@@ -162,6 +162,11 @@ export default defineConfigurationPart({
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-spy-on.md
 		'vitest/prefer-spy-on': 'error',
 
+		// Enforce using `toBe(true)` and `toBe(false)` over matchers that coerce types to boolean (autofixable)
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-strict-boolean-matchers.md
+		// Note: I just can't imagine the developer writing `toBeTruthy` instead of `toBe(true)` if he didn't want to write EXACTLY that...
+		'vitest/prefer-strict-boolean-matchers': 'off',
+
 		// Suggest using `toStrictEqual()`
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-strict-equal.md
 		'vitest/prefer-strict-equal': 'warn',
