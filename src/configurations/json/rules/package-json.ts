@@ -11,6 +11,12 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/no-empty-fields.md
 		'package-json/no-empty-fields': 'warn',
 
+		// Prevents adding unnecessary / redundant files
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/no-redundant-files.md
+		// Note: It's good to be informed that NPM includes some files by default,
+		// but in general people are more comfortable with explicit instructions.
+		'package-json/no-redundant-files': 'off',
+
 		// Require object keys to be sorted (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/sort-keys.html
 		'jsonc/sort-keys': [
