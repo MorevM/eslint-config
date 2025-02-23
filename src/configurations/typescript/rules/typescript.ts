@@ -307,6 +307,10 @@ export default defineConfigurationPart({
 			checksVoidReturn: true,
 		}],
 
+		// Disallow using the spread operator when it might cause unexpected behavior
+		// https://typescript-eslint.io/rules/no-misused-spread
+		'@typescript-eslint/no-misused-spread': 'error',
+
 		// Disallow enums from having both number and string members
 		// https://typescript-eslint.io/rules/no-mixed-enums
 		'@typescript-eslint/no-mixed-enums': 'error',
