@@ -120,6 +120,29 @@ export default defineConfigurationPart({
 			form: 'object',
 		}],
 
+		// Requires the `author` property to be present
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-author.md
+		// Note: Most commercial projects are doing quite well without it
+		'package-json/require-author': 'off',
+
+		// Requires the `files` property to be present
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-files.md
+		// Note: Most commercial projects are doing quite well without it
+		'package-json/require-files': 'off',
+
+		// Requires the `keywords` property to be present
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-keywords.md
+		// Note: Most commercial projects are doing quite well without it
+		'package-json/require-keywords': 'off',
+
+		// Requires the `name` property to be present
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-name.md
+		'package-json/require-name': 'error',
+
+		// Requires the `version` property to be present
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-version.md
+		'package-json/require-version': 'error',
+
 		// Dependencies, scripts, and configuration values must be declared in alphabetical order (autofixable)
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/sort-collections.md
 		// Note: Configured in more detail in `jsonc/sort-keys` above
