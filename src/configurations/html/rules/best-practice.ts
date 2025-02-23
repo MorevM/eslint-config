@@ -67,6 +67,11 @@ export default defineConfigurationPart({
 		// https://yeonjuan.github.io/html-eslint/docs/rules/require-doctype
 		'@html-eslint/require-doctype': 'error',
 
+		// Require `<!DOCTYPE html>` in the document (autofixable)
+		// https://html-eslint.org/docs/rules/require-explicit-size
+		// Note: way too strict, there are several ways to prevent CLS
+		'@html-eslint/require-explicit-size': 'off',
+
 		// Enforce `<li>` to be in `<ul>`, `<ol>` or `<menu>`
 		// https://yeonjuan.github.io/html-eslint/docs/rules/require-li-container
 		'@html-eslint/require-li-container': 'error',
