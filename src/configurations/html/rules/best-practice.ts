@@ -43,6 +43,10 @@ export default defineConfigurationPart({
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-target-blank
 		'@html-eslint/no-target-blank': 'error',
 
+		// Enforces to use `HTTPS` for embedded resources (image, media, style sheet and script)
+		// https://html-eslint.org/docs/rules/prefer-https
+		'@html-eslint/prefer-https': 'error',
+
 		// Enforces the use of tag with specified attributes
 		// https://github.com/yeonjuan/html-eslint/blob/main/docs/rules/require-attrs.md
 		// Note: should be configured individually if needed
