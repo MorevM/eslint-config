@@ -18,6 +18,10 @@ export default defineConfigurationPart({
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-aria-hidden-body
 		'@html-eslint/no-aria-hidden-body': 'error',
 
+		// Disallows the use of heading elements inside `<button>`
+		// https://html-eslint.org/docs/rules/no-heading-inside-button
+		'@html-eslint/no-heading-inside-button': 'error',
+
 		// Disallow use of `user-scalable=no` in `<meta name="viewport">`
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-non-scalable-viewport
 		'@html-eslint/no-non-scalable-viewport': 'error',
