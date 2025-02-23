@@ -31,6 +31,10 @@ export default defineConfigurationPart({
 		// https://html-eslint.org/docs/rules/lowercase
 		'@html-eslint/lowercase': 'warn',
 
+		// Enforces element maximum depth
+		// https://html-eslint.org/docs/rules/max-element-depth
+		'@html-eslint/max-element-depth': 'off',
+
 		// Disallow extra spaces around attributes (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-extra-spacing-attrs
 		'@html-eslint/no-extra-spacing-attrs': ['warn', {
