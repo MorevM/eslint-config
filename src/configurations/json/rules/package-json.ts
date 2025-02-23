@@ -129,7 +129,7 @@ export default defineConfigurationPart({
 
 		// Enforce that package.json has all properties required by the npm spec
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-package-def.md
-		'package-json/valid-package-def': 'error',
+		'package-json/valid-package-definition': 'error',
 
 		// Enforce that if repository directory is specified, it matches the path to the `package.json` file
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-repository-directory.md
