@@ -50,6 +50,10 @@ export default defineConfigurationPart({
 		// https://yeonjuan.github.io/html-eslint/docs/rules/require-img-alt
 		'@html-eslint/require-img-alt': 'error',
 
+		// Enforces the presence of accessible labels for input elements
+		// https://html-eslint.org/docs/rules/require-input-label
+		'@html-eslint/require-input-label': 'error',
+
 		// Enforce to use `<meta name="viewport" ...>` in the `<head></head>`
 		// https://yeonjuan.github.io/html-eslint/docs/rules/require-meta-viewport
 		'@html-eslint/require-meta-viewport': 'error',
