@@ -22,6 +22,10 @@ export default defineConfigurationPart({
 		// https://html-eslint.org/docs/rules/no-heading-inside-button
 		'@html-eslint/no-heading-inside-button': 'error',
 
+		// This rule disallows the use of invalid role on elements
+		// https://html-eslint.org/docs/rules/no-invalid-role
+		'@html-eslint/no-invalid-role': 'error',
+
 		// Disallow use of `user-scalable=no` in `<meta name="viewport">`
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-non-scalable-viewport
 		'@html-eslint/no-non-scalable-viewport': 'error',
