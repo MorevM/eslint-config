@@ -38,6 +38,10 @@ export default defineConfigurationPart({
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-skip-heading-levels
 		'@html-eslint/no-skip-heading-levels': 'warn',
 
+		// Enforces to use a valid `method` attribute on the `<form>`
+		// https://html-eslint.org/docs/rules/require-form-method
+		'@html-eslint/require-form-method': 'error',
+
 		// Require title attribute in `<frame>` and `<iframe>`
 		// https://yeonjuan.github.io/html-eslint/docs/rules/require-frame-title
 		'@html-eslint/require-frame-title': 'error',
