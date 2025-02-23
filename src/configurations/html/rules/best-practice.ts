@@ -18,6 +18,10 @@ export default defineConfigurationPart({
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-inline-styles
 		'@html-eslint/no-inline-styles': 'off',
 
+		// Disallows interactive elements from being nested
+		// https://html-eslint.org/docs/rules/no-nested-interactive
+		'@html-eslint/no-nested-interactive': 'off',
+
 		// Disallow using obsolete tags in HTML5
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-obsolete-tags
 		'@html-eslint/no-obsolete-tags': 'error',
