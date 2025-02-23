@@ -7,6 +7,10 @@ export default defineConfigurationPart({
 		'package-json': pluginPackageJson,
 	},
 	rules: {
+		// Reports on unnecessary empty arrays and objects
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/no-empty-fields.md
+		'package-json/no-empty-fields': 'warn',
+
 		// Require object keys to be sorted (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/sort-keys.html
 		'jsonc/sort-keys': [
@@ -99,7 +103,7 @@ export default defineConfigurationPart({
 			},
 		],
 
-		// Package properties must be declared in standard order	 (autofixable)
+		// Package properties must be declared in standard order (autofixable)
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/order-properties.md
 		// Note: Already configured in `jsonc/sort-keys` above
 		'package-json/order-properties': 'off',
