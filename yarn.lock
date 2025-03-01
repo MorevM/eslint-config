@@ -1358,7 +1358,7 @@ __metadata:
     jsonc-eslint-parser: "npm:^2.4.0"
     jsonc-parser: "npm:^3.3.1"
     lefthook: "npm:^1.10.11"
-    package-manager-detector: "npm:^0.2.9"
+    package-manager-detector: "npm:^0.2.10"
     release-it: "npm:^18.1.2"
     semver: "npm:^7.7.1"
     tsup: "npm:^8.3.6"
@@ -7975,10 +7975,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"package-manager-detector@npm:^0.2.9":
-  version: 0.2.9
-  resolution: "package-manager-detector@npm:0.2.9"
-  checksum: 10c0/5fe1e80743fd110954f1904be4be32f34fc46c17b05e9e47a81e2f5777e474366cb570ed3b697a5ae8290860b53ac4b309898b24919dc1ddeb6d4097429113e1
+"package-manager-detector@npm:^0.2.10":
+  version: 0.2.10
+  resolution: "package-manager-detector@npm:0.2.10"
+  dependencies:
+    quansync: "npm:^0.2.2"
+  checksum: 10c0/d2c3aff1e7757224f55e7329aeea92ef34f7357d8fc21067846471bcdea778f0ed4c75fa86783de70469a3ed7f67fa3b290de7b0cf2f22a8c16c6c922d607f5b
   languageName: node
   linkType: hard
 
@@ -8347,6 +8349,13 @@ __metadata:
   version: 1.5.1
   resolution: "q@npm:1.5.1"
   checksum: 10c0/7855fbdba126cb7e92ef3a16b47ba998c0786ec7fface236e3eb0135b65df36429d91a86b1fff3ab0927b4ac4ee88a2c44527c7c3b8e2a37efbec9fe34803df4
+  languageName: node
+  linkType: hard
+
+"quansync@npm:^0.2.2":
+  version: 0.2.6
+  resolution: "quansync@npm:0.2.6"
+  checksum: 10c0/de27a8dfa89de92a9b9fc10c49167ada1ea8b04b0335d0921e84abec51699b36f0f06f8ee0479514d5d5f32cb14e975a54a41e5fe3c3a96e72e3ad333aa422ca
   languageName: node
   linkType: hard
 
