@@ -521,24 +521,110 @@ export default defineConfigurationPart({
 		//       which makes code less verbose, but some of them are just annoying to read.
 		'unicorn/prevent-abbreviations': ['warn', {
 			extendDefaultReplacements: false,
+			// @keep-sorted
 			replacements: {
 				btn: {
 					button: true,
 				},
+				cb: {
+					callback: true,
+				},
+				cnt: {
+					count: true,
+				},
 				conf: {
 					config: true,
 				},
+				ctx: {
+					context: true,
+				},
 				cur: {
-					curr: true,
+					current: true,
+				},
+				curr: {
+					current: true,
+				},
+				descr: {
+					description: true,
+				},
+				dir: {
+					direction: true,
+					directory: true,
+				},
+				dirs: {
+					directories: true,
+				},
+				dst: {
+					dest: true,
+					dist: true,
+					destination: true,
+					distribution: true,
+				},
+				e: {
+					error: true,
+					event: true,
+				},
+				elem: {
+					element: true,
+				},
+				elems: {
+					elements: true,
+				},
+				err: {
+					error: true,
+				},
+				ev: {
+					event: true,
+				},
+				evt: {
+					event: true,
+				},
+				func: {
+					fn: true,
+					function: true,
 				},
 				idx: {
 					index: true,
 				},
+				len: {
+					length: true,
+				},
 				msg: {
 					message: true,
 				},
+				opts: {
+					options: true,
+				},
+				rel: {
+					related: true,
+					relationship: true,
+					relative: true,
+				},
+				req: {
+					request: true,
+				},
+				res: {
+					resource: true,
+					response: true,
+					result: true,
+				},
+				sep: {
+					separator: true,
+				},
 				tbl: {
 					table: true,
+				},
+				tmp: {
+					temp: true,
+				},
+				tmpl: {
+					template: true,
+				},
+				val: {
+					value: true,
+				},
+				ver: {
+					version: true,
 				},
 			},
 		}],
