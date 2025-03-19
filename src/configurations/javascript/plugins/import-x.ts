@@ -58,7 +58,7 @@ export default defineConfigurationPart({
 
 		// Report CommonJS `require()` calls and `module.exports` or `exports.*`
 		// https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-commonjs.md
-		// @TODO: [2025-01-01] Hmm... It seems to early to turn it on
+		// @TODO: [2026-01-01] Still a lot :(
 		'import-x/no-commonjs': 'off',
 
 		// Forbid imports with CommonJS exports
