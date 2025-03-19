@@ -1,5 +1,41 @@
 
 
+## [37.0.0](https://github.com/MorevM/eslint-config/compare/v36.3.2...v37.0.0) (2025-03-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* **typescript:** With new rule `@typescript-eslint/no-misused-spread` Typescript configuration becomes more strict and may produce new errors.
+* **html:** With new rule `@html-eslint/require-input-label` HTML-related configurations become more strict and may produce new errors.
+* **html:** With new rule `@html-eslint/prefer-https` HTML-related configurations become more strict and may produce new errors.
+* **html:** With new rule `@html-eslint/require-form-method` HTML-related configurations become more strict and may produce new errors.
+* **html:** With new rule `@html-eslint/no-nested-interactive` HTML-related configurations become more strict and may produce new errors.
+* **html:** With new rule `@html-eslint/no-invalid-role` HTML-related configurations become more strict and may produce new errors.
+* **html:** With new rule `@html-eslint/no-heading-inside-button` HTML-related configurations become more strict and may produce new errors.
+
+### Features
+
+* **html:** Add `@html-eslint/no-heading-inside-button` rule ([d4829c2](https://github.com/MorevM/eslint-config/commit/d4829c27fa8a70bb69f3c317974be9845c56efef))
+* **html:** Add `@html-eslint/no-invalid-role` rule ([4dc6639](https://github.com/MorevM/eslint-config/commit/4dc6639d9be4d769ead18455640be708b5e4dc62))
+* **html:** Add `@html-eslint/no-nested-interactive` rule ([dd61660](https://github.com/MorevM/eslint-config/commit/dd6166043f24c7a5733134a4857bbf24ef43bd72))
+* **html:** Add `@html-eslint/prefer-https` rule ([e52077e](https://github.com/MorevM/eslint-config/commit/e52077e0e8863d5696e78a8055562fb8ffe9fd4c))
+* **html:** Add `@html-eslint/require-form-method` rule ([87e7cd2](https://github.com/MorevM/eslint-config/commit/87e7cd2ace3a827ff5d43c915ff57b85482d9c00))
+* **html:** Add `@html-eslint/require-input-label` rule ([06a56df](https://github.com/MorevM/eslint-config/commit/06a56df789fbb7eaeacc250cac837c84239b74eb))
+* **html:** Take account of `@html-eslint/max-element-depth` rule ([4a93e63](https://github.com/MorevM/eslint-config/commit/4a93e63c82352672b2ba72850279ef09d869d534))
+* **html:** Take account of `@html-eslint/require-explicit-size` rule ([f3489bb](https://github.com/MorevM/eslint-config/commit/f3489bb4f1a18f3302ae8b876bf3a97a5b5e710c))
+* **javascript:** Increase the number of banned abbreviations ([576b79d](https://github.com/MorevM/eslint-config/commit/576b79ddcc7d81b941d9dfc466496be2b6d3f112))
+* **json:** Add `package-json/no-empty-fields` rule ([fca4a21](https://github.com/MorevM/eslint-config/commit/fca4a218d711744ee97600cad3848effa28a9eeb))
+* **json:** Add some of `package-json/require-*` rules ([27ed71c](https://github.com/MorevM/eslint-config/commit/27ed71c82cd7414c8d60e1ad3a5a2a917e48a477))
+* **json:** Take account of `package-json/no-redundant-files` rule ([c29c17a](https://github.com/MorevM/eslint-config/commit/c29c17a29558ca5f1622a01d04a5f63239cbd7f8))
+* **typescript:** Add `@typescript-eslint/no-misused-spread` rule ([cc0acc4](https://github.com/MorevM/eslint-config/commit/cc0acc41fdb0296404a2f6ec7f444356221749fd))
+* **vitest:** Take account of `vitest/prefer-strict-boolean-matchers` rule ([b4705f0](https://github.com/MorevM/eslint-config/commit/b4705f01a086eee372c74ce979787d1341c70b7a))
+* **vitest:** Take account of `vitest/require-mock-type-parameters` rule ([c3da3b3](https://github.com/MorevM/eslint-config/commit/c3da3b3f11641e4e423e53a73bb302096d819c5b))
+
+### Bug fixes
+
+* **html:** Temporarily disable `@html-eslint/attrs-newline` rule due to its overly strict implementation ([0ad583d](https://github.com/MorevM/eslint-config/commit/0ad583d54f4f13ae94bd7137c64d0c4e46288911))
+* **json:** Replace deprecated `package-json/valid-package-def` with `package-json/valid-package-definition` ([a1a3923](https://github.com/MorevM/eslint-config/commit/a1a39231e92d7b2fed14a20431ac442af90de4b5))
+
 ## [36.3.2](https://github.com/MorevM/eslint-config/compare/v36.3.1...v36.3.2) (2024-12-28)
 
 No notable changes in this release, just dependencies update.
