@@ -257,10 +257,10 @@ export default class RulesFinder {
 	public get readableDeprecatedRules() {
 		const data = this.getReadableSource(this.configuredDeprecatedRules, 'deprecatedRules');
 
-		return data.reduce<string[]>((acc, curr) => {
-			const deprecatedRules = curr.rules.map((rule) => quote(rule, '`')).join(', ');
-			const prefix = curr.name === 'eslint' ? 'ESLint' : `Plugin '${curr.name}'`;
-			acc.push(`${prefix} has ${curr.rules.length} deprecated rule(s): ${deprecatedRules}`);
+		return data.reduce<string[]>((acc, current) => {
+			const deprecatedRules = current.rules.map((rule) => quote(rule, '`')).join(', ');
+			const prefix = current.name === 'eslint' ? 'ESLint' : `Plugin '${current.name}'`;
+			acc.push(`${prefix} has ${current.rules.length} deprecated rule(s): ${deprecatedRules}`);
 			return acc;
 		}, []).join('\n');
 	}
@@ -273,10 +273,10 @@ export default class RulesFinder {
 	public get readableUnconfiguredRules() {
 		const data = this.getReadableSource(this.unconfiguredRules, 'allRules');
 
-		return data.reduce<string[]>((acc, curr) => {
-			const unconfiguredRules = curr.rules.map((rule) => quote(rule, '`')).join(', ');
-			const prefix = curr.name === 'eslint' ? 'ESLint' : `Plugin '${curr.name}'`;
-			acc.push(`${prefix} has ${curr.rules.length} unconfigured rule(s): ${unconfiguredRules}`);
+		return data.reduce<string[]>((acc, current) => {
+			const unconfiguredRules = current.rules.map((rule) => quote(rule, '`')).join(', ');
+			const prefix = current.name === 'eslint' ? 'ESLint' : `Plugin '${current.name}'`;
+			acc.push(`${prefix} has ${current.rules.length} unconfigured rule(s): ${unconfiguredRules}`);
 			return acc;
 		}, []).join('\n');
 	}

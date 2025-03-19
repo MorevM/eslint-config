@@ -10,7 +10,7 @@ import type { FlatConfig } from '#types';
  */
 export const mergeParts = (...objects: NonEmptyArray<FlatConfig>) => {
 	return {
-		plugins: objects.reduce<FlatConfig['plugins']>((acc, curr) => ({ ...acc, ...curr.plugins }), {}),
-		rules: objects.reduce<FlatConfig['rules']>((acc, curr) => ({ ...acc, ...curr.rules }), {}),
+		plugins: objects.reduce<FlatConfig['plugins']>((acc, config) => ({ ...acc, ...config.plugins }), {}),
+		rules: objects.reduce<FlatConfig['rules']>((acc, config) => ({ ...acc, ...config.rules }), {}),
 	};
 };
