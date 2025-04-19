@@ -986,13 +986,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@html-eslint/parser@npm:^0.35.0":
-  version: 0.35.0
-  resolution: "@html-eslint/parser@npm:0.35.0"
+"@html-eslint/parser@npm:^0.39.0":
+  version: 0.39.0
+  resolution: "@html-eslint/parser@npm:0.39.0"
   dependencies:
-    "@html-eslint/template-syntax-parser": "npm:^0.35.0"
-    es-html-parser: "npm:0.1.0"
-  checksum: 10c0/15c5e93141eb96358dc741baa375776f0b80aae752dc1b36c79f2a95fe0643abc368a3b6943457c8e3675937ec8a5d3b54948e55483ddb13b555d5c2f86a11a6
+    "@html-eslint/template-syntax-parser": "npm:^0.39.0"
+    es-html-parser: "npm:0.1.1"
+  checksum: 10c0/a8bb7987f32ef4a4a89a96471ca934074643f558a6eeabc4004872dad56aab83cd6a64c0737896d03051d53fcc2916ed84c22655c4d611d84631db5fefd0aee7
   languageName: node
   linkType: hard
 
@@ -1009,6 +1009,13 @@ __metadata:
   version: 0.35.0
   resolution: "@html-eslint/template-syntax-parser@npm:0.35.0"
   checksum: 10c0/bab109dc2072e77e3ba436cc5ed9ef486e3a79e76d3ffd16389df015b8a04d6a8eec9661917c2b7e306658855ce306e5e572cf5ab78c551c503e7392326446d5
+  languageName: node
+  linkType: hard
+
+"@html-eslint/template-syntax-parser@npm:^0.39.0":
+  version: 0.39.0
+  resolution: "@html-eslint/template-syntax-parser@npm:0.39.0"
+  checksum: 10c0/846dd393891544f9e5c8cd34ff02919422de704bcd42965767c5c6d3b5839a62e02fdfd418b45801301ee12a6c91b8384a3bdeb3e45276c595f99e27ed0634d9
   languageName: node
   linkType: hard
 
@@ -1331,7 +1338,7 @@ __metadata:
   dependencies:
     "@clack/prompts": "npm:^0.10.0"
     "@html-eslint/eslint-plugin": "npm:^0.35.0"
-    "@html-eslint/parser": "npm:^0.35.0"
+    "@html-eslint/parser": "npm:^0.39.0"
     "@morev/commitlint-config": "npm:^0.2.2"
     "@morev/eslint-config": "workspace:^"
     "@morev/utils": "npm:^3.12.1"
@@ -4213,6 +4220,13 @@ __metadata:
   version: 0.1.0
   resolution: "es-html-parser@npm:0.1.0"
   checksum: 10c0/e1a1666c19f115b6bbb9a8bf516d42b4f77b4e5785bf6740ddab819233b7eadd034ac305f21267ca8a9c43d8062c8f73beedaa118e801cd5fd712320d062f970
+  languageName: node
+  linkType: hard
+
+"es-html-parser@npm:0.1.1":
+  version: 0.1.1
+  resolution: "es-html-parser@npm:0.1.1"
+  checksum: 10c0/0bd8afa3293b12766fd0fde3e74bfe842c78275a1954b0c39979d2bfe35db7417808c90327b7b41dd47b51bf24368e88521ec3b44c71c2826ede301cd24d85c0
   languageName: node
   linkType: hard
 
