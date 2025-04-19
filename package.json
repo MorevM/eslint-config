@@ -65,7 +65,7 @@
 	},
 	"dependencies": {
 		"@clack/prompts": "^0.10.0",
-		"@html-eslint/eslint-plugin": "^0.35.0",
+		"@html-eslint/eslint-plugin": "^0.39.0",
 		"@html-eslint/parser": "^0.35.0",
 		"@morev/utils": "^3.12.1",
 		"@stylistic/eslint-plugin": "^3.0.1",
