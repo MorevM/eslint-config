@@ -935,6 +935,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint/core@npm:^0.13.0":
+  version: 0.13.0
+  resolution: "@eslint/core@npm:0.13.0"
+  dependencies:
+    "@types/json-schema": "npm:^7.0.15"
+  checksum: 10c0/ba724a7df7ed9dab387481f11d0d0f708180f40be93acce2c21dacca625c5867de3528760c42f1c457ccefe6a669d525ff87b779017eabc0d33479a36300797b
+  languageName: node
+  linkType: hard
+
 "@eslint/eslintrc@npm:^3.3.0":
   version: 3.3.0
   resolution: "@eslint/eslintrc@npm:3.3.0"
@@ -966,6 +975,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eslint/plugin-kit@npm:0.2.8":
+  version: 0.2.8
+  resolution: "@eslint/plugin-kit@npm:0.2.8"
+  dependencies:
+    "@eslint/core": "npm:^0.13.0"
+    levn: "npm:^0.4.1"
+  checksum: 10c0/554847c8f2b6bfe0e634f317fc43d0b54771eea0015c4f844f75915fdb9e6170c830c004291bad57db949d61771732e459f36ed059f45cf750af223f77357c5c
+  languageName: node
+  linkType: hard
+
 "@eslint/plugin-kit@npm:^0.2.7":
   version: 0.2.7
   resolution: "@eslint/plugin-kit@npm:0.2.7"
@@ -976,13 +995,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@html-eslint/eslint-plugin@npm:^0.35.0":
-  version: 0.35.0
-  resolution: "@html-eslint/eslint-plugin@npm:0.35.0"
+"@html-eslint/eslint-plugin@npm:^0.40.2":
+  version: 0.40.2
+  resolution: "@html-eslint/eslint-plugin@npm:0.40.2"
   dependencies:
-    "@html-eslint/template-parser": "npm:^0.35.0"
-    "@html-eslint/template-syntax-parser": "npm:^0.35.0"
-  checksum: 10c0/e9ac0c05af3fe448a050e7e0bacd01aec5659ecd28ac34aa1d853b66d9d48014e5a5e11ec7fc904fea8278db9a232bca0e57258c3d73d8db80a5d4f366c7b4b0
+    "@eslint/plugin-kit": "npm:0.2.8"
+    "@html-eslint/parser": "npm:^0.40.0"
+    "@html-eslint/template-parser": "npm:^0.40.0"
+    "@html-eslint/template-syntax-parser": "npm:^0.40.0"
+  checksum: 10c0/26d0aee41ee2041e17492a86e7f17b3f6e119260108c6331d87954d87e5d13a050e1ba70d52c8189aed1ab46112a60eb56bbee08c3402a0777dcde8e2400b3d5
   languageName: node
   linkType: hard
 
@@ -996,12 +1017,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@html-eslint/template-parser@npm:^0.35.0":
-  version: 0.35.0
-  resolution: "@html-eslint/template-parser@npm:0.35.0"
+"@html-eslint/parser@npm:^0.40.0":
+  version: 0.40.0
+  resolution: "@html-eslint/parser@npm:0.40.0"
   dependencies:
-    es-html-parser: "npm:0.1.0"
-  checksum: 10c0/c2f590cdf29c4b2d208931e9d088086c041646c64b1e7997c182c2b6e0271888c48f813f0fd3a0db629209f718340d536242739381cb15ee1c4bed239e4622e8
+    "@html-eslint/template-syntax-parser": "npm:^0.40.0"
+    es-html-parser: "npm:0.2.0"
+  checksum: 10c0/8968040c506378e0119b25ccd1999e14ecbdaddbb0f3012d76473f20efd95ec49bd87eb00c6783749e0b4227f071a4bc31ad6b307f448f5928312c035570ac75
+  languageName: node
+  linkType: hard
+
+"@html-eslint/template-parser@npm:^0.40.0":
+  version: 0.40.0
+  resolution: "@html-eslint/template-parser@npm:0.40.0"
+  dependencies:
+    es-html-parser: "npm:0.2.0"
+  checksum: 10c0/5723ca4aea1c8cc34fd6cde84d394279e1b63baed5a8d358da3337c1a3b786225cb5353318c645d83b229cd4aae689e60e0701d12f355ab87280607b1f3b12e5
   languageName: node
   linkType: hard
 
@@ -1009,6 +1040,13 @@ __metadata:
   version: 0.35.0
   resolution: "@html-eslint/template-syntax-parser@npm:0.35.0"
   checksum: 10c0/bab109dc2072e77e3ba436cc5ed9ef486e3a79e76d3ffd16389df015b8a04d6a8eec9661917c2b7e306658855ce306e5e572cf5ab78c551c503e7392326446d5
+  languageName: node
+  linkType: hard
+
+"@html-eslint/template-syntax-parser@npm:^0.40.0":
+  version: 0.40.0
+  resolution: "@html-eslint/template-syntax-parser@npm:0.40.0"
+  checksum: 10c0/1638b6ac967c0cc1e25b3babe9f8bb79e013af388df9bcc05d5a4cda5ec61690e8c0285ea2f212796d33bdfc9bb3d9c712f51e6e1bf942b650d6f00450417757
   languageName: node
   linkType: hard
 
@@ -1330,7 +1368,7 @@ __metadata:
   resolution: "@morev/eslint-config@workspace:."
   dependencies:
     "@clack/prompts": "npm:^0.10.0"
-    "@html-eslint/eslint-plugin": "npm:^0.35.0"
+    "@html-eslint/eslint-plugin": "npm:^0.40.2"
     "@html-eslint/parser": "npm:^0.35.0"
     "@morev/commitlint-config": "npm:^0.2.2"
     "@morev/eslint-config": "workspace:^"
@@ -4213,6 +4251,13 @@ __metadata:
   version: 0.1.0
   resolution: "es-html-parser@npm:0.1.0"
   checksum: 10c0/e1a1666c19f115b6bbb9a8bf516d42b4f77b4e5785bf6740ddab819233b7eadd034ac305f21267ca8a9c43d8062c8f73beedaa118e801cd5fd712320d062f970
+  languageName: node
+  linkType: hard
+
+"es-html-parser@npm:0.2.0":
+  version: 0.2.0
+  resolution: "es-html-parser@npm:0.2.0"
+  checksum: 10c0/bda5e1dc9f6297eeea8707d67d36162e567a3bbf2696814c204edb1d30e4641511cde4cf3bd43f649e5a6c4644a07dfaf16b007a3000ecf98e48c324e38937ad
   languageName: node
   linkType: hard
 
