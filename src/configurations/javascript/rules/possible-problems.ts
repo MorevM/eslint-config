@@ -177,6 +177,10 @@ export default defineConfigurationPart({
 		// https://eslint.org/docs/rules/no-this-before-super
 		'no-this-before-super': 'error',
 
+		// Disallow `let` or `var` variables that are read but never assigned
+		// https://eslint.org/docs/rules/no-unassigned-vars
+		'no-unassigned-vars': 'error',
+
 		// Disallow undeclared variables
 		// https://eslint.org/docs/rules/no-undef
 		'no-undef': 'error',
