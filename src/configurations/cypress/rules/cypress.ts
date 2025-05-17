@@ -15,6 +15,10 @@ export default defineConfigurationPart({
 		// https://docs.cypress.io/guides/references/best-practices#Unnecessary-Waiting
 		'cypress/no-unnecessary-waiting': 'error',
 
+		// Disallow using `cy.xpath()` calls
+		// https://github.com/cypress-io/eslint-plugin-cypress/blob/master/docs/rules/no-xpath.md
+		'cypress/no-xpath': 'warn',
+
 		// Prevent using async/await in Cypress test case
 		// https://github.com/cypress-io/eslint-plugin-cypress/blob/HEAD/docs/rules/no-async-tests.md
 		'cypress/no-async-tests': 'error',
