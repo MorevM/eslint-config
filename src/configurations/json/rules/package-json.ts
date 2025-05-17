@@ -148,6 +148,11 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-name.md
 		'package-json/require-name': 'error',
 
+		// Requires the `types` property to be present
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-types.md
+		// Note: Most commercial projects are doing quite well without it
+		'package-json/require-types': 'off',
+
 		// Requires the `version` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-version.md
 		'package-json/require-version': 'error',
