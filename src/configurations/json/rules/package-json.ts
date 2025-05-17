@@ -125,6 +125,11 @@ export default defineConfigurationPart({
 		// Note: Most commercial projects are doing quite well without it
 		'package-json/require-author': 'off',
 
+		// Requires the `description` property to be present
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-description.md
+		// Note: Most commercial projects are doing quite well without it
+		'package-json/require-description': 'off',
+
 		// Requires the `files` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-files.md
 		// Note: Most commercial projects are doing quite well without it
