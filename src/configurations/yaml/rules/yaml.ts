@@ -42,7 +42,10 @@ export default defineConfigurationPart({
 
 		// Enforce consistent indentation (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/indent.html
-		'yml/indent': ['warn', 2],
+		'yml/indent': ['warn', 2, {
+			indentBlockSequences: true,
+			alignMultilineFlowScalars: true,
+		}],
 
 		// Enforce naming convention to key names
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/key-name-casing.html
