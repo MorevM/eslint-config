@@ -101,6 +101,10 @@ export default defineConfigurationPart({
 		// https://eslint.vuejs.org/rules/no-extra-parens.html
 		...extensionFromBase('no-extra-parens'),
 
+		// Disallow shorthand type conversions in `<template>` (autofixable)
+		// https://eslint.vuejs.org/rules/no-implicit-coercion.html
+		...extensionFromBase('no-implicit-coercion'),
+
 		// Disallow irregular whitespace in `.vue` files
 		// https://eslint.vuejs.org/rules/no-irregular-whitespace.html
 		...extensionFromBase('-no-irregular-whitespace'),
@@ -144,7 +148,7 @@ export default defineConfigurationPart({
 		// Require template literals instead of string concatenation in `<template>` (autofixable)
 		// https://eslint.vuejs.org/rules/prefer-template.html
 		// It seems https://github.com/JuniorTour/vue-template-babel-compiler is not stable, turned off for a while
-		// TODO: [2025-05-11] Try again with vue-template-babel-compiler
+		// TODO: [2026-05-11] Try again with vue-template-babel-compiler
 		// ...extensionFromBase('prefer-template'),
 		'vue/prefer-template': 'off',
 
