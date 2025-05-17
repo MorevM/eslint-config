@@ -10,6 +10,10 @@ export default defineConfigurationPart({
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-duplicate-attrs
 		'@html-eslint/no-duplicate-attrs': 'error',
 
+		// This rule disallows duplicate class names in class attributes
+		// https://html-eslint.org/docs/rules/no-duplicate-class
+		'@html-eslint/no-duplicate-class': 'error',
+
 		// Disallow duplicate `id` attributes
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-duplicate-id
 		'@html-eslint/no-duplicate-id': 'error',
