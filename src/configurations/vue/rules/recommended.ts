@@ -47,6 +47,7 @@ export default defineConfigurationPart({
 			order: [
 				'el',
 				'name',
+				'compilerOptions',
 				'inheritAttrs',
 				'key',
 				'parent',
