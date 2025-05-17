@@ -398,9 +398,13 @@ export default defineConfigurationPart({
 		// https://typescript-eslint.io/rules/no-unnecessary-type-assertion
 		'@typescript-eslint/no-unnecessary-type-assertion': 'warn',
 
-		// Disallows unnecessary constraints on generic types (autofixable)
+		// Disallows unnecessary constraints on generic types (has suggestions)
 		// https://typescript-eslint.io/rules/no-unnecessary-type-constraint
 		'@typescript-eslint/no-unnecessary-type-constraint': 'warn',
+
+		// Disallow conversion idioms when they do not change the type or value of the expression (has suggestions)
+		// https://typescript-eslint.io/rules/no-unnecessary-type-conversion
+		'@typescript-eslint/no-unnecessary-type-conversion': 'error',
 
 		// Disallow type parameters that aren't used multiple times
 		// https://typescript-eslint.io/rules/no-unnecessary-type-parameters
