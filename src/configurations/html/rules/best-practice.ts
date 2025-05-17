@@ -79,5 +79,9 @@ export default defineConfigurationPart({
 		// Enforce to use `<meta charset="...">` in the `<head></head>`
 		// https://yeonjuan.github.io/html-eslint/docs/rules/require-meta-charset
 		'@html-eslint/require-meta-charset': 'error',
+
+		// Enforce the use of baseline features
+		// https://html-eslint.org/docs/rules/use-baseline
+		'@html-eslint/use-baseline': 'off',
 	},
 });
