@@ -120,6 +120,10 @@ export default defineConfigurationPart({
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-comparison-matcher.md
 		'vitest/prefer-comparison-matcher': 'warn',
 
+		// Prefer using a function as a describe name over an equivalent string (autofixable)
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-describe-function-title.md
+		'vitest/prefer-describe-function-title': 'warn',
+
 		// Prefer `.each` rather than manual loops
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-each.md
 		'vitest/prefer-each': 'error',
