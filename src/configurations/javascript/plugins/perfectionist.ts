@@ -43,6 +43,10 @@ export default defineConfigurationPart({
 		'perfectionist/sort-imports': ['warn', {
 			type: 'natural',
 			order: 'asc',
+			fallbackSort: { // ??? https://perfectionist.dev/rules/sort-imports
+				type: 'alphabetical',
+				order: 'asc',
+			},
 			ignoreCase: true,
 			specialCharacters: 'keep',
 			internalPattern: [
