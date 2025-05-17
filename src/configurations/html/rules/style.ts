@@ -8,7 +8,7 @@ export default defineConfigurationPart({
 	rules: {
 		// Require newline between attributes (autofixable)
 		// https://yeonjuan.github.io/html-eslint/docs/rules/attrs-newline
-		'@html-eslint/attrs-newline': ['off', {
+		'@html-eslint/attrs-newline': ['warn', {
 			closeStyle: 'newline',
 			ifAttrsMoreThan: 5,
 		}],
