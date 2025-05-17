@@ -23,6 +23,10 @@ export default defineConfigurationPart({
 		// https://github.com/cypress-io/eslint-plugin-cypress/blob/HEAD/docs/rules/no-async-tests.md
 		'cypress/no-async-tests': 'error',
 
+		// Disallow chain of `cy.get()` calls
+		// https://github.com/cypress-io/eslint-plugin-cypress/blob/master/docs/rules/no-chained-get.md
+		'cypress/no-chained-get': 'error',
+
 		// Disallow using `cy.debug()` calls
 		// https://github.com/cypress-io/eslint-plugin-cypress/blob/master/docs/rules/no-debug.md
 		'cypress/no-debug': 'error',
