@@ -67,6 +67,8 @@ export default defineConfigurationPart({
 				'model',
 				['props', 'propsData'],
 				'emits',
+				'slots',
+				'expose',
 				'setup',
 				'fetch',
 				'asyncData',
