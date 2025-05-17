@@ -1393,7 +1393,6 @@ __metadata:
   dependencies:
     "@clack/prompts": "npm:^0.10.1"
     "@html-eslint/eslint-plugin": "npm:^0.40.3"
-    "@html-eslint/parser": "npm:^0.40.0"
     "@morev/commitlint-config": "npm:^0.2.2"
     "@morev/eslint-config": "workspace:^"
     "@morev/utils": "npm:^3.12.2"
