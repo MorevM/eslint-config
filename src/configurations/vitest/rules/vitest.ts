@@ -243,7 +243,9 @@ export default defineConfigurationPart({
 
 		// Enforce valid titles (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/valid-title.md
-		'vitest/valid-title': 'warn',
+		'vitest/valid-title': ['warn', {
+			allowArguments: true,
+		}],
 
 		// Enable all `padding-around-*` rules of `jest`, all are autofixable (nothing `jest`-special inside)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/padding-around-all.md
