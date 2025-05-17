@@ -18,7 +18,9 @@ export default defineConfigurationPart({
 
 		// Disallow adding multiple root nodes to the template
 		// https://eslint.vuejs.org/rules/no-multiple-template-root.html
-		'vue/no-multiple-template-root': 'error',
+		'vue/no-multiple-template-root': ['error', {
+			disallowComments: true,
+		}],
 
 		// Disallow `key` attribute on `<template v-for>`
 		// https://eslint.vuejs.org/rules/no-v-for-template-key.html
