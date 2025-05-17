@@ -76,16 +76,28 @@ export default defineConfigurationPart({
 				['side-effect-style'],
 				['unknown'],
 			],
-			customGroups: {
-				value: {
-					vitest: ['^vitest(\/.*)?$'],
-					jest: ['^jest(/.*)?$'],
-					vite: ['^vite(\/.*)?$'],
-					vue: ['^vue(\/.*)?$'],
-					react: ['^react(-.*)?$'],
+			customGroups: [
+				{
+					groupName: 'vitest',
+					elementNamePattern: '^vitest(\/.*)?$',
 				},
-				type: {},
-			},
+				{
+					groupName: 'jest',
+					elementNamePattern: '^jest(/.*)?$',
+				},
+				{
+					groupName: 'vite',
+					elementNamePattern: '^vite(\/.*)?$',
+				},
+				{
+					groupName: 'vue',
+					elementNamePattern: '^vue(\/.*)?$',
+				},
+				{
+					groupName: 'react',
+					elementNamePattern: '^react(-.*)?$',
+				},
+			],
 			environment: 'node',
 		}],
 
