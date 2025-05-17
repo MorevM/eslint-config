@@ -46,13 +46,17 @@ export default defineConfigurationPart({
 			ignores: [],
 		}],
 
-		// Enforce declaration style of defineEmits
+		// Enforce declaration style of `defineEmits`
 		// https://eslint.vuejs.org/rules/define-emits-declaration.html
 		'vue/define-emits-declaration': ['warn', 'type-literal'],
 
-		// Enforce declaration style of defineProps
+		// Enforce declaration style of `defineProps`
 		// https://eslint.vuejs.org/rules/define-props-declaration.html
 		'vue/define-props-declaration': ['warn', 'type-based'],
+
+		// enforce consistent style for props destructuring
+		// https://eslint.vuejs.org/rules/define-props-destructuring.html
+		'vue/define-props-destructuring': 'off',
 
 		// Enforce or forbid the use of the scoped and module attributes in SFC top level style tags.
 		// https://eslint.vuejs.org/rules/enforce-style-attribute.html
