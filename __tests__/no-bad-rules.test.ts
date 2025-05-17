@@ -43,6 +43,13 @@ describe('Check unknown, unused and deprecated rules', () => {
 			// Turned off due to wrong implementation
 			'markdownlint/md012',
 		]);
+
+		ruleFinder.setKnownDeprecatedRules([
+			'vue/no-v-for-template-key',
+			'vue/no-v-model-argument',
+			'vue/valid-model-definition',
+			'vue/valid-v-bind-sync',
+		]);
 	});
 
 	it('Has no deprecated rules', async () => {

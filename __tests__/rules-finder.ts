@@ -34,6 +34,11 @@ export default class RulesFinder {
 	private knownUnusedRules: string[] = [];
 
 	/**
+	 * List of known rules which are marked as deprecated but should still be used.
+	 */
+	private knownDeprecatedRules: string[] = [];
+
+	/**
 	 * Extracts the data of each provider rules and the list of configured rules.
 	 *
 	 * @param   config   ESLint-compatible configuration.
@@ -163,6 +168,19 @@ export default class RulesFinder {
 	}
 
 	/**
+	 * Set a list of known rules that are marked as deprecated but should still be here.
+	 * These rules are not counted.
+	 *
+	 * @param   rules   Array containing rule names.
+	 */
+	public setKnownDeprecatedRules(rules: string[]) {
+		this.knownDeprecatedRules = arrayUnique([
+			...this.knownDeprecatedRules,
+			...rules.filter(Boolean),
+		]);
+	}
+
+	/**
 	 * All rules presented in all plugins and ESLint itself.
 	 *
 	 * @returns   List of all rules.
@@ -226,7 +244,9 @@ export default class RulesFinder {
 	 * @returns   List of all deprecated rules presented in the config.
 	 */
 	public get configuredDeprecatedRules() {
-		return this.configuredRules.filter((rule) => this.deprecatedRules.includes(rule));
+		return this.configuredRules
+			.filter((rule) => !this.knownDeprecatedRules.includes(rule))
+			.filter((rule) => this.deprecatedRules.includes(rule));
 	}
 
 	/**
