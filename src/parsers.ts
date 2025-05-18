@@ -1,5 +1,6 @@
+// eslint-disable-next-line import-x/no-extraneous-dependencies, n/no-extraneous-import -- Dependency of @html-eslint/eslint-plugin
 export { default as parserHtml } from '@html-eslint/parser';
-// eslint-disable-next-line import-x/no-extraneous-dependencies -- Dependency of `eslint-plugin-astro`
+// eslint-disable-next-line import-x/no-extraneous-dependencies, n/no-extraneous-import -- Dependency of `eslint-plugin-astro`
 export { default as parserAstro } from 'astro-eslint-parser';
 export { default as parserMarkdown } from 'eslint-plugin-markdownlint/parser.js';
 export { default as parserJson } from 'jsonc-eslint-parser';
