@@ -153,9 +153,9 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-hex-escape.md
 		'unicorn/no-hex-escape': 'warn',
 
-		// Require `Array.isArray()` instead of `instanceof Array` (autofixable)
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-instanceof-array.md
-		'unicorn/no-instanceof-array': 'error',
+		// Disallow `instanceof` with built-in objects (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-instanceof-builtins.md
+		'unicorn/no-instanceof-builtins': 'error',
 
 		// Disallow invalid options in `fetch()` and `new Request()`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-fetch-options.md
