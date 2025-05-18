@@ -21,6 +21,10 @@ export default defineConfigurationPart({
 			ignore: [],
 		}],
 
+		// Enforce consistent assertion style with `node:assert` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-assert.md
+		'unicorn/consistent-assert': 'warn',
+
 		// Use destructured variables over properties (partly autofixable, but might be confusing)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-destructuring.md
 		// Reason for `off`: too much false-positive errors
