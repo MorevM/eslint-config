@@ -116,11 +116,6 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-method-this-argument.md
 		'unicorn/no-array-method-this-argument': 'warn',
 
-		// Enforce combining multiple `Array#push()` into one call (autofixable but doesn't care about comments, may be confusing)
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-push-push.md
-		'unicorn/no-array-push-push': 'off',
-		'no-autofix/unicorn/no-array-push-push': 'warn',
-
 		// Disallow `Array#reduce()` and `Array#reduceRight()`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-reduce.md
 		// Note: if you can't read reduce calls - just practice more
@@ -476,6 +471,12 @@ export default defineConfigurationPart({
 		// Prefer using `Set#size` instead of `Array#length` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-size.md
 		'unicorn/prefer-set-size': 'warn',
+
+		// Enforce combining multiple `Array#push()`, `Element#classList.{add,remove}()`, and `importScripts()` into one call
+		// Autofixable but doesn't care about comments, might be confusing.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-single-call.md
+		'unicorn/prefer-single-call': 'off',
+		'no-autofix/unicorn/prefer-single-call': 'warn',
 
 		// Prefer the spread operator over `Array.from(…)`, `Array#concat(…)` and `Array#slice()` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-spread.md
