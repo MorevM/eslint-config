@@ -25,6 +25,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-assert.md
 		'unicorn/consistent-assert': 'warn',
 
+		// Prefer passing `Date` directly to the constructor when cloning (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-date-clone.md
+		'unicorn/consistent-date-clone': 'warn',
+
 		// Use destructured variables over properties (partly autofixable, but might be confusing)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-destructuring.md
 		// Reason for `off`: too much false-positive errors
