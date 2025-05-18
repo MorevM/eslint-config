@@ -386,6 +386,10 @@ export default defineConfigurationPart({
 		// Note: I think it's better to be explicit, especially when working with mixed environments (Vue/React + SSR for example)
 		'unicorn/prefer-global-this': 'off',
 
+		// Prefer `import.meta.{dirname,filename}` over legacy techniques for getting file paths (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-import-meta-properties.md
+		'unicorn/prefer-import-meta-properties': 'warn',
+
 		// Prefer `.includes()` over `.indexOf()` and `Array#some()` when checking for existence or non-existence
 		// (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-includes.md
