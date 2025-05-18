@@ -245,6 +245,10 @@ export default defineConfigurationPart({
 			checkGlobalVariables: false,
 		}],
 
+		// Disallow using `1` as the `depth` argument of `Array#flat()` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-array-flat-depth.md
+		'unicorn/no-unnecessary-array-flat-depth': 'warn',
+
 		// Disallow awaiting non-promise values (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-await.md
 		'unicorn/no-unnecessary-await': 'warn',
