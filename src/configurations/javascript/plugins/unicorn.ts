@@ -94,6 +94,10 @@ export default defineConfigurationPart({
 		// Note: it depends, i would like to enable it for all cases except `eslint-disable(-*)?-line`, but there is no option, so off
 		'unicorn/no-abusive-eslint-disable': 'off',
 
+		// Disallow recursive access to this within getters and setters.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-accessor-recursion.md
+		'unicorn/no-accessor-recursion': 'error',
+
 		// Disallow anonymous functions and classes as the default export
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-anonymous-default-export.md
 		'unicorn/no-anonymous-default-export': 'off',
