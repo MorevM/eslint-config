@@ -17,6 +17,7 @@ import {
 	configurationYaml,
 } from '#configurations';
 import { GLOB_EXCLUDE } from '#globs';
+import { applyNoAutofix } from './no-autofix';
 import type { FlatConfig } from '#types';
 
 type ConfigurationsMap = {
@@ -66,7 +67,7 @@ type DefineIgnoreOptions = {
  * @returns                  Flat list of configurations.
  */
 export const combine = (...configurations: FlatConfig[]) => {
-	return configurations.flat(Infinity);
+	return applyNoAutofix(...configurations);
 };
 
 /**

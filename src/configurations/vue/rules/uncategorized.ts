@@ -1,11 +1,10 @@
 import { DIGIT_CHARACTERS, SPECIAL_CHARACTERS } from '#constants';
-import { pluginNoAutofix, pluginVue } from '#plugins';
+import { pluginVue } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
-		'vue': pluginVue,
-		'no-autofix': pluginNoAutofix,
+		vue: pluginVue,
 	},
 	rules: {
 		// Disallow use other than available lang

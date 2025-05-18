@@ -1,10 +1,9 @@
-import { pluginNoAutofix, pluginRegexp } from '#plugins';
+import { pluginRegexp } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
-		'regexp': pluginRegexp,
-		'no-autofix': pluginNoAutofix,
+		regexp: pluginRegexp,
 	},
 	rules: {
 		// POSSIBLE ERRORS

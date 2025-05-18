@@ -1,4 +1,4 @@
-import { pluginNoAutofix, pluginTypescript } from '#plugins';
+import { pluginTypescript } from '#plugins';
 import { defineConfigurationPart, extensionFactory } from '#utils';
 import configurationJavascript from '~configurations/javascript';
 
@@ -11,7 +11,6 @@ const extensionFromBase = extensionFactory({
 export default defineConfigurationPart({
 	plugins: {
 		'@typescript-eslint': pluginTypescript,
-		'no-autofix': pluginNoAutofix,
 	},
 	rules: {
 		// Require that member overloads be consecutive

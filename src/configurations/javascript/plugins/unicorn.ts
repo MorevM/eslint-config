@@ -1,10 +1,9 @@
-import { pluginNoAutofix, pluginUnicorn } from '#plugins';
+import { pluginUnicorn } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
-		'unicorn': pluginUnicorn,
-		'no-autofix': pluginNoAutofix,
+		unicorn: pluginUnicorn,
 	},
 	rules: {
 		// Improve regexes by making them shorter, consistent, and safer (autofixable)

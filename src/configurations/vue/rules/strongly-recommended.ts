@@ -1,11 +1,10 @@
 import { INLINE_ELEMENTS } from '#constants';
-import { pluginNoAutofix, pluginVue } from '#plugins';
+import { pluginVue } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
-		'vue': pluginVue,
-		'no-autofix': pluginNoAutofix,
+		vue: pluginVue,
 	},
 	rules: {
 		// Enforce attribute naming style on custom components in template (autofixable)

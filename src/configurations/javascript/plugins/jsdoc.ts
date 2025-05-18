@@ -1,10 +1,9 @@
-import { pluginJsdoc, pluginNoAutofix } from '#plugins';
+import { pluginJsdoc } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
-		'jsdoc': pluginJsdoc,
-		'no-autofix': pluginNoAutofix,
+		jsdoc: pluginJsdoc,
 	},
 	rules: {
 		// Checks that `@access` tags use one of the correct values

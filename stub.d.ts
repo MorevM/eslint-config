@@ -77,3 +77,9 @@ declare module 'eslint-plugin-jsx-a11y' {
 	declare const _default: ESLint.Plugin;
 	export default _default;
 }
+
+
+declare module 'eslint-rule-composer' {
+	declare const _default: any;
+	export default _default;
+}

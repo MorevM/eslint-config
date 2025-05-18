@@ -1,10 +1,9 @@
-import { pluginNoAutofix, pluginStylistic } from '#plugins';
+import { pluginStylistic } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
 		'@stylistic': pluginStylistic,
-		'no-autofix': pluginNoAutofix,
 	},
 	rules: {
 		// Enforce linebreaks after opening and before closing array brackets (autofixable)

@@ -1,10 +1,9 @@
-import { pluginMarkdown, pluginNoAutofix } from '#plugins';
+import { pluginMarkdown } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
-		'markdownlint': pluginMarkdown,
-		'no-autofix': pluginNoAutofix,
+		markdownlint: pluginMarkdown,
 	},
 	rules: {
 	// Heading levels should only increment by one level at a time

@@ -1,10 +1,9 @@
-import { pluginJest, pluginNoAutofix } from '#plugins';
+import { pluginJest } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
-		'jest': pluginJest,
-		'no-autofix': pluginNoAutofix,
+		jest: pluginJest,
 	},
 	rules: {
 		// Have control over `test` and `it` usages (autofixable)

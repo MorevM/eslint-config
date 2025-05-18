@@ -1,10 +1,9 @@
-import { pluginNoAutofix, pluginVitest } from '#plugins';
+import { pluginVitest } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
-		'vitest': pluginVitest,
-		'no-autofix': pluginNoAutofix,
+		vitest: pluginVitest,
 	},
 	rules: {
 		// Forbidden `.spec` test file pattern

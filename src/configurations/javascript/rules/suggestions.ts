@@ -1,11 +1,8 @@
 import { CONFUSING_BROWSER_GLOBALS } from '#constants';
-import { pluginNoAutofix } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
-	plugins: {
-		'no-autofix': pluginNoAutofix,
-	},
+	plugins: {},
 	rules: {
 		// Enforces getter/setter pairs in objects and classes
 		// https://eslint.org/docs/rules/accessor-pairs

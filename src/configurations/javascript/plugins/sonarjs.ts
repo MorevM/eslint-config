@@ -1,10 +1,9 @@
-import { pluginNoAutofix, pluginSonarjs } from '#plugins';
+import { pluginSonarjs } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
 	plugins: {
-		'sonarjs': pluginSonarjs,
-		'no-autofix': pluginNoAutofix,
+		sonarjs: pluginSonarjs,
 	},
 	rules: {
 		//===============

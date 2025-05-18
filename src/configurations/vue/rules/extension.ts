@@ -1,4 +1,4 @@
-import { pluginNoAutofix, pluginVue } from '#plugins';
+import { pluginVue } from '#plugins';
 import { defineConfigurationPart, extensionFactory } from '#utils';
 import configurationJavascript from '~configurations/javascript';
 
@@ -9,8 +9,7 @@ const extensionFromBase = extensionFactory({
 
 export default defineConfigurationPart({
 	plugins: {
-		'vue': pluginVue,
-		'no-autofix': pluginNoAutofix,
+		vue: pluginVue,
 	},
 	rules: {
 		// Enforce linebreaks after opening and before closing array brackets in `<template>` (autofixable)
