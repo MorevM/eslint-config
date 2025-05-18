@@ -1,5 +1,60 @@
 
 
+## [38.0.0](https://github.com/MorevM/eslint-config/compare/v37.0.0...v38.0.0) (2025-05-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* Since many modules are moving towards to ESM-only format, the minimum Node version is set to 22 to be able to `require`` these modules in `eslint-plugin-no-autofix`.
+* Minimal supported ESLint version is 9.27.0
+* **package-json:** With new rule `package-json/require-engines` `package.json` files without `engines` property will throw an error
+* **html:** New rule `@html-eslint/no-duplicate-class` will report on duplicated class names in HTML markup
+* **cypress:** With new rule `cypress/no-chained-get` cypress configuration become more strict and may produce new errors
+* **vue2:** Vue2 components that have comments in the template root now will produce errors
+* **vue:** With new rule `vue/no-import-compiler-macros` vue files may produce some new errors
+* **typescript:** With new rule `@typescript-eslint/no-unnecessary-type-conversion` TypeScript-related configurations become more strict.
+* **javascript:** With new rule `no-unassigned-vars` JS-related configurations become more strict
+
+### Features
+
+* **cypress:** Add `cypress/no-chained-get` rule ([75f9d9c](https://github.com/MorevM/eslint-config/commit/75f9d9c99d90c27838c195a2ee450e3a8e6f3100))
+* **cypress:** Add `cypress/no-xpath` rule ([9f3b286](https://github.com/MorevM/eslint-config/commit/9f3b286a60cb6f1b5f4bea2039e06651f05b6959))
+* **html:** Add `@html-eslint/no-duplicate-class` rule ([0e13d8c](https://github.com/MorevM/eslint-config/commit/0e13d8c879df8a30a5b379aa915035d11d1d83ec))
+* **html:** Enable `@html-eslint/attrs-newline` again as I fixed the behavior :) ([1f20a01](https://github.com/MorevM/eslint-config/commit/1f20a012455b12450b9293594ce1f42818acaff9))
+* **html:** Take account of `@html-eslint/use-baseline` rule ([8b27c10](https://github.com/MorevM/eslint-config/commit/8b27c1012901405ccab7c3d14819a30647ca4a4b))
+* **javascript:** Add `no-unassigned-vars` rule ([6fc479d](https://github.com/MorevM/eslint-config/commit/6fc479d6dc95fe417dae2ac6200f22f2ed2287ec))
+* **javascript:** Add fallback alphabetical sorting option in`perfectionist/sort-imports` rule ([0e23e76](https://github.com/MorevM/eslint-config/commit/0e23e765fad49216793fc8f55fcaa5a612650570))
+* **node:** Enable `n/no-extraneous-import` rule again ([f9acbdc](https://github.com/MorevM/eslint-config/commit/f9acbdc9a737fb05707d752599ed3eee7023007b))
+* **package-json:** Add `package-json/require-engines` rule ([79c66c5](https://github.com/MorevM/eslint-config/commit/79c66c56c4105ba71d53f844ee4dfbeb4879437e))
+* **package-json:** Take account of `package-json/require-description` rule ([d72ecf2](https://github.com/MorevM/eslint-config/commit/d72ecf2102eab1d4f5bebb7d86fc694d131678a2))
+* **package-json:** Take account of `package-json/require-types` rule ([65f3097](https://github.com/MorevM/eslint-config/commit/65f30971942f80c9e22dc819c9e358cde17954d2))
+* **package-json:** Take account of `package-json/restrict-dependency-ranges` rule ([0758fac](https://github.com/MorevM/eslint-config/commit/0758fac8488eb3b5d778772d991ac8d2dff0d850))
+* **typescript:** Add `@typescript-eslint/no-unnecessary-type-conversion` rule ([f9791ee](https://github.com/MorevM/eslint-config/commit/f9791eee0059a297efc46b5cf2fdfc8b74479935))
+* **vitest:** Add `vitest/prefer-describe-function-title` rule ([edda58d](https://github.com/MorevM/eslint-config/commit/edda58d3e1d77376eee4dc8c9e440c8d2a8c5ade))
+* **vue2:** Disallow comments in Vue2 template root for better migration to v3 ([7d67cb5](https://github.com/MorevM/eslint-config/commit/7d67cb57e6c95b8b267a1e9c0f589c42679667a7))
+* **vue:** Add `vue/no-implicit-coercion` extension rule ([3e92adb](https://github.com/MorevM/eslint-config/commit/3e92adb672bb608b6b741ad7f2c41885f9db1fc4))
+* **vue:** Add `vue/no-import-compiler-macros` rule ([12239ed](https://github.com/MorevM/eslint-config/commit/12239edf70b93f715ce396ea15cf7d565f7d149d))
+* **vue:** Set `compilerOptions` field to `vue/order-in-components` rule ([6d22060](https://github.com/MorevM/eslint-config/commit/6d220603a7ca25b7ab29b31f7deac7d1b05b9549))
+* **vue:** Set `slots` and `expose` fields to `vue/order-in-components` rule ([32a8cbf](https://github.com/MorevM/eslint-config/commit/32a8cbfdfbb8eb7041eef75a3328e79c40db65cd))
+* **vue:** Take account of `vue/define-props-destructuring` rule ([867dd2f](https://github.com/MorevM/eslint-config/commit/867dd2f74a7911c31e0b3d8dad7e0f85886e61e8))
+* **yaml:** Add `alignMultilineFlowScalars` option to `yml/indent` rule ([da59e0c](https://github.com/MorevM/eslint-config/commit/da59e0cbab478892bd3f2c9b9f8563e0f905d1a1))
+
+
+### Refactoring
+
+* **javascript:** Migrate to new syntax in `perfectionist/sort-imports` customGroups ([a5fede5](https://github.com/MorevM/eslint-config/commit/a5fede5587080685d4cee04f34056ce89e11d0b8))
+
+
+### Bug fixes
+
+* **vitest:** Allow arguments in `vitest/valid-title` ([a30e578](https://github.com/MorevM/eslint-config/commit/a30e578500c62ca2df9b7ecf12130063e19d7ff0))
+
+
+### Tests
+
+* Let vue2-only rules marked as deprecated be in the list for a while ([c0eaf72](https://github.com/MorevM/eslint-config/commit/c0eaf721cf8aa2cc40a61ce31c9aad9ee4634255))
+
+
 ## [37.0.0](https://github.com/MorevM/eslint-config/compare/v36.3.2...v37.0.0) (2025-03-19)
 
 
