@@ -169,10 +169,6 @@ export default defineConfigurationPart({
 		// Note: developer knows better
 		'unicorn/no-keyword-prefix': 'off',
 
-		// Disallow using `.length` as the end argument of `{Array,String,TypedArray}#slice()` (autofixable)
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-length-as-slice-end.md
-		'unicorn/no-length-as-slice-end': 'warn',
-
 		// Disallow `if` statements as the only statement in `if` blocks without `else` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-lonely-if.md
 		'unicorn/no-lonely-if': 'off',
@@ -256,6 +252,10 @@ export default defineConfigurationPart({
 		// Enforce the use of built-in methods instead of unnecessary polyfills
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-polyfills.md
 		'unicorn/no-unnecessary-polyfills': 'warn',
+
+		// Disallow using `.length` or `Infinity` as the end argument of `{Array,String,TypedArray}#slice()` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-slice-end.md
+		'unicorn/no-unnecessary-slice-end': 'warn',
 
 		// Disallow unreadable array destructuring (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-array-destructuring.md
