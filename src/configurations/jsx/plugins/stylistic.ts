@@ -79,10 +79,7 @@ export default defineConfigurationPart({
 
 		// Require one JSX element per line (autofixable)
 		// https://eslint.style/rules/jsx/jsx-one-expression-per-line
-		// TODO[2025-05-11]: Maybe turn on?
-		'@stylistic/jsx-one-expression-per-line': ['off', {
-			allow: 'literal',
-		}],
+		'@stylistic/jsx-one-expression-per-line': 'off',
 
 		// Enforce PascalCase for user-defined JSX components
 		// https://eslint.style/rules/jsx/jsx-pascal-case
