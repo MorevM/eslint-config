@@ -1,5 +1,29 @@
 
 
+## [38.1.0](https://github.com/MorevM/eslint-config/compare/v38.0.0...v38.1.0) (2025-05-18)
+
+
+### Features
+
+* **javascript:** Add `unicorn/consistent-assert` rule ([844ac7f](https://github.com/MorevM/eslint-config/commit/844ac7fe46d0079e55c08db3ea3ef60c95aa0b54))
+* **javascript:** Add `unicorn/consistent-date-clone` rule ([c479e87](https://github.com/MorevM/eslint-config/commit/c479e879dc65cffbc81815facf9b4cccd6a3b2b9))
+* **javascript:** Add `unicorn/no-accessor-recursion` rule ([b4279cf](https://github.com/MorevM/eslint-config/commit/b4279cfb2028cccebef1b2fa81dfc4e7119cdd0f))
+* **javascript:** Add `unicorn/no-named-default` rule ([c61ac5d](https://github.com/MorevM/eslint-config/commit/c61ac5d6bd0578cebd3288a62c909d0bc2adba0e))
+* **javascript:** Add `unicorn/no-unnecessary-array-flat-depth` rule ([b4228ca](https://github.com/MorevM/eslint-config/commit/b4228caba95201e327fcfffa1d98c9a95fb52a2b))
+* **javascript:** Add `unicorn/no-unnecessary-array-splice-count` rule ([3f6a529](https://github.com/MorevM/eslint-config/commit/3f6a5293ffc2114dcbe0c64761114cad11dbdadb))
+* **javascript:** Add `unicorn/prefer-import-meta-properties` rule ([fc87326](https://github.com/MorevM/eslint-config/commit/fc873261fdd627da4970b1294048b637952996d4))
+
+### Refactoring
+
+* Replace `eslint-plugin-no-autofix` with a custom realization ([601c520](https://github.com/MorevM/eslint-config/commit/601c520f8bc9205c28a1ad5fcb645ae69878a5f4))
+* **javascript:** Replace deprecated `unicorn/no-array-push-push` with `unicorn/prefer-single-call` ([3e54c7e](https://github.com/MorevM/eslint-config/commit/3e54c7ef554e0ce5360c86ad3dc6971a9a479d4e))
+* **javascript:** Replace deprecated `unicorn/no-instanceof-array` with `unicorn/no-instanceof-builtins` ([f56cf54](https://github.com/MorevM/eslint-config/commit/f56cf547f66359b63e596b1af0bdb6c4ae7723d7))
+* **javascript:** Replace deprecated `unicorn/no-length-as-slice-end` with `unicorn/no-unnecessary-slice-end` ([69b7f94](https://github.com/MorevM/eslint-config/commit/69b7f9497212ef17c0ba6f71513ad762e88993f3))
+
+### Chores
+
+* Bump `eslint-plugin-unicorn` from 56.0.1 to 59.0.1 ([ab0d88d](https://github.com/MorevM/eslint-config/commit/ab0d88d1a79d8c7db28f900d966d28b40fc009d6))
+
 ## [38.0.0](https://github.com/MorevM/eslint-config/compare/v37.0.0...v38.0.0) (2025-05-18)
 
 
