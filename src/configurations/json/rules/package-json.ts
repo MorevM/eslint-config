@@ -157,6 +157,11 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-version.md
 		'package-json/require-version': 'error',
 
+		// Restricts the range of dependencies to allow or disallow specific types of ranges
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/restrict-dependency-ranges.md
+		// TODO[2025-08-01]: Review
+		'package-json/restrict-dependency-ranges': 'off',
+
 		// Dependencies, scripts, and configuration values must be declared in alphabetical order (autofixable)
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/sort-collections.md
 		// Note: Configured in more detail in `jsonc/sort-keys` above
