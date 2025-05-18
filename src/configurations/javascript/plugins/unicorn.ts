@@ -249,6 +249,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-array-flat-depth.md
 		'unicorn/no-unnecessary-array-flat-depth': 'warn',
 
+		// Disallow using `.length` or `Infinity` as the `deleteCount` or `skipCount` argument of `Array#{splice,toSpliced}()` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-array-splice-count.md
+		'unicorn/no-unnecessary-array-splice-count': 'warn',
+
 		// Disallow awaiting non-promise values (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-await.md
 		'unicorn/no-unnecessary-await': 'warn',
