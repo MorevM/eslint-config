@@ -305,7 +305,7 @@ export default defineConfigurationPart({
 		// https://eslint.style/rules/js/operator-linebreak
 		'@stylistic/operator-linebreak': ['warn', 'before', {
 			overrides: {
-				'=': 'none',
+				'=': 'after',
 			},
 		}],
 
