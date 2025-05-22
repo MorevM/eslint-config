@@ -15,6 +15,7 @@ export const tsup: Options = {
 	},
 	external: [
 		'@morev/utils',
+		'@morev/disable-autofix',
 		'@eslint/eslintrc',
 		'eslint-plugin-chai-friendly',
 		'eslint-plugin-astro',
@@ -26,7 +27,6 @@ export const tsup: Options = {
 		'eslint-plugin-jsdoc',
 		'eslint-plugin-jsonc',
 		'eslint-plugin-markdownlint',
-		'eslint-plugin-no-autofix',
 		'eslint-plugin-no-secrets',
 		'eslint-plugin-node',
 		'eslint-plugin-regexp',

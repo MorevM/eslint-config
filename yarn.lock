@@ -1443,6 +1443,7 @@ __metadata:
     "@html-eslint/eslint-plugin": "npm:^0.40.3"
     "@morev/commitlint-config": "npm:^0.2.2"
     "@morev/eslint-config": "workspace:^"
+    "@morev/eslint-disable-autofix": "npm:^1.0.2"
     "@morev/utils": "npm:^3.12.2"
     "@release-it/conventional-changelog": "npm:8.0.2"
     "@stylistic/eslint-plugin": "npm:^4.2.0"
@@ -1498,6 +1499,18 @@ __metadata:
     eslint-config: ./bin/index.js
   languageName: unknown
   linkType: soft
+
+"@morev/eslint-disable-autofix@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "@morev/eslint-disable-autofix@npm:1.0.2"
+  dependencies:
+    "@morev/utils": "npm:^3.12.2"
+    eslint-rule-composer: "npm:^0.3.0"
+  peerDependencies:
+    eslint: ^9.0.0
+  checksum: 10c0/b8cd39059265305c2de178e4f0141651bb158965e59a3306b2a33395ab389e8b88e03c5729131e58bcc90fbdc1b4ab8f91c539f1a2623b5cd713f53627827080
+  languageName: node
+  linkType: hard
 
 "@morev/utils@npm:^2.1.0":
   version: 2.8.1

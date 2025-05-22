@@ -1,10 +1,3 @@
-declare module 'eslint-plugin-no-autofix' {
-	import type { ESLint } from 'eslint';
-
-	declare const _default: ESLint.Plugin;
-	export default _default;
-}
-
 declare module 'eslint-plugin-eslint-comments' {
 	import type { ESLint } from 'eslint';
 
@@ -75,11 +68,5 @@ declare module 'eslint-plugin-jsx-a11y' {
 	import type { ESLint } from 'eslint';
 
 	declare const _default: ESLint.Plugin;
-	export default _default;
-}
-
-
-declare module 'eslint-rule-composer' {
-	declare const _default: any;
 	export default _default;
 }

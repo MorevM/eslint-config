@@ -199,7 +199,6 @@ export default defineConfigurationPart({
 
 		// Suggest using `test.todo` (autofixable but may be confusing)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-todo.md
-		'jest/prefer-todo': 'off',
 		'no-autofix/jest/prefer-todo': 'error',
 
 		// Require setup and teardown code to be within a hook

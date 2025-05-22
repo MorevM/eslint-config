@@ -11,7 +11,6 @@ export default defineConfigurationPart({
 		// Require braces in arrow function body (autofixable but doesn't care about `maxlen`)
 		// https://eslint.org/docs/rules/arrow-body-style
 		// Reason for `off`: developer knows better
-		'arrow-body-style': 'off',
 		'no-autofix/arrow-body-style': ['off', 'as-needed', {
 			requireReturnForObjectLiteral: false,
 		}],
@@ -80,7 +79,6 @@ export default defineConfigurationPart({
 
 		// Require the use of `===` and `!==` (autofixable but unsafe)
 		// https://eslint.org/docs/rules/eqeqeq
-		'eqeqeq': 'off',
 		'no-autofix/eqeqeq': ['error', 'always', {
 			null: 'ignore',
 		}],
@@ -210,7 +208,6 @@ export default defineConfigurationPart({
 		// Disallow regular expressions that look like division (autofixable but unclear)
 		// https://eslint.org/docs/rules/no-div-regex
 		// Note: not sure about it
-		'no-div-regex': 'off',
 		'no-autofix/no-div-regex': 'off',
 
 		// Disallow `return` before `else` (autofixable)
@@ -250,7 +247,6 @@ export default defineConfigurationPart({
 
 		// Disallow unnecessary function binding (autofixable but may be unsafe)
 		// https://eslint.org/docs/rules/no-extra-bind
-		'no-extra-bind': 'off',
 		'no-autofix/no-extra-bind': 'error',
 
 		// Disallow unnecessary boolean casts (autofixable)
@@ -259,7 +255,6 @@ export default defineConfigurationPart({
 
 		// Disallow unnecessary labels (autofixable but unsafe)
 		// https://eslint.org/docs/rules/no-extra-label
-		'no-extra-label': 'off',
 		'no-autofix/no-extra-label': 'error',
 
 		// Disallow assignment to native objects or read-only global variables
@@ -519,7 +514,6 @@ export default defineConfigurationPart({
 
 		// Disallow use of undefined when initializing variables (autofixable but may be comfusing)
 		// https://eslint.org/docs/rules/no-undef-init
-		'no-undef-init': 'off',
 		'no-autofix/no-undef-init': 'error',
 
 		// Disallow use of undefined variable
@@ -593,12 +587,10 @@ export default defineConfigurationPart({
 		// Disallow redundant return statements (autofixable but may be confusing)
 		// https://eslint.org/docs/rules/no-useless-return
 		// Note: explicit is better than implicit
-		'no-useless-return': 'off',
 		'no-autofix/no-useless-return': 'off',
 
 		// Require `let` or `const` instead of `var` (autofixable but unsafe)
 		// https://eslint.org/docs/rules/no-var
-		'no-var': 'off',
 		'no-autofix/no-var': 'error',
 
 		// Disallow `void` operators
@@ -640,7 +632,6 @@ export default defineConfigurationPart({
 
 		// Require `const` declarations for variables that are never reassigned after declared (autofixable)
 		// https://eslint.org/docs/rules/prefer-const
-		'prefer-const': 'off',
 		'no-autofix/prefer-const': ['warn', {
 			destructuring: 'all',
 			ignoreReadBeforeAssign: true,
@@ -648,7 +639,6 @@ export default defineConfigurationPart({
 
 		// Prefer destructuring from arrays and objects (autofixable but unsafe)
 		// https://eslint.org/docs/rules/prefer-destructuring
-		'prefer-destructuring': 'off',
 		'no-autofix/prefer-destructuring': ['warn', {
 			VariableDeclarator: {
 				array: false,
@@ -704,7 +694,6 @@ export default defineConfigurationPart({
 
 		// Require template literals instead of string concatenation (autofixable but can fix wrong)
 		// https://eslint.org/docs/rules/prefer-template
-		'prefer-template': 'off',
 		'no-autofix/prefer-template': 'warn',
 
 		// Require use of the second argument for `parseInt()`

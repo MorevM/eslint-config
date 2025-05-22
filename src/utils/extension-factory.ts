@@ -64,19 +64,27 @@ export const extensionFactory = (options: ExtensionFactoryOptions) => {
 	 */
 	return (ruleOrRules: string | string[], extendWith?: PlainObject) => {
 		return toArray(ruleOrRules).reduce<Record<string, RuleValue>>((result, rule) => {
-			const shouldDisable = alwaysDisableBaseRule || rule.startsWith('-');
+			const shouldDisableBaseRule = alwaysDisableBaseRule || rule.startsWith('-');
 			const cleanRule = [baseRulePrefix, rule.replace(/^-/, '')].filter(Boolean).join('/');
 
 			const ruleName = ESLINT_FORMATTING_RULES.includes(cleanRule)
 				? `@stylistic/${cleanRule}`
 				: cleanRule;
 
-			const ruleValue = baseRules?.[ruleName];
+			let shouldDisableAutofix = false;
+			const ruleValue = (() => {
+				if (baseRules?.[ruleName]) return baseRules?.[ruleName];
+				if (baseRules?.[`no-autofix/${ruleName}`]) {
+					shouldDisableAutofix = true;
+					return baseRules?.[`no-autofix/${ruleName}`];
+				}
+				return null;
+			})();
 			if (!ruleValue) {
 				throw new Error(`There is no rule '${ruleName}' to extend.`);
 			}
 
-			shouldDisable && (result[ruleName] = 'off');
+			shouldDisableBaseRule && (result[ruleName] = 'off');
 
 			const severity = isArray(ruleValue) ? ruleValue[0] : ruleValue;
 			const baseOptions = isArray(ruleValue) ? ruleValue.slice(1)[0] : null;
@@ -85,7 +93,8 @@ export const extensionFactory = (options: ExtensionFactoryOptions) => {
 				? { ...baseOptions as object, ...extendWith }
 				: baseOptions;
 
-			result[`${prefix}/${cleanRule}`] = isEmpty(newOptions)
+			const autofixPrefix = shouldDisableAutofix ? 'no-autofix/' : '';
+			result[`${autofixPrefix}${prefix}/${cleanRule}`] = isEmpty(newOptions)
 				? severity
 				: [severity, newOptions];
 

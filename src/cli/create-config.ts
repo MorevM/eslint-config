@@ -164,7 +164,7 @@ export const createConfig = async (stepOptions: StepOptions) => {
 	await sleep(delay);
 
 	// TODO: Simplify the type of the `pick` utility
-	// eslint-disable-next-line no-autofix/prefer-template -- Better to do this way
+	// eslint-disable-next-line prefer-template -- Better to do this way
 	const configurationsToAdd = tsObject.entries(pick(configurations, ...configurationsToEnable as any[]))
 		// Bloody perfectionism is here :)
 		.sort(([name1], [name2]) =>

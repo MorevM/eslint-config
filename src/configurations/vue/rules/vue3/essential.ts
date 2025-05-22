@@ -78,7 +78,6 @@ export default defineConfigurationPart({
 
 		// Disallow deprecated `v-is` directive (autofixable but seems broken)
 		// https://eslint.vuejs.org/rules/no-deprecated-v-is.html
-		'vue/no-deprecated-v-is': 'off',
 		'no-autofix/vue/no-deprecated-v-is': 'error',
 
 		// Disallow using deprecated `.native` modifiers

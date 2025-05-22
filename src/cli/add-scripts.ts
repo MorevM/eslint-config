@@ -138,7 +138,7 @@ export const addScripts = async (stepOptions: StepOptions) => {
 				'\t',
 			);
 
-			// eslint-disable-next-line no-autofix/prefer-template -- Better to do this way
+			// eslint-disable-next-line prefer-template -- Better to do this way
 			fs.writeFileSync(FILE_NAME, fileContents + '\n');
 			log.success(
 				formatCliMessage(`

@@ -66,6 +66,7 @@
 	"dependencies": {
 		"@clack/prompts": "^0.10.1",
 		"@html-eslint/eslint-plugin": "^0.40.3",
+		"@morev/eslint-disable-autofix": "^1.0.2",
 		"@morev/utils": "^3.12.2",
 		"@stylistic/eslint-plugin": "^4.2.0",
 		"@vitest/eslint-plugin": "^1.2.0",

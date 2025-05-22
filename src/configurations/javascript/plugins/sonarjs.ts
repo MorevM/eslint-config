@@ -95,7 +95,6 @@ export default defineConfigurationPart({
 
 		// Functions should not have identical implementations (autofixable but may be confusing)
 		// https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/no-identical-functions.md
-		'sonarjs/no-identical-functions': 'off',
 		'no-autofix/sonarjs/no-identical-functions': ['warn', 3],
 
 		// Boolean checks should not be inverted (autofixable but may be confusing to autofix)
@@ -139,7 +138,6 @@ export default defineConfigurationPart({
 		// Local variables should not be declared and then immediately returned or thrown
 		// (autofixable but may be confusing to autofix)
 		// https://github.com/SonarSource/eslint-plugin-sonarjs/blob/master/docs/rules/prefer-immediate-return.md
-		'sonarjs/prefer-immediate-return': 'off',
 		'no-autofix/sonarjs/prefer-immediate-return': 'warn',
 
 		// Object literal syntax should be used

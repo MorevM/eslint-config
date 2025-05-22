@@ -139,7 +139,6 @@ export default defineConfigurationPart({
 
 		// Disallow boolean defaults (autofixable but may be unsafe)
 		// https://eslint.vuejs.org/rules/no-boolean-default.html
-		'vue/no-boolean-default': 'off',
 		'no-autofix/vue/no-boolean-default': ['error', 'default-false'],
 
 		// Disallow element's child contents which would be overwritten by a directive like `v-html` or `v-text`
@@ -152,7 +151,6 @@ export default defineConfigurationPart({
 
 		// Disallow the `<template>` `<script>` `<style>` block to be empty
 		// https://eslint.vuejs.org/rules/no-empty-component-block.html
-		'vue/no-empty-component-block': 'off',
 		'no-autofix/vue/no-empty-component-block': 'warn',
 
 		// disallow importing Vue compiler macros (autofixable)
@@ -356,7 +354,6 @@ export default defineConfigurationPart({
 		// Require static class names in template to be in a separate `class` attribute
 		// (autofixable but is it really needed?)
 		// https://eslint.vuejs.org/rules/prefer-separate-static-class.html
-		'vue/prefer-separate-static-class': 'off',
 		'no-autofix/vue/prefer-separate-static-class': 'off',
 
 		// Require shorthand form attribute when v-bind value is true

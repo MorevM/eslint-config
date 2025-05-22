@@ -200,7 +200,6 @@ export default defineConfigurationPart({
 
 		// Suggest using `test.todo` (autofixable but may be confusing)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-todo.md
-		'vitest/prefer-todo': 'off',
 		'no-autofix/vitest/prefer-todo': 'off',
 
 		// Prefer `vi.mocked()` over `fn as Mock` (autofixable)

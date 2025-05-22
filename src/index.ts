@@ -1,3 +1,4 @@
+import { disableAutofix } from '@morev/eslint-disable-autofix';
 import { arrayUnique } from '@morev/utils';
 import gitignore from 'eslint-config-flat-gitignore';
 import {
@@ -17,7 +18,6 @@ import {
 	configurationYaml,
 } from '#configurations';
 import { GLOB_EXCLUDE } from '#globs';
-import { applyNoAutofix } from './no-autofix';
 import type { FlatConfig } from '#types';
 
 type ConfigurationsMap = {
@@ -67,7 +67,7 @@ type DefineIgnoreOptions = {
  * @returns                  Flat list of configurations.
  */
 export const combine = (...configurations: FlatConfig[]) => {
-	return applyNoAutofix(...configurations);
+	return disableAutofix(configurations.flat(Infinity));
 };
 
 /**

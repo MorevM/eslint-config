@@ -17,9 +17,7 @@ export default combine([
 	defineConfiguration('markdown', {
 		overrides: {
 			// Doesn't respect HTML element indentation
-			// TODO: Maybe so automation to disable only the base rule
 			'markdownlint/md007': 'off',
-			'no-autofix/markdownlint/md007': 'off',
 			'markdownlint/md036': 'off',
 			// Doesn't take into account blockquotes with headlines
 			'markdownlint/md028': 'off',

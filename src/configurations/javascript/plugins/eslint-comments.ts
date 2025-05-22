@@ -27,7 +27,6 @@ export default defineConfigurationPart({
 
 		// Disallow unused `eslint-disable` comments (autofixable but confusing)
 		// https://mysticatea.github.io/eslint-plugin-eslint-comments/rules/no-unused-disable.html
-		'eslint-comments/no-unused-disable': 'off',
 		'no-autofix/eslint-comments/no-unused-disable': 'warn',
 
 		// Disallow unused `eslint-enable` comments

@@ -117,7 +117,6 @@ export default defineConfigurationPart({
 		// Disallow not strictly valid regular expressions (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/strict.html
 		// Note: Conflicts with time-tested `unicorn/better-regex` rule
-		'regexp/strict': 'off',
 		'no-autofix/regexp/strict': 'off',
 
 		// BEST PRACTICES
@@ -343,7 +342,6 @@ export default defineConfigurationPart({
 		// Prefer lookarounds over capturing group that do not replace (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-lookaround.html
 		// Lookarounds are much more complex to understand than substitutions
-		'regexp/prefer-lookaround': 'off',
 		'no-autofix/regexp/prefer-lookaround': 'off',
 
 		// Enforce using named backreferences (autofixable)

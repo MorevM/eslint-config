@@ -120,7 +120,6 @@ export default defineConfigurationPart({
 		// Enforce the location of arrow function bodies (autofixable)
 		// https://eslint.style/rules/js/implicit-arrow-linebreak
 		// Note: Doesn't care about max-len when autofix
-		'@stylistic/implicit-arrow-linebreak': 'off',
 		'no-autofix/@stylistic/implicit-arrow-linebreak': ['off', 'beside'],
 
 		// Enforce consistent indentation (autofixable)
@@ -226,7 +225,6 @@ export default defineConfigurationPart({
 
 		// Disallow floating decimals (autofixable but...I just hate a leading zeros)
 		// https://eslint.style/rules/js/no-floating-decimal
-		'@stylistic/no-floating-decimal': 'off',
 		'no-autofix/@stylistic/no-floating-decimal': 'off',
 
 		// Disallow mixes of different operators

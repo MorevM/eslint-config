@@ -41,7 +41,6 @@ export default defineConfigurationPart({
 
 		// Enforce end tag style (autofixable, but not safe)
 		// https://eslint.vuejs.org/rules/html-end-tags.html
-		'vue/html-end-tags': 'off',
 		'no-autofix/vue/html-end-tags': 'error',
 
 		// Enforce consistent indentation in <template> (autofixable)

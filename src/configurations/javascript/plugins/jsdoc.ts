@@ -36,7 +36,6 @@ export default defineConfigurationPart({
 		// Ensures that parameter names in JSDoc match those
 		// in the function declaration (autofixable but may be confusing)
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-param-names
-		'jsdoc/check-param-names': 'off',
 		'no-autofix/jsdoc/check-param-names': ['error', {
 			enableFixer: true,
 		}],
@@ -45,7 +44,6 @@ export default defineConfigurationPart({
 		// and that nested properties have defined roots
 		// (autofixable but may be confusing)
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-property-names
-		'jsdoc/check-property-names': 'off',
 		'no-autofix/jsdoc/check-property-names': ['error', { enableFixer: true }],
 
 		// Reports against syntax not encouraged for the mode
@@ -152,7 +150,6 @@ export default defineConfigurationPart({
 		// This rule reports types being used on `@param` or `@returns`
 		// (autofixable but it isn't clear)
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-types
-		'jsdoc/no-types': 'off',
 		'no-autofix/jsdoc/no-types': 'off',
 
 		// Checks that types in jsdoc comments are defined
@@ -168,7 +165,6 @@ export default defineConfigurationPart({
 		// in complete sentences (autofixable but works incorrect)
 		// Related issue: https://github.com/gajus/eslint-plugin-jsdoc/issues/779
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-description-complete-sentence
-		'jsdoc/require-description-complete-sentence': 'off',
 		'no-autofix/jsdoc/require-description-complete-sentence': 'off',
 
 		// Requires that all functions have a description
@@ -177,7 +173,6 @@ export default defineConfigurationPart({
 
 		// Requires that all functions have examples (strangely autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-example
-		'jsdoc/require-example': 'off',
 		'no-autofix/jsdoc/require-example': 'off',
 
 		// Require `@file`, `@fileoverview,` or `@overview`

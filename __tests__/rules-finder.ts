@@ -103,10 +103,6 @@ export default class RulesFinder {
 			Object.entries(configItem.plugins).forEach(([mapName, pluginDefinition]) => {
 				if (!pluginDefinition.rules) return;
 
-				// `eslint-plugin-no-autofix` creates a prefixed alias for all other rules.
-				// It's irrelevant for calculation.
-				if (mapName === 'no-autofix') return;
-
 				// Some plugins occur multiple times in different configurations -
 				// no need to process them twice.
 				if (acc.some((item) => item.name === mapName)) return;
@@ -144,10 +140,7 @@ export default class RulesFinder {
 		return config.reduce<string[]>((acc, configItem) => {
 			if (!configItem.rules) return acc;
 
-			const configuredRules = Object.keys(configItem.rules)
-				// `no-autofix` rules are skipped as they are
-				// just mappings to the real ones.
-				.filter((ruleName) => !ruleName.startsWith('no-autofix'));
+			const configuredRules = Object.keys(configItem.rules);
 
 			acc.push(...configuredRules);
 			return acc;

@@ -32,7 +32,6 @@ export default defineConfigurationPart({
 
 		// Require correct usage of hashbang (autofixable)
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/hashbang.md
-		'n/hashbang': 'off',
 		'no-autofix/n/hashbang': ['error', {
 			// "convertPath": null,
 			ignoreUnpublished: false,

@@ -189,7 +189,7 @@ export const updateSettings = async (stepOptions: StepOptions) => {
 
 	const mergedSettings = mergeObjects(existedVscodeSettings ?? {}, SETTINGS);
 
-	// eslint-disable-next-line no-autofix/prefer-template -- Better to do this way here
+	// eslint-disable-next-line prefer-template -- Better to do this way here
 	const newContents = JSON.stringify(mergedSettings, null, '\t') + '\n';
 	const newContentsWithComments = newContents
 		// Prepend comments
