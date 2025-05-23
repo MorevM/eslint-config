@@ -174,7 +174,7 @@ export default defineConfigurationPart({
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md033
 		// Note: Sometimes it needed
 		'markdownlint/md033': ['error', {
-			allowed_elements: ['table', 'details', 'summary', 'br', 'code'],
+			allowed_elements: ['table', 'details', 'summary', 'br', 'code', 'img', 'div', 'span'],
 		}],
 
 		// Bare URL used (autofixable)
