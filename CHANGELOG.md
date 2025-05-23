@@ -1,5 +1,17 @@
 
 
+## [38.1.1](https://github.com/MorevM/eslint-config/compare/v38.1.0...v38.1.1) (2025-05-23)
+
+### Bug fixes
+
+* **javascript:** Enforce a linebreak after `=`  character in case of multiline expression ([129cab8](https://github.com/MorevM/eslint-config/commit/129cab871d9bc048f543d787fdb2550208476550))
+* **markdownlint:** Extend allowed elements list with `img`, `div` and `span` ([cbd0f73](https://github.com/MorevM/eslint-config/commit/cbd0f73a24b1d00493c899e63e61aedf98ac0bad))
+
+### Chores
+
+* Replace local `no-autofix` with shared library ([c28d146](https://github.com/MorevM/eslint-config/commit/c28d1466284f482a5f037dd49909e6ea3d585574))
+
+
 ## [38.1.0](https://github.com/MorevM/eslint-config/compare/v38.0.0...v38.1.0) (2025-05-18)
 
 
