@@ -104,6 +104,10 @@ export default defineConfigurationPart({
 		// Well, I use Node mostly for simple small CLI utilities for developer usage only
 		'n/no-sync': 'off',
 
+		// Disallow top-level `await` in published modules
+		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-top-level-await.md
+		'n/no-top-level-await': 'off',
+
 		// Disallow bin files that `npm` ignores
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/no-unpublished-bin.md
 		'n/no-unpublished-bin': 'error',
