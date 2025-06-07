@@ -1,5 +1,23 @@
 
 
+## [38.2.0](https://github.com/MorevM/eslint-config/compare/v38.1.1...v38.2.0) (2025-06-07)
+
+
+### Features
+
+* **jest:** Add `jest/prefer-ending-with-an-expect` rule ([9311502](https://github.com/MorevM/eslint-config/commit/9311502553cf9d319734682b3be362decf3be76c))
+* **json:** Add `package-json/require-type` rule ([013ff9c](https://github.com/MorevM/eslint-config/commit/013ff9cf1dcf20433e9b68a0736468a94b7c38f5))
+* **node:** Take account of `n/no-top-level-await` rule ([633a992](https://github.com/MorevM/eslint-config/commit/633a9923e455068b79bda5c2129a2d438c9faca3))
+
+
+### Bug fixes
+
+* **cypress:** Update Cypress globals location ([ac7ebd1](https://github.com/MorevM/eslint-config/commit/ac7ebd14a880a13449a75942247944de147bf75e))
+* **javascript:** Prevent transformation of `www` to `w{3}` within a RegExps ([14c72c4](https://github.com/MorevM/eslint-config/commit/14c72c4adce6e4b18765b9520b350e16c4f5ee49))
+* **javascript:** Remove a custom `to-line` command as implemented in the package itself ([af6d80c](https://github.com/MorevM/eslint-config/commit/af6d80c08de2f8dbdd87d06c5f09c78060f037ef))
+* **typescript:** Get rid of deprecated `@typescript-eslint/typedef` rule ([ae8fe70](https://github.com/MorevM/eslint-config/commit/ae8fe70b44970e198336d8954ee5d9af56676924))
+
+
 ## [38.1.1](https://github.com/MorevM/eslint-config/compare/v38.1.0...v38.1.1) (2025-05-23)
 
 ### Bug fixes
