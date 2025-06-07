@@ -1283,7 +1283,7 @@ __metadata:
     eslint-plugin-markdownlint: "npm:^0.3.4"
     eslint-plugin-n: "npm:^17.18.0"
     eslint-plugin-no-secrets: "npm:^2.2.1"
-    eslint-plugin-package-json: "npm:^0.31.0"
+    eslint-plugin-package-json: "npm:^0.33.2"
     eslint-plugin-perfectionist: "npm:^4.14.0"
     eslint-plugin-regexp: "npm:^2.8.0"
     eslint-plugin-sonarjs: "npm:^1.0.4"
@@ -4799,9 +4799,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-package-json@npm:^0.31.0":
-  version: 0.31.0
-  resolution: "eslint-plugin-package-json@npm:0.31.0"
+"eslint-plugin-package-json@npm:^0.33.2":
+  version: 0.33.2
+  resolution: "eslint-plugin-package-json@npm:0.33.2"
   dependencies:
     "@altano/repository-tools": "npm:^0.1.1"
     detect-indent: "npm:6.1.0"
@@ -4815,7 +4815,7 @@ __metadata:
   peerDependencies:
     eslint: ">=8.0.0"
     jsonc-eslint-parser: ^2.0.0
-  checksum: 10c0/6958c8fd7ca0e7b78c02a9a2c8ac7e97b44f67924ce3e9d98c9236f1b485f2897e707846c8599022d61f452f3243d02275bc74940395a2a1efffd30433599b5b
+  checksum: 10c0/1ee96daf0bce457873d0c65c8c5e684b3c5bd901c7550b26a6024b5fa3051c2018ab6e37b0266061ad691f88999220fdebd0522441521c8b5a975593e77dadd5
   languageName: node
   linkType: hard
 
@@ -9291,7 +9291,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyglobby@npm:^0.2.11, tinyglobby@npm:^0.2.13":
+"tinyglobby@npm:^0.2.11":
   version: 0.2.13
   resolution: "tinyglobby@npm:0.2.13"
   dependencies:
