@@ -247,7 +247,9 @@ export default defineConfigurationPart({
 
 		// Enforce using quantifier (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-quantifier.html
-		'regexp/prefer-quantifier': 'warn',
+		'regexp/prefer-quantifier': ['warn', {
+			allows: ['www'],
+		}],
 
 		// Enforce using character class range (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/prefer-range.html
