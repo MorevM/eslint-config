@@ -26,7 +26,8 @@ export default function configurationCypress(options: Partial<CypressConfigurati
 			name: 'morev/cypress/core',
 			languageOptions: {
 				globals: {
-					...pluginCypress.environments!.globals.globals,
+					// @ts-expect-error -- Trust me it exists
+					...pluginCypress.configs.globals.languageOptions.globals,
 				},
 			},
 			files,
