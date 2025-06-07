@@ -112,7 +112,7 @@
 		"@types/node": "^22.15.21",
 		"eslint": "9.27.0",
 		"lefthook": "^1.11.13",
-		"release-it": "^19.0.2",
+		"release-it": "^19.0.3",
 		"tsup": "^8.5.0",
 		"tsx": "^4.19.4",
 		"typescript": "^5.8.3",
