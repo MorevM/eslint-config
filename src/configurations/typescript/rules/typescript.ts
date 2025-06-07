@@ -634,10 +634,6 @@ export default defineConfigurationPart({
 			types: 'never',
 		}],
 
-		// Requires type annotations to exist
-		// https://typescript-eslint.io/rules/typedef
-		'@typescript-eslint/typedef': 'off',
-
 		// Enforces unbound methods are called with their expected scope
 		// https://typescript-eslint.io/rules/unbound-method
 		'@typescript-eslint/unbound-method': ['off', {
