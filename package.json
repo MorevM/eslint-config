@@ -84,7 +84,7 @@
 		"eslint-plugin-jsdoc": "^50.7.1",
 		"eslint-plugin-jsonc": "^2.20.1",
 		"eslint-plugin-jsx-a11y": "^6.10.2",
-		"eslint-plugin-markdownlint": "^0.3.4",
+		"eslint-plugin-markdownlint": "^0.9.0",
 		"eslint-plugin-n": "^17.19.0",
 		"eslint-plugin-no-secrets": "^2.2.1",
 		"eslint-plugin-package-json": "^0.33.2",
