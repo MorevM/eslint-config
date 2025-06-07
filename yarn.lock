@@ -1259,7 +1259,7 @@ __metadata:
     "@morev/commitlint-config": "npm:^0.2.2"
     "@morev/eslint-config": "workspace:^"
     "@morev/eslint-disable-autofix": "npm:^1.0.2"
-    "@morev/utils": "npm:^3.12.2"
+    "@morev/utils": "npm:^3.13.1"
     "@release-it/conventional-changelog": "npm:8.0.2"
     "@stylistic/eslint-plugin": "npm:^4.2.0"
     "@total-typescript/ts-reset": "npm:^0.6.1"
@@ -1348,6 +1348,18 @@ __metadata:
     ohash: "npm:^1.1.4"
     type-fest: "npm:^4.26.1"
   checksum: 10c0/f046a283f2f391003ced8b74e1982c3d2edcf528dcda63cadc8632e5498912fd220a7cb1748fb0778bcc69e5a521073aaca3784fe9fe10989eb86c9624ae416f
+  languageName: node
+  linkType: hard
+
+"@morev/utils@npm:^3.13.1":
+  version: 3.13.1
+  resolution: "@morev/utils@npm:3.13.1"
+  dependencies:
+    fast-copy: "npm:^3.0.2"
+    fast-equals: "npm:^5.0.1"
+    ohash: "npm:^1.1.4"
+    type-fest: "npm:^4.26.1"
+  checksum: 10c0/5597d74d38849f631c9ae6579f7822f7de67dc251e8326e170918f9ec16afef03bacba42a8bb742e30c4fe7a0441e0da33c96e024d7719ad2f5b5d9e54073924
   languageName: node
   linkType: hard
 
@@ -9291,7 +9303,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyglobby@npm:^0.2.11, tinyglobby@npm:^0.2.13":
+"tinyglobby@npm:^0.2.11":
   version: 0.2.13
   resolution: "tinyglobby@npm:0.2.13"
   dependencies:
