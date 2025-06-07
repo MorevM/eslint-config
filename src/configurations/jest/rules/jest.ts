@@ -134,6 +134,10 @@ export default defineConfigurationPart({
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-each.md
 		'jest/prefer-each': 'error',
 
+		// Prefer having the last statement in a test be an assertion
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-ending-with-an-expect.md
+		'jest/prefer-ending-with-an-expect': 'warn',
+
 		// Suggest using the built-in equality matchers
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-equality-matcher.md
 		'jest/prefer-equality-matcher': 'warn',
