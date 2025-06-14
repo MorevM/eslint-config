@@ -175,6 +175,10 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/unique-dependencies.md
 		'package-json/unique-dependencies': 'error',
 
+		// Enforce that the author field is a valid npm author specification
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-author.md
+		'package-json/valid-author': 'error',
+
 		// Checks existence of local dependencies in the package.json
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-local-dependency.md
 		'package-json/valid-local-dependency': 'error',
