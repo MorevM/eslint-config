@@ -58,13 +58,15 @@ export const prependTabs = (value: string) =>
 
 export const formatCliMessage = (value: string): string => {
 	const tagToColorMap = {
-		m: 'magenta',
 		c: 'cyan',
 		g: 'green',
+		m: 'magenta',
 		r: 'red',
 		y: 'yellow',
 	} as const;
-	const regexp = new RegExp(`<((${Object.keys(tagToColorMap).join('|')}))>(.*?)</\\2>`, 'g');
+
+	const allTags = `[${Object.keys(tagToColorMap).join('')}]`;
+	const regexp = new RegExp(`<((${allTags}))>(.*?)</\\2>`, 'g');
 
 	return stripIndent(value.replaceAll(regexp,
 		(substring, _, tag: keyof typeof tagToColorMap, tagContents) => {
