@@ -67,7 +67,7 @@ type DefineIgnoreOptions = {
  * @returns                  Flat list of configurations.
  */
 export const combine = (...configurations: FlatConfig[]) => {
-	return disableAutofix(configurations.flat(Infinity));
+	return disableAutofix(configurations.flat(Infinity)) as FlatConfig[];
 };
 
 /**
