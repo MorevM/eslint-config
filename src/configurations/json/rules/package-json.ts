@@ -183,10 +183,6 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-bin.md
 		'package-json/valid-bin': 'error',
 
-		// Checks existence of local dependencies in the package.json
-		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-local-dependency.md
-		'package-json/valid-local-dependency': 'error',
-
 		// Enforce that package names are valid npm package names
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-name.md
 		'package-json/valid-name': 'error',
