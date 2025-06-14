@@ -179,6 +179,10 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-author.md
 		'package-json/valid-author': 'error',
 
+		// Enforce that the bin property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-bin.md
+		'package-json/valid-bin': 'error',
+
 		// Checks existence of local dependencies in the package.json
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-local-dependency.md
 		'package-json/valid-local-dependency': 'error',
