@@ -1271,7 +1271,7 @@ __metadata:
     eslint-define-config: "npm:^2.1.0"
     eslint-import-resolver-typescript: "npm:^4.4.3"
     eslint-plugin-astro: "npm:^1.3.1"
-    eslint-plugin-chai-friendly: "npm:^1.0.1"
+    eslint-plugin-chai-friendly: "npm:^1.1.0"
     eslint-plugin-command: "npm:^3.2.1"
     eslint-plugin-cypress: "npm:^5.1.0"
     eslint-plugin-eslint-comments: "npm:^3.2.0"
@@ -4610,12 +4610,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-chai-friendly@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "eslint-plugin-chai-friendly@npm:1.0.1"
+"eslint-plugin-chai-friendly@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "eslint-plugin-chai-friendly@npm:1.1.0"
   peerDependencies:
     eslint: ">=3.0.0"
-  checksum: 10c0/5940a2cf02cf5ee217856b17778464773be79e0b1f4cc4278c4d3a06cf26f160187732c33c7fcf6ea502f23ee95178bdda900c8c21585ccc569e160c5aab9804
+  checksum: 10c0/9872c85fecd65d20fdb6ba2cec7be9ad2ed44d5e166402f9136a1806687da4e5c40683f993e6b552468bc3267667bbbc2c7d0b4ec8d2fa153282182e0316625c
   languageName: node
   linkType: hard
 
