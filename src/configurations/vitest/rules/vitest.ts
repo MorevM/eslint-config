@@ -20,6 +20,12 @@ export default defineConfigurationPart({
 			withinDescribe: 'it',
 		}],
 
+		// Enforce using `vitest` or `vi` but not both (autofixable)
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/consistent-vitest-vi.md
+		'vitest/consistent-vitest-vi': ['warn', {
+			fn: 'vi', // to be consistent with Vitest documentation
+		}],
+
 		// Enforce having expectation in test body
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/expect-expect.md
 		'vitest/expect-expect': ['error', {
