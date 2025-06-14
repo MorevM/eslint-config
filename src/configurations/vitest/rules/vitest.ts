@@ -79,6 +79,10 @@ export default defineConfigurationPart({
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-import-node-test.md
 		'vitest/no-import-node-test': 'error',
 
+		// Disallow importing Vitest globals (autofixable)
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-importing-vitest-globals.md
+		'vitest/no-importing-vitest-globals': 'off',
+
 		// Disallow string interpolation in snapshots (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-interpolation-in-snapshots.md
 		'vitest/no-interpolation-in-snapshots': 'warn',
@@ -148,6 +152,10 @@ export default defineConfigurationPart({
 		// Suggest having hooks before any test cases
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-hooks-on-top.md
 		'vitest/prefer-hooks-on-top': 'error',
+
+		// Enforce importing Vitest globals	(autofixable)
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-importing-vitest-globals.md
+		'vitest/prefer-importing-vitest-globals': 'off',
 
 		// Enforce lowercase titles (autofixable)
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-lowercase-title.md
