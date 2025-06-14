@@ -1,5 +1,25 @@
 
 
+## [39.0.0](https://github.com/MorevM/eslint-config/compare/v38.2.0...v39.0.0) (2025-06-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* **package-json:** With new rule `package-json/valid-bin` some `package.json`'s may produce errors
+* **package-json:** With new rule `package-json/valid-author` some `package.json`'s may produce errors
+
+### Features
+
+* **package-json:** Add `package-json/valid-author` rule ([8c2dfe9](https://github.com/MorevM/eslint-config/commit/8c2dfe95fdf18d65aabe63da8e16d81aaa43ac0e))
+* **package-json:** Add `package-json/valid-bin` rule ([3eeb37e](https://github.com/MorevM/eslint-config/commit/3eeb37ea0c84c198c49f8a0f0cf636991e5a38d6))
+* **vitest:** Add `vitest/consistent-vitest-vi` rule ([965b10f](https://github.com/MorevM/eslint-config/commit/965b10f17c194ec97fbeeb57b0893e5715b217e3))
+
+### Bug fixes
+
+* **package-json:** Remove deprecated `package-json/valid-local-dependency` rule ([572a439](https://github.com/MorevM/eslint-config/commit/572a4395a5f2fe7c32c1a278431c6e13b8e0c159))
+* Use optimal RegExp for styling within CLI ([9ac5957](https://github.com/MorevM/eslint-config/commit/9ac5957906af57e02197613513abc54f4162ed75))
+* **vitest:** Take account of new `no-importing-vitest-globals` and `prefer-importing-vitest-globals` rules ([19622f3](https://github.com/MorevM/eslint-config/commit/19622f346d5417b39641ac7da07d065b2b0e24ae))
+
 ## [38.2.0](https://github.com/MorevM/eslint-config/compare/v38.1.1...v38.2.0) (2025-06-07)
 
 
