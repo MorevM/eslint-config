@@ -87,7 +87,7 @@
 		"eslint-plugin-markdownlint": "^0.3.4",
 		"eslint-plugin-n": "^17.20.0",
 		"eslint-plugin-no-secrets": "^2.2.1",
-		"eslint-plugin-package-json": "^0.39.0",
+		"eslint-plugin-package-json": "^0.40.4",
 		"eslint-plugin-perfectionist": "^4.14.0",
 		"eslint-plugin-regexp": "^2.9.0",
 		"eslint-plugin-sonarjs": "^1.0.4",
