@@ -1,5 +1,18 @@
 
 
+## [39.1.0](https://github.com/MorevM/eslint-config/compare/v39.0.0...v39.1.0) (2025-06-22)
+
+
+### Features
+
+* **html:** Add `'@html-eslint/no-invalid-entity'` rule ([21a25d1](https://github.com/MorevM/eslint-config/commit/21a25d127f784a50848a727161cb599fe458dbd2))
+* **html:** Add `@html-eslint/no-aria-hidden-on-focusable` rule ([ec2d8c5](https://github.com/MorevM/eslint-config/commit/ec2d8c5f242a58ed8d212ce16f409c0b6216bab4))
+* **html:** Add `@html-eslint/no-duplicate-in-head` rule ([c6ced32](https://github.com/MorevM/eslint-config/commit/c6ced32a016ac385a2e0479ee8a374ac56d963f1))
+* **html:** Add `@html-eslint/no-empty-headings` rule ([6979f70](https://github.com/MorevM/eslint-config/commit/6979f701738a50cf40ad6cc94fc5545add29dbd9))
+* **package-json:** Enforce package.json `bin` files to be in kebab case ([1aee227](https://github.com/MorevM/eslint-config/commit/1aee227bc51b69f28641b9dbbe25e23f138aca7d))
+* **playwright:** Add `playwright` configuration ([407460f](https://github.com/MorevM/eslint-config/commit/407460f58595ebb14414bdb8d4e82bba8ce9c3f1))
+
+
 ## [39.0.0](https://github.com/MorevM/eslint-config/compare/v38.2.0...v39.0.0) (2025-06-14)
 
 
