@@ -22,6 +22,10 @@ export default defineConfigurationPart({
 		// https://html-eslint.org/docs/rules/no-aria-hidden-on-focusable
 		'@html-eslint/no-aria-hidden-on-focusable': 'error',
 
+		// Enforce that all heading elements (`h1–h6`) and elements with `role="heading"` must have accessible text content
+		// https://html-eslint.org/docs/rules/no-empty-headings
+		'@html-eslint/no-empty-headings': 'warn',
+
 		// Disallows the use of heading elements inside `<button>`
 		// https://html-eslint.org/docs/rules/no-heading-inside-button
 		'@html-eslint/no-heading-inside-button': 'error',
