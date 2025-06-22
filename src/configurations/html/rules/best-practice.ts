@@ -18,6 +18,10 @@ export default defineConfigurationPart({
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-duplicate-id
 		'@html-eslint/no-duplicate-id': 'error',
 
+		// Disallows duplicate tags in the `<head>` section
+		// https://html-eslint.org/docs/rules/no-duplicate-in-head
+		'@html-eslint/no-duplicate-in-head': 'error',
+
 		// Disallow inline styles
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-inline-styles
 		'@html-eslint/no-inline-styles': 'off',
