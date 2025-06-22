@@ -22,6 +22,10 @@ export default defineConfigurationPart({
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-inline-styles
 		'@html-eslint/no-inline-styles': 'off',
 
+		// Disallow use of invalid HTML entities
+		// https://html-eslint.org/docs/rules/no-invalid-entity
+		'@html-eslint/no-invalid-entity': 'error',
+
 		// Disallows interactive elements from being nested
 		// https://html-eslint.org/docs/rules/no-nested-interactive
 		'@html-eslint/no-nested-interactive': 'off',
