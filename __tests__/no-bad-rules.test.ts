@@ -8,6 +8,7 @@ const ruleFinder = new RulesFinder(
 		defineConfiguration('browser'),
 		defineConfiguration('node'),
 		defineConfiguration('cypress'),
+		defineConfiguration('playwright'),
 		defineConfiguration('astro'),
 		defineConfiguration('html'),
 		defineConfiguration('jest'),

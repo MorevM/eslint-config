@@ -72,6 +72,11 @@ export type JestConfigurationOptions = AnyConfigurationOptions;
 export type CypressConfigurationOptions = AnyConfigurationOptions;
 
 /**
+ * Options for Playwright configuration.
+ */
+export type PlaywrightConfigurationOptions = AnyConfigurationOptions;
+
+/**
  * Options for JSX syntax.
  */
 export type JsxConfigurationOptions = AnyConfigurationOptions;

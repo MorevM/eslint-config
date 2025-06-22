@@ -24,6 +24,7 @@ const configurationsMapNames = {
 	vitest: 'Vitest',
 	jest: 'Jest',
 	cypress: 'Cypress',
+	playwright: 'Playwright',
 	typescript: 'TypeScript',
 	vue: 'Vue',
 	astro: 'Astro',
@@ -62,6 +63,7 @@ export const createConfig = async (stepOptions: StepOptions) => {
 		vitest: false,
 		jest: false,
 		cypress: false,
+		playwright: false,
 		typescript: false,
 		vue: false,
 		astro: false,
@@ -110,6 +112,9 @@ export const createConfig = async (stepOptions: StepOptions) => {
 	dependenciesList.includes('vitest') && (configurations.vitest = {});
 	dependenciesList.includes('jest') && (configurations.jest = {});
 	dependenciesList.includes('cypress') && (configurations.cypress = {});
+	if (dependenciesList.some((dependency) => dependency.includes('playwright'))) {
+		configurations.playwright = {};
+	}
 
 	// Typescript
 	if (dependenciesList.includes('typescript') || hasTsconfig()) {

@@ -754,6 +754,32 @@ Let's take a more detailed look:
 
   </details>
 
+* 📁 `playwright` - for projects that use [Playwright](https://playwright.dev/) as a test platform.
+  <details>
+    <summary>Show the details</summary>
+
+    ---
+
+    This configuration enables Playwright-specific rules.
+
+    By default, the rules apply to the test file names under `e2e`, `tests` or `playwright` directories.
+
+    > You can see these globs in the source code [here](./src/globs.ts) (`GLOB_PLAYWRIGHT` constant).
+
+    If you have non-standard test file name pattern, then specify files explicitly using the `files` option.
+
+    Example of `playwright` configuration in use:
+
+    ```js
+    export default combine([
+      defineConfiguration('playwright'),
+    ]);
+    ```
+
+    ---
+
+  </details>
+
 * 📁 `json` - for projects that use JSON, JSON5 and JSONC files.
   <details>
     <summary>Show the details</summary>

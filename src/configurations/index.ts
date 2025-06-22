@@ -8,6 +8,7 @@ export { default as configurationJson } from './json';
 export { default as configurationJsx } from './jsx';
 export { default as configurationMarkdown } from './markdown';
 export { default as configurationNode } from './node';
+export { default as configurationPlaywright } from './playwright';
 export { default as configurationTypescript } from './typescript';
 export { default as configurationVitest } from './vitest';
 export { default as configurationVue } from './vue';

@@ -12,6 +12,7 @@ import {
 	configurationJsx,
 	configurationMarkdown,
 	configurationNode,
+	configurationPlaywright,
 	configurationTypescript,
 	configurationVitest,
 	configurationVue,
@@ -33,6 +34,7 @@ type ConfigurationsMap = {
 	vitest: typeof configurationVitest;
 	jest: typeof configurationJest;
 	cypress: typeof configurationCypress;
+	playwright: typeof configurationPlaywright;
 	jsx: typeof configurationJsx;
 	astro: typeof configurationAstro;
 };
@@ -93,6 +95,7 @@ export const defineConfiguration = <T extends Configuration>(name: T, options: C
 		case 'vitest': return configurationVitest(options);
 		case 'jest': return configurationJest(options);
 		case 'cypress': return configurationCypress(options);
+		case 'playwright': return configurationPlaywright(options);
 		case 'jsx': return configurationJsx(options);
 		case 'astro': return configurationAstro(options);
 		default: return {};

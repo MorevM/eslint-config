@@ -42,6 +42,9 @@ export const GLOB_CYPRESS = [
 	'**/cypress/integration/**/*.*', // Cypress < 10 defaults
 	'**/cypress/e2e/**/*.*', // Cypress >= 10 defaults
 ];
+export const GLOB_PLAYWRIGHT = [
+	'**/{tests,e2e,playwright}/**/*.*',
+];
 
 export const GLOB_EXCLUDE = [
 	// OS files
