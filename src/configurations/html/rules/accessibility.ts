@@ -18,6 +18,10 @@ export default defineConfigurationPart({
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-aria-hidden-body
 		'@html-eslint/no-aria-hidden-body': 'error',
 
+		// Disallow the use of `aria-hidden="true"` on focusable elements
+		// https://html-eslint.org/docs/rules/no-aria-hidden-on-focusable
+		'@html-eslint/no-aria-hidden-on-focusable': 'error',
+
 		// Disallows the use of heading elements inside `<button>`
 		// https://html-eslint.org/docs/rules/no-heading-inside-button
 		'@html-eslint/no-heading-inside-button': 'error',
