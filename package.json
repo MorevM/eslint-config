@@ -68,7 +68,7 @@
 		"@html-eslint/eslint-plugin": "^0.42.0",
 		"@morev/eslint-disable-autofix": "^1.0.2",
 		"@morev/utils": "^3.13.1",
-		"@stylistic/eslint-plugin": "^4.4.1",
+		"@stylistic/eslint-plugin": "^5.2.0",
 		"@vitest/eslint-plugin": "^1.2.7",
 		"ansis": "^4.1.0",
 		"eslint-config-flat-gitignore": "^2.1.0",
