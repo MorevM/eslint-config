@@ -5,10 +5,10 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@altano/repository-tools@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "@altano/repository-tools@npm:1.0.1"
-  checksum: 10c0/1102750b41ae5373fcdd434a11d02827806b338260adc781924623586bda8d046fe37d1780dd4125d28396ece62c9f77d4b919ba4313802238554c2567d48f89
+"@altano/repository-tools@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@altano/repository-tools@npm:2.0.1"
+  checksum: 10c0/080c8df928c0bfcc2f103b2090ecaf03dc93b2a161c572065ee7278dc02ffdbf3d3570cbada45c0ddb3f6d7bc3f3d0fd0788ea4aa03c3ebaf487e87a9e323190
   languageName: node
   linkType: hard
 
@@ -1101,7 +1101,7 @@ __metadata:
     eslint-plugin-markdownlint: "npm:^0.3.4"
     eslint-plugin-n: "npm:^17.20.0"
     eslint-plugin-no-secrets: "npm:^2.2.1"
-    eslint-plugin-package-json: "npm:^0.40.4"
+    eslint-plugin-package-json: "npm:^0.54.0"
     eslint-plugin-perfectionist: "npm:^4.15.0"
     eslint-plugin-playwright: "npm:^2.2.0"
     eslint-plugin-regexp: "npm:^2.9.0"
@@ -3479,14 +3479,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-indent@npm:7.0.1, detect-indent@npm:^7.0.1":
+"detect-indent@npm:^7.0.1":
   version: 7.0.1
   resolution: "detect-indent@npm:7.0.1"
   checksum: 10c0/47b6e3e3dda603c386e73b129f3e84844ae59bc2615f5072becf3cc02eab400bed5a4e6379c49d0b18cf630e80c2b07e87e0038b777addbc6ef793ad77dd05bc
   languageName: node
   linkType: hard
 
-"detect-newline@npm:4.0.1, detect-newline@npm:^4.0.1":
+"detect-newline@npm:^4.0.1":
   version: 4.0.1
   resolution: "detect-newline@npm:4.0.1"
   checksum: 10c0/1cc1082e88ad477f30703ae9f23bd3e33816ea2db6a35333057e087d72d466f5a777809b71f560118ecff935d2c712f5b59e1008a8b56a900909d8fd4621c603
@@ -3921,7 +3921,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-fix-utils@npm:^0.4.0":
+"eslint-fix-utils@npm:~0.4.0":
   version: 0.4.0
   resolution: "eslint-fix-utils@npm:0.4.0"
   peerDependencies:
@@ -4209,24 +4209,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-package-json@npm:^0.40.4":
-  version: 0.40.4
-  resolution: "eslint-plugin-package-json@npm:0.40.4"
+"eslint-plugin-package-json@npm:^0.54.0":
+  version: 0.54.0
+  resolution: "eslint-plugin-package-json@npm:0.54.0"
   dependencies:
-    "@altano/repository-tools": "npm:^1.0.0"
+    "@altano/repository-tools": "npm:^2.0.1"
     change-case: "npm:^5.4.4"
-    detect-indent: "npm:7.0.1"
-    detect-newline: "npm:4.0.1"
-    eslint-fix-utils: "npm:^0.4.0"
-    package-json-validator: "npm:~0.15.0"
+    detect-indent: "npm:^7.0.1"
+    detect-newline: "npm:^4.0.1"
+    eslint-fix-utils: "npm:~0.4.0"
+    package-json-validator: "npm:~0.29.0"
     semver: "npm:^7.5.4"
     sort-object-keys: "npm:^1.1.3"
-    sort-package-json: "npm:^3.0.0"
-    validate-npm-package-name: "npm:^6.0.0"
+    sort-package-json: "npm:^3.3.0"
+    validate-npm-package-name: "npm:^6.0.2"
   peerDependencies:
     eslint: ">=8.0.0"
     jsonc-eslint-parser: ^2.0.0
-  checksum: 10c0/e6a2bd41cc1df3f115829e6f4c827559cd7a1c8b6b0a650690f234b10718f841f24075323c52e571df5d8e73b56eb4dcd0be7df30e94d609a9c5eee7b40b043e
+  checksum: 10c0/a58ae1b276800bc64f6ee7a130f18ac61a037b9d52209a19192caadaf22fa5460578f533c60f1059a667ea645beffa91a8e5e0f9c6c64779332199f1d13e1451
   languageName: node
   linkType: hard
 
@@ -7180,14 +7180,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"package-json-validator@npm:~0.15.0":
-  version: 0.15.0
-  resolution: "package-json-validator@npm:0.15.0"
+"package-json-validator@npm:~0.29.0":
+  version: 0.29.1
+  resolution: "package-json-validator@npm:0.29.1"
   dependencies:
+    semver: "npm:^7.7.2"
+    validate-npm-package-license: "npm:^3.0.4"
     yargs: "npm:~18.0.0"
   bin:
     pjv: lib/bin/pjv.js
-  checksum: 10c0/c7c34d9e0109cfe16345c75590903cccdf7c2369cc5ba801f71966b566c29e68735ec67a5f5c915dc6795dc3c498ff95e3b3674af4740589f2279b4fe90c16cd
+  checksum: 10c0/c2c7aaa25791a43e303de27daab49b16a75289e6ee63525be0e9c7fa3c9d18a5e4c3e48f5f85c7e9a06ab43321865e42c178068078fe49113c06fc297c0aff61
   languageName: node
   linkType: hard
 
@@ -8198,9 +8200,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sort-package-json@npm:^3.0.0":
-  version: 3.2.1
-  resolution: "sort-package-json@npm:3.2.1"
+"sort-package-json@npm:^3.3.0":
+  version: 3.4.0
+  resolution: "sort-package-json@npm:3.4.0"
   dependencies:
     detect-indent: "npm:^7.0.1"
     detect-newline: "npm:^4.0.1"
@@ -8211,7 +8213,7 @@ __metadata:
     tinyglobby: "npm:^0.2.12"
   bin:
     sort-package-json: cli.js
-  checksum: 10c0/383a62dbea96a030e90f9c3ac42fa4fb7700904f125a50700a1f75b048bb319d4104c57a989ef8f7b7a8f1553fe7b10e49ebcfd13a5ca08658541fd0bdcd202f
+  checksum: 10c0/1adb7860eee770fa51ac1c810c2fa2483ab47bf150d1fc2437ef28314ee928142a51245ba22aac8a8c662f431609fc633d404bcdd93acbf54d5a056253741218
   languageName: node
   linkType: hard
 
@@ -9214,10 +9216,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"validate-npm-package-name@npm:^6.0.0":
-  version: 6.0.1
-  resolution: "validate-npm-package-name@npm:6.0.1"
-  checksum: 10c0/4d5455523e0a0c9a9ae3f306d4e6205c43be71dac85882db1c357ebbaf685390ea94985511824cfe41c04ca302dd85eb1f0292ab6941234b5ddca38d11865f9a
+"validate-npm-package-name@npm:^6.0.2":
+  version: 6.0.2
+  resolution: "validate-npm-package-name@npm:6.0.2"
+  checksum: 10c0/c4c23a8b9fa8deee11eea421d94fbe39f742146c06571b62247212579298186b724ebc5152240a415753bdaf9b8849a487e675ec2968d44660f8a65de6cdef9e
   languageName: node
   linkType: hard
 
