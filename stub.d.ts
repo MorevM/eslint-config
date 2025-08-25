@@ -1,3 +1,4 @@
+/* eslint-disable no-duplicate-imports -- False positives with `declare module` */
 declare module 'eslint-plugin-eslint-comments' {
 	import type { ESLint } from 'eslint';
 
