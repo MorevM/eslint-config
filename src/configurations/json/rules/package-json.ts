@@ -216,17 +216,65 @@ export default defineConfigurationPart({
 			enforceCase: true,
 		}],
 
+		// Enforce that the `bundleDependencies` (also: `bundledDependencies`) property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-bundleDependencies.md
+		'package-json/valid-bundleDependencies': 'error',
+
+		// Enforce that the `config` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-config.md
+		'package-json/valid-config': 'error',
+
+		// Enforce that the `cpu` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-cpu.md
+		'package-json/valid-cpu': 'error',
+
+		// Enforce that the `dependencies` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-dependencies.md
+		'package-json/valid-dependencies': 'error',
+
+		// Enforce that the `description` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-description.md
+		'package-json/valid-description': 'error',
+
+		// Enforce that the `devDependencies` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-devDependencies.md
+		'package-json/valid-devDependencies': 'error',
+
+		// Enforce that the `exports` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-exports.md
+		'package-json/valid-exports': 'error',
+
+		// Enforce that the `license` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-license.md
+		'package-json/valid-license': 'error',
+
 		// Enforce that package names are valid npm package names
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-name.md
 		'package-json/valid-name': 'error',
+
+		// Enforce that the `optionalDependencies` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-optionalDependencies.md
+		'package-json/valid-optionalDependencies': 'error',
 
 		// Enforce that package.json has all properties required by the npm spec
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-package-def.md
 		'package-json/valid-package-definition': 'error',
 
+		// Enforce that the `peerDependencies` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-peerDependencies.md
+		'package-json/valid-peerDependencies': 'error',
+
 		// Enforce that if repository directory is specified, it matches the path to the `package.json` file
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-repository-directory.md
 		'package-json/valid-repository-directory': 'error',
+
+		// Enforce that the `scripts` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-scripts.md
+		'package-json/valid-scripts': 'error',
+
+		// Enforce that the `type` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-type.md
+		'package-json/valid-type': 'error',
 
 		// Enforce that package versions are valid semver specifiers
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-version.md
