@@ -56,7 +56,6 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 			ignores,
 			rules: {
 				'no-undef': 'off',
-				'no-duplicate-imports': 'off',
 				'unicorn/prefer-json-parse-buffer': 'off',
 				'jsdoc/require-returns-type': 'off',
 				'jsdoc/require-param-type': 'off',

@@ -85,7 +85,9 @@ export default defineConfigurationPart({
 
 		// Disallow duplicate imports
 		// https://eslint.org/docs/rules/no-duplicate-imports
-		'no-duplicate-imports': 'error',
+		'no-duplicate-imports': ['error', {
+			allowSeparateTypeImports: true,
+		}],
 
 		// Disallow empty character classes in regular expressions
 		// https://eslint.org/docs/rules/no-empty-character-class
