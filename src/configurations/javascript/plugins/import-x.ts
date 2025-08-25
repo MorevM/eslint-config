@@ -256,5 +256,9 @@ export default defineConfigurationPart({
 		// https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/prefer-default-export.md
 		// Note: I don't thinks it's a good practice as long as CommonJS still in use
 		'import-x/prefer-default-export': 'off',
+
+		// Enforce using namespace imports for specific modules, like `react` / `react-dom` (autofixable)
+		// https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/prefer-namespace-import.md
+		'import-x/prefer-namespace-import': 'off',
 	},
 });
