@@ -94,10 +94,6 @@ export default defineConfigurationPart({
 		// https://eslint.style/rules/js/dot-location
 		'@stylistic/dot-location': ['warn', 'property'],
 
-		// Require or disallow spacing between function identifiers and their invocations (autofixable)
-		// https://eslint.style/rules/js/func-call-spacing
-		'@stylistic/func-call-spacing': 'off',
-
 		// Enforce linebreaks between arguments of a function call (autofixable)
 		// https://eslint.style/rules/js/function-call-argument-newline
 		'@stylistic/function-call-argument-newline': ['warn', 'consistent'],
