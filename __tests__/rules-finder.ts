@@ -114,7 +114,12 @@ export default class RulesFinder {
 
 					provider.allRules.push(neededName);
 
-					if ('meta' in ruleDefinition && isObject(ruleDefinition.meta) && 'deprecated' in ruleDefinition.meta) {
+					if (
+						isObject(ruleDefinition)
+						&& 'meta' in ruleDefinition
+						&& isObject(ruleDefinition.meta)
+						&& 'deprecated' in ruleDefinition.meta
+					) {
 						ruleDefinition.meta.deprecated && provider.deprecatedRules.push(neededName);
 						!ruleDefinition.meta?.deprecated && provider.activeRules.push(neededName);
 					} else {

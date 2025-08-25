@@ -40,8 +40,8 @@ plugins:
 
 hooks:
   before:init:
-    - yarn build
-    - yarn lint:fix
+    - pnpm build
+    - pnpm lint:fix
   after:init:
-    - yarn lint
-    - yarn test
+    - pnpm lint
+    - pnpm test

@@ -38,5 +38,6 @@ export const tsup: Options = {
 		'eslint-plugin-yml',
 		'eslint-plugin-perfectionist',
 		'eslint-plugin-package-json',
+		'@html-eslint/parser',
 	],
 };
