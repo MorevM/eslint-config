@@ -112,6 +112,10 @@ export default defineConfigurationPart({
 		// https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/no-useless-not.md
 		'playwright/no-useless-not': 'warn',
 
+		// Disallow usage of `page.waitForNavigation()`
+		// https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/no-wait-for-navigation.md
+		'playwright/no-wait-for-navigation': 'warn',
+
 		// 	Disallow usage of `page.waitForSelector()`
 		// https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/no-wait-for-selector.md
 		'playwright/no-wait-for-selector': 'error',
