@@ -9,7 +9,9 @@ export default defineConfigurationPart({
 	rules: {
 		// Reports on unnecessary empty arrays and objects
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/no-empty-fields.md
-		'package-json/no-empty-fields': 'warn',
+		'package-json/no-empty-fields': ['warn', {
+			ignoreProperties: ['browserslist'],
+		}],
 
 		// Prevents adding unnecessary / redundant files
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/no-redundant-files.md
@@ -163,7 +165,6 @@ export default defineConfigurationPart({
 
 		// Restricts the range of dependencies to allow or disallow specific types of ranges
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/restrict-dependency-ranges.md
-		// TODO[2025-08-01]: Review
 		'package-json/restrict-dependency-ranges': 'off',
 
 		// Dependencies, scripts, and configuration values must be declared in alphabetical order (autofixable)
