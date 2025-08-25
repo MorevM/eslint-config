@@ -211,5 +211,9 @@ export default defineConfigurationPart({
 		// Enforce valid titles (autofixable)
 		// https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/valid-title.md
 		'playwright/valid-title': 'error',
+
+		// Enforce valid tag format in test blocks
+		// https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/valid-test-tags.md
+		'playwright/valid-test-tags': 'error',
 	},
 });
