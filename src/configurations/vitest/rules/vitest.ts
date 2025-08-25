@@ -271,6 +271,10 @@ export default defineConfigurationPart({
 			allowArguments: true,
 		}],
 
+		// Disallow `.todo` usage
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/warn-todo.md
+		'vitest/warn-todo': 'warn',
+
 		// Enable all `padding-around-*` rules of `jest`, all are autofixable (nothing `jest`-special inside)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/padding-around-all.md
 		'vitest/padding-around-all': 'warn',
