@@ -366,6 +366,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-blob-reading-methods.md
 		'unicorn/prefer-blob-reading-methods': 'error',
 
+		// Prefer class field declarations over `this` assignments in constructors (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-class-fields.md
+		'unicorn/prefer-class-fields': 'error',
+
 		// Prefer `String#codePointAt(…)` over `String#charCodeAt(…)` and `String.fromCodePoint(…)` over `String.fromCharCode(…)`.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-code-point.md
 		'unicorn/prefer-code-point': 'error',
