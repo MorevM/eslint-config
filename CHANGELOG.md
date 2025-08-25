@@ -1,5 +1,42 @@
 
 
+## [40.0.0](https://github.com/MorevM/eslint-config/compare/v39.1.0...v40.0.0) (2025-08-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* **html:** With new rule `@html-eslint/no-ineffective-attrs` ineffective attributes in HTML will raise an error.
+* **package-json:** With new rules from `package-json` invalid fields in the `package.json` will raise an error.
+* **javascript:** WIth new `unicorn/require-module-specifiers` rule empty import/export statements will raise an error.
+* **javascript:** With new `unicorn/no-useless-error-capture-stack-trace` rule call of `Error.captureStackTrace` inside constructor of a built-in Error subclass will raise an error.
+* **javascript:** With new rule `unicorn/prefer-class-fields` `this` assignments in class constructors will raise an error.
+* **playwright:** With new rule `playwright/valid-test-tags` incorrect Playwright tags will raise an error
+
+### Features
+
+* **html:** Add `@html-eslint/no-ineffective-attrs` rule ([20e35c4](https://github.com/MorevM/eslint-config/commit/20e35c40d6aee701fa3d84688a1f0b6501aba9c9))
+* **javascript:** Add `unicorn/no-useless-error-capture-stack-trace` rule ([edcc1b8](https://github.com/MorevM/eslint-config/commit/edcc1b88855589e47156da986addf5f2bcc6e7dd))
+* **javascript:** Add `unicorn/prefer-class-fields` rule ([20baf20](https://github.com/MorevM/eslint-config/commit/20baf2010759e4903026d21c6a7607ad328160c6))
+* **javascript:** Add `unicorn/require-module-specifiers` rule ([8948fe6](https://github.com/MorevM/eslint-config/commit/8948fe6f963c3877781d9e31bc1beb72ea0d3f06))
+* **javascript:** Take account of `no-array-reverse` rule ([39bbbf5](https://github.com/MorevM/eslint-config/commit/39bbbf52ecb3face08eaa01023a8193b310ac31f))
+* **package-json:** Add `package-json/valid-*` rules ([f1c8cdc](https://github.com/MorevM/eslint-config/commit/f1c8cdc40a0c58c71acd4f231824aab69888c667))
+* **package-json:** Take account of `package-json/require-*` rules ([7ebee17](https://github.com/MorevM/eslint-config/commit/7ebee171ae4cbf7c246c36347f3ef8301e4913c8))
+* **playwright:** Add `playwright/no-wait-for-navigation` rule ([e6435a6](https://github.com/MorevM/eslint-config/commit/e6435a616c99e3175ced37d193262f4675126fcd))
+* **playwright:** Add `playwright/valid-test-tags` rule ([ab37226](https://github.com/MorevM/eslint-config/commit/ab37226fffec8a5f20ce5e97d412ddc6a147d271))
+* **vitest:** Add `vitest/warn-todo` rule ([0dff0a9](https://github.com/MorevM/eslint-config/commit/0dff0a9b54623f8843deab2d12bf5d0f3849fd56))
+
+
+### Bug fixes
+
+* **javascript:** Allow separate type imports in `no-duplicate-imports` rule ([87956ad](https://github.com/MorevM/eslint-config/commit/87956ad6b311074a8dd60735d6460e56571357c0))
+* **javascript:** Remove `ForInStatement` from `no-restricted-syntax` rule ([1acec65](https://github.com/MorevM/eslint-config/commit/1acec65a9e68eebadcf457f3ac67ec04023ac669))
+* **javascript:** Remove doubled `@stylistic/func-call-spacing` rule ([e9bd491](https://github.com/MorevM/eslint-config/commit/e9bd491f0cc478ddec0d94c3d332fbc9e371cd06))
+* **javascript:** Take account of `import-x/prefer-namespace-import` rule ([d3543ff](https://github.com/MorevM/eslint-config/commit/d3543ff41912b41cd749803deb2a48e402b47ea9))
+* **package-json:** Ignore empty `browserslist` entry ([5974e05](https://github.com/MorevM/eslint-config/commit/5974e055fbe3818266cd8cad3a15d674bb8a4f84))
+* **vitest:** Take account of `vitest/prefer-called-once` and `vitest/prefer-called-times` rules ([8a2e56f](https://github.com/MorevM/eslint-config/commit/8a2e56f757309faaa1f974b97c037bbde1ae02eb))
+* **vue:** Take account of `vue/no-negated-condition` and `vue/no-negated-v-if-condition` rules ([ea2955c](https://github.com/MorevM/eslint-config/commit/ea2955ca6d1fa5f6bbb8460ed16e90e3987883ce))
+
+
 ## [39.1.0](https://github.com/MorevM/eslint-config/compare/v39.0.0...v39.1.0) (2025-06-22)
 
 
