@@ -666,6 +666,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-array-join-separator.md
 		'unicorn/require-array-join-separator': 'error',
 
+		// Require non-empty specifier list in import and export statements (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-module-specifiers.md
+		'unicorn/require-module-specifiers': 'error',
+
 		// Enforce using the digits argument with `Number#toFixed()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-number-to-fixed-digits-argument.md
 		'unicorn/require-number-to-fixed-digits-argument': 'error',
