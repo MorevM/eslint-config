@@ -281,6 +281,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unused-properties.md
 		'unicorn/no-unused-properties': 'warn',
 
+		// Disallow unnecessary `Error.captureStackTrace(…)` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-error-capture-stack-trace.md
+		'unicorn/no-useless-error-capture-stack-trace': 'error',
+
 		// Forbid useless fallback when spreading in object literals (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-fallback-in-spread.md
 		'unicorn/no-useless-fallback-in-spread': 'warn',
