@@ -22,6 +22,10 @@ export default defineConfigurationPart({
 		// https://html-eslint.org/docs/rules/no-duplicate-in-head
 		'@html-eslint/no-duplicate-in-head': 'error',
 
+		// Disallow HTML attributes that have no effect in their context
+		// https://html-eslint.org/docs/rules/no-ineffective-attrs
+		'@html-eslint/no-ineffective-attrs': 'error',
+
 		// Disallow inline styles
 		// https://yeonjuan.github.io/html-eslint/docs/rules/no-inline-styles
 		'@html-eslint/no-inline-styles': 'off',
