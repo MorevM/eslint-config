@@ -121,6 +121,14 @@ export default defineConfigurationPart({
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/no-test-return-statement.md
 		'vitest/no-test-return-statement': 'error',
 
+		// Enforce using `toBeCalledOnce()` or `toHaveBeenCalledOnce()`	(autofixable)
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-once.md
+		'vitest/prefer-called-once': 'off',
+
+		// Enforce using `toBeCalledTimes(1)` or `toHaveBeenCalledTimes(1)`	(autofixable)
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-times.md
+		'vitest/prefer-called-times': 'off',
+
 		// Suggest using `toBeCalledWith()` or `toHaveBeenCalledWith()`
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-with.md
 		'vitest/prefer-called-with': 'off',
