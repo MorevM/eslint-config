@@ -36,6 +36,15 @@ type ExtensionFactoryOptions = {
 	alwaysDisableBaseRule?: boolean;
 };
 
+// The basic rule is called `function-call-spacing`, while in vue,
+// for example, it is called `func-call-spacing`.
+//
+// @see https://eslint.style/rules/function-call-spacing
+// @see https://eslint.vuejs.org/rules/func-call-spacing.html
+const BASE_RULES_MAP: Record<string, string> = {
+	'func-call-spacing': 'function-call-spacing',
+};
+
 /**
  * Utility function to create extension rules.
  *
@@ -65,11 +74,12 @@ export const extensionFactory = (options: ExtensionFactoryOptions) => {
 	return (ruleOrRules: string | string[], extendWith?: PlainObject) => {
 		return toArray(ruleOrRules).reduce<Record<string, RuleValue>>((result, rule) => {
 			const shouldDisableBaseRule = alwaysDisableBaseRule || rule.startsWith('-');
-			const cleanRule = [baseRulePrefix, rule.replace(/^-/, '')].filter(Boolean).join('/');
+			const cleanRuleName = [baseRulePrefix, rule.replace(/^-/, '')].filter(Boolean).join('/');
+			const baseRuleName = BASE_RULES_MAP[cleanRuleName] ?? cleanRuleName;
 
-			const ruleName = ESLINT_FORMATTING_RULES.includes(cleanRule)
-				? `@stylistic/${cleanRule}`
-				: cleanRule;
+			const ruleName = ESLINT_FORMATTING_RULES.includes(baseRuleName)
+				? `@stylistic/${baseRuleName}`
+				: baseRuleName;
 
 			let shouldDisableAutofix = false;
 			const ruleValue = (() => {
@@ -94,7 +104,7 @@ export const extensionFactory = (options: ExtensionFactoryOptions) => {
 				: baseOptions;
 
 			const autofixPrefix = shouldDisableAutofix ? 'no-autofix/' : '';
-			result[`${autofixPrefix}${prefix}/${cleanRule}`] = isEmpty(newOptions)
+			result[`${autofixPrefix}${prefix}/${cleanRuleName}`] = isEmpty(newOptions)
 				? severity
 				: [severity, newOptions];
 
