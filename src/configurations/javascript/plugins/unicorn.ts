@@ -120,6 +120,11 @@ export default defineConfigurationPart({
 		// Note: if you can't read reduce calls - just practice more
 		'unicorn/no-array-reduce': 'off',
 
+		// Prefer `Array#toReversed()` over `Array#reverse()`
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-reverse.md
+		// TODO[2026-05-11]: Maybe enable
+		'unicorn/no-array-reverse': 'off',
+
 		// Forbid member access from await expression (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-expression-member.md
 		'unicorn/no-await-expression-member': 'warn',
