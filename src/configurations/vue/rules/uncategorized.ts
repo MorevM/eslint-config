@@ -165,6 +165,11 @@ export default defineConfigurationPart({
 		// https://eslint.vuejs.org/rules/no-multiple-objects-in-class.html
 		'vue/no-multiple-objects-in-class': 'error',
 
+		// Disallow negated conditions in v-if/v-else
+		// https://eslint.vuejs.org/rules/no-negated-v-if-condition.html
+		// It's very situational
+		'vue/no-negated-v-if-condition': 'off',
+
 		// Disallow a potential typo in your component property
 		// https://eslint.vuejs.org/rules/no-potential-component-option-typo.html
 		'vue/no-potential-component-option-typo': ['warn', {

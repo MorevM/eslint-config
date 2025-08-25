@@ -112,6 +112,10 @@ export default defineConfigurationPart({
 		// https://eslint.vuejs.org/rules/no-loss-of-precision.html
 		...extensionFromBase('no-loss-of-precision'),
 
+		// Disallow negated conditions in `<template>`
+		// https://eslint.vuejs.org/rules/no-negated-condition.html
+		...extensionFromBase('no-negated-condition'),
+
 		// Disallow specified syntax in `<template>`
 		// https://eslint.vuejs.org/rules/no-restricted-syntax.html
 		...extensionFromBase('no-restricted-syntax'),
