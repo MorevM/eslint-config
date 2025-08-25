@@ -127,10 +127,30 @@ export default defineConfigurationPart({
 		// Note: Most commercial projects are doing quite well without it
 		'package-json/require-author': 'off',
 
+		// Requires the `bugs` property to be present
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-bugs.md
+		// Note: Most commercial projects are doing quite well without it
+		'package-json/require-bugs': 'off',
+
+		// Requires the `bundleDependencies` property to be present.
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-bundleDependencies.md
+		// Note: Way too strict to require
+		'package-json/require-bundleDependencies': 'off',
+
+		// Requires the `dependencies` property to be present.
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-dependencies.md
+		// Note: Way too strict to require
+		'package-json/require-dependencies': 'off',
+
 		// Requires the `description` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-description.md
 		// Note: Most commercial projects are doing quite well without it
 		'package-json/require-description': 'off',
+
+		// Requires the `devDependencies` property to be present.
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-devDependencies.md
+		// Note: Way too strict to require
+		'package-json/require-devDependencies': 'off',
 
 		// Requires the `engines` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-engines.md
@@ -149,6 +169,16 @@ export default defineConfigurationPart({
 		// Requires the `name` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-name.md
 		'package-json/require-name': 'error',
+
+		// Requires the `optionalDependencies` property to be present.
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-optionalDependencies.md
+		// Note: Way too strict to require
+		'package-json/require-optionalDependencies': 'off',
+
+		// Requires the `peerDependencies` property to be present.
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-peerDependencies.md
+		// Note: Way too strict to require
+		'package-json/require-peerDependencies': 'off',
 
 		// Requires the `type` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-type.md
