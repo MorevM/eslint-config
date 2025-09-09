@@ -44,7 +44,13 @@ export default function configurationYaml(options: Partial<YamlConfigurationOpti
 		}),
 		defineConfigurationPart({
 			name: 'morev/yaml/exceptions',
-			files: ['**/dependabot.yml', '**/.gitlab-ci.yml', '**/.yarnrc.yml', '**/.codecov.yml'],
+			files: [
+				'**/dependabot.yml',
+				'**/.gitlab-ci.yml',
+				'**/.yarnrc.yml',
+				'**/.codecov.yml',
+				'**/.github/**/*.yml',
+			],
 			rules: {
 				'yml/file-extension': 'off',
 			},
