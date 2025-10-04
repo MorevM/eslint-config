@@ -114,7 +114,7 @@
 		"@types/semver": "^7.7.0",
 		"eslint": "9.34.0",
 		"lefthook": "^1.11.14",
-		"release-it": "^19.0.3",
+		"release-it": "^19.0.5",
 		"tsup": "^8.5.0",
 		"tsx": "^4.20.3",
 		"typescript": "^5.8.3",
