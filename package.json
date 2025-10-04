@@ -111,7 +111,7 @@
 		"@release-it/conventional-changelog": "8.0.2",
 		"@total-typescript/ts-reset": "^0.6.1",
 		"@types/node": "^22.15.32",
-		"@types/semver": "^7.7.0",
+		"@types/semver": "^7.7.1",
 		"eslint": "9.34.0",
 		"lefthook": "^1.11.14",
 		"release-it": "^19.0.3",
