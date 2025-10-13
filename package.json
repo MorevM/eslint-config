@@ -60,7 +60,7 @@
 		"release:rc": "release-it --preRelease=rc --disable-metrics"
 	},
 	"peerDependencies": {
-		"eslint": "^9.34.0",
+		"eslint": "^9.37.0",
 		"typescript": "^5.4.2"
 	},
 	"dependencies": {
@@ -113,7 +113,7 @@
 		"@total-typescript/ts-reset": "^0.6.1",
 		"@types/node": "^22.18.10",
 		"@types/semver": "^7.7.1",
-		"eslint": "9.34.0",
+		"eslint": "9.37.0",
 		"lefthook": "^1.13.6",
 		"release-it": "^19.0.5",
 		"tsup": "^8.5.0",
