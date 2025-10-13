@@ -129,6 +129,10 @@ export default defineConfigurationPart({
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-once.md
 		'vitest/prefer-called-once': 'off',
 
+		// Prefer `toHaveBeenCalledExactlyOnceWith` over `toHaveBeenCalledOnce` and `toHaveBeenCalledWith` (autofixable)
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-exactly-once-with.md
+		'vitest/prefer-called-exactly-once-with': 'warn',
+
 		// Enforce using `toBeCalledTimes(1)` or `toHaveBeenCalledTimes(1)`	(autofixable)
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-times.md
 		'vitest/prefer-called-times': 'off',
