@@ -6,6 +6,10 @@ export default defineConfigurationPart({
 		unicorn: pluginUnicorn,
 	},
 	rules: {
+		// Prefer using `Element#classList.toggle()` to toggle class names (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-classlist-toggle.md
+		'unicorn/prefer-classlist-toggle': 'warn',
+
 		// Prefer `Node#append()` over `Node#appendChild()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-append.md
 		'unicorn/prefer-dom-node-append': 'warn',
