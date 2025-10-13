@@ -240,6 +240,10 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-devDependencies.md
 		'package-json/valid-devDependencies': 'error',
 
+		// Enforce that the `directories` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-directories.md
+		'package-json/valid-directories': 'error',
+
 		// Enforce that the `exports` property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-exports.md
 		'package-json/valid-exports': 'error',
