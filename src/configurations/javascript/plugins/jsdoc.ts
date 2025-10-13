@@ -266,6 +266,10 @@ export default defineConfigurationPart({
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-returns-type
 		'jsdoc/require-returns-type': 'error',
 
+		// Requires tags be present, optionally for specific contexts
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-tags.md
+		'jsdoc/require-tags': 'off',
+
 		// Requires `@template` tags be present when type parameters are used.
 		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-template.md#readme
 		// Note: Do not think this is required in a TS environment
