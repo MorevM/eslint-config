@@ -125,6 +125,11 @@ export default defineConfigurationPart({
 		// TODO[2026-05-11]: Maybe enable
 		'unicorn/no-array-reverse': 'off',
 
+		// Prefer `Array#toSorted()` over `Array#sort()`.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-sort.md
+		// TODO[2026-05-11]: Maybe enable
+		'unicorn/no-array-sort': 'off',
+
 		// Forbid member access from await expression (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-expression-member.md
 		'unicorn/no-await-expression-member': 'warn',
