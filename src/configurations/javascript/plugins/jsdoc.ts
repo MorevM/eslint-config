@@ -75,6 +75,14 @@ export default defineConfigurationPart({
 		// https://github.com/gajus/eslint-plugin-jsdoc#empty-tags
 		'jsdoc/empty-tags': 'warn',
 
+		// Reports use of JSDoc tags in non-tag positions (in the default "typescript" mode) (autofixable)
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/escape-inline-tags.md
+		'jsdoc/escape-inline-tags': ['warn', {
+			allowedInlineTags: [],
+			enableFixer: true,
+			fixType: 'backticks',
+		}],
+
 		// Reports an issue with any non-constructor function using `@implements`
 		// https://github.com/gajus/eslint-plugin-jsdoc#implements-on-classes
 		'jsdoc/implements-on-classes': 'error',
