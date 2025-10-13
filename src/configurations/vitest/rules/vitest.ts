@@ -163,6 +163,10 @@ export default defineConfigurationPart({
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-expect-resolves.md
 		'vitest/prefer-expect-resolves': 'warn',
 
+		// Enforce using `expectTypeOf` instead of `expect(typeof ...)` (autofixable)
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-expect-type-of.md
+		'vitest/prefer-expect-type-of': 'warn',
+
 		// Prefer having hooks in a consistent order
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/prefer-hooks-in-order.md
 		'vitest/prefer-hooks-in-order': 'warn',
