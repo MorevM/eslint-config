@@ -59,6 +59,7 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 				'unicorn/prefer-json-parse-buffer': 'off',
 				'jsdoc/require-returns-type': 'off',
 				'jsdoc/require-param-type': 'off',
+				'jsdoc/require-yields-type': 'off',
 			},
 		}),
 		!isEmpty(overrides) && defineConfigurationPart({
