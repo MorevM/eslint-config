@@ -371,6 +371,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-at.md
 		'unicorn/prefer-at': 'warn',
 
+		// Prefer `BigInt` literals over the constructor (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-bigint-literals.md
+		'unicorn/prefer-bigint-literals': 'warn',
+
 		// Prefer `Blob#arrayBuffer()` over F`ileReader#readAsArrayBuffer(…)` and `Blob#text()` over `FileReader#readAsText(…)`.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-blob-reading-methods.md
 		'unicorn/prefer-blob-reading-methods': 'error',
