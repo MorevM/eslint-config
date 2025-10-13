@@ -275,6 +275,10 @@ export default defineConfigurationPart({
 		// Note: Do not think this is required in a TS environment
 		'jsdoc/require-template': 'off',
 
+		// Requires a description for `@template` tags
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-template-description.md
+		'jsdoc/require-template-description': 'off',
+
 		// Requires that returns are documented
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-returns
 		'jsdoc/require-returns': 'error',
