@@ -164,6 +164,10 @@ export default defineConfigurationPart({
 		// https://github.com/gajus/eslint-plugin-jsdoc#no-undefined-types
 		'jsdoc/no-undefined-types': 'error',
 
+		// Prefer `@import` tags to inline `import()` statements (autofixable)
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/prefer-import-tag.md
+		'jsdoc/prefer-import-tag': 'off',
+
 		// Requires that each JSDoc line starts with an `*` (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-asterisk-prefix
 		'jsdoc/require-asterisk-prefix': ['warn', 'always'],
