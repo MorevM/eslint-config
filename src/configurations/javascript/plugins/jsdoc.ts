@@ -172,6 +172,10 @@ export default defineConfigurationPart({
 		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/prefer-import-tag.md
 		'jsdoc/reject-any-type': 'off',
 
+		// Reports use of `Function` type
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/reject-function-type.md
+		'jsdoc/reject-function-type': 'off',
+
 		// Requires that each JSDoc line starts with an `*` (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-asterisk-prefix
 		'jsdoc/require-asterisk-prefix': ['warn', 'always'],
