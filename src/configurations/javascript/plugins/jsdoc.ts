@@ -522,6 +522,28 @@ export default defineConfigurationPart({
 			escapeMarkdown: false, // For a while, seems nothing wrong with it
 		}],
 
+		// Prefers either function properties or method signatures (autofixable)
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/ts-method-signature-style.md
+		'jsdoc/ts-method-signature-style': ['warn', 'property', {
+			enableFixer: true,
+		}],
+
+		// Warns against use of the empty object type
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/ts-no-empty-object-type.md
+		'jsdoc/ts-no-empty-object-type': 'warn',
+
+		// Catches unnecessary template expressions such as string expressions within a template literal (autofixable)
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/ts-no-unnecessary-template-expression.md
+		'jsdoc/ts-no-unnecessary-template-expression': ['warn', {
+			enableFixer: true,
+		}],
+
+		// Prefers function types over call signatures when there are no other properties. (autofixable)
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/ts-prefer-function-type.md
+		'jsdoc/ts-prefer-function-type': ['warn', {
+			enableFixer: true,
+		}],
+
 		// Formats JSDoc type values (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/type-formatting.md
 		'jsdoc/type-formatting': ['warn', {
