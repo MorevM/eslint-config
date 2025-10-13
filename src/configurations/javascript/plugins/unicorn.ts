@@ -342,11 +342,6 @@ export default defineConfigurationPart({
 			},
 		}],
 
-		// Prefer `.addEventListener()` and `.removeEventListener()` over on-functions (autofixable)
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-add-event-listener.md
-		// Doesn't set removeEventListener, so may be confusing to disable it
-		'no-autofix/unicorn/prefer-add-event-listener': 'off',
-
 		// Prefer `.find(…)` over the first element from `.filter(…)` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-find.md
 		'unicorn/prefer-array-find': 'warn',
