@@ -665,6 +665,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-array-join-separator.md
 		'unicorn/require-array-join-separator': 'error',
 
+		// Require non-empty module attributes for imports and exports (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-module-attributes.md
+		'no-autofix/unicorn/require-module-attributes': 'warn',
+
 		// Require non-empty specifier list in import and export statements (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-module-specifiers.md
 		'unicorn/require-module-specifiers': 'error',
