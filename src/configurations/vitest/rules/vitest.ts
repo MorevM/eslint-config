@@ -33,6 +33,10 @@ export default defineConfigurationPart({
 			additionalTestBlockFunctions: [],
 		}],
 
+		// Enforce hoisted APIs to be on top of the file
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/hoisted-apis-on-top.md
+		'vitest/hoisted-apis-on-top': 'error',
+
 		// Enforce a maximum number of `expect` per test
 		// https://github.com/veritem/eslint-plugin-vitest/blob/main/docs/rules/max-expects.md
 		'vitest/max-expects': ['off', { max: 99 }],
