@@ -304,6 +304,10 @@ export default defineConfigurationPart({
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-yields-check
 		'jsdoc/require-yields-check': 'error',
 
+		// Requires a description for `@yields` tags
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-yields-description.md
+		'jsdoc/require-yields-description': 'error',
+
 		// Sorts tags by a specified sequence according to tag name (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc#sort-tags
 		// Note: let it be here with default order for a while
