@@ -287,6 +287,10 @@ export default defineConfigurationPart({
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-throws
 		'jsdoc/require-throws': 'error',
 
+		// Requires a description for `@throws` tags
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-throws.md
+		'jsdoc/require-throws-description': 'error',
+
 		// Requires that yields are documented
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-yields
 		'jsdoc/require-yields': 'error',
