@@ -287,6 +287,10 @@ export default defineConfigurationPart({
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/warn-todo.md
 		'vitest/warn-todo': 'warn',
 
+		// Enforce dynamic import in mock (autofixable)
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-import-in-mock.md
+		'vitest/prefer-import-in-mock': 'warn',
+
 		// Enable all `padding-around-*` rules of `jest`, all are autofixable (nothing `jest`-special inside)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/padding-around-all.md
 		'vitest/padding-around-all': 'warn',
