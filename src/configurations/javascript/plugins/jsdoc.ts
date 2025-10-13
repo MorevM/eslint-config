@@ -208,6 +208,14 @@ export default defineConfigurationPart({
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-jsdoc
 		'jsdoc/require-jsdoc': 'off',
 
+		// Requires a description for `@next` tags
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-next-description.md
+		'jsdoc/require-next-description': 'off',
+
+		// Requires a type for `@next` tags
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-next-type.md
+		'jsdoc/require-next-type': 'off',
+
 		// Requires that each `@param` tag has a description value
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-param-description
 		'jsdoc/require-param-description': 'off',
