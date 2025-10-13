@@ -90,11 +90,6 @@ export default defineConfigurationPart({
 			ignore: [],
 		}],
 
-		// Disallow multiple spaces between inline JSX props (autofixable)
-		// https://eslint.style/rules/jsx/jsx-props-no-multi-spaces
-		// Note: Covered by the core `@stylistic/no-multi-spaces` rule.
-		'@stylistic/jsx-props-no-multi-spaces': 'off',
-
 		// Disallow extra closing tags for components without children (autofixable)
 		// https://eslint.style/rules/jsx/jsx-self-closing-comp
 		'@stylistic/jsx-self-closing-comp': ['warn', {
