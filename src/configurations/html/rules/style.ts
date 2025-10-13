@@ -7,24 +7,24 @@ export default defineConfigurationPart({
 	},
 	rules: {
 		// Require newline between attributes (autofixable)
-		// https://yeonjuan.github.io/html-eslint/docs/rules/attrs-newline
+		// https://html-eslint.org/docs/rules/attrs-newline
 		'@html-eslint/attrs-newline': ['warn', {
 			closeStyle: 'newline',
 			ifAttrsMoreThan: 5,
 		}],
 
 		// Require newline between elements (autofixable)
-		// https://yeonjuan.github.io/html-eslint/docs/rules/element-newline
+		// https://html-eslint.org/docs/rules/element-newline
 		'@html-eslint/element-newline': 'error',
 
 		// Enforce naming conventions for `id` attributes
-		// https://yeonjuan.github.io/html-eslint/docs/rules/id-naming-convention
+		// https://html-eslint.org/docs/rules/id-naming-convention
 		// Note: should be configured individually
 		// P.S. Don't use `ID`s
 		'@html-eslint/id-naming-convention': 'off',
 
 		// Enforce consistent indentation (autofixable)
-		// https://yeonjuan.github.io/html-eslint/docs/rules/indent
+		// https://html-eslint.org/docs/rules/indent
 		'@html-eslint/indent': ['warn', 'tab'],
 
 		// Enforce to use lowercase for tag and attribute names (autofixable)
@@ -36,7 +36,7 @@ export default defineConfigurationPart({
 		'@html-eslint/max-element-depth': 'off',
 
 		// Disallow extra spaces around attributes (autofixable)
-		// https://yeonjuan.github.io/html-eslint/docs/rules/no-extra-spacing-attrs
+		// https://html-eslint.org/docs/rules/no-extra-spacing-attrs
 		'@html-eslint/no-extra-spacing-attrs': ['warn', {
 			enforceBeforeSelfClose: true,
 		}],
@@ -49,15 +49,15 @@ export default defineConfigurationPart({
 		}],
 
 		// Disallows the use of multiple empty lines (autofixable)
-		// https://yeonjuan.github.io/html-eslint/docs/rules/no-multiple-empty-lines
+		// https://html-eslint.org/docs/rules/no-multiple-empty-lines
 		'@html-eslint/no-multiple-empty-lines': ['warn', { max: 2 }],
 
 		// Disallow trailing whitespaces at the end of lines (autofixable)
-		// https://yeonjuan.github.io/html-eslint/docs/rules/no-trailing-spaces
+		// https://html-eslint.org/docs/rules/no-trailing-spaces
 		'@html-eslint/no-trailing-spaces': ['error'],
 
 		// Enforce consistent quoting attributes with double or single (autofixable)
-		// https://yeonjuan.github.io/html-eslint/docs/rules/quotes
+		// https://html-eslint.org/docs/rules/quotes
 		'@html-eslint/quotes': ['warn', 'double'],
 
 		// Enforce attributes alphabetical sorting (autofixable)
