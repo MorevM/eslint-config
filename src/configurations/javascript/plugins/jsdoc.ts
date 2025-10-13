@@ -470,6 +470,40 @@ export default defineConfigurationPart({
 			escapeMarkdown: false, // For a while, seems nothing wrong with it
 		}],
 
+		// Formats JSDoc type values (autofixable)
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/type-formatting.md
+		'jsdoc/type-formatting': ['warn', {
+			enableFixer: true,
+			//
+			arrayBrackets: 'square',
+			arrowFunctionPostReturnMarkerSpacing: ' ',
+			arrowFunctionPreReturnMarkerSpacing: ' ',
+			functionOrClassParameterSpacing: ' ',
+			functionOrClassPostGenericSpacing: '',
+			functionOrClassPostReturnMarkerSpacing: ' ',
+			functionOrClassPreReturnMarkerSpacing: '',
+			functionOrClassTypeParameterSpacing: ' ',
+			genericAndTupleElementSpacing: ' ',
+			genericDot: false,
+			keyValuePostColonSpacing: ' ',
+			keyValuePostKeySpacing: '',
+			keyValuePostOptionalSpacing: '',
+			keyValuePostVariadicSpacing: '',
+			methodQuotes: 'single',
+			objectFieldIndent: '  ',
+			objectFieldQuote: null,
+			objectFieldSeparator: 'semicolon-and-linebreak',
+			objectFieldSeparatorOptionalLinebreak: true,
+			objectFieldSeparatorTrailingPunctuation: true,
+			parameterDefaultValueSpacing: ' ',
+			postMethodNameSpacing: '',
+			postNewSpacing: ' ',
+			separatorForSingleObjectField: false,
+			stringQuotes: 'single',
+			typeBracketSpacing: '',
+			unionSpacing: ' ',
+		}],
+
 		// Requires all types to be valid JSDoc, Closure, or TypeScript compiler
 		// types without syntax errors
 		// https://github.com/gajus/eslint-plugin-jsdoc#valid-types
