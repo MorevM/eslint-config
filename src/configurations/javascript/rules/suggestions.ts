@@ -689,6 +689,10 @@ export default defineConfigurationPart({
 		// https://eslint.org/docs/rules/prefer-template
 		'no-autofix/prefer-template': 'warn',
 
+		// Disallow losing originally caught error when re-throwing custom errors
+		// https://eslint.org/docs/latest/rules/preserve-caught-error
+		'preserve-caught-error': 'error',
+
 		// Require use of the second argument for `parseInt()`
 		// https://eslint.org/docs/rules/radix
 		'radix': 'error',
