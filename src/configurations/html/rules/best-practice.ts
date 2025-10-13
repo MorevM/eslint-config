@@ -51,6 +51,11 @@ export default defineConfigurationPart({
 		// Note: should be configured individually if needed
 		'@html-eslint/no-restricted-attrs': 'off',
 
+		// Disallow specified tags
+		// https://yeonjuan.github.io/html-eslint/docs/rules/no-restricted-tags
+		// Note: should be configured individually if needed
+		'@html-eslint/no-restricted-tags': 'off',
+
 		// Disallow usage of type attributes for stylesheets and scripts (autofixable)
 		// https://html-eslint.org/docs/rules/no-script-style-type
 		'@html-eslint/no-script-style-type': 'warn',
