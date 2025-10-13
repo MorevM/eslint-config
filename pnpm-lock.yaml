@@ -102,8 +102,8 @@ importers:
         specifier: ^10.4.0
         version: 10.4.0(@typescript-eslint/parser@8.40.0(eslint@9.34.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.34.0(jiti@2.6.1))(vue-eslint-parser@10.2.0(eslint@9.34.0(jiti@2.6.1)))
       eslint-plugin-yml:
-        specifier: ^1.18.0
-        version: 1.18.0(eslint@9.34.0(jiti@2.6.1))
+        specifier: ^1.19.0
+        version: 1.19.0(eslint@9.34.0(jiti@2.6.1))
       eslint-rule-composer:
         specifier: ^0.3.0
         version: 0.3.0
@@ -2088,8 +2088,8 @@ packages:
       '@typescript-eslint/parser':
         optional: true
 
-  eslint-plugin-yml@1.18.0:
-    resolution: {integrity: sha512-9NtbhHRN2NJa/s3uHchO3qVVZw0vyOIvWlXWGaKCr/6l3Go62wsvJK5byiI6ZoYztDsow4GnS69BZD3GnqH3hA==}
+  eslint-plugin-yml@1.19.0:
+    resolution: {integrity: sha512-S+4GbcCWksFKAvFJtf0vpdiCkZZvDJCV4Zsi9ahmYkYOYcf+LRqqzvzkb/ST7vTYV6sFwXOvawzYyL/jFT2nQA==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
@@ -6279,9 +6279,10 @@ snapshots:
     optionalDependencies:
       '@typescript-eslint/parser': 8.40.0(eslint@9.34.0(jiti@2.6.1))(typescript@5.9.3)
 
-  eslint-plugin-yml@1.18.0(eslint@9.34.0(jiti@2.6.1)):
+  eslint-plugin-yml@1.19.0(eslint@9.34.0(jiti@2.6.1)):
     dependencies:
-      debug: 4.4.1
+      debug: 4.4.3
+      diff-sequences: 27.5.1
       escape-string-regexp: 4.0.0
       eslint: 9.34.0(jiti@2.6.1)
       eslint-compat-utils: 0.6.5(eslint@9.34.0(jiti@2.6.1))
