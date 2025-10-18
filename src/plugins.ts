@@ -1,3 +1,4 @@
+export { default as pluginMarkdown } from '@eslint/markdown';
 export { default as pluginHtml } from '@html-eslint/eslint-plugin';
 export { default as pluginStylistic } from '@stylistic/eslint-plugin';
 export { default as pluginVitest } from '@vitest/eslint-plugin';
