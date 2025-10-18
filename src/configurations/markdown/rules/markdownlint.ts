@@ -203,10 +203,6 @@ export default defineConfigurationPart({
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md039
 		'markdownlint/md039': 'warn',
 
-		// Fenced code blocks should have a language specified
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md040
-		'markdownlint/md040': 'warn',
-
 		// First line in a file should be a top-level heading
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md041
 		// Note: It's pretty annoying to disable it all the time considering assistive role of most MD files.
