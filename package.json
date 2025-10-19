@@ -114,6 +114,7 @@
 		"@types/node": "^22.18.10",
 		"@types/semver": "^7.7.1",
 		"eslint": "9.37.0",
+		"eslint-plugin-markdown-preferences": "^0.36.2",
 		"lefthook": "^1.13.6",
 		"release-it": "^19.0.5",
 		"tsup": "^8.5.0",
