@@ -173,10 +173,6 @@ export default defineConfigurationPart({
 			allowed_elements: ['table', 'details', 'summary', 'br', 'code', 'img', 'div', 'span'],
 		}],
 
-		// Bare URL used (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md034
-		'markdownlint/md034': 'error',
-
 		// Horizontal rule style
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md035
 		'markdownlint/md035': ['warn', {
