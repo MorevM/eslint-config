@@ -56,5 +56,12 @@ export default defineConfigurationPart({
 		'markdown/no-missing-atx-heading-space': ['error', {
 			checkClosedHeadings: true,
 		}],
+
+		// Disallow missing label references
+		// https://github.com/eslint/markdown/blob/main/docs/rules/no-missing-label-refs.md
+		'markdown/no-missing-label-refs': ['warn', {
+			// TODO: This is temporal until https://github.com/eslint/markdown/issues/294 is resolved.
+			allowLabels: ['!NOTE', '!TIP', '!IMPORTANT', '!WARNING', '!CAUTION'],
+		}],
 	},
 });
