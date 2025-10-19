@@ -150,10 +150,6 @@ export default defineConfigurationPart({
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md036
 		'markdownlint/md036': 'error',
 
-		// Spaces inside emphasis markers (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md037
-		'markdownlint/md037': 'error',
-
 		// Spaces inside code span elements (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md038
 		'markdownlint/md038': 'warn',
