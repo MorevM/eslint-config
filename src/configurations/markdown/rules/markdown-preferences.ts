@@ -18,5 +18,27 @@ export default defineConfigurationPart({
 			ignoreUnknown: true,
 			ignoreList: [],
 		}],
+
+		// Enforce consistent casing in headings (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/heading-casing.html
+		// TODO: Custom option to extend option arrays
+		'markdown-preferences/heading-casing': ['warn', {
+			style: 'Title Case',
+			preserveWords: [
+				...pluginMarkdownPreferences.resources.defaultPreserveWords,
+			],
+			ignorePatterns: [
+				'/^v\\d+/u', // Version numbers starting with 'v' (e.g., v1, v2.0.1)
+				'/\\w+\\.[a-z\\d]+$/u', // File extensions and names (e.g., config.json, package.json, index.html)
+				'/\\w*(?:API|Api)$/u', // Words ending with API (e.g., webAPI, restAPI)
+				'/\\w*(?:SDK|Sdk)$/u', // Words ending with SDK (e.g., nodeSDK, javaSDK)
+				'/\\w*(?:CLI|Cli)$/u', // Words ending with CLI (e.g., nodeCLI, gitCLI)
+				'/[а-яё]/u', // Any Cyrillic content
+			],
+			minorWords: [
+				...pluginMarkdownPreferences.resources.defaultMinorWords,
+				'via',
+			],
+		}],
 	},
 });
