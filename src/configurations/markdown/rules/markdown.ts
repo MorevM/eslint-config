@@ -67,5 +67,9 @@ export default defineConfigurationPart({
 		// Disallow link fragments that do not reference valid headings
 		// https://github.com/eslint/markdown/blob/main/docs/rules/no-missing-link-fragments.md
 		'markdown/no-missing-link-fragments': 'error',
+
+		// Disallow multiple H1 headings in the same document
+		// https://github.com/eslint/markdown/blob/main/docs/rules/no-multiple-h1.md
+		'markdown/no-multiple-h1': 'error',
 	},
 });

@@ -105,13 +105,6 @@ export default defineConfigurationPart({
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md023
 		'markdownlint/md023': 'warn',
 
-		// Multiple top-level headings in the same document
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md025
-		'markdownlint/md025': ['error', {
-			level: 1,
-			front_matter_title: '^\s*"?title"?\s*[:=]',
-		}],
-
 		// Trailing punctuation in heading (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md026
 		'markdownlint/md026': ['warn', {
