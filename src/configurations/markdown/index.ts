@@ -5,6 +5,7 @@ import { defineConfigurationPart, mergeParts } from '#utils';
 import { universalRules } from '~configurations/universal-rules';
 
 import markdown from './rules/markdown';
+import markdownPreferences from './rules/markdown-preferences';
 import markdownlint from './rules/markdownlint';
 
 import type { MarkdownConfigurationOptions } from '#types';
@@ -29,6 +30,7 @@ export default function configurationMarkdown(options: Partial<MarkdownConfigura
 			ignores,
 			...mergeParts(
 				markdown,
+				markdownPreferences,
 			),
 		}),
 		defineConfigurationPart({
