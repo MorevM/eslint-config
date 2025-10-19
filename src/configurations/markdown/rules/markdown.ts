@@ -89,5 +89,9 @@ export default defineConfigurationPart({
 		// Disallow unused definitions
 		// https://github.com/eslint/markdown/blob/main/docs/rules/no-unused-definitions.md
 		'markdown/no-unused-definitions': 'error',
+
+		// Require alternative text for images
+		// https://github.com/eslint/markdown/blob/main/docs/rules/require-alt-text.md
+		'markdown/require-alt-text': 'error',
 	},
 });

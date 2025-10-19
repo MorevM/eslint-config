@@ -177,10 +177,6 @@ export default defineConfigurationPart({
 			code_blocks: false,
 		}],
 
-		// Images should have alternate text
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md045
-		'markdownlint/md045': 'error',
-
 		// Code block style
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md046
 		'markdownlint/md046': ['error', {
