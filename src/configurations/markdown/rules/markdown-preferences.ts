@@ -46,5 +46,27 @@ export default defineConfigurationPart({
 		'markdown-preferences/ordered-list-marker-start': ['warn', {
 			start: 1,
 		}],
+
+		// Enforce the use of inline code for specific words (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/prefer-inline-code-words.html
+		'markdown-preferences/prefer-inline-code-words': ['off', {
+			words: [], // TODO: Think about
+		}],
+
+		// Enforce the use of inline code for specific words (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/prefer-linked-words.html
+		'markdown-preferences/prefer-linked-words': ['off', {
+			words: [], // TODO: Think about
+		}],
+
+		// Enforce consistent casing in table header cells (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/table-header-casing.html
+		// TODO: Think about
+		'markdown-preferences/table-header-casing': ['off', {
+			ignorePatterns: [],
+			minorWords: [],
+			preserveWords: [],
+			style: 'Title Case',
+		}],
 	},
 });
