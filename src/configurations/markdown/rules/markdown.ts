@@ -75,5 +75,9 @@ export default defineConfigurationPart({
 		// Disallow URLs that match defined reference identifiers (autofixable)
 		// https://github.com/eslint/markdown/blob/main/docs/rules/no-reference-like-urls.md
 		'markdown/no-reference-like-urls': 'error',
+
+		// Disallow reversed link and image syntax (autofixable)
+		// https://github.com/eslint/markdown/blob/main/docs/rules/no-reversed-media-syntax.md
+		'markdown/no-reversed-media-syntax': 'error',
 	},
 });
