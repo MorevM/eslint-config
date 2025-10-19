@@ -86,17 +86,9 @@ export default defineConfigurationPart({
 
 		// Where is 'markdownlint/md015' - 'markdownlint/md017'? :)
 
-		// Requires space after hash on ATX style heading (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md018
-		'markdownlint/md018': 'warn',
-
 		// Disallow multiple spaces after hash on ATX style heading (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md019
 		'markdownlint/md019': 'warn',
-
-		// Requires space inside hashes on closed ATX style heading (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md020
-		'markdownlint/md020': 'warn',
 
 		// Disallow multiple spaces after hash on closed ATX style heading (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md021

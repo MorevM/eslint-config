@@ -50,5 +50,11 @@ export default defineConfigurationPart({
 		// Disallow invalid label references
 		// https://github.com/eslint/markdown/blob/main/docs/rules/no-invalid-label-refs.md
 		'markdown/no-invalid-label-refs': 'error',
+
+		// Disallow headings without a space after the hash characters (autofixable)
+		// https://github.com/eslint/markdown/blob/main/docs/rules/no-missing-atx-heading-space.md
+		'markdown/no-missing-atx-heading-space': ['error', {
+			checkClosedHeadings: true,
+		}],
 	},
 });
