@@ -196,10 +196,6 @@ export default defineConfigurationPart({
 			front_matter_title: '^\s*"?title"?\s*[:=]',
 		}],
 
-		// No empty links
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md042
-		'markdownlint/md042': 'error',
-
 		// Required heading structure
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md043
 		'markdownlint/md043': 'off',
