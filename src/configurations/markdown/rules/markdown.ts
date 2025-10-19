@@ -5,7 +5,7 @@ export default defineConfigurationPart({
 	plugins: {
 		markdown: pluginMarkdown,
 	},
-	language: 'markdown/commonmark',
+	language: 'markdown/gfm',
 	rules: {
 		// Require languages for fenced code blocks
 		// https://github.com/eslint/markdown/blob/main/docs/rules/fenced-code-language.md
@@ -18,5 +18,141 @@ export default defineConfigurationPart({
 		// Disallow bare URLs (autofixable)
 		// https://github.com/eslint/markdown/blob/main/docs/rules/no-bare-urls.md
 		'markdown/no-bare-urls': 'error',
+
+		// Disallow duplicate definitions
+		// https://github.com/eslint/markdown/blob/main/docs/rules/no-duplicate-definitions.md
+		'markdown/no-duplicate-definitions': 'error',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+
+		// // DDDDDDDDDDDDDDDDDDDDDDDD
+		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
+		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
 	},
 });
