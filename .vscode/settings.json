@@ -36,4 +36,21 @@
 		{ "rule": "*quotes", "severity": "warn", "fixable": true },
 		{ "rule": "*semi", "severity": "warn", "fixable": true },
 	],
+
+	"actionButtons": {
+		"loadNpmCommands": false,
+		"reloadButton": null,
+		"commands": [
+			{
+				"name": "Build",
+				"singleInstance": true,
+				"command": "pnpm build",
+			},
+			{
+				"name": "Restart ESLint",
+				"useVsCodeApi": true,
+				"command": "eslint.restart",
+			},
+		],
+	},
 }
