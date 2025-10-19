@@ -159,13 +159,6 @@ export default defineConfigurationPart({
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md032
 		'markdownlint/md032': 'warn',
 
-		// Inline HTML
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md033
-		// Note: Sometimes it needed
-		'markdownlint/md033': ['error', {
-			allowed_elements: ['table', 'details', 'summary', 'br', 'code', 'img', 'div', 'span'],
-		}],
-
 		// Horizontal rule style
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md035
 		'markdownlint/md035': ['warn', {
