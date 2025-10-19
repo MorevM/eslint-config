@@ -79,5 +79,11 @@ export default defineConfigurationPart({
 		// Disallow reversed link and image syntax (autofixable)
 		// https://github.com/eslint/markdown/blob/main/docs/rules/no-reversed-media-syntax.md
 		'markdown/no-reversed-media-syntax': 'error',
+
+		// Disallow spaces around emphasis markers (autofixable)
+		// https://github.com/eslint/markdown/blob/main/docs/rules/no-space-in-emphasis.md
+		'markdown/no-space-in-emphasis': ['error', {
+			checkStrikethrough: true,
+		}],
 	},
 });
