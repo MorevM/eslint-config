@@ -55,10 +55,6 @@ export default defineConfigurationPart({
 			spaces_per_tab: 2,
 		}],
 
-		// Reports reversed link syntax (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md011
-		'markdownlint/md011': 'error',
-
 		// Enforce multiple consecutive blank lines (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md012
 		// TODO: Turned off due to wrong implementation, replaced with `@stylistic/no-multiple-empty-lines`
