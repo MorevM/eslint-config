@@ -6,10 +6,6 @@ export default defineConfigurationPart({
 		markdownlint: pluginMarkdownlint,
 	},
 	rules: {
-	// Heading levels should only increment by one level at a time
-	// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md001
-		'markdownlint/md001': 'error',
-
 		// First heading should be a top-level heading (deprecated)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md002
 		// 'markdownlint/md002': null,
