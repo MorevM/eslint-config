@@ -71,5 +71,9 @@ export default defineConfigurationPart({
 		// Disallow multiple H1 headings in the same document
 		// https://github.com/eslint/markdown/blob/main/docs/rules/no-multiple-h1.md
 		'markdown/no-multiple-h1': 'error',
+
+		// Disallow URLs that match defined reference identifiers (autofixable)
+		// https://github.com/eslint/markdown/blob/main/docs/rules/no-reference-like-urls.md
+		'markdown/no-reference-like-urls': 'error',
 	},
 });
