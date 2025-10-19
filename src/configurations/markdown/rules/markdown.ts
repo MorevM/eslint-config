@@ -29,9 +29,11 @@ export default defineConfigurationPart({
 			checkSiblingsOnly: true,
 		}],
 
-		// // DDDDDDDDDDDDDDDDDDDDDDDD
-		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
-		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',
+		// Disallow empty definitions
+		// https://github.com/eslint/markdown/blob/main/docs/rules/no-empty-definitions.md
+		'markdown/no-empty-definitions': 'error',
+			checkSiblingsOnly: true,
+		}],
 
 		// // DDDDDDDDDDDDDDDDDDDDDDDD
 		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
