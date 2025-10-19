@@ -93,5 +93,12 @@ export default defineConfigurationPart({
 		// Require alternative text for images
 		// https://github.com/eslint/markdown/blob/main/docs/rules/require-alt-text.md
 		'markdown/require-alt-text': 'error',
+
+		// Disallow data rows in a GitHub Flavored Markdown table
+		// from having more cells than the header row
+		// https://github.com/eslint/markdown/blob/main/docs/rules/table-column-count.md
+		'markdown/table-column-count': ['warn', {
+			checkMissingCells: true,
+		}],
 	},
 });
