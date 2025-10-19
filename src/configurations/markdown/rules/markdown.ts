@@ -10,5 +10,9 @@ export default defineConfigurationPart({
 		// Require languages for fenced code blocks
 		// https://github.com/eslint/markdown/blob/main/docs/rules/fenced-code-language.md
 		'markdown/fenced-code-language': 'warn',
+
+		// Require languages for fenced code blocks
+		// https://github.com/eslint/markdown/blob/main/docs/rules/heading-increment.md
+		'markdown/heading-increment': 'warn',
 	},
 });
