@@ -40,5 +40,11 @@ export default defineConfigurationPart({
 		// Disallow empty links
 		// https://github.com/eslint/markdown/blob/main/docs/rules/no-empty-links.md
 		'markdown/no-empty-links': 'error',
+
+		// Disallow HTML tags
+		// https://github.com/eslint/markdown/blob/main/docs/rules/no-html.md
+		'markdown/no-html': ['error', {
+			allowed: ['table', 'details', 'summary', 'br', 'code', 'img', 'div', 'span'],
+		}],
 	},
 });
