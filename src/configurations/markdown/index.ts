@@ -25,13 +25,20 @@ export default function configurationMarkdown(options: Partial<MarkdownConfigura
 		}),
 		defineConfigurationPart({
 			name: 'morev/markdown/core',
+			files,
+			ignores,
+			...mergeParts(
+				markdown,
+			),
+		}),
+		defineConfigurationPart({
+			name: 'morev/markdown/markdownlint',
 			languageOptions: {
 				parser: parserMarkdown,
 			},
 			files,
 			ignores,
 			...mergeParts(
-				markdown,
 				markdownlint,
 			),
 		}),
