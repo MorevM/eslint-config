@@ -85,5 +85,9 @@ export default defineConfigurationPart({
 		'markdown/no-space-in-emphasis': ['error', {
 			checkStrikethrough: true,
 		}],
+
+		// Disallow unused definitions
+		// https://github.com/eslint/markdown/blob/main/docs/rules/no-unused-definitions.md
+		'markdown/no-unused-definitions': 'error',
 	},
 });
