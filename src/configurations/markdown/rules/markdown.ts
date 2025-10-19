@@ -63,5 +63,9 @@ export default defineConfigurationPart({
 			// TODO: This is temporal until https://github.com/eslint/markdown/issues/294 is resolved.
 			allowLabels: ['!NOTE', '!TIP', '!IMPORTANT', '!WARNING', '!CAUTION'],
 		}],
+
+		// Disallow link fragments that do not reference valid headings
+		// https://github.com/eslint/markdown/blob/main/docs/rules/no-missing-link-fragments.md
+		'markdown/no-missing-link-fragments': 'error',
 	},
 });
