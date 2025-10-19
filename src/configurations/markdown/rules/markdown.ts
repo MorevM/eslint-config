@@ -46,5 +46,9 @@ export default defineConfigurationPart({
 		'markdown/no-html': ['error', {
 			allowed: ['table', 'details', 'summary', 'br', 'code', 'img', 'div', 'span'],
 		}],
+
+		// Disallow invalid label references
+		// https://github.com/eslint/markdown/blob/main/docs/rules/no-invalid-label-refs.md
+		'markdown/no-invalid-label-refs': 'error',
 	},
 });
