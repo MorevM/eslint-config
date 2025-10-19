@@ -23,6 +23,12 @@ export default defineConfigurationPart({
 		// https://github.com/eslint/markdown/blob/main/docs/rules/no-duplicate-definitions.md
 		'markdown/no-duplicate-definitions': 'error',
 
+		// Disallow duplicate headings in the same document
+		// https://github.com/eslint/markdown/blob/main/docs/rules/no-duplicate-headings.md
+		'markdown/no-duplicate-headings': ['error', {
+			checkSiblingsOnly: true,
+		}],
+
 		// // DDDDDDDDDDDDDDDDDDDDDDDD
 		// // LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
 		// 'markdown/xxxxxxxxxxxxxxxxxxxxxxxxx': 'warn',

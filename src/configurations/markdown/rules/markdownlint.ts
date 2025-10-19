@@ -113,13 +113,6 @@ export default defineConfigurationPart({
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md023
 		'markdownlint/md023': 'warn',
 
-		// Multiple headings with the same content
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md024
-		'markdownlint/md024': ['error', {
-			siblings_only: true,
-			allow_different_nesting: true,
-		}],
-
 		// Multiple top-level headings in the same document
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md025
 		'markdownlint/md025': ['error', {
