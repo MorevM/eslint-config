@@ -16,12 +16,6 @@ export default defineConfigurationPart({
 			style: 'atx',
 		}],
 
-		// Enforce unordered list style (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md004
-		'markdownlint/md004': ['warn', {
-			style: 'asterisk',
-		}],
-
 		// Reports inconsistent indentation for list items at the same level (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md005
 		'markdownlint/md005': 'warn',

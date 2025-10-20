@@ -7,6 +7,8 @@ export default defineConfigurationPart({
 	},
 	// language: 'markdown/gfm',
 	rules: {
+		// #region Preference Rules
+
 		// Enforce canonical language names in code blocks (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/canonical-code-block-language.html
 		'markdown-preferences/canonical-code-block-language': 'warn',
@@ -68,5 +70,18 @@ export default defineConfigurationPart({
 			preserveWords: [],
 			style: 'Title Case',
 		}],
+
+		// #endregion
+
+		// #region Notation Rules
+
+		// Enforce consistent bullet list (unordered list) marker style (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/bullet-list-marker-style.html
+		'markdown-preferences/bullet-list-marker-style': ['warn', {
+			primary: '-',
+			secondary: '*',
+		}],
+
+		// #endregion
 	},
 });
