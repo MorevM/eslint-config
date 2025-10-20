@@ -181,12 +181,6 @@ export default defineConfigurationPart({
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md047
 		'markdownlint/md047': 'warn',
 
-		// Code fence style
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md048
-		'markdownlint/md048': ['error', {
-			style: 'backtick',
-		}],
-
 		// Emphasis style should be consistent (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md049
 		'markdownlint/md049': ['warn', {
