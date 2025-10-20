@@ -82,6 +82,12 @@ export default defineConfigurationPart({
 			secondary: '*',
 		}],
 
+		// Enforce a consistent code fence style (backtick or tilde) (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/code-fence-style.html
+		'markdown-preferences/code-fence-style': ['warn', {
+			style: 'backtick',
+		}],
+
 		// #endregion
 	},
 });
