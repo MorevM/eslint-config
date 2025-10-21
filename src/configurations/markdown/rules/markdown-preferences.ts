@@ -161,6 +161,10 @@ export default defineConfigurationPart({
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/prefer-autolinks.html
 		'markdown-preferences/prefer-autolinks': 'warn',
 
+		// Enforce the use of fenced code blocks over indented code blocks (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/prefer-fenced-code-blocks.html
+		'markdown-preferences/prefer-fenced-code-blocks': 'error',
+
 		// #endregion
 
 		// #region Decorative Rules
