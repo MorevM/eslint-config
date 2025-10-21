@@ -115,6 +115,28 @@ export default defineConfigurationPart({
 			style: 'backslash',
 		}],
 
+		// Enforce consistent style for level 1 headings (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/level1-heading-style.html
+		'markdown-preferences/level1-heading-style': ['warn', {
+			style: 'atx',
+		}],
+
+		// Enforce consistent style for level 2 headings (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/level2-heading-style.html
+		'markdown-preferences/level2-heading-style': ['warn', {
+			style: 'atx',
+		}],
+
+		// #endregion
+
+		// #region Decorative Rules
+
+		// Enforce consistent use of closing sequence in ATX headings (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/atx-heading-closing-sequence.html
+		'markdown-preferences/atx-heading-closing-sequence': ['warn', {
+			closingSequence: 'never',
+		}],
+
 		// #endregion
 	},
 });

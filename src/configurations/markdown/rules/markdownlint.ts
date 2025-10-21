@@ -10,12 +10,6 @@ export default defineConfigurationPart({
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md002
 		// 'markdownlint/md002': null,
 
-		// Enforce heading styles
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md003
-		'markdownlint/md003': ['error', {
-			style: 'atx',
-		}],
-
 		// Reports inconsistent indentation for list items at the same level (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md005
 		'markdownlint/md005': 'warn',
