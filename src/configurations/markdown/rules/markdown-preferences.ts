@@ -109,6 +109,12 @@ export default defineConfigurationPart({
 			strongEmphasis: '***',
 		}],
 
+		// Enforce consistent hard linebreak style (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/hard-linebreak-style.html
+		'markdown-preferences/hard-linebreak-style': ['warn', {
+			style: 'backslash',
+		}],
+
 		// #endregion
 	},
 });
