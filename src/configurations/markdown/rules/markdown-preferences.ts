@@ -146,6 +146,10 @@ export default defineConfigurationPart({
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/no-implicit-block-closing.html
 		'markdown-preferences/no-implicit-block-closing': 'error',
 
+		// Disallow text backslash at the end of a line
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/no-text-backslash-linebreak.html
+		'markdown-preferences/no-text-backslash-linebreak': 'warn',
+
 		// #endregion
 
 		// #region Decorative Rules
