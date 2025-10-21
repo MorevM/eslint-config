@@ -150,6 +150,13 @@ export default defineConfigurationPart({
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/no-text-backslash-linebreak.html
 		'markdown-preferences/no-text-backslash-linebreak': 'warn',
 
+		// Enforce consistent ordered list marker style (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/ordered-list-marker-style.html
+		'markdown-preferences/ordered-list-marker-style': ['warn', {
+			prefer: 'n.',
+			overrides: [], // TODO[2025-10-26]: Maybe add option to specify different styles for different levels
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
