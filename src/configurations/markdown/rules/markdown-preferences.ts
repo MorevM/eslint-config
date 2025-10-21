@@ -88,6 +88,19 @@ export default defineConfigurationPart({
 			style: 'backtick',
 		}],
 
+		// Require link definitions and footnote definitions to be placed at the end of the document (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/definitions-last.html
+		'markdown-preferences/definitions-last': ['warn', {
+			linkDefinitionPlacement: {
+				referencedFromSingleSection: 'document-last', // TODO[2025-10-26]: Maybe 'section-last'
+				referencedFromMultipleSections: 'document-last',
+			},
+			footnoteDefinitionPlacement: {
+				referencedFromSingleSection: 'document-last',
+				referencedFromMultipleSections: 'document-last',
+			},
+		}],
+
 		// #endregion
 	},
 });
