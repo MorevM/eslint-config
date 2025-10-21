@@ -134,6 +134,13 @@ export default defineConfigurationPart({
 			avoidEscape: true,
 		}],
 
+		// Enforce a consistent style for link titles (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/link-title-style.html
+		'markdown-preferences/link-title-style': ['warn', {
+			style: 'single', // TODO[2025-10-26]: Maybe change?
+			avoidEscape: true,
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
