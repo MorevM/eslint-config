@@ -17,7 +17,7 @@ export default defineConfigurationPart({
 
 		// Disallow bare URLs (autofixable)
 		// https://github.com/eslint/markdown/blob/main/docs/rules/no-bare-urls.md
-		'markdown/no-bare-urls': 'error',
+		'markdown/no-bare-urls': 'off', // Covered by `markdown-preferences/prefer-autolinks`
 
 		// Disallow duplicate definitions
 		// https://github.com/eslint/markdown/blob/main/docs/rules/no-duplicate-definitions.md

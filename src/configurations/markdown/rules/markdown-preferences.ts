@@ -157,6 +157,10 @@ export default defineConfigurationPart({
 			overrides: [], // TODO[2025-10-26]: Maybe add option to specify different styles for different levels
 		}],
 
+		// Enforce the use of autolinks for URLs (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/prefer-autolinks.html
+		'markdown-preferences/prefer-autolinks': 'warn',
+
 		// #endregion
 
 		// #region Decorative Rules
