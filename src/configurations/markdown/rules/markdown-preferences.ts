@@ -101,6 +101,14 @@ export default defineConfigurationPart({
 			},
 		}],
 
+		// Enforce a consistent delimiter style for emphasis and strong emphasis (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/emphasis-delimiters-style.html
+		'markdown-preferences/emphasis-delimiters-style': ['warn', {
+			emphasis: '*',
+			strong: '**',
+			strongEmphasis: '***',
+		}],
+
 		// #endregion
 	},
 });

@@ -180,17 +180,5 @@ export default defineConfigurationPart({
 		// Files should end with a single newline character (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md047
 		'markdownlint/md047': 'warn',
-
-		// Emphasis style should be consistent (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md049
-		'markdownlint/md049': ['warn', {
-			style: 'asterisk',
-		}],
-
-		// Strong style should be consistent (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md050
-		'markdownlint/md050': ['warn', {
-			style: 'asterisk',
-		}],
 	},
 });
