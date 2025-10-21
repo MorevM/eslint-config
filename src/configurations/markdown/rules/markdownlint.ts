@@ -165,12 +165,6 @@ export default defineConfigurationPart({
 			code_blocks: false,
 		}],
 
-		// Code block style
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md046
-		'markdownlint/md046': ['error', {
-			style: 'fenced',
-		}],
-
 		// Files should end with a single newline character (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md047
 		'markdownlint/md047': 'warn',
