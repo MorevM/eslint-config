@@ -127,6 +127,13 @@ export default defineConfigurationPart({
 			style: 'atx',
 		}],
 
+		// Enforce a consistent style for link destinations (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/link-destination-style.html
+		'markdown-preferences/link-destination-style': ['warn', {
+			style: 'bare', // TODO[2025-10-26]: Maybe change?
+			avoidEscape: true,
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
