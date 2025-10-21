@@ -2,6 +2,7 @@ import { pluginMarkdownPreferences } from '#plugins';
 import { defineConfigurationPart } from '#utils';
 
 export default defineConfigurationPart({
+	language: 'markdown-preferences/extended-syntax',
 	plugins: {
 		'markdown-preferences': pluginMarkdownPreferences,
 	},
@@ -140,6 +141,10 @@ export default defineConfigurationPart({
 			style: 'single', // TODO[2025-10-26]: Maybe change?
 			avoidEscape: true,
 		}],
+
+		// Disallow implicit block closing for fenced code blocks, math blocks, and custom containers (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/no-implicit-block-closing.html
+		'markdown-preferences/no-implicit-block-closing': 'error',
 
 		// #endregion
 
