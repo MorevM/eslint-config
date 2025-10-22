@@ -246,6 +246,10 @@ export default defineConfigurationPart({
 			align: 'left',
 		}],
 
+		// Disallow multiple spaces (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/no-multi-spaces.html
+		'markdown-preferences/no-multi-spaces': 'warn',
+
 		// #endregion
 
 		// #region Decorative Rules
