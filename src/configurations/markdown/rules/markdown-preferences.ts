@@ -240,6 +240,12 @@ export default defineConfigurationPart({
 			space: 'never',
 		}],
 
+		// Enforce consistent alignment of list markers (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/list-marker-alignment.html
+		'markdown-preferences/list-marker-alignment': ['warn', {
+			align: 'left',
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
