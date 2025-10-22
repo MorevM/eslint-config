@@ -213,6 +213,13 @@ export default defineConfigurationPart({
 			},
 		}],
 
+		// Enforce linebreaks after opening and before closing link brackets (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/link-bracket-newline.html
+		'markdown-preferences/link-bracket-newline': ['warn', {
+			newline: 'never',
+			multiline: false,
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
