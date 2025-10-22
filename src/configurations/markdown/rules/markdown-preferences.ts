@@ -250,6 +250,14 @@ export default defineConfigurationPart({
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/no-multi-spaces.html
 		'markdown-preferences/no-multi-spaces': 'warn',
 
+		// Disallow multiple empty lines (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/no-multiple-empty-lines.html
+		'markdown-preferences/no-multiple-empty-lines': ['warn', {
+			max: 2,
+			maxEOF: 0,
+			maxBOF: 0,
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
