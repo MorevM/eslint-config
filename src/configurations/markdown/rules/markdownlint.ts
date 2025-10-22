@@ -31,14 +31,6 @@ export default defineConfigurationPart({
 			spaces_per_tab: 2,
 		}],
 
-		// Enforce multiple consecutive blank lines (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md012
-		// TODO: Turned off due to wrong implementation, replaced with `@stylistic/no-multiple-empty-lines`
-		// Related issue: https://gitlab.com/pawelbbdrozd/eslint-plugin-markdownlint/-/issues/6
-		// 'markdownlint/md012': ['warn', {
-		// 	maximum: 2,
-		// }],
-
 		// Enforce line length
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md013
 		'markdownlint/md013': ['warn', {
