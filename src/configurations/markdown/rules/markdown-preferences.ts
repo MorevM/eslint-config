@@ -177,6 +177,12 @@ export default defineConfigurationPart({
 			delimiter: '~~',
 		}],
 
+		// Enforce consistent character style for thematic breaks (horizontal rules) (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/thematic-break-character-style.html
+		'markdown-preferences/thematic-break-character-style': ['warn', {
+			style: '-',
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
