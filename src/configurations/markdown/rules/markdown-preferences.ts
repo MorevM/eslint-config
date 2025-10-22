@@ -191,6 +191,12 @@ export default defineConfigurationPart({
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/blockquote-marker-alignment.html
 		'markdown-preferences/blockquote-marker-alignment': 'warn',
 
+		// Require or disallow spacing between opening code fence and language identifier (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/code-fence-spacing.html
+		'markdown-preferences/code-fence-spacing': ['warn', {
+			space: 'never',
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
