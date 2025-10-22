@@ -10,10 +10,6 @@ export default defineConfigurationPart({
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md002
 		// 'markdownlint/md002': null,
 
-		// Reports inconsistent indentation for list items at the same level (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md005
-		'markdownlint/md005': 'warn',
-
 		// Consider starting bulleted lists at the beginning of the line (autofixable; deprecated)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md006
 		// 'markdownlint/md006': true,
