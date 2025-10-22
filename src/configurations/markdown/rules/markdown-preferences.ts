@@ -234,6 +234,12 @@ export default defineConfigurationPart({
 			multiline: false,
 		}],
 
+		// Enforce consistent spacing inside link parentheses (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/link-paren-spacing.html
+		'markdown-preferences/link-paren-spacing': ['warn', {
+			space: 'never',
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
