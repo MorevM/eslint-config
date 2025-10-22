@@ -128,12 +128,6 @@ export default defineConfigurationPart({
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md032
 		'markdownlint/md032': 'warn',
 
-		// Horizontal rule style
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md035
-		'markdownlint/md035': ['warn', {
-			style: '---',
-		}],
-
 		// Emphasis used instead of a heading
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md036
 		'markdownlint/md036': 'error',
