@@ -171,6 +171,12 @@ export default defineConfigurationPart({
 			minLinks: 2,
 		}],
 
+		// Enforce a consistent delimiter style for strikethrough (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/strikethrough-delimiters-style.html
+		'markdown-preferences/strikethrough-delimiters-style': ['warn', {
+			delimiter: '~~',
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
