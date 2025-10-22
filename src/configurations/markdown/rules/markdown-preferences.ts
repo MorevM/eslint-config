@@ -197,6 +197,12 @@ export default defineConfigurationPart({
 			space: 'never',
 		}],
 
+		// Require or disallow spacing between opening custom container marker and info (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/custom-container-marker-spacing.html
+		'markdown-preferences/custom-container-marker-spacing': ['warn', {
+			space: 'always',
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
