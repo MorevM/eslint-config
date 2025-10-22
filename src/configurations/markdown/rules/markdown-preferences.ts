@@ -220,6 +220,13 @@ export default defineConfigurationPart({
 			multiline: false,
 		}],
 
+		// Enforce consistent spacing inside link brackets (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/link-bracket-spacing.html
+		'markdown-preferences/link-bracket-spacing': ['warn', {
+			space: 'never',
+			imagesInLinks: false,
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
