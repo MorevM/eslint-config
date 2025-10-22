@@ -227,6 +227,13 @@ export default defineConfigurationPart({
 			imagesInLinks: false,
 		}],
 
+		// Enforce linebreaks after opening and before closing link parentheses (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/link-paren-newline.html
+		'markdown-preferences/link-paren-newline': ['warn', {
+			newline: 'never',
+			multiline: false,
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
