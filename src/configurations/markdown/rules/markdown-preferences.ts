@@ -185,6 +185,14 @@ export default defineConfigurationPart({
 
 		// #endregion
 
+		// #region Whitespace Rules
+
+		// Enforce consistent alignment of blockquote markers (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/blockquote-marker-alignment.html
+		'markdown-preferences/blockquote-marker-alignment': 'warn',
+
+		// #endregion
+
 		// #region Decorative Rules
 
 		// Enforce consistent use of closing sequence in ATX headings (autofixable)
