@@ -165,6 +165,12 @@ export default defineConfigurationPart({
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/prefer-fenced-code-blocks.html
 		'markdown-preferences/prefer-fenced-code-blocks': 'error',
 
+		// Enforce using link reference definitions instead of inline links (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/prefer-link-reference-definitions.html
+		'markdown-preferences/prefer-link-reference-definitions': ['warn', {
+			minLinks: 2,
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
