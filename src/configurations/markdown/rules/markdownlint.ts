@@ -18,14 +18,6 @@ export default defineConfigurationPart({
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md006
 		// 'markdownlint/md006': true,
 
-		// Enforce unordered list indentation (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md007
-		// Note: Doesn't work well with lists nested it HTML such as `details`
-		'no-autofix/markdownlint/md007': ['error', {
-			indent: 2,
-			start_indented: false,
-		}],
-
 		// Where is 'markdownlint/md008'? :)
 
 		// Disallow trailing spaces (autofixable)
@@ -85,10 +77,6 @@ export default defineConfigurationPart({
 			lines_below: 1,
 		}],
 
-		// Headings must start at the beginning of the line (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md023
-		'markdownlint/md023': 'warn',
-
 		// Trailing punctuation in heading (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md026
 		'markdownlint/md026': ['warn', {
@@ -107,15 +95,6 @@ export default defineConfigurationPart({
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md029
 		'markdownlint/md029': ['warn', {
 			style: 'one',
-		}],
-
-		// Spaces after list markers (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md030
-		'markdownlint/md030': ['warn', {
-			ul_single: 1,
-			ol_single: 1,
-			ul_multi: 1,
-			ol_multi: 1,
 		}],
 
 		// Fenced code blocks should be surrounded by blank lines (autofixable)

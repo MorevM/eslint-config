@@ -203,6 +203,16 @@ export default defineConfigurationPart({
 			space: 'always',
 		}],
 
+		// Enforce consistent indentation in Markdown files (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/indent.html
+		'markdown-preferences/indent': ['warn', {
+			listItems: {
+				first: 1,
+				other: 'minimum',
+				relativeTo: 'taskListMarkerEnd',
+			},
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
