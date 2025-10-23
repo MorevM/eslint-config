@@ -361,6 +361,10 @@ export default defineConfigurationPart({
 			],
 		}],
 
+		// Enforce consistent use of leading and trailing pipes in tables (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/table-leading-trailing-pipes.html
+		'markdown-preferences/table-leading-trailing-pipes': ['warn', 'always'],
+
 		// #endregion
 	},
 });
