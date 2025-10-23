@@ -16,14 +16,6 @@ export default defineConfigurationPart({
 
 		// Where is 'markdownlint/md008'? :)
 
-		// Disallow trailing spaces (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md009
-		'markdownlint/md009': ['warn', {
-			br_spaces: 0, // use `\` for hard break
-			list_item_empty_lines: false,
-			strict: true,
-		}],
-
 		// Disallow hard tab characters (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md010
 		'markdownlint/md010': ['warn', {

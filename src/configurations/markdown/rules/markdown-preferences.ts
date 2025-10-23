@@ -258,6 +258,13 @@ export default defineConfigurationPart({
 			maxBOF: 0,
 		}],
 
+		// Disallow trailing whitespace at the end of lines (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/no-trailing-spaces.html
+		'markdown-preferences/no-trailing-spaces': ['warn', {
+			ignoreComments: false,
+			skipBlankLines: false,
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
