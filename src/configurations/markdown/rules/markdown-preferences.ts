@@ -365,6 +365,18 @@ export default defineConfigurationPart({
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/table-leading-trailing-pipes.html
 		'markdown-preferences/table-leading-trailing-pipes': ['warn', 'always'],
 
+		// Enforce consistent alignment of table pipes (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/table-pipe-alignment.html
+		'markdown-preferences/table-pipe-alignment': ['warn', {
+			column: 'minimum',
+			delimiterMinLength: {
+				defaultDelimiter: 1, // TODO[2025-10-26]: Rethink
+				leftAlignmentDelimiter: 2,
+				centerAlignmentDelimiter: 3,
+				rightAlignmentDelimiter: 2,
+			},
+		}],
+
 		// #endregion
 	},
 });
