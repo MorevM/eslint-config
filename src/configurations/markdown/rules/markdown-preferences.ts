@@ -265,6 +265,18 @@ export default defineConfigurationPart({
 			skipBlankLines: false,
 		}],
 
+		// Disallow or require padding inside custom containers (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/padded-custom-containers.html
+		'markdown-preferences/padded-custom-containers': ['warn', {
+			padding: 'never',
+			overrides: [
+				{
+					info: '/^code-group\\b/u',
+					padding: 'always',
+				},
+			],
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
