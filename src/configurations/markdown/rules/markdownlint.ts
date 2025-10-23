@@ -50,13 +50,6 @@ export default defineConfigurationPart({
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md021
 		'markdownlint/md021': 'warn',
 
-		// Headings should be surrounded by blank lines (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md022
-		'markdownlint/md022': ['warn', {
-			lines_above: 1,
-			lines_below: 1,
-		}],
-
 		// Trailing punctuation in heading (autofixable)
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md026
 		'markdownlint/md026': ['warn', {
@@ -76,16 +69,6 @@ export default defineConfigurationPart({
 		'markdownlint/md029': ['warn', {
 			style: 'one',
 		}],
-
-		// Fenced code blocks should be surrounded by blank lines (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md031
-		'markdownlint/md031': ['warn', {
-			list_items: true,
-		}],
-
-		// Lists should be surrounded by blank lines (autofixable)
-		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md032
-		'markdownlint/md032': 'warn',
 
 		// Emphasis used instead of a heading
 		// https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md#md036
