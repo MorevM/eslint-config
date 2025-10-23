@@ -337,6 +337,10 @@ export default defineConfigurationPart({
 			fallbackLength: 'minimum',
 		}],
 
+		// Disallow laziness in blockquotes
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/no-laziness-blockquotes.html
+		'markdown-preferences/no-laziness-blockquotes': 'error',
+
 		// #endregion
 	},
 });
