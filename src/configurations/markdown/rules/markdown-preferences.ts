@@ -300,6 +300,18 @@ export default defineConfigurationPart({
 			blankLine: 'never',
 		}],
 
+		// Enforce consistent spacing around table pipes (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/table-pipe-spacing.html
+		'markdown-preferences/table-pipe-spacing': ['warn', {
+			space: 'always',
+			cellAlign: {
+				defaultDelimiter: 'left',
+				leftAlignmentDelimiter: 'left',
+				centerAlignmentDelimiter: 'center',
+				rightAlignmentDelimiter: 'right',
+			},
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
