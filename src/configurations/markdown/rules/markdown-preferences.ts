@@ -377,6 +377,12 @@ export default defineConfigurationPart({
 			},
 		}],
 
+		// Enforce consistent length for thematic breaks (horizontal rules) (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/thematic-break-length.html
+		'markdown-preferences/thematic-break-length': ['warn', {
+			length: 3,
+		}],
+
 		// #endregion
 	},
 });
