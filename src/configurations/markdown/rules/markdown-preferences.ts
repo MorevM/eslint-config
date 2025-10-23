@@ -316,6 +316,14 @@ export default defineConfigurationPart({
 
 		// #region Decorative Rules
 
+		// Enforce consistent length for the closing sequence (trailing #s) in ATX headings (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/atx-heading-closing-sequence-length.html
+		// Note: ATX closing sequence is disallowed by `atx-heading-closing-sequence`
+		'markdown-preferences/atx-heading-closing-sequence-length': ['off', {
+			mode: 'match-opening',
+			length: undefined,
+		}],
+
 		// Enforce consistent use of closing sequence in ATX headings (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/atx-heading-closing-sequence.html
 		'markdown-preferences/atx-heading-closing-sequence': ['warn', {
