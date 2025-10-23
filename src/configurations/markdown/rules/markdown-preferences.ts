@@ -383,6 +383,12 @@ export default defineConfigurationPart({
 			length: 3,
 		}],
 
+		// Enforce consistent repeating patterns for thematic breaks (horizontal rules) (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/thematic-break-sequence-pattern.html
+		'markdown-preferences/thematic-break-sequence-pattern': ['warn', {
+			pattern: '-',
+		}],
+
 		// #endregion
 	},
 });
