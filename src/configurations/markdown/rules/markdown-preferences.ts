@@ -345,6 +345,13 @@ export default defineConfigurationPart({
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/ordered-list-marker-sequence.html
 		'markdown-preferences/ordered-list-marker-sequence': 'warn',
 
+		// Enforce setext heading underline length (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/ordered-list-marker-sequence.html
+		'markdown-preferences/setext-heading-underline-length': ['warn', {
+			mode: 'exact',
+			align: undefined,
+		}],
+
 		// #endregion
 	},
 });
