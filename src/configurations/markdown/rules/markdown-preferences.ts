@@ -277,6 +277,29 @@ export default defineConfigurationPart({
 			],
 		}],
 
+		// Require or disallow padding lines between blocks (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/padding-line-between-blocks.html
+		'markdown-preferences/padding-line-between-blocks': ['warn', {
+			prev: '*',
+			next: '*',
+			blankLine: 'always',
+		},
+		{
+			prev: 'link-definition',
+			next: 'link-definition',
+			blankLine: 'never',
+		},
+		{
+			prev: 'footnote-definition',
+			next: 'footnote-definition',
+			blankLine: 'never',
+		},
+		{
+			prev: 'paragraph',
+			next: { type: 'list', in: 'list' },
+			blankLine: 'never',
+		}],
+
 		// #endregion
 
 		// #region Decorative Rules
