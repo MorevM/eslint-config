@@ -341,6 +341,10 @@ export default defineConfigurationPart({
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/no-laziness-blockquotes.html
 		'markdown-preferences/no-laziness-blockquotes': 'error',
 
+		// Enforce that ordered list markers use sequential numbers (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/ordered-list-marker-sequence.html
+		'markdown-preferences/ordered-list-marker-sequence': 'warn',
+
 		// #endregion
 	},
 });
