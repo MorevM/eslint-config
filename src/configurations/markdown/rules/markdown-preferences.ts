@@ -352,6 +352,15 @@ export default defineConfigurationPart({
 			align: undefined,
 		}],
 
+		// Enforce a specific order for link definitions and footnote definitions (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/sort-definitions.html
+		'markdown-preferences/sort-definitions': ['warn', {
+			order: [
+				{ match: '!/^\\[\\^/u', sort: 'alphabetical' },
+				{ match: '/./u', sort: 'alphabetical' },
+			],
+		}],
+
 		// #endregion
 	},
 });
