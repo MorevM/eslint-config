@@ -330,6 +330,13 @@ export default defineConfigurationPart({
 			closingSequence: 'never',
 		}],
 
+		// Enforce consistent code fence length in fenced code blocks (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/code-fence-length.html
+		'markdown-preferences/code-fence-length': ['warn', {
+			length: 3,
+			fallbackLength: 'minimum',
+		}],
+
 		// #endregion
 	},
 });
