@@ -38,7 +38,6 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 				sourceType: 'module',
 				parserOptions: {
 					extraFileExtensions: extraFileExtensions.map((extension) => `.${extension}`),
-					project: true,
 					projectService: true,
 					tsconfigRootDir: process.cwd(),
 				},
