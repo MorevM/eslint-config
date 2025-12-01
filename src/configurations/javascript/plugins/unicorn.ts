@@ -659,6 +659,9 @@ export default defineConfigurationPart({
 					version: true,
 				},
 			},
+			allowList: [
+				'eCommerce',
+			],
 		}],
 
 		// Enforce consistent relative URL style (autofixable)
