@@ -42,6 +42,12 @@ export default defineConfigurationPart({
 			],
 		}],
 
+		// Disallow trailing punctuation in headings (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/no-heading-trailing-punctuation.html
+		'markdown-preferences/no-heading-trailing-punctuation': ['warn', {
+			punctuation: '.,;:!。、，；：！｡､',
+		}],
+
 		// Enforce that ordered list markers start with 1 or 0 (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/ordered-list-marker-start.html
 		'markdown-preferences/ordered-list-marker-start': ['warn', {
