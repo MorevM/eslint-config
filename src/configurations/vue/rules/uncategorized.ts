@@ -276,6 +276,10 @@ export default defineConfigurationPart({
 		// https://eslint.vuejs.org/rules/no-undef-components.html
 		'vue/no-undef-components': 'error',
 
+		// Disallow use of undefined custom directives
+		// https://eslint.vuejs.org/rules/no-undef-directives.html
+		'vue/no-undef-directives': 'error',
+
 		// Disallow undefined properties
 		// https://eslint.vuejs.org/rules/no-undef-properties.html
 		// Reason to be `off`: Doesn't work well with Vuex
