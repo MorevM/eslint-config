@@ -161,6 +161,10 @@ export default defineConfigurationPart({
 		// https://eslint.vuejs.org/rules/no-import-compiler-macros.html
 		'vue/no-import-compiler-macros': 'error',
 
+		// Disallow object, array, and function literals in template
+		// https://eslint.vuejs.org/rules/no-literals-in-template.html
+		'vue/no-literals-in-template': 'error',
+
 		// Disallow asynchronously registered expose
 		// https://eslint.vuejs.org/rules/no-expose-after-await.html
 		'vue/no-expose-after-await': 'error',
