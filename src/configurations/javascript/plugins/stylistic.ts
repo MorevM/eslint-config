@@ -283,7 +283,9 @@ export default defineConfigurationPart({
 
 		// Enforce spacing inside braces (autofixable)
 		// https://eslint.style/rules/js/object-curly-spacing
-		'@stylistic/object-curly-spacing': ['warn', 'always'],
+		'@stylistic/object-curly-spacing': ['warn', 'always', {
+			emptyObjects: 'never',
+		}],
 
 		// Enforce `same line` or `multiple line` on object properties (autofixable but unsafe cause indent)
 		// https://eslint.style/rules/js/object-property-newline
