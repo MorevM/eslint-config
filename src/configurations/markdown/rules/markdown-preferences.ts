@@ -334,6 +334,22 @@ export default defineConfigurationPart({
 			fallbackLength: 'minimum',
 		}],
 
+		// Enforce maximum length for various Markdown entities
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/max-len.html
+		'markdown-preferences/max-len': ['warn', {
+			heading: 100,
+			paragraph: 120,
+			list: 120,
+			blockquote: 120,
+			table: 'ignore',
+			footnoteDefinition: 120,
+			html: 'ignore',
+			code: 'ignore',
+			frontmatter: 'ignore',
+			math: 'ignore',
+			ignoreUrls: true,
+		}],
+
 		// Disallow laziness in blockquotes
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/no-laziness-blockquotes.html
 		'markdown-preferences/no-laziness-blockquotes': 'error',
