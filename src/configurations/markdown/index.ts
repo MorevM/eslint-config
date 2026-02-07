@@ -1,12 +1,10 @@
 import { isEmpty } from '@morev/utils';
 import { GLOB_MARKDOWN } from '#globs';
-import { parserMarkdown } from '#parsers';
 import { defineConfigurationPart, mergeParts } from '#utils';
 import { universalRules } from '~configurations/universal-rules';
 
 import markdown from './rules/markdown';
 import markdownPreferences from './rules/markdown-preferences';
-import markdownlint from './rules/markdownlint';
 
 import type { MarkdownConfigurationOptions } from '#types';
 
@@ -31,17 +29,6 @@ export default function configurationMarkdown(options: Partial<MarkdownConfigura
 			...mergeParts(
 				markdown,
 				markdownPreferences,
-			),
-		}),
-		defineConfigurationPart({
-			name: 'morev/markdown/markdownlint',
-			languageOptions: {
-				parser: parserMarkdown,
-			},
-			files,
-			ignores,
-			...mergeParts(
-				markdownlint,
 			),
 		}),
 		defineConfigurationPart({
