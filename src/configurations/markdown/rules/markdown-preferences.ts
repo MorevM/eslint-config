@@ -42,7 +42,7 @@ export default defineConfigurationPart({
 			],
 		}],
 
-		// Disallow trailing punctuation in headings (autofixable)
+		// Disallow trailing punctuation in headings
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/no-heading-trailing-punctuation.html
 		'markdown-preferences/no-heading-trailing-punctuation': ['warn', {
 			punctuation: '.,;:!。、，；：！｡､',
@@ -259,6 +259,14 @@ export default defineConfigurationPart({
 			max: 2,
 			maxEOF: 0,
 			maxBOF: 0,
+		}],
+
+		// Disallow tab characters in Markdown files (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/no-multiple-empty-lines.html
+		'markdown-preferences/no-tabs': ['warn', {
+			checkTarget: 'all',
+			ignoreCodeBlocks: [],
+			codeBlockTabWidth: 2,
 		}],
 
 		// Disallow trailing whitespace at the end of lines (autofixable)
