@@ -30,7 +30,6 @@ export const tsup: Options = {
 		'eslint-plugin-jsdoc',
 		'eslint-plugin-jsonc',
 		'eslint-plugin-markdown-preferences',
-		'eslint-plugin-markdownlint',
 		'eslint-plugin-no-secrets',
 		'eslint-plugin-node',
 		'eslint-plugin-package-json',

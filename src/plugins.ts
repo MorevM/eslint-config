@@ -12,7 +12,6 @@ export { default as pluginJsdoc } from 'eslint-plugin-jsdoc';
 export { default as pluginJson } from 'eslint-plugin-jsonc';
 export { default as pluginJsxA11y } from 'eslint-plugin-jsx-a11y';
 export { default as pluginMarkdownPreferences } from 'eslint-plugin-markdown-preferences';
-export { default as pluginMarkdownlint } from 'eslint-plugin-markdownlint';
 export { default as pluginN } from 'eslint-plugin-n';
 export { default as pluginNoSecrets } from 'eslint-plugin-no-secrets';
 export { default as pluginPackageJson } from 'eslint-plugin-package-json';
