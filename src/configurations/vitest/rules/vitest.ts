@@ -261,6 +261,10 @@ export default defineConfigurationPart({
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-vi-mocked.md
 		'vitest/prefer-vi-mocked': 'warn',
 
+		// Ensure that every `expect.poll` call is awaited (autofixable)
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-awaited-expect-poll.md
+		'vitest/require-awaited-expect-poll': 'error',
+
 		// Require setup and teardown code to be within a hook
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-hook.md
 		'vitest/require-hook': ['error', {
