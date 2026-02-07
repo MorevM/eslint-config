@@ -97,14 +97,6 @@ export default defineConfigurationPart({
 			html: false,
 		}],
 
-		// Enforce props alphabetical sorting (autofixable)
-		// https://eslint.style/rules/jsx/jsx-sort-props
-		// Note: only to put reserved props on top
-		'@stylistic/jsx-sort-props': ['warn', {
-			noSortAlphabetically: true,
-			reservedFirst: true,
-		}],
-
 		// Enforce whitespace in and around the JSX opening and closing brackets (autofixable)
 		// https://eslint.style/rules/jsx/jsx-tag-spacing
 		'@stylistic/jsx-tag-spacing': ['warn', {
