@@ -134,6 +134,10 @@ export default defineConfigurationPart({
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-test-return-statement.md
 		'vitest/no-test-return-statement': 'error',
 
+		// Disallow unnecessary async function wrapper for expected promises (autofixable)
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-unneeded-async-expect-function.md
+		'vitest/no-unneeded-async-expect-function': 'error',
+
 		// Enforce using `toBeCalledOnce()` or `toHaveBeenCalledOnce()`	(autofixable)
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-once.md
 		'vitest/prefer-called-once': 'off',
