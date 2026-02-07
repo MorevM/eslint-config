@@ -204,6 +204,10 @@ export default defineConfigurationPart({
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-mock-promise-shorthand.md
 		'vitest/prefer-mock-promise-shorthand': 'warn',
 
+		// Prefer mock return shorthands (autofixable)
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-mock-return-shorthand.md
+		'vitest/prefer-mock-return-shorthand': 'off',
+
 		// Prefer including a hint with external snapshots
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-snapshot-hint.md
 		'vitest/prefer-snapshot-hint': ['warn', 'always'],
