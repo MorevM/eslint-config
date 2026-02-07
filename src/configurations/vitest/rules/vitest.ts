@@ -6,6 +6,15 @@ export default defineConfigurationPart({
 		vitest: pluginVitest,
 	},
 	rules: {
+		// Enforce using .each or .for consistently
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/consistent-each-for.md
+		'vitest/consistent-each-for': ['off', {
+			test: 'for',
+			it: 'for',
+			describe: 'each',
+			suite: 'each',
+		}],
+
 		// Forbidden `.spec` test file pattern
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/consistent-test-filename.md
 		'vitest/consistent-test-filename': ['error', {
