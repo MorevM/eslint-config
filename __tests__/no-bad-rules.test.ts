@@ -41,6 +41,8 @@ describe('Check unknown, unused and deprecated rules', () => {
 			'vue/prefer-template',
 			// Covered with `n/prefer-node-protocol`
 			'unicorn/prefer-node-protocol',
+			// Experimental rules
+			'@stylistic/exp-list-style',
 		]);
 
 		ruleFinder.setKnownDeprecatedRules([
