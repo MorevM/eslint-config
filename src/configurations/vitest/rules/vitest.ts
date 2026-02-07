@@ -280,6 +280,11 @@ export default defineConfigurationPart({
 		// Note: way too restrictive I believe
 		'vitest/require-mock-type-parameters': 'off',
 
+		// Require tests to declare a timeout
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-test-timeout.md
+		// Note: way too restrictive I believe
+		'vitest/require-test-timeout': 'off',
+
 		// Require `toThrow()` to be called with an error message
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-to-throw-message.md
 		'vitest/require-to-throw-message': 'off',
