@@ -245,6 +245,10 @@ export default defineConfigurationPart({
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-truthy.md
 		'vitest/prefer-to-contain': 'warn',
 
+		// Suggest using `toHaveBeenCalledTimes()` (autofixable)
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-have-been-called-times.md
+		'vitest/prefer-to-have-been-called-times': 'warn',
+
 		// Suggest using `toHaveLength()` (autofixable)
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-have-length.md
 		'vitest/prefer-to-have-length': 'warn',
