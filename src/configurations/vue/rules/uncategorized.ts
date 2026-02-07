@@ -149,6 +149,10 @@ export default defineConfigurationPart({
 		// https://eslint.vuejs.org/rules/no-duplicate-attr-inheritance.html
 		'vue/no-duplicate-attr-inheritance': 'error',
 
+		// Disallow duplication of class names in class attributes (autofixable)
+		// https://eslint.vuejs.org/rules/no-duplicate-class-names.html
+		'vue/no-duplicate-class-names': 'error',
+
 		// Disallow the `<template>` `<script>` `<style>` block to be empty
 		// https://eslint.vuejs.org/rules/no-empty-component-block.html
 		'no-autofix/vue/no-empty-component-block': 'warn',
