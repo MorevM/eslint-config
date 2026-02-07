@@ -6,7 +6,6 @@ export default defineConfigurationPart({
 	plugins: {
 		'markdown-preferences': pluginMarkdownPreferences,
 	},
-	// language: 'markdown/gfm',
 	rules: {
 		// #region Preference Rules
 
@@ -24,8 +23,7 @@ export default defineConfigurationPart({
 
 		// Enforce consistent casing in headings (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/heading-casing.html
-		// TODO: Custom option to extend option arrays
-		'markdown-preferences/heading-casing': ['warn', {
+		'markdown-preferences/heading-casing': ['off', {
 			style: 'Title Case',
 			preserveWords: [
 				...pluginMarkdownPreferences.resources.defaultPreserveWords,
@@ -59,12 +57,11 @@ export default defineConfigurationPart({
 		// Enforce the use of inline code for specific words (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/prefer-linked-words.html
 		'markdown-preferences/prefer-linked-words': ['off', {
-			words: [], // TODO: Think about
+			words: [],
 		}],
 
 		// Enforce consistent casing in table header cells (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/table-header-casing.html
-		// TODO: Think about
 		'markdown-preferences/table-header-casing': ['off', {
 			ignorePatterns: [],
 			minorWords: [],
@@ -93,7 +90,7 @@ export default defineConfigurationPart({
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/definitions-last.html
 		'markdown-preferences/definitions-last': ['warn', {
 			linkDefinitionPlacement: {
-				referencedFromSingleSection: 'document-last', // TODO[2025-10-26]: Maybe 'section-last'
+				referencedFromSingleSection: 'document-last',
 				referencedFromMultipleSections: 'document-last',
 			},
 			footnoteDefinitionPlacement: {
@@ -131,14 +128,14 @@ export default defineConfigurationPart({
 		// Enforce a consistent style for link destinations (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/link-destination-style.html
 		'markdown-preferences/link-destination-style': ['warn', {
-			style: 'bare', // TODO[2025-10-26]: Maybe change?
+			style: 'bare',
 			avoidEscape: true,
 		}],
 
 		// Enforce a consistent style for link titles (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/link-title-style.html
 		'markdown-preferences/link-title-style': ['warn', {
-			style: 'single', // TODO[2025-10-26]: Maybe change?
+			style: 'single',
 			avoidEscape: true,
 		}],
 
@@ -154,7 +151,7 @@ export default defineConfigurationPart({
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/ordered-list-marker-style.html
 		'markdown-preferences/ordered-list-marker-style': ['warn', {
 			prefer: 'n.',
-			overrides: [], // TODO[2025-10-26]: Maybe add option to specify different styles for different levels
+			overrides: [],
 		}],
 
 		// Enforce the use of autolinks for URLs (autofixable)
@@ -370,7 +367,7 @@ export default defineConfigurationPart({
 		'markdown-preferences/table-pipe-alignment': ['warn', {
 			column: 'minimum',
 			delimiterMinLength: {
-				defaultDelimiter: 1, // TODO[2025-10-26]: Rethink
+				defaultDelimiter: 1,
 				leftAlignmentDelimiter: 2,
 				centerAlignmentDelimiter: 3,
 				rightAlignmentDelimiter: 2,
