@@ -166,6 +166,10 @@ export default defineConfigurationPart({
 		// Note: Most commercial projects are doing quite well without it
 		'package-json/require-keywords': 'off',
 
+		// Requires the `license` property to be present.
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-license.md
+		'package-json/require-license': 'warn',
+
 		// Requires the `name` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-name.md
 		'package-json/require-name': 'error',
