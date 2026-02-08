@@ -220,6 +220,10 @@ export default defineConfigurationPart({
 		// Note: Configured in more detail in `jsonc/sort-keys` above
 		'package-json/sort-collections': 'off',
 
+		// Requires that all peer dependencies are also declared as dev dependencies
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/specify-peers-locally.md
+		'package-json/specify-peers-locally': 'error',
+
 		// Checks a dependency isn't specified more than once (i.e. in `dependencies` and `devDependencies`)
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/unique-dependencies.md
 		'package-json/unique-dependencies': 'error',
