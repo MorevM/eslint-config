@@ -211,6 +211,10 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/restrict-dependency-ranges.md
 		'package-json/restrict-dependency-ranges': 'off',
 
+		// Enforce that names for `scripts` are in kebab case (optionally separated by colons)
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/scripts-name-casing.md
+		'package-json/scripts-name-casing': 'error',
+
 		// Dependencies, scripts, and configuration values must be declared in alphabetical order (autofixable)
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/sort-collections.md
 		// Note: Configured in more detail in `jsonc/sort-keys` above
