@@ -449,6 +449,10 @@ export default defineConfigurationPart({
 		// https://typescript-eslint.io/rules/no-unused-expressions
 		...extensionFromBase('no-unused-expressions'),
 
+		// Disallow unused private class members
+		// https://typescript-eslint.io/rules/no-unused-private-class-members
+		...extensionFromBase('no-unused-private-class-members'),
+
 		// Disallow unused variables
 		// https://typescript-eslint.io/rules/no-unused-vars
 		...extensionFromBase('no-unused-vars'),
