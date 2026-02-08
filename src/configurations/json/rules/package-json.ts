@@ -7,6 +7,10 @@ export default defineConfigurationPart({
 		'package-json': pluginPackageJson,
 	},
 	rules: {
+		// Enforce that names for bin properties are in kebab case
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/bin-name-casing.md
+		'package-json/bin-name-casing': 'error',
+
 		// Reports on unnecessary empty arrays and objects
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/no-empty-fields.md
 		'package-json/no-empty-fields': ['warn', {
