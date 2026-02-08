@@ -86,6 +86,11 @@ export default defineConfigurationPart({
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/no-raw-locators.md
 		'playwright/no-raw-locators': 'off',
 
+		// Disallow specific locator methods
+		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/no-restricted-locators.md
+		// Note: too wide to be in the shared config
+		'playwright/no-restricted-locators': 'off',
+
 		// Disallow specific matchers & modifiers
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/no-restricted-matchers.md
 		'playwright/no-restricted-matchers': 'off',
