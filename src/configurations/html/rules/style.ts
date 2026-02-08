@@ -25,7 +25,9 @@ export default defineConfigurationPart({
 
 		// Enforce consistent indentation (autofixable)
 		// https://html-eslint.org/docs/rules/indent
-		'@html-eslint/indent': ['warn', 'tab'],
+		'@html-eslint/indent': ['warn', 'tab', {
+			ignoreComment: true,
+		}],
 
 		// Enforce to use lowercase for tag and attribute names (autofixable)
 		// https://html-eslint.org/docs/rules/lowercase
