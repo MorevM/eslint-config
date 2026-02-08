@@ -13,6 +13,10 @@ export default defineConfigurationPart({
 			ifAttrsMoreThan: 5,
 		}],
 
+		// Disallow extra spacing in class attribute values (autofixable)
+		// https://html-eslint.org/docs/rules/class-spacing
+		'@html-eslint/class-spacing': 'warn',
+
 		// Require newline between elements (autofixable)
 		// https://html-eslint.org/docs/rules/element-newline
 		'@html-eslint/element-newline': 'error',
