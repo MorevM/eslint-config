@@ -469,6 +469,10 @@ export default defineConfigurationPart({
 		// https://typescript-eslint.io/rules/no-useless-constructor
 		...extensionFromBase('no-useless-constructor'),
 
+		// Disallow default values that will never be used (autofixable)
+		// https://typescript-eslint.io/rules/no-useless-default-assignment
+		'@typescript-eslint/no-useless-default-assignment': 'error',
+
 		// Require destructuring from arrays and/or objects (autofixable)
 		// https://typescript-eslint.io/rules/prefer-destructuring
 		...extensionFromBase('prefer-destructuring'),
