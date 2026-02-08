@@ -244,6 +244,10 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-config.md
 		'package-json/valid-config': 'error',
 
+		// Enforce that the `contributors` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-contributors.md
+		'package-json/valid-contributors': 'error',
+
 		// Enforce that the `cpu` property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-cpu.md
 		'package-json/valid-cpu': 'error',
