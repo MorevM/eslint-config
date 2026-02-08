@@ -181,6 +181,10 @@ export default defineConfigurationPart({
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-mock-promise-shorthand.md
 		'jest/prefer-mock-promise-shorthand': 'warn',
 
+		// Prefer mock return shorthands (autofixable)
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-mock-return-shorthand.md
+		'jest/prefer-mock-return-shorthand': 'off',
+
 		// Prefer including a hint with external snapshots
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-snapshot-hint.md
 		'jest/prefer-snapshot-hint': ['warn', 'always'],
