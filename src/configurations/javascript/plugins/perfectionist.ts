@@ -227,8 +227,8 @@ export default defineConfigurationPart({
 			partitionByNewLine: true,
 			newlinesBetween: 'ignore',
 			groups: [
-				'value-export',
-				'type-export',
+				'value-import',
+				'type-import',
 			],
 		}],
 
