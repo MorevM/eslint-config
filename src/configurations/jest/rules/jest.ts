@@ -205,6 +205,10 @@ export default defineConfigurationPart({
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-to-contain.md
 		'jest/prefer-to-contain': 'warn',
 
+		// Suggest using `toHaveBeenCalled()` (autofixable)
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-to-have-been-called.md
+		'jest/prefer-to-have-been-called': 'off',
+
 		// Suggest using `toHaveLength()` (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-to-have-length.md
 		'jest/prefer-to-have-length': 'warn',
