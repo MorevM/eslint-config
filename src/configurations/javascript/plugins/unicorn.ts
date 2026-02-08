@@ -491,6 +491,10 @@ export default defineConfigurationPart({
 		// Note: just why?
 		'no-autofix/unicorn/prefer-regexp-test': 'off',
 
+		// Prefer `Response.json()` over `new Response(JSON.stringify())` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-response-static-json.md
+		'unicorn/prefer-response-static-json': 'warn',
+
 		// Prefer `Set#has()` over `Array#includes()` when checking for existence or non-existence (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-has.md
 		// Note: Set needed when Set needed, Array needed when Array needed...
