@@ -113,6 +113,10 @@ export default defineConfigurationPart({
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/no-unsafe-references.md
 		'playwright/no-unsafe-references': 'error',
 
+		// Disallow usage of page locators that are not used (autofixable)
+		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/no-unused-locators.md
+		'playwright/no-unused-locators': 'error',
+
 		// Disallow unnecessary `await`s for Playwright methods (autofixable)
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/no-useless-await.md
 		'playwright/no-useless-await': 'error',
