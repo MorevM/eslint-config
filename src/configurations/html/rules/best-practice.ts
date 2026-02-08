@@ -68,7 +68,7 @@ export default defineConfigurationPart({
 		// https://html-eslint.org/docs/rules/no-target-blank
 		'@html-eslint/no-target-blank': 'error',
 
-		// Disallows tags that contain only whitespace characters
+		// Disallows tags that contain only whitespace characters (autofixable)
 		// https://html-eslint.org/docs/rules/no-whitespace-only-children
 		'@html-eslint/no-whitespace-only-children': 'warn',
 
