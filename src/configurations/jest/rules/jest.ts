@@ -209,6 +209,10 @@ export default defineConfigurationPart({
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-to-have-been-called.md
 		'jest/prefer-to-have-been-called': 'off',
 
+		// Suggest using `toHaveBeenCalledTimes()` (autofixable)
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-to-have-been-called-times.md
+		'jest/prefer-to-have-been-called-times': 'warn',
+
 		// Suggest using `toHaveLength()` (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-to-have-length.md
 		'jest/prefer-to-have-length': 'warn',
