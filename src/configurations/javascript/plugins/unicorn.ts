@@ -290,6 +290,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unused-properties.md
 		'unicorn/no-unused-properties': 'warn',
 
+		// Disallow useless values or fallbacks in `Set`, `Map`, `WeakSet`, or `WeakMap` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-collection-argument.md
+		'unicorn/no-useless-collection-argument': 'warn',
+
 		// Disallow unnecessary `Error.captureStackTrace(…)` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-error-capture-stack-trace.md
 		'unicorn/no-useless-error-capture-stack-trace': 'error',
