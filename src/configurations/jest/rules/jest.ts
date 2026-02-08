@@ -266,6 +266,10 @@ export default defineConfigurationPart({
 		'@typescript-eslint/unbound-method': 'off',
 		'jest/unbound-method': 'off', // has no options unlike `@typescript-eslint/unbound-method`
 
+		// Require that `resolve` and `reject` modifiers are present (and only) for promise-like types (requires type information)
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/valid-expect-with-promise.md
+		'jest/valid-expect-with-promise': 'error',
+
 		// Enable all `padding-around-*` rules of `jest`, all are autofixable
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/padding-around-all.md
 		'jest/padding-around-all': 'warn',
