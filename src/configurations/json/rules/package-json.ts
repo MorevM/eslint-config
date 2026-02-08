@@ -212,9 +212,7 @@ export default defineConfigurationPart({
 
 		// Enforce that the bin property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-bin.md
-		'package-json/valid-bin': ['error', {
-			enforceCase: true,
-		}],
+		'package-json/valid-bin': 'error',
 
 		// Enforce that the `bundleDependencies` (also: `bundledDependencies`) property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-bundleDependencies.md
