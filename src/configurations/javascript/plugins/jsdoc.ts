@@ -252,6 +252,10 @@ export default defineConfigurationPart({
 		// https://github.com/gajus/eslint-plugin-jsdoc#require-property-type
 		'jsdoc/require-property-type': 'error',
 
+		// Requires that each `@property` tag has a `type` value
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-rejects.md
+		'jsdoc/require-rejects': 'off',
+
 		// Requires a return statement (or non-undefined Promise resolve value)
 		// in function bodies if a @returns tag (without a void or undefined type)
 		// is specified in the function's jsdoc comment.
