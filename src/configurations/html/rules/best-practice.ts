@@ -64,6 +64,10 @@ export default defineConfigurationPart({
 		// https://html-eslint.org/docs/rules/no-target-blank
 		'@html-eslint/no-target-blank': 'error',
 
+		// Disallows tags that contain only whitespace characters
+		// https://html-eslint.org/docs/rules/no-whitespace-only-children
+		'@html-eslint/no-whitespace-only-children': 'warn',
+
 		// Enforces to use `HTTPS` for embedded resources (image, media, style sheet and script)
 		// https://html-eslint.org/docs/rules/prefer-https
 		'@html-eslint/prefer-https': 'error',
