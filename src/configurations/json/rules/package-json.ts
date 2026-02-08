@@ -11,6 +11,12 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/bin-name-casing.md
 		'package-json/bin-name-casing': 'error',
 
+		// Enforce consistent format for the exports field (implicit or explicit subpaths) (autofixable)
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/exports-subpaths-style.md
+		'package-json/exports-subpaths-style': ['warn', {
+			prefer: 'explicit',
+		}],
+
 		// Reports on unnecessary empty arrays and objects
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/no-empty-fields.md
 		'package-json/no-empty-fields': ['warn', {
