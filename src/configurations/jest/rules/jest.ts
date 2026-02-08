@@ -249,6 +249,10 @@ export default defineConfigurationPart({
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/valid-expect-in-promise.md
 		'jest/valid-expect-in-promise': 'error',
 
+		// Disallow mocking of non-existing module paths
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/valid-mock-module-path.md
+		'jest/valid-mock-module-path': 'off',
+
 		// Enforce valid titles (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/valid-title.md
 		'jest/valid-title': 'warn',
