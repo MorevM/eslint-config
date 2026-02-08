@@ -237,6 +237,10 @@ export default defineConfigurationPart({
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/valid-title.md
 		'jest/valid-title': 'warn',
 
+		// Disallow using equality matchers on error types
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-error-equal.md
+		'jest/no-error-equal': 'error',
+
 		// Enforces unbound methods are called with their expected scope
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/unbound-method.md
 		'@typescript-eslint/unbound-method': 'off',
