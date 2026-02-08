@@ -117,6 +117,10 @@ export default defineConfigurationPart({
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-test-return-statement.md
 		'jest/no-test-return-statement': 'error',
 
+		// Disallow unnecessary async function wrapper for expected promises (autofixable)
+		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-unneeded-async-expect-function.md
+		'jest/no-unneeded-async-expect-function': 'error',
+
 		// Disallow using `jest.mock()` factories without an explicit type parameter (autofixable)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-untyped-mock-factory.md
 		// NOTE: Should be an error, but it can be applied to TS files only (so it is not suitable for mixed codebases)
