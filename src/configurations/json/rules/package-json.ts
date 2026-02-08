@@ -305,13 +305,41 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-directories.md
 		'package-json/valid-directories': 'error',
 
+		// Enforce that the `engines` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-engines.md
+		'package-json/valid-engines': 'error',
+
 		// Enforce that the `exports` property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-exports.md
 		'package-json/valid-exports': 'error',
 
+		// Enforce that the `files` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-files.md
+		'package-json/valid-files': 'error',
+
+		// Enforce that the `homepage` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-homepage.md
+		'package-json/valid-homepage': 'error',
+
+		// Enforce that the `keywords` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-keywords.md
+		'package-json/valid-keywords': 'error',
+
 		// Enforce that the `license` property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-license.md
 		'package-json/valid-license': 'error',
+
+		// Enforce that the `main` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-main.md
+		'package-json/valid-main': 'error',
+
+		// Enforce that the `man` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-man.md
+		'package-json/valid-man': 'error',
+
+		// Enforce that the `module` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-module.md
+		'package-json/valid-module': 'error',
 
 		// Enforce that package names are valid npm package names
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-name.md
@@ -321,13 +349,25 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-optionalDependencies.md
 		'package-json/valid-optionalDependencies': 'error',
 
-		// Enforce that package.json has all properties required by the npm spec
-		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-package-def.md
-		'package-json/valid-package-definition': 'error',
+		// Enforce that the `os` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-os.md
+		'package-json/valid-os': 'error',
 
 		// Enforce that the `peerDependencies` property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-peerDependencies.md
 		'package-json/valid-peerDependencies': 'error',
+
+		// Enforce that the `private` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-private.md
+		'package-json/valid-private': 'error',
+
+		// Enforce that the `publishConfig` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-publishConfig.md
+		'package-json/valid-publishConfig': 'error',
+
+		// Enforce that the `repository` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-repository.md
+		'package-json/valid-repository': 'error',
 
 		// Enforce that if repository directory is specified, it matches the path to the `package.json` file
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-repository-directory.md
@@ -337,6 +377,10 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-scripts.md
 		'package-json/valid-scripts': 'error',
 
+		// Enforce that the `sideEffects` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-sideEffects.md
+		'package-json/valid-sideEffects': 'error',
+
 		// Enforce that the `type` property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-type.md
 		'package-json/valid-type': 'error',
@@ -344,5 +388,9 @@ export default defineConfigurationPart({
 		// Enforce that package versions are valid semver specifiers
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-version.md
 		'package-json/valid-version': 'error',
+
+		// Enforce that the `workspaces` property is valid
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-workspaces.md
+		'package-json/valid-workspaces': 'error',
 	},
 });
