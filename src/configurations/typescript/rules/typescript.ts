@@ -630,6 +630,10 @@ export default defineConfigurationPart({
 		// https://typescript-eslint.io/rules/strict-boolean-expressions
 		'@typescript-eslint/strict-boolean-expressions': 'off',
 
+		// Disallow passing a value-returning function in a position accepting a void function (requires type information)
+		// https://typescript-eslint.io/rules/strict-void-return
+		'@typescript-eslint/strict-void-return': 'error',
+
 		// Exhaustiveness checking in switch with union type
 		// https://typescript-eslint.io/rules/switch-exhaustiveness-check
 		'@typescript-eslint/switch-exhaustiveness-check': 'error',
