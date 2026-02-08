@@ -22,6 +22,28 @@ export default defineConfigurationPart({
 		// https://perfectionist.dev/rules/sort-enums
 		'perfectionist/sort-enums': 'off',
 
+		// Enforce sorted export attributes (autofixable)
+		// https://perfectionist.dev/rules/sort-export-attributes
+		'perfectionist/sort-export-attributes': ['warn', {
+			type: 'natural',
+			order: 'asc',
+			fallbackSort: {
+				type: 'line-length',
+				order: 'desc',
+			},
+			alphabet: '',
+			ignoreCase: true,
+			specialCharacters: 'keep',
+			locales: ['en-US'],
+			partitionByComment: false,
+			partitionByNewLine: true,
+			newlinesBetween: 'ignore',
+			groups: ['type-attribute', 'unknown'],
+			customGroups: [
+				{ groupName: 'type-attribute', elementNamePattern: '^type' },
+			],
+		}],
+
 		// Enforce sorted exports (autofixable)
 		// https://perfectionist.dev/rules/sort-exports
 		'perfectionist/sort-exports': ['warn', {
@@ -49,6 +71,28 @@ export default defineConfigurationPart({
 		// Enforce sorted heritage clauses (autofixable)
 		// https://perfectionist.dev/rules/sort-heritage-clauses
 		'perfectionist/sort-heritage-clauses': 'off',
+
+		// Enforce sorted import attributes (autofixable)
+		// https://perfectionist.dev/rules/sort-import-attributes
+		'perfectionist/sort-import-attributes': ['warn', {
+			type: 'natural',
+			order: 'asc',
+			fallbackSort: {
+				type: 'line-length',
+				order: 'desc',
+			},
+			alphabet: '',
+			ignoreCase: true,
+			specialCharacters: 'keep',
+			locales: ['en-US'],
+			partitionByComment: false,
+			partitionByNewLine: true,
+			newlinesBetween: 'ignore',
+			groups: ['type-attribute', 'unknown'],
+			customGroups: [
+				{ groupName: 'type-attribute', elementNamePattern: '^type' },
+			],
+		}],
 
 		// Enforce sorted imports (autofixable)
 		// https://perfectionist.dev/rules/sort-imports
