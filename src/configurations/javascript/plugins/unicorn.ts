@@ -161,6 +161,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-hex-escape.md
 		'unicorn/no-hex-escape': 'warn',
 
+		// Disallow immediate mutation after variable assignment (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-immediate-mutation.md
+		'unicorn/no-immediate-mutation': 'error',
+
 		// Disallow `instanceof` with built-in objects (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-instanceof-builtins.md
 		'unicorn/no-instanceof-builtins': 'error',
