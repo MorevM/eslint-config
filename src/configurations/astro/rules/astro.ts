@@ -1,6 +1,5 @@
 import { pluginAstro } from '#plugins';
 import { defineConfigurationPart, extensionFactory } from '#utils';
-
 import configurationJavascript from '~configurations/javascript';
 import configurationJsx from '~configurations/jsx';
 
@@ -59,6 +58,10 @@ export default defineConfigurationPart({
 		// Disallow use of `set:html` to prevent XSS attack
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-set-html-directive/
 		'astro/no-set-html-directive': 'off',
+
+		// Disallow inline `<script>` without `src` to encourage CSP-safe patterns
+		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-unsafe-inline-scripts/
+		'astro/no-unsafe-inline-scripts': 'off',
 
 		// Disallow use of `set:text` (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-set-text-directive/
