@@ -6,6 +6,10 @@ export default defineConfigurationPart({
 		playwright: pluginPlaywright,
 	},
 	rules: {
+		// Enforce consistent spacing between test blocks (autofixable)
+		// https://github.com/mskelton/eslint-plugin-playwright/tree/main/docs/rules/consistent-spacing-between-blocks.md
+		'playwright/consistent-spacing-between-blocks': 'warn',
+
 		// Enforce assertion to be made in a test body
 		// https://github.com/playwright-community/eslint-plugin-playwright/blob/main/docs/rules/expect-expect.md
 		'playwright/expect-expect': 'error',
