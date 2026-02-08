@@ -29,6 +29,12 @@ export default defineConfigurationPart({
 		// but in general people are more comfortable with explicit instructions.
 		'package-json/no-redundant-files': 'off',
 
+		// Warns when `publishConfig.access` is used in unscoped packages
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/no-redundant-publishConfig.md
+		// Note: It's good to be informed that NPM includes some files by default,
+		// but in general people are more comfortable with explicit instructions.
+		'package-json/no-redundant-publishConfig': 'off',
+
 		// Require object keys to be sorted (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-jsonc/rules/sort-keys.html
 		'jsonc/sort-keys': [
@@ -132,6 +138,11 @@ export default defineConfigurationPart({
 			form: 'object',
 		}],
 
+		// Ensures that proper attribution is included, requiring that either `author` or `contributors` is defined,
+		// and that if `contributors` is present, it should include at least one contributor.
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-attribution.md
+		'package-json/require-attribution': 'off',
+
 		// Requires the `author` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-author.md
 		// Note: Most commercial projects are doing quite well without it
@@ -166,10 +177,20 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-engines.md
 		'package-json/require-engines': 'error',
 
+		// Requires the `exports` property to be present
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-exports.md
+		// Note: Most commercial projects are doing quite well without it
+		'package-json/require-exports': 'off',
+
 		// Requires the `files` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-files.md
 		// Note: Most commercial projects are doing quite well without it
 		'package-json/require-files': 'off',
+
+		// Requires the `homepage` property to be present
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-homepage.md
+		// Note: Most commercial projects are doing quite well without it
+		'package-json/require-homepage': 'off',
 
 		// Requires the `keywords` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-keywords.md
@@ -194,6 +215,18 @@ export default defineConfigurationPart({
 		// Note: Way too strict to require
 		'package-json/require-peerDependencies': 'off',
 
+		// Requires the `repository` property to be present.
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-repository.md
+		'package-json/require-repository': 'off',
+
+		// Requires the `scripts` property to be present.
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-scripts.md
+		'package-json/require-scripts': 'off',
+
+		// Requires the `sideEffects` property to be present.
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-sideEffects.md
+		'package-json/require-sideEffects': 'off',
+
 		// Requires the `type` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-type.md
 		'package-json/require-type': 'error',
@@ -210,6 +243,10 @@ export default defineConfigurationPart({
 		// Restricts the range of dependencies to allow or disallow specific types of ranges
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/restrict-dependency-ranges.md
 		'package-json/restrict-dependency-ranges': 'off',
+
+		// Disallows unnecessary properties in private packages (autofixable)
+		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/restrict-private-properties.md
+		'package-json/restrict-private-properties': 'off',
 
 		// Enforce that names for `scripts` are in kebab case (optionally separated by colons)
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/scripts-name-casing.md
