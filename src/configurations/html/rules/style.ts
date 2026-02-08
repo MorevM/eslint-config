@@ -37,6 +37,10 @@ export default defineConfigurationPart({
 		// https://html-eslint.org/docs/rules/lowercase
 		'@html-eslint/lowercase': 'warn',
 
+		// Disallows empty CSS blocks in `<style>` tags
+		// https://html-eslint.org/docs/rules/css-no-empty-blocks
+		'@html-eslint/css-no-empty-blocks': 'warn',
+
 		// Enforces element maximum depth
 		// https://html-eslint.org/docs/rules/max-element-depth
 		'@html-eslint/max-element-depth': 'off',
