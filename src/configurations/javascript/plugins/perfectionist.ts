@@ -27,11 +27,23 @@ export default defineConfigurationPart({
 		'perfectionist/sort-exports': ['warn', {
 			type: 'natural',
 			order: 'asc',
+			fallbackSort: {
+				type: 'line-length',
+				order: 'desc',
+			},
+			alphabet: '',
 			ignoreCase: true,
 			specialCharacters: 'keep',
-			groupKind: 'values-first',
+			locales: ['en-US'],
 			partitionByComment: false,
 			partitionByNewLine: true,
+			newlinesBetween: 'ignore',
+			groups: [
+				'wildcard-export',
+				'named-export',
+				'value-export',
+				'type-export',
+			],
 		}],
 
 		// Enforce sorted heritage clauses (autofixable)
@@ -43,38 +55,39 @@ export default defineConfigurationPart({
 		'perfectionist/sort-imports': ['warn', {
 			type: 'natural',
 			order: 'asc',
-			fallbackSort: { // ??? https://perfectionist.dev/rules/sort-imports
+			fallbackSort: {
 				type: 'alphabetical',
 				order: 'asc',
 			},
 			ignoreCase: true,
 			specialCharacters: 'keep',
+			locales: ['en-US'],
+			sortBy: 'path',
 			internalPattern: [
 				'^~.*',
 				'^@/.*',
 				'^#.*',
 			],
 			sortSideEffects: false,
-			newlinesBetween: 'ignore',
 			partitionByComment: false,
 			partitionByNewLine: false,
+			newlinesBetween: 'ignore',
 			groups: [
 				['vitest', 'jest'],
 				['vite'],
-				['vue', 'react'],
+				['vue', 'react', 'astro'],
 				['builtin'],
 				['external'],
 				['internal'],
 				['parent'],
 				['sibling'],
 				['index'],
-				['object'],
-				['external-type'],
-				['builtin-type'],
-				['internal-type'],
-				['parent-type'],
-				['sibling-type'],
-				['index-type'],
+				['type-external'],
+				['type-builtin'],
+				['type-internal'],
+				['type-parent'],
+				['type-sibling'],
+				['type-index'],
 				['style'],
 				['side-effect'],
 				['side-effect-style'],
@@ -96,6 +109,10 @@ export default defineConfigurationPart({
 				{
 					groupName: 'vue',
 					elementNamePattern: '^vue(\/.*)?$',
+				},
+				{
+					groupName: 'astro',
+					elementNamePattern: '^astro(\/.*)?$',
 				},
 				{
 					groupName: 'react',
@@ -130,11 +147,22 @@ export default defineConfigurationPart({
 		'perfectionist/sort-named-exports': ['warn', {
 			type: 'natural',
 			order: 'asc',
+			fallbackSort: {
+				type: 'line-length',
+				order: 'desc',
+			},
+			alphabet: '',
 			ignoreCase: true,
 			specialCharacters: 'keep',
-			groupKind: 'values-first',
+			locales: ['en-US'],
+			ignoreAlias: false,
 			partitionByComment: false,
 			partitionByNewLine: true,
+			newlinesBetween: 'ignore',
+			groups: [
+				'value-export',
+				'type-export',
+			],
 		}],
 
 		// Enforce sorted named imports (autofixable)
@@ -142,12 +170,22 @@ export default defineConfigurationPart({
 		'perfectionist/sort-named-imports': ['warn', {
 			type: 'natural',
 			order: 'asc',
+			fallbackSort: {
+				type: 'line-length',
+				order: 'desc',
+			},
+			alphabet: '',
 			ignoreCase: true,
 			specialCharacters: 'keep',
+			locales: ['en-US'],
 			ignoreAlias: false,
-			groupKind: 'values-first',
 			partitionByComment: false,
 			partitionByNewLine: true,
+			newlinesBetween: 'ignore',
+			groups: [
+				'value-export',
+				'type-export',
+			],
 		}],
 
 		// Enforce sorted object types (autofixable)
