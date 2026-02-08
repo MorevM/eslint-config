@@ -38,6 +38,10 @@ export default defineConfigurationPart({
 		// https://html-eslint.org/docs/rules/no-nested-interactive
 		'@html-eslint/no-nested-interactive': 'off',
 
+		// Disallows the use of obsolete attributes in HTML5
+		// https://html-eslint.org/docs/rules/no-obsolete-attrs
+		'@html-eslint/no-obsolete-attrs': 'warn',
+
 		// Disallow using obsolete tags in HTML5
 		// https://html-eslint.org/docs/rules/no-obsolete-tags
 		'@html-eslint/no-obsolete-tags': 'error',
