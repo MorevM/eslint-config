@@ -101,7 +101,9 @@ export const addScripts = async (stepOptions: StepOptions) => {
 	await sleep(delay);
 
 	if (shouldRemoveExistingScripts) {
-		eslintRelatedEntries.forEach(([key]) => delete existedNpmScripts[key]);
+		eslintRelatedEntries.forEach(([key]) => {
+			delete existedNpmScripts[key];
+		});
 	}
 
 	existedNpmScripts[lintScriptName] = `eslint .`;

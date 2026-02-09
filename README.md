@@ -1,3 +1,7 @@
+<!--
+  eslint-disable markdown-preferences/indent -- https://github.com/ota-meshi/eslint-plugin-markdown-preferences/issues/254
+-->
+
 ![Promo image of @morev/eslint-config package](./.github/images/banner.svg)
 
 ![Stability of "master" branch](https://img.shields.io/github/actions/workflow/status/MorevM/eslint-config/build.yaml?branch=master)
@@ -13,29 +17,29 @@ Strict shareable ESLint configuration with reasonable defaults.
 
 ## Table of contents
 
-* [Installation](#installation)
-  * [Automatic installation via CLI](#automatic-installation-via-cli)
-  * [Manual installation](#manual-installation)
-    * [Adding the required packages](#adding-the-required-packages)
-    * [Creating the configuration file](#creating-the-configuration-file)
-    * [Creating `npm scripts` for linting](#creating-npm-scripts-for-linting)
-    * [Configuring VSCode](#configuring-vscode)
-      * [Disabling `prettier`](#disabling-prettier)
-      * [Enabling autofix on save](#enabling-autofix-on-save)
-      * [Enabling ESLint to work with any supported file format](#enabling-eslint-to-work-with-any-supported-file-format)
-      * [Suppressing stylistic errors noise](#suppressing-stylistic-errors-noise)
-* [Package contents](#package-contents)
-  * [`combine` utility function](#combine-utility-function)
-  * [`defineIgnores` utility function](#defineignores-utility-function)
-  * [`defineConfiguration` function](#defineconfiguration-function)
-  * [Extra useful exports](#extra-useful-exports)
+- [Installation](#installation)
+  - [Automatic installation via CLI](#automatic-installation-via-cli)
+  - [Manual installation](#manual-installation)
+    - [Adding the required packages](#adding-the-required-packages)
+    - [Creating the configuration file](#creating-the-configuration-file)
+    - [Creating `npm scripts` for linting](#creating-npm-scripts-for-linting)
+    - [Configuring VSCode](#configuring-vscode)
+      - [Disabling `prettier`](#disabling-prettier)
+      - [Enabling autofix on save](#enabling-autofix-on-save)
+      - [Enabling ESLint to work with any file format](#enabling-eslint-to-work-with-any-supported-file-format)
+      - [Suppressing stylistic errors noise](#suppressing-stylistic-errors-noise)
+- [Package contents][package-contents]
+  - [`combine` utility function](#combine-utility-function)
+  - [`defineIgnores` utility function][define-ignores]
+  - [`defineConfiguration` function][define-configuration]
+  - [Extra useful exports](#extra-useful-exports)
 
 ## Installation
 
 You have two options:
 
-* Automatic installation/configuration via CLI using the installation wizard *(recommended)*;
-* Manual installation and configuration.
+- Automatic installation/configuration via CLI using the installation wizard *(recommended)*;
+- Manual installation and configuration.
 
 Both options are described below.
 
@@ -43,7 +47,7 @@ Both options are described below.
 
 Just run the package binary using your favorite package manager:
 
-```bash
+```sh
 # Using `npm`
 npx @morev/eslint-config@latest
 
@@ -80,7 +84,7 @@ Then follow the installer instructions.
 
 Add the `eslint` and `@morev/eslint-config` packages as `devDependencies` using your favorite package manager:
 
-```bash
+```sh
 # Using `npm`
 npm install -D eslint @morev/eslint-config
 
@@ -100,13 +104,13 @@ bun install -D eslint @morev/eslint-config
 > [!CAUTION]
 > Minimum environment requirements:
 >
-> * Node 20 or higher.
-> * `eslint^9.9.1`;
-> * `typescript^5.4.2` (if used);
+> - Node 20 or higher.
+> - `eslint^9.9.1`;
+> - `typescript^5.4.2` (if used);
 
 #### Creating the configuration file
 
-Create the [`eslint.config.js`](https://eslint.org/docs/latest/use/configure/configuration-files) file
+Create the [`eslint.config.js`][eslint-configuration-files] file
 with the following content as a starting point:
 
 ```js
@@ -122,7 +126,7 @@ export default combine([
 
 ```
 
-For more explanations on this part, take a look at [Package contents](#package-contents) section.
+For more explanations on this part, take a look at [Package contents][package-contents] section.
 
 ---
 
@@ -151,7 +155,8 @@ Open your `package.json` and create these scripts for linting within "scripts" s
 
   ---
 
-  You have two ways: disable ESLint for non-linting files using [`defineIgnores`](#defineignores-utility-function) (recommended),
+  You have two ways: disable ESLint for non-linting files using
+  [`defineIgnores`][define-ignores] (recommended),
   or call ESLint only for required files in `npm scripts`.
 
   **Method 1 (recommended): Excluding files**
@@ -189,7 +194,8 @@ Open your `package.json` and create these scripts for linting within "scripts" s
   > It is important to use quotes for Windows compatibility.
 
   Keep in mind that in this case you lose the possibility to call ESLint without arguments (and expect a correct result)
-  also there is nothing to prevent the IDE's extension from automatically making changes to these files once you open and save them.
+  also there is nothing to prevent the IDE's extension from automatically
+  making changes to these files once you open and save them.
 
 </details>
 
@@ -197,7 +203,7 @@ Open your `package.json` and create these scripts for linting within "scripts" s
 
 #### Configuring VSCode
 
-For a better user experience, install the [official ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+For a better user experience, install the [official ESLint extension].
 
 Next, create the `.vscode/settings.json` file in the project root (if not exists). \
 This file contains settings that apply only to a specific project, so your other projects will remain in the same state
@@ -206,7 +212,8 @@ This file contains settings that apply only to a specific project, so your other
 If the file already exists, you will need to add/replace/merge the necessary keys/values yourself.
 
 > [!TIP]
-> The format of `.vscode/settings.json` file is actually `JSONC` - so you can safely use comments and trailing commas inside.
+> The format of `.vscode/settings.json` file is actually `JSONC` -
+> so you can safely use comments and trailing commas inside.
 
 ##### Disabling `prettier`
 
@@ -244,10 +251,11 @@ Put these lines in the `.vscode/settings.json` file to enable this feature:
 
 ##### Enabling ESLint to work with any supported file format
 
-By default, [VSCode ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-only validates JavaScript files, but the config provides a configurations to work with JSX, Astro, Vue, YAML, JSON files and so on.
+By default, [VSCode ESLint extension][official ESLint extension]
+only validates JavaScript files, but the config provides a configurations
+to work with JSX, Astro, Vue, YAML, JSON files and so on.
 
-All available configurations are listed in the [`defineconfiguration`](#defineconfiguration-function) section.
+All available configurations are listed in the [`defineConfiguration`][define-configuration] section.
 
 Put these lines in the `.vscode/settings.json` file
 to enforce the extension to check all files supported by this package:
@@ -316,12 +324,13 @@ Put these lines in the `.vscode/settings.json` file to set the severity of such 
 ## Package contents
 
 The main export of the package provides 3 functions - `combine`, `defineIgnores` and `defineConfiguration`. \
-All of these functions are inline-documented using JSDoc with the provided TS types, so you'll always have hints right in the editor. \
+All of these functions are inline-documented using JSDoc with the provided TS types,
+so you'll always have hints right in the editor. \
 However, let's look at them in more detail:
 
 ### `combine` utility function
 
-Your [`eslint.config.js`](https://eslint.org/docs/latest/use/configure/configuration-files) file
+Your [`eslint.config.js`][eslint-configuration-files] file
 should export the configurations (both imported from this package and, optionally, other parts)
 wrapped with the `combine` utility:
 
@@ -383,9 +392,9 @@ It automatically reads the root `.gitignore` file to inherit ignored paths,
 and adds some known non-linting files to reduce the config verbosity.
 
 > [!TIP]
-> You can see these extra patterns for ignoring in the source code (the `GLOB_EXCLUDE` constant) [here](./src/globs.ts).
+> You can see these extra patterns for ignoring in the source code (the `GLOB_EXCLUDE` constant) [here].
 
-Under the hood, it uses [`eslint-config-flat-gitignore`](https://github.com/antfu/eslint-config-flat-gitignore) package.
+Under the hood, it uses [`eslint-config-flat-gitignore`][eslint-config-flat-gitignore] package.
 
 > [!IMPORTANT]
 > The function only considers the root `.gitignore`. \
@@ -446,7 +455,7 @@ Under the hood, it uses [`eslint-config-flat-gitignore`](https://github.com/antf
   ]);
   ```
 
-  `gitignoreFiles` value is passed to the [`eslint-config-flat-gitignore`](https://github.com/antfu/eslint-config-flat-gitignore)
+  `gitignoreFiles` value is passed to the [`eslint-config-flat-gitignore`][eslint-config-flat-gitignore]
   as the `files` argument without any changes.
 
 </details>
@@ -483,9 +492,10 @@ so the "vue" configuration has a preset `["**/*.vue"]`, and so on.
 
 Let's take a more detailed look:
 
-#### The configurations list:
+#### The configurations list
 
-* 🗂️ `javascript` - the base ESLint configuration with plugins related to `js` files.
+- 🗂️ `javascript` - the base ESLint configuration with plugins related to `js` files.
+
   <details>
     <summary>Show the details</summary>
 
@@ -500,7 +510,8 @@ Let's take a more detailed look:
 
   </details>
 
-* 📁 `browser` - additional JS rules related only to code that executes in the browser.
+- 📁 `browser` - additional JS rules related only to code that executes in the browser.
+
   <details>
     <summary>Show the details</summary>
 
@@ -513,7 +524,8 @@ Let's take a more detailed look:
     whether a file belongs to a browser context).
 
     If your project structure identifies files that refer **only** to the browser,
-    it is recommended to set `files` explicitly (so that, for example, you get errors when you try to use `window` inside a server file).
+    it is recommended to set `files` explicitly (so that, for example,
+    you get errors when you try to use `window` inside a server file).
 
     ```js
     export default combine([
@@ -527,7 +539,8 @@ Let's take a more detailed look:
 
   </details>
 
-* 📁 `node` - set of the rules for the code that use [Node.js](https://nodejs.org/) APIs.
+- 📁 `node` - set of the rules for the code that use [Node.js](https://nodejs.org/) APIs.
+
   <details>
     <summary>Show the details</summary>
 
@@ -555,7 +568,8 @@ Let's take a more detailed look:
 
   </details>
 
-* 📁 `typescript` - for projects that use [Typescript](https://www.typescriptlang.org/).
+- 📁 `typescript` - for projects that use [Typescript](https://www.typescriptlang.org/).
+
   <details>
     <summary>Show the details</summary>
 
@@ -563,8 +577,9 @@ Let's take a more detailed look:
 
     This configuration provides rules specific to TypeScript and enables the TypeScript parser for TS(X) files.
 
-    Just one important detail here - if you use TypeScript inside files that have a different extension (like `.vue` or `.astro`) -
-    don't forget to specify those extensions as the `extraFileExtensions` option.
+    Just one important detail here - if you use TypeScript inside files that have
+    a different extension (like `.vue` or `.astro`) - don't forget to specify
+    those extensions as the `extraFileExtensions` option.
 
     Example of ESLint config for Vue 3 with TypeScript:
 
@@ -584,7 +599,8 @@ Let's take a more detailed look:
 
   </details>
 
-* 📁 `jsx` - for projects that use JSX/TSX.
+- 📁 `jsx` - for projects that use JSX/TSX.
+
   <details>
     <summary>Show the details</summary>
 
@@ -603,7 +619,8 @@ Let's take a more detailed look:
 
   </details>
 
-* 📁 `vue` - for projects that use [VueJS](https://vuejs.org/) (both `2` and `3`).
+- 📁 `vue` - for projects that use [VueJS](https://vuejs.org/) (both `2` and `3`).
+
   <details>
     <summary>Show the details</summary>
 
@@ -641,7 +658,8 @@ Let's take a more detailed look:
 
   </details>
 
-* 📁 `astro` - for projects that use [Astro](https://astro.build/) framework.
+- 📁 `astro` - for projects that use [Astro](https://astro.build/) framework.
+
   <details>
     <summary>Show the details</summary>
 
@@ -668,7 +686,8 @@ Let's take a more detailed look:
 
   </details>
 
-* 📁 `vitest` - for projects that use [Vitest](https://vitest.dev/) as a test platform.
+- 📁 `vitest` - for projects that use [Vitest](https://vitest.dev/) as a test platform.
+
   <details>
     <summary>Show the details</summary>
 
@@ -679,7 +698,7 @@ Let's take a more detailed look:
     By default, the rules apply to popular test file names, which in turn are driven by the tool's defaults. \
     By default, the configuration ignores Cypress default test filename pattern.
 
-    > You can see these globs in the source code [here](./src/globs.ts) (`GLOB_TESTS` and `GLOB_CYPRESS` constants).
+    > You can see these globs in the source code [here] (`GLOB_TESTS` and `GLOB_CYPRESS` constants).
 
     It also declares `vitest` testing functions as
     [ESLint globals](https://eslint.org/docs/latest/use/configure/language-options#using-configuration-files) by default. \
@@ -700,7 +719,8 @@ Let's take a more detailed look:
 
   </details>
 
-* 📁 `jest` - for projects that use [Jest](https://jestjs.io/) as a test platform.
+- 📁 `jest` - for projects that use [Jest](https://jestjs.io/) as a test platform.
+
   <details>
     <summary>Show the details</summary>
 
@@ -711,7 +731,7 @@ Let's take a more detailed look:
     By default, the rules apply to popular test file names, which in turn are driven by the tool's defaults.
     By default, the configuration ignores Cypress default test filename pattern.
 
-    > You can see these globs in the source code [here](./src/globs.ts) (`GLOB_TESTS` and `GLOB_CYPRESS` constants).
+    > You can see these globs in the source code [here] (`GLOB_TESTS` and `GLOB_CYPRESS` constants).
 
     If you have non-standard test file name pattern or a custom ignores,
     then specify files and exceptions explicitly using the `files` and `ignores` options.
@@ -728,7 +748,8 @@ Let's take a more detailed look:
 
   </details>
 
-* 📁 `cypress` - for projects that use [Cypress](https://www.cypress.io/) as a test platform.
+- 📁 `cypress` - for projects that use [Cypress](https://www.cypress.io/) as a test platform.
+
   <details>
     <summary>Show the details</summary>
 
@@ -738,7 +759,7 @@ Let's take a more detailed look:
 
     By default, the rules apply to the test file names that Cypress uses by default.
 
-    > You can see these globs in the source code [here](./src/globs.ts) (`GLOB_CYPRESS` constant).
+    > You can see these globs in the source code [here] (`GLOB_CYPRESS` constant).
 
     If you have non-standard test file name pattern, then specify files explicitly using the `files` option.
 
@@ -754,7 +775,8 @@ Let's take a more detailed look:
 
   </details>
 
-* 📁 `playwright` - for projects that use [Playwright](https://playwright.dev/) as a test platform.
+- 📁 `playwright` - for projects that use [Playwright](https://playwright.dev/) as a test platform.
+
   <details>
     <summary>Show the details</summary>
 
@@ -764,7 +786,7 @@ Let's take a more detailed look:
 
     By default, the rules apply to the test file names under `e2e`, `tests` or `playwright` directories.
 
-    > You can see these globs in the source code [here](./src/globs.ts) (`GLOB_PLAYWRIGHT` constant).
+    > You can see these globs in the source code [here] (`GLOB_PLAYWRIGHT` constant).
 
     If you have non-standard test file name pattern, then specify files explicitly using the `files` option.
 
@@ -780,7 +802,8 @@ Let's take a more detailed look:
 
   </details>
 
-* 📁 `json` - for projects that use JSON, JSON5 and JSONC files.
+- 📁 `json` - for projects that use JSON, JSON5 and JSONC files.
+
   <details>
     <summary>Show the details</summary>
 
@@ -803,7 +826,8 @@ Let's take a more detailed look:
 
   </details>
 
-* 📁 `markdown` - for projects that use [Markdown](https://en.wikipedia.org/wiki/Markdown) files.
+- 📁 `markdown` - for projects that use [Markdown](https://en.wikipedia.org/wiki/Markdown) files.
+
   <details>
     <summary>Show the details</summary>
 
@@ -825,7 +849,8 @@ Let's take a more detailed look:
 
   </details>
 
-* 📁 `html` - for projects that use pure HTML files.
+- 📁 `html` - for projects that use pure HTML files.
+
   <details>
     <summary>Show the details</summary>
 
@@ -845,7 +870,8 @@ Let's take a more detailed look:
 
   </details>
 
-* 📁 `yaml` - for projects that use [YAML files](https://en.wikipedia.org/wiki/YAML).
+- 📁 `yaml` - for projects that use [YAML files](https://en.wikipedia.org/wiki/YAML).
+
   <details>
     <summary>Show the details</summary>
 
@@ -880,3 +906,13 @@ If you need to access the globs used within the package, you can use `/globs` ex
 ```ts
 import { GLOB_TSX } from '@morev/eslint-config/globs';
 ```
+
+---
+
+[define-configuration]: #defineconfiguration-function
+[define-ignores]: #defineignores-utility-function
+[eslint-config-flat-gitignore]: https://github.com/antfu/eslint-config-flat-gitignore
+[eslint-configuration-files]: https://eslint.org/docs/latest/use/configure/configuration-files
+[here]: ./src/globs.ts
+[official ESLint extension]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+[package-contents]: #package-contents
