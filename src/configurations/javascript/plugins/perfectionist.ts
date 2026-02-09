@@ -60,6 +60,7 @@ export default defineConfigurationPart({
 			partitionByComment: false,
 			partitionByNewLine: true,
 			newlinesBetween: 'ignore',
+			newlinesInside: 'ignore',
 			groups: [
 				'wildcard-export',
 				'named-export',
@@ -116,6 +117,7 @@ export default defineConfigurationPart({
 			partitionByComment: false,
 			partitionByNewLine: false,
 			newlinesBetween: 'ignore',
+			newlinesInside: 'ignore',
 			groups: [
 				['vitest', 'jest'],
 				['vite'],
