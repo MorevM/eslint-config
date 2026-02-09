@@ -5,6 +5,7 @@ on:
     tags: [v*]
 
 permissions:
+  id-token: write
   contents: write
 
 jobs:
@@ -62,5 +63,3 @@ jobs:
           else
             pnpm publish --access public --no-git-checks
           fi
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
