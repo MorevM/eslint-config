@@ -63,3 +63,5 @@ jobs:
           else
             pnpm publish --access public --no-git-checks
           fi
+        env:
+          NODE_AUTH_TOKEN: ''  # Clear placeholder set by setup-node to enable OIDC
