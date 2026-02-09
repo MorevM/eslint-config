@@ -45,7 +45,6 @@ export default function configurationVitest(options: Partial<VitestConfiguration
 				...languageOptions,
 				parser: parserTypescript,
 				parserOptions: {
-					project: true,
 					projectService: true,
 					tsconfigRootDir: process.cwd(),
 				},

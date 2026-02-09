@@ -32,7 +32,6 @@ export default function configurationJest(options: Partial<JestConfigurationOpti
 				},
 				parser: parserTypescript,
 				parserOptions: {
-					project: true,
 					projectService: true,
 					tsconfigRootDir: process.cwd(),
 				},
