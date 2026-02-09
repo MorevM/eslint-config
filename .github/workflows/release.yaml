@@ -28,6 +28,20 @@ jobs:
           scope: '@morev'
           registry-url: https://registry.npmjs.org
 
+      - name: Clear NODE_AUTH_TOKEN for OIDC
+        # Remove the _authToken line from .npmrc that setup-node creates
+        # This allows npm to use OIDC instead of token-based auth
+        # See: https://github.com/actions/setup-node/issues/1440
+        run: |
+          echo "Contents of .npmrc before cleanup:"
+          cat $NPM_CONFIG_USERCONFIG || true
+          # Remove any authToken lines to allow OIDC
+          sed -i '/_authToken/d' $NPM_CONFIG_USERCONFIG || true
+          echo "Contents of .npmrc after cleanup:"
+          cat $NPM_CONFIG_USERCONFIG || true
+          # Also unset the env var
+          unset NODE_AUTH_TOKEN
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
@@ -64,4 +78,5 @@ jobs:
             pnpm publish --access public --no-git-checks
           fi
         env:
-          NODE_AUTH_TOKEN: ''  # Clear placeholder set by setup-node to enable OIDC
+          # Explicitly clear placeholder set by setup-node to enable OIDC
+          NODE_AUTH_TOKEN: ''
