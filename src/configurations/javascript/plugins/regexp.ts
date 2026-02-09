@@ -273,12 +273,10 @@ export default defineConfigurationPart({
 
 		// Enforce the use of the `u` flag (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/require-unicode-regexp.html
-		// @TODO: [2026-01-01] Review
 		'regexp/require-unicode-regexp': 'off',
 
 		// Enforce the use of the `u` flag (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/require-unicode-sets-regexp.html
-		// @TODO: [2026-01-01] Review
 		'regexp/require-unicode-sets-regexp': 'off',
 
 		// Require simplify set operations (autofixable)
