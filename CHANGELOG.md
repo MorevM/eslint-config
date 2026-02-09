@@ -1,5 +1,12 @@
 
 
+## [41.0.0-rc.1](https://github.com/MorevM/eslint-config/compare/v41.0.0-rc.0...v41.0.0-rc.1) (2026-02-09)
+
+
+### Chores
+
+* Mark `eslint-plugin-markdown-preferences` as direct dependency ([6cb2f48](https://github.com/MorevM/eslint-config/commit/6cb2f48a286dab7d30d0e39568553a10b8368bab))
+
 ## [41.0.0-rc.0](https://github.com/MorevM/eslint-config/compare/v40.0.0...v41.0.0-rc.0) (2026-02-09)
 
 ### ⚠ BREAKING CHANGES
