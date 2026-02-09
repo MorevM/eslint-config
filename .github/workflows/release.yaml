@@ -56,6 +56,11 @@ jobs:
           body: ${{steps.latest-changelog-entry.outputs.result}}
 
       - name: Publish package
-        run: pnpm publish --access public --no-git-checks
+        run: |
+          if [[ "${GITHUB_REF_NAME}" == *"-rc."* ]]; then
+            pnpm publish --tag rc --access public --no-git-checks
+          else
+            pnpm publish --access public --no-git-checks
+          fi
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
