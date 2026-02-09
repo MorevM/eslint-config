@@ -56,7 +56,8 @@
 		"test": "pnpm build && vitest",
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix",
-		"release": "release-it --disable-metrics"
+		"release": "release-it --disable-metrics",
+		"release:rc": "release-it --preRelease=rc --disable-metrics"
 	},
 	"peerDependencies": {
 		"eslint": "^9.34.0",
