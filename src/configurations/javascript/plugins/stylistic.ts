@@ -331,7 +331,7 @@ export default defineConfigurationPart({
 		// https://eslint.style/rules/js/quotes
 		'@stylistic/quotes': ['warn', 'single', {
 			avoidEscape: true,
-			allowTemplateLiterals: true,
+			allowTemplateLiterals: 'always',
 		}],
 
 		// Enforce spacing between rest and spread operators and their expressions (autofixable)
