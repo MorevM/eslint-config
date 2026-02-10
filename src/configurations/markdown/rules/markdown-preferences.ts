@@ -285,6 +285,10 @@ export default defineConfigurationPart({
 					info: '/^code-group\\b/u',
 					padding: 'always',
 				},
+				{
+					info: '/^details\\b/u',
+					padding: 'always',
+				},
 			],
 		}],
 
