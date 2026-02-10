@@ -1,5 +1,18 @@
 
 
+## [41.0.0-rc.2](https://github.com/MorevM/eslint-config/compare/v41.0.0-rc.1...v41.0.0-rc.2) (2026-02-10)
+
+
+### Chores
+
+* Bump `@stylistic/eslint-plugin` from 5.7.1 to 5.8.0 ([1e6035a](https://github.com/MorevM/eslint-config/commit/1e6035afc84f0ce22690662a49dd22406dcf0e97))
+* Bump dependencies that do not require additional work ([a9061f6](https://github.com/MorevM/eslint-config/commit/a9061f6d9254dde60036c87c9ed07e3d02c405ba))
+
+
+### Tests
+
+* Add experimental `@stylistic/exp-jsx-props-style` to the list of exceptions ([ab27847](https://github.com/MorevM/eslint-config/commit/ab278476ad0596834bdbed50f2c7bc1a63ada7a0))
+
 ## [41.0.0-rc.1](https://github.com/MorevM/eslint-config/compare/v41.0.0-rc.0...v41.0.0-rc.1) (2026-02-09)
 
 
