@@ -1,3 +1,4 @@
+export { default as pluginEslintComments } from '@eslint-community/eslint-plugin-eslint-comments';
 export { default as pluginMarkdown } from '@eslint/markdown';
 export { default as pluginHtml } from '@html-eslint/eslint-plugin';
 export { default as pluginStylistic } from '@stylistic/eslint-plugin';
@@ -5,7 +6,6 @@ export { default as pluginVitest } from '@vitest/eslint-plugin';
 export { default as pluginAstro } from 'eslint-plugin-astro';
 export { default as pluginChaiFriendly } from 'eslint-plugin-chai-friendly';
 export { default as pluginCypress } from 'eslint-plugin-cypress';
-export { default as pluginEslintComments } from 'eslint-plugin-eslint-comments';
 export { default as pluginImportX } from 'eslint-plugin-import-x';
 export { default as pluginJest } from 'eslint-plugin-jest';
 export { default as pluginJsdoc } from 'eslint-plugin-jsdoc';

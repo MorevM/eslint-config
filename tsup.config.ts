@@ -15,6 +15,7 @@ export const tsup: Options = {
 	},
 	/// keep-sorted
 	external: [
+		'@eslint-community/eslint-plugin-eslint-comments',
 		'@eslint/eslintrc',
 		'@eslint/markdown',
 		'@html-eslint/parser',
@@ -24,7 +25,6 @@ export const tsup: Options = {
 		'eslint-plugin-astro',
 		'eslint-plugin-chai-friendly',
 		'eslint-plugin-cypress',
-		'eslint-plugin-eslint-comments',
 		'eslint-plugin-import-x',
 		'eslint-plugin-jest',
 		'eslint-plugin-jsdoc',
