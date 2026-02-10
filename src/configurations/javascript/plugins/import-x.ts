@@ -135,7 +135,13 @@ export default defineConfigurationPart({
 
 		// Ensure imports point to a file/module that can be resolved
 		// https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-unresolved.md
-		'import-x/no-unresolved': ['error', { commonjs: true, caseSensitive: true }],
+		'import-x/no-unresolved': ['error', {
+			commonjs: true,
+			caseSensitive: true,
+			ignore: [
+				'\\.\\w+\\?\\w+$', // skip smth like 'icon.svg?inline'
+			],
+		}],
 
 		// Prevent unnecessary path segments in import and require statements
 		// https://github.com/un-ts/eslint-plugin-import-x/blob/master/docs/rules/no-useless-path-segments.md
