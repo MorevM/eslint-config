@@ -43,6 +43,7 @@ describe('Check unknown, unused and deprecated rules', () => {
 			'unicorn/prefer-node-protocol',
 			// Experimental rules
 			'@stylistic/exp-list-style',
+			'@stylistic/exp-jsx-props-style',
 		]);
 
 		ruleFinder.setKnownDeprecatedRules([
