@@ -370,7 +370,9 @@ export default defineConfigurationPart({
 
 		// Enforce that ordered list markers use sequential numbers (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/ordered-list-marker-sequence.html
-		'markdown-preferences/ordered-list-marker-sequence': 'warn',
+		'markdown-preferences/ordered-list-marker-sequence': ['warn', {
+			increment: 'never',
+		}],
 
 		// Enforce setext heading underline length (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/ordered-list-marker-sequence.html
