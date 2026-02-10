@@ -400,7 +400,8 @@ export default defineConfigurationPart({
 
 		// Disallow conversion idioms when they do not change the type or value of the expression (has suggestions)
 		// https://typescript-eslint.io/rules/no-unnecessary-type-conversion
-		'@typescript-eslint/no-unnecessary-type-conversion': 'error',
+		// Note: better for runtime safety
+		'@typescript-eslint/no-unnecessary-type-conversion': 'off',
 
 		// Disallow type parameters that aren't used multiple times
 		// https://typescript-eslint.io/rules/no-unnecessary-type-parameters
