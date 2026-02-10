@@ -352,11 +352,11 @@ export default defineConfigurationPart({
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/max-len.html
 		'markdown-preferences/max-len': ['warn', {
 			heading: 100,
-			paragraph: 120,
-			list: 120,
-			blockquote: 120,
+			paragraph: 140,
+			list: 140,
+			blockquote: 140,
 			table: 'ignore',
-			footnoteDefinition: 120,
+			footnoteDefinition: 140,
 			html: 'ignore',
 			code: 'ignore',
 			frontmatter: 'ignore',
