@@ -1,5 +1,21 @@
 
 
+## [41.0.0-rc.3](https://github.com/MorevM/eslint-config/compare/v41.0.0-rc.2...v41.0.0-rc.3) (2026-02-10)
+
+
+### Bug fixes
+
+* **javascript:** Skip files with inline import modifiers in `import-x/no-unresolved` ([a5c3e9e](https://github.com/MorevM/eslint-config/commit/a5c3e9e90d931ca2834f4df6b497f2e6e21bb332))
+* **markdown:** Add padding for `details` container ([2c1ae67](https://github.com/MorevM/eslint-config/commit/2c1ae674c263b2042fdd980de68700f2db8f3c37))
+* **markdown:** Disable incrementing of ordered list items ([61812bb](https://github.com/MorevM/eslint-config/commit/61812bb787fa432a96eaed7e8a495feef5f83d0d))
+* **markdown:** Increase maximum available length ([c0c3469](https://github.com/MorevM/eslint-config/commit/c0c3469cd76f98b2e4c322aaad15f3688aeaf170))
+* **typescript:** Turn off `@typescript-eslint/no-misused-spread` rule ([dfb95e2](https://github.com/MorevM/eslint-config/commit/dfb95e273e1853587449c0c999b4016ea3e7b2f1))
+* **typescript:** Turn off `@typescript-eslint/no-unnecessary-type-conversion` rule ([3056e3b](https://github.com/MorevM/eslint-config/commit/3056e3b3bfd630d7df73229e85b2132d6af35d26))
+* **typescript:** Turn off `@typescript-eslint/no-useless-default-assignment` rule ([bf51f07](https://github.com/MorevM/eslint-config/commit/bf51f07f044ee5ad107449566f382795779f8bca))
+* **typescript:** Turn off `@typescript-eslint/strict-void-return` rule ([ca5a2d8](https://github.com/MorevM/eslint-config/commit/ca5a2d89e922bb7bf03e001c5fa7c41de439d3e7))
+* **vitest:** Turn off `vitest/prefer-expect-type-of` rule ([46925e9](https://github.com/MorevM/eslint-config/commit/46925e9372b8d92c7441aab367f583bc349cfd14))
+* **vue:** Turn of `vue/no-literals-in-template` rule ([128b71d](https://github.com/MorevM/eslint-config/commit/128b71dd8c91d4081658f44148da45da55f59ffe))
+
 ## [41.0.0-rc.2](https://github.com/MorevM/eslint-config/compare/v41.0.0-rc.1...v41.0.0-rc.2) (2026-02-10)
 
 
