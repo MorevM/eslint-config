@@ -471,7 +471,8 @@ export default defineConfigurationPart({
 
 		// Disallow default values that will never be used (autofixable)
 		// https://typescript-eslint.io/rules/no-useless-default-assignment
-		'@typescript-eslint/no-useless-default-assignment': 'error',
+		// Note: useful for runtime security
+		'@typescript-eslint/no-useless-default-assignment': 'off',
 
 		// Require destructuring from arrays and/or objects (autofixable)
 		// https://typescript-eslint.io/rules/prefer-destructuring
