@@ -163,7 +163,8 @@ export default defineConfigurationPart({
 
 		// Disallow object, array, and function literals in template
 		// https://eslint.vuejs.org/rules/no-literals-in-template.html
-		'vue/no-literals-in-template': 'error',
+		// Note: way too strict
+		'vue/no-literals-in-template': 'off',
 
 		// Disallow asynchronously registered expose
 		// https://eslint.vuejs.org/rules/no-expose-after-await.html
