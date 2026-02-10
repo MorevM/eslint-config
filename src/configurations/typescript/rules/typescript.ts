@@ -633,7 +633,8 @@ export default defineConfigurationPart({
 
 		// Disallow passing a value-returning function in a position accepting a void function (requires type information)
 		// https://typescript-eslint.io/rules/strict-void-return
-		'@typescript-eslint/strict-void-return': 'error',
+		// Note: rarely usefull but hurts in cases like `setTimeout(fn)`
+		'@typescript-eslint/strict-void-return': 'off',
 
 		// Exhaustiveness checking in switch with union type
 		// https://typescript-eslint.io/rules/switch-exhaustiveness-check
