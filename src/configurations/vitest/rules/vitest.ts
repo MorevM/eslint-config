@@ -182,7 +182,8 @@ export default defineConfigurationPart({
 
 		// Enforce using `expectTypeOf` instead of `expect(typeof ...)` (autofixable)
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-expect-type-of.md
-		'vitest/prefer-expect-type-of': 'warn',
+		// Note: not suitable for runtime checks or for working in environments with inaccurate types
+		'vitest/prefer-expect-type-of': 'off',
 
 		// Prefer having hooks in a consistent order
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-hooks-in-order.md
