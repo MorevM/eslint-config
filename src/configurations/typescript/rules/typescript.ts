@@ -303,7 +303,9 @@ export default defineConfigurationPart({
 
 		// Disallow using the spread operator when it might cause unexpected behavior
 		// https://typescript-eslint.io/rules/no-misused-spread
-		'@typescript-eslint/no-misused-spread': 'error',
+		// Note: I would like to enable for everything except strings (`[...string]`),
+		//       but there is no such option :(
+		'@typescript-eslint/no-misused-spread': 'off',
 
 		// Disallow enums from having both number and string members
 		// https://typescript-eslint.io/rules/no-mixed-enums
