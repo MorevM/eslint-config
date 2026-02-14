@@ -24,8 +24,8 @@ importers:
         specifier: ^0.54.0
         version: 0.54.0(jiti@2.6.1)
       '@morev/eslint-disable-autofix':
-        specifier: ^1.0.2
-        version: 1.0.2(eslint@9.39.2(jiti@2.6.1))
+        specifier: ^1.1.0
+        version: 1.1.0(eslint@9.39.2(jiti@2.6.1))
       '@morev/utils':
         specifier: ^3.13.1
         version: 3.13.1
@@ -746,11 +746,11 @@ packages:
   '@morev/commitlint-config@0.2.2':
     resolution: {integrity: sha512-i4MhIy4C3W2z53hhqKxhlLG52QxfozR6UZDkcZ0PjxwATzgd5x5neVtbyfeceC8zfdCmYOlDuWvVXI0VhnKmKQ==}
 
-  '@morev/eslint-disable-autofix@1.0.2':
-    resolution: {integrity: sha512-6wUrWT6xMqCSF7SVnDqTGlKzViehVBMVEl427lxHV9v4mrfOYeG1bpsL7kVhW0hnEit/+DWZGEPC2+4Zl2Qr6A==}
+  '@morev/eslint-disable-autofix@1.1.0':
+    resolution: {integrity: sha512-sUb89ypIJssOJw1QRUZpWETuTitM/B2DZsekP8vkDD83cLLgZb0XN8t+arxhdWBKucyTLlrtQIjrI8RBRDuJyw==}
     engines: {node: '>=18'}
     peerDependencies:
-      eslint: ^9.0.0
+      eslint: ^9.0.0 || ^10.0.0
 
   '@morev/utils@2.8.1':
     resolution: {integrity: sha512-q++LKjbWTUt8cZIvnDLUnt+6LXsgiUmfW5S3kaPST4bR/FXhoU87hwua9DfgqW6ht11CwgOyGeQ14ktV51somw==}
@@ -5029,11 +5029,10 @@ snapshots:
       - '@swc/core'
       - '@swc/wasm'
 
-  '@morev/eslint-disable-autofix@1.0.2(eslint@9.39.2(jiti@2.6.1))':
+  '@morev/eslint-disable-autofix@1.1.0(eslint@9.39.2(jiti@2.6.1))':
     dependencies:
       '@morev/utils': 3.13.1
       eslint: 9.39.2(jiti@2.6.1)
-      eslint-rule-composer: 0.3.0
 
   '@morev/utils@2.8.1':
     dependencies:
