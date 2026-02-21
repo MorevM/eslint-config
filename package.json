@@ -71,7 +71,7 @@
 		"@html-eslint/parser": "^0.54.0",
 		"@morev/eslint-disable-autofix": "^1.0.2",
 		"@morev/utils": "^3.13.1",
-		"@stylistic/eslint-plugin": "^5.8.0",
+		"@stylistic/eslint-plugin": "^5.9.0",
 		"@vitest/eslint-plugin": "^1.6.7",
 		"ansis": "^4.2.0",
 		"astro-eslint-parser": "^1.2.2",
