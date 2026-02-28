@@ -79,7 +79,7 @@
 		"eslint-import-resolver-typescript": "^4.4.3",
 		"eslint-plugin-astro": "^1.5.0",
 		"eslint-plugin-chai-friendly": "^1.1.0",
-		"eslint-plugin-command": "^3.4.0",
+		"eslint-plugin-command": "^3.5.2",
 		"eslint-plugin-cypress": "^5.3.0",
 		"eslint-plugin-import-x": "^4.16.1",
 		"eslint-plugin-jest": "^29.13.0",
