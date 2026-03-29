@@ -52,7 +52,9 @@ export default defineConfigurationPart({
 
 		// Reports invalid block tag names
 		// https://github.com/gajus/eslint-plugin-jsdoc#check-tag-names
-		'jsdoc/check-tag-names': 'error',
+		'jsdoc/check-tag-names': ['error', {
+			definedTags: ['TODO', 'DEPRECATED'],
+		}],
 
 		// Checks that any `@template` names are actually used in the connected `@typedef` or type alias.
 		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-template-names.md#readme
