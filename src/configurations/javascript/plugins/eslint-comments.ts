@@ -52,7 +52,6 @@ export default defineConfigurationPart({
 
 		// Require include descriptions in ESLint directive-comments
 		// https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/require-description.html
-		// Note: Usually it's obvious
-		'eslint-comments/require-description': 'off',
+		'eslint-comments/require-description': 'warn',
 	},
 });
