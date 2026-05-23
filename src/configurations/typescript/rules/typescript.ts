@@ -396,7 +396,8 @@ export default defineConfigurationPart({
 
 		// Disallows unnecessary constraints on generic types (has suggestions)
 		// https://typescript-eslint.io/rules/no-unnecessary-type-constraint
-		'@typescript-eslint/no-unnecessary-type-constraint': 'warn',
+		// Note: Explicit is better than implicit
+		'@typescript-eslint/no-unnecessary-type-constraint': 'off',
 
 		// Disallow conversion idioms when they do not change the type or value of the expression (has suggestions)
 		// https://typescript-eslint.io/rules/no-unnecessary-type-conversion
