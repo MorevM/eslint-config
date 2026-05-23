@@ -61,7 +61,7 @@
 	},
 	"peerDependencies": {
 		"eslint": "^9.39.2",
-		"typescript": "^5.4.2"
+		"typescript": ">=5.4.2"
 	},
 	"dependencies": {
 		"@clack/prompts": "^1.0.0",
