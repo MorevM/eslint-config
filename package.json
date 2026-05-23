@@ -33,26 +33,26 @@
 	"bin": "./bin/index.js",
 	"exports": {
 		".": {
-			"types": "./dist/index.d.ts",
-			"import": "./dist/index.js"
+			"types": "./dist/index.d.mts",
+			"import": "./dist/index.mjs"
 		},
 		"./globs": {
-			"types": "./dist/globs.d.ts",
-			"import": "./dist/globs.js"
+			"types": "./dist/globs.d.mts",
+			"import": "./dist/globs.mjs"
 		},
 		"./parsers": {
-			"types": "./dist/parsers.d.ts",
-			"import": "./dist/parsers.js"
+			"types": "./dist/parsers.d.mts",
+			"import": "./dist/parsers.mjs"
 		},
 		"./plugins": {
-			"types": "./dist/plugins.d.ts",
-			"import": "./dist/plugins.js"
+			"types": "./dist/plugins.d.mts",
+			"import": "./dist/plugins.mjs"
 		}
 	},
-	"main": "./dist/index.js",
+	"main": "./dist/index.mjs",
 	"scripts": {
 		"prepare": "lefthook install",
-		"build": "tsup",
+		"build": "tsdown",
 		"test": "pnpm build && vitest",
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix",
@@ -117,7 +117,7 @@
 		"eslint": "9.39.2",
 		"lefthook": "^2.1.4",
 		"release-it": "^19.2.4",
-		"tsup": "^8.5.1",
+		"tsdown": "^0.22.0",
 		"tsx": "^4.21.0",
 		"typescript": "^5.9.3",
 		"vite-tsconfig-paths": "^6.1.0",
