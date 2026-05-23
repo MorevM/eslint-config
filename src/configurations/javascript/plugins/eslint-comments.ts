@@ -25,10 +25,6 @@ export default defineConfigurationPart({
 		// Note: It's usually obvious what's wrong here
 		'eslint-comments/no-unlimited-disable': 'off',
 
-		// Disallow unused `eslint-disable` comments (autofixable but confusing)
-		// https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-unused-disable.html
-		'no-autofix/eslint-comments/no-unused-disable': 'warn',
-
 		// Disallow unused `eslint-enable` comments
 		// https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/no-unused-enable.html
 		'eslint-comments/no-unused-enable': 'error',
