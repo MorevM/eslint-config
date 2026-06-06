@@ -73,7 +73,7 @@
 		"@morev/utils": "^3.15.0",
 		"@stylistic/eslint-plugin": "^5.8.0",
 		"@vitest/eslint-plugin": "^1.6.7",
-		"ansis": "^4.2.0",
+		"ansis": "^4.3.1",
 		"astro-eslint-parser": "^1.4.0",
 		"eslint-config-flat-gitignore": "^2.3.0",
 		"eslint-import-resolver-typescript": "^4.4.3",
