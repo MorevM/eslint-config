@@ -183,6 +183,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-console-spaces.md
 		'unicorn/no-console-spaces': 'warn',
 
+		// Disallow confusing uses of `Array#{splice,toSpliced}()`
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-confusing-array-splice.md
+		// Note: reports as `warn` because the alternatives can differ around return values and indexes
+		'unicorn/no-confusing-array-splice': 'warn',
+
 		// Do not use `document.cookie` directly
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-document-cookie.md
 		// `js-cookie` just 1.5kb and no worries
