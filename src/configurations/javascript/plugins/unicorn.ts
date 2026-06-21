@@ -18,6 +18,32 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-assert.md
 		'unicorn/consistent-assert': 'warn',
 
+		// Enforce consistent spelling of compound words in identifiers
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-compound-words.md
+		'unicorn/consistent-compound-words': ['off', {
+			extendDefaultReplacements: true,
+			// Reason: these forms can be ambiguous domain or API terms, not just misspellings.
+			replacements: {
+				metaData: false,
+				subClass: false,
+				subDirectory: false,
+				subDomain: false,
+				subMenu: false,
+				subProcess: false,
+				subString: false,
+				subTree: false,
+				subType: false,
+				subTitle: false,
+				weekEnd: false,
+			},
+			allowList: {},
+			checkVariables: true,
+			checkProperties: false,
+			checkDefaultAndNamespaceImports: 'internal',
+			checkShorthandImports: 'internal',
+			checkShorthandProperties: false,
+		}],
+
 		// Prefer passing `Date` directly to the constructor when cloning (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-date-clone.md
 		'unicorn/consistent-date-clone': 'warn',
