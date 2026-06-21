@@ -53,4 +53,10 @@
 			},
 		],
 	},
+
+	"github.copilot.chat.commitMessageGeneration.instructions": [
+		{
+			"file": ".github/ai/commit-message-guidlines.md",
+		},
+	],
 }
