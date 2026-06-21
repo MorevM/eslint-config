@@ -11,6 +11,11 @@ export default defineConfigurationPart({
 		// Reason: too broad and not configurable per DOM traversal pattern
 		'unicorn/better-dom-traversing': 'off',
 
+		// Disallow unnecessary `Blob` to `File` conversion
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-blob-to-file.md
+		// Note: reports as `warn` because this is a narrow cleanup suggestion with manual fixes
+		'unicorn/no-blob-to-file': 'warn',
+
 		// Prefer `.addEventListener()` and `.removeEventListener()` over on-functions (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-add-event-listener.md
 		// Doesn't set removeEventListener, so may be confusing to disable it
