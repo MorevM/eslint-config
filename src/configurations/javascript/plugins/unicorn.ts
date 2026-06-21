@@ -494,6 +494,11 @@ export default defineConfigurationPart({
 			checkUsedVariables: false,
 		}],
 
+		// Prefer `.getOrInsertComputed()` when the default value has side effects (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-get-or-insert-computed.md
+		// Note: reports as `error` because `getOrInsert()` evaluates side-effectful defaults even when the key exists
+		'unicorn/prefer-get-or-insert-computed': 'error',
+
 		// Prefer `globalThis` over `window`, `self`, and `global` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-global-this.md
 		// Note: I think it's better to be explicit, especially when working with mixed environments (Vue/React + SSR for example)
