@@ -520,6 +520,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-size.md
 		'unicorn/prefer-set-size': 'warn',
 
+		// Prefer simple conditions first in logical expressions (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-simple-condition-first.md
+		// Reason: condition order should follow algorithm importance and readability, not static simplicity
+		'unicorn/prefer-simple-condition-first': 'off',
+
 		// Enforce combining multiple `Array#push()`, `Element#classList.{add,remove}()`, and `importScripts()` into one call
 		// Autofixable but doesn't care about comments, might be confusing.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-single-call.md
