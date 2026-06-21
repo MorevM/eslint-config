@@ -1,6 +1,12 @@
-import { combine, defineConfiguration, defineIgnores } from '@morev/eslint-config';
+import { createJiti } from 'jiti';
 
-export default combine([
+const jiti = createJiti(import.meta.url, {
+	tsconfigPaths: true,
+});
+
+const { combine, defineConfiguration, defineIgnores } = await jiti.import<typeof import('./src/index.ts')>('./src/index.ts');
+
+export default combine(
 	defineIgnores({
 		extraIgnoredGlobs: ['bin'],
 	}),
@@ -38,4 +44,4 @@ export default combine([
 			'no-await-in-loop': 'off',
 		},
 	},
-]);
+);
