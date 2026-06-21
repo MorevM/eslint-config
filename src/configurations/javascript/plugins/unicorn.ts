@@ -705,6 +705,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-type-error.md
 		'unicorn/prefer-type-error': 'warn',
 
+		// Prefer Unicode code point escapes over legacy escape sequences (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-unicode-code-point-escapes.md
+		'unicorn/prefer-unicode-code-point-escapes': 'warn',
+
 		// Prevent abbreviations (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prevent-abbreviations.md
 		// Note: it mostly personal preferences, I'm absolutely fine with any common abbreviations
