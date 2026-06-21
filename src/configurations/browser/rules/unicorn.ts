@@ -19,9 +19,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-append.md
 		'unicorn/prefer-dom-node-append': 'warn',
 
-		// Prefer using `.dataset` on DOM elements over `.setAttribute(…)` (autofixable)
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-dataset.md
-		'unicorn/prefer-dom-node-dataset': 'warn',
+		// Enforce consistent style for DOM element dataset access (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/dom-node-dataset.md
+		'unicorn/dom-node-dataset': ['warn', {
+			preferAttributes: false,
+		}],
 
 		// Prefer `childNode.remove()` over `parentNode.removeChild(childNode)` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-remove.md
