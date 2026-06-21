@@ -113,6 +113,10 @@ export default defineConfigurationPart({
 			typedVariables: 'ignore',
 		}],
 
+		// Enforce consistent optional chaining for same-base member access
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-optional-chaining.md
+		'unicorn/consistent-optional-chaining': 'warn',
+
 		// Enforce consistent style for escaping `${` in template literals (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-template-literal-escape.md
 		'unicorn/consistent-template-literal-escape': 'warn',
