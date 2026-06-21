@@ -203,6 +203,11 @@ export default defineConfigurationPart({
 		// Note: some files may be intentionally empty, but it's good to have a rule that will show them
 		'unicorn/no-empty-file': 'warn',
 
+		// Disallow exports in scripts
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-exports-in-scripts.md
+		// Note: does not break execution, but mixing CLI and module roles may be a design mistake
+		'unicorn/no-exports-in-scripts': 'warn',
+
 		// Do not use a for loop that can be replaced with a for-of loop (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-for-loop.md
 		// Note: too radical to be an error or exists at all, but let it be `warn` for a while
