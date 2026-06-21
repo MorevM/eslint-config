@@ -334,6 +334,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-await.md
 		'unicorn/no-unnecessary-await': 'warn',
 
+		// Disallow unnecessary nested ternary expressions (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-nested-ternary.md
+		// Note: reports as `warn` because it only combines duplicated ternary branches
+		'unicorn/no-unnecessary-nested-ternary': 'warn',
+
 		// Enforce the use of built-in methods instead of unnecessary polyfills
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-polyfills.md
 		'unicorn/no-unnecessary-polyfills': 'warn',
