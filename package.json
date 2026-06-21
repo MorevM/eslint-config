@@ -115,6 +115,7 @@
 		"@types/node": "^22.18.10",
 		"@types/semver": "^7.7.1",
 		"eslint": "9.39.2",
+		"jiti": "^2.7.0",
 		"lefthook": "^2.1.8",
 		"release-it": "^20.0.1",
 		"tsdown": "^0.22.0",
