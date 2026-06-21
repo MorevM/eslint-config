@@ -525,6 +525,12 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-includes.md
 		'unicorn/prefer-includes': 'error',
 
+		// Prefer `Iterator.concat(…)` over temporary spread arrays (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-iterator-concat.md
+		// Reason: `Iterator.concat()` is too new for a shared config
+		// TODO [2028-12-24]: Enable after expected Baseline Widely Available.
+		'unicorn/prefer-iterator-concat': 'off',
+
 		// Enforce consistent JSON file reads before `JSON.parse()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-json-file-read.md
 		// Note: `string` is more explicit and compatible with TypeScript's `JSON.parse()` typing
