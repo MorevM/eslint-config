@@ -21,6 +21,11 @@ export default defineConfigurationPart({
 		// Note: reports as `warn` because it mixes correctness fixes with efficiency cleanups
 		'unicorn/no-incorrect-query-selector': 'warn',
 
+		// Disallow invalid `accept` values on file inputs (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-file-input-accept.md
+		// Note: reports as `warn` because `accept` is a picker hint and some fixes are normalization
+		'unicorn/no-invalid-file-input-accept': 'warn',
+
 		// Prefer drawing canvases directly instead of converting them to images
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-canvas-to-image.md
 		// Reason: syntax-based check may report intentional canvas conversions
