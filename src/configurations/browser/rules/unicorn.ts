@@ -74,5 +74,12 @@ export default defineConfigurationPart({
 		// Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-keyboard-event-key.md
 		'unicorn/prefer-keyboard-event-key': 'error',
+
+		// Require `CSS.escape()` for interpolated values in CSS selectors (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-css-escape.md
+		// Note: only attribute selector interpolations are checked to avoid escaping intentional selector fragments
+		'unicorn/require-css-escape': ['warn', {
+			checkAllSelectors: false,
+		}],
 	},
 });
