@@ -6,6 +6,11 @@ export default defineConfigurationPart({
 		unicorn: pluginUnicorn,
 	},
 	rules: {
+		// Prefer better DOM traversal APIs
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/better-dom-traversing.md
+		// Reason: too broad and not configurable per DOM traversal pattern
+		'unicorn/better-dom-traversing': 'off',
+
 		// Prefer `.addEventListener()` and `.removeEventListener()` over on-functions (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-add-event-listener.md
 		// Doesn't set removeEventListener, so may be confusing to disable it
