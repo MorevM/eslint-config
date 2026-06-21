@@ -415,7 +415,7 @@ export default defineConfigurationPart({
 		// Prefer `export…from` when re-exporting (autofixable but might be confusing during development flow)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-export-from.md
 		'no-autofix/unicorn/prefer-export-from': ['warn', {
-			ignoreUsedVariables: true,
+			checkUsedVariables: false,
 		}],
 
 		// Prefer `globalThis` over `window`, `self`, and `global` (autofixable)
