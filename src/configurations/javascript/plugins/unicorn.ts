@@ -513,6 +513,13 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-import-meta-properties.md
 		'unicorn/prefer-import-meta-properties': 'warn',
 
+		// Prefer `.includes()` over repeated equality comparisons
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-includes-over-repeated-comparisons.md
+		// Note: reports as `warn` because accessors and proxies can make repeated reads observable
+		'unicorn/prefer-includes-over-repeated-comparisons': ['warn', {
+			minimumComparisons: 3,
+		}],
+
 		// Prefer `.includes()` over `.indexOf()` and `Array#some()` when checking for existence or non-existence
 		// (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-includes.md
