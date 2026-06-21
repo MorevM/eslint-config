@@ -14,6 +14,13 @@ export default defineConfigurationPart({
 			ignore: [],
 		}],
 
+		// Enforce consistent class references in static methods
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/class-reference-in-static-methods.md
+		'unicorn/class-reference-in-static-methods': ['warn', {
+			preferThis: true,
+			preferSuper: true,
+		}],
+
 		// Enforce consistent assertion style with `node:assert` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-assert.md
 		'unicorn/consistent-assert': 'warn',
