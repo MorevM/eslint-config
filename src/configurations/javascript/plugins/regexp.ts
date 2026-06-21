@@ -116,7 +116,7 @@ export default defineConfigurationPart({
 
 		// Disallow not strictly valid regular expressions (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-regexp/rules/strict.html
-		// Note: Conflicts with time-tested `unicorn/better-regex` rule
+		// Note: Too strict for existing regular expressions
 		'no-autofix/regexp/strict': 'off',
 
 		// BEST PRACTICES
