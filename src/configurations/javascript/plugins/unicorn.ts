@@ -311,6 +311,11 @@ export default defineConfigurationPart({
 		// Note: too radical to be a strict rule
 		'unicorn/no-this-assignment': 'off',
 
+		// Disallow `this` outside of classes
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-this-outside-of-class.md
+		// Reason: object methods, Vue options, and SDK callbacks may intentionally bind `this`
+		'unicorn/no-this-outside-of-class': 'off',
+
 		// Disallow comparing `undefined` using `typeof` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-typeof-undefined.md
 		'unicorn/no-typeof-undefined': ['warn', {
