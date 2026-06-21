@@ -432,9 +432,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-includes.md
 		'unicorn/prefer-includes': 'error',
 
-		// Prefer reading a JSON file as a buffer (autofixable)
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-json-parse-buffer.md
-		'unicorn/prefer-json-parse-buffer': 'warn',
+		// Enforce consistent JSON file reads before `JSON.parse()` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-json-file-read.md
+		// Note: `string` is more explicit and compatible with TypeScript's `JSON.parse()` typing
+		'unicorn/consistent-json-file-read': ['warn', 'string'],
 
 		// Prefer using a logical operator over a ternary (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-logical-operator-over-ternary.md
