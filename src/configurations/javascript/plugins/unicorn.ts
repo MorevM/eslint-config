@@ -257,6 +257,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-in-promise-methods.md
 		'unicorn/no-await-in-promise-methods': 'warn',
 
+		// Disallow `break` and `continue` in nested loops and switches inside loops
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-break-in-nested-loop.md
+		'unicorn/no-break-in-nested-loop': 'warn',
+
 		// Do not use leading/trailing space between `console.log` parameters (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-console-spaces.md
 		'unicorn/no-console-spaces': 'warn',
