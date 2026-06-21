@@ -302,6 +302,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unused-properties.md
 		'unicorn/no-unused-properties': 'warn',
 
+		// Disallow unnecessary `.toArray()` on iterators (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-iterator-to-array.md
+		'unicorn/no-useless-iterator-to-array': 'warn',
+
 		// Disallow useless values or fallbacks in `Set`, `Map`, `WeakSet`, or `WeakMap` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-collection-argument.md
 		'unicorn/no-useless-collection-argument': 'warn',
