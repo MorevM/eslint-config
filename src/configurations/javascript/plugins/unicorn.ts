@@ -129,8 +129,10 @@ export default defineConfigurationPart({
 
 		// Prefer `Array#toSorted()` over `Array#sort()`.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-sort.md
-		// TODO[2026-05-11]: Maybe enable
-		'unicorn/no-array-sort': 'off',
+		// Note: mutating `sort()` is ok when in-place operation is intended
+		'unicorn/no-array-sort': ['off', {
+			allowExpressionStatement: true,
+		}],
 
 		// Forbid member access from await expression (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-expression-member.md
