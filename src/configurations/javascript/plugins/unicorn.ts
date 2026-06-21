@@ -33,6 +33,21 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-assert.md
 		'unicorn/consistent-assert': 'warn',
 
+		// Enforce consistent class member order
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-class-member-order.md
+		'unicorn/consistent-class-member-order': ['warn', {
+			order: [
+				'static-field',
+				'static-block',
+				'private-field',
+				'public-field',
+				'constructor',
+				'static-method',
+				'private-method',
+				'public-method',
+			],
+		}],
+
 		// Enforce consistent spelling of compound words in identifiers
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-compound-words.md
 		'unicorn/consistent-compound-words': ['off', {
