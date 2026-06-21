@@ -176,6 +176,13 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/isolated-functions.md
 		'unicorn/isolated-functions': 'error',
 
+		// Limit the depth of nested calls
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/max-nested-calls.md
+		// Reason: a good developer knows when to stop.
+		'unicorn/max-nested-calls': ['off', {
+			max: 3,
+		}],
+
 		// Enforce the use of `new` for all builtins, except `String`, `Number`, `Boolean`, `Symbol` and `BigInt`
 		// (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/new-for-builtins.md
