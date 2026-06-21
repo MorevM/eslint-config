@@ -81,5 +81,9 @@ export default defineConfigurationPart({
 		'unicorn/require-css-escape': ['warn', {
 			checkAllSelectors: false,
 		}],
+
+		// Require passive event listeners for high-frequency events (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-passive-events.md
+		'unicorn/require-passive-events': 'warn',
 	},
 });
