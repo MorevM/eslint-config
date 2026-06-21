@@ -21,6 +21,14 @@ export default defineConfigurationPart({
 			preferSuper: true,
 		}],
 
+		// Enforce better comment content (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/comment-content.md
+		// TODO [2026-06-27]: Discuss whether the default replacement dictionary fits shared prose.
+		'unicorn/comment-content': ['off', {
+			extendDefaultReplacements: true,
+			replacements: {},
+		}],
+
 		// Enforce consistent assertion style with `node:assert` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-assert.md
 		'unicorn/consistent-assert': 'warn',
