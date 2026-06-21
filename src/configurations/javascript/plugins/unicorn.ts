@@ -83,6 +83,10 @@ export default defineConfigurationPart({
 		// Note: it depends, developer knows better
 		'unicorn/import-style': 'off',
 
+		// Prevent usage of variables from outside the scope of isolated functions
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/isolated-functions.md
+		'unicorn/isolated-functions': 'error',
+
 		// Enforce the use of `new` for all builtins, except `String`, `Number`, `Boolean`, `Symbol` and `BigInt`
 		// (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/new-for-builtins.md
