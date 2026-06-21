@@ -16,6 +16,11 @@ export default defineConfigurationPart({
 		// Note: reports as `warn` because this is a narrow cleanup suggestion with manual fixes
 		'unicorn/no-blob-to-file': 'warn',
 
+		// Disallow incorrect `querySelector()` and `querySelectorAll()` usage (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-incorrect-query-selector.md
+		// Note: reports as `warn` because it mixes correctness fixes with efficiency cleanups
+		'unicorn/no-incorrect-query-selector': 'warn',
+
 		// Prefer drawing canvases directly instead of converting them to images
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-canvas-to-image.md
 		// Reason: syntax-based check may report intentional canvas conversions
