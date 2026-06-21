@@ -653,6 +653,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-match-all.md
 		'unicorn/prefer-string-match-all': 'warn',
 
+		// Prefer `String#padStart()` and `String#padEnd()` over manual string padding (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-pad-start-end.md
+		'unicorn/prefer-string-pad-start-end': 'warn',
+
 		// Prefer using the `String.raw` tag to avoid escaping `\` (autofixable but confusing)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-raw.md
 		// Note: pretty rarely used thing that raises more questions than it does any benefit
