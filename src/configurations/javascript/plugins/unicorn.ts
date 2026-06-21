@@ -47,6 +47,10 @@ export default defineConfigurationPart({
 		// Note: really not sure about that, let it be in warn for a while @todo:
 		'unicorn/consistent-function-scoping': 'warn',
 
+		// Enforce consistent style for escaping `${` in template literals (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-template-literal-escape.md
+		'unicorn/consistent-template-literal-escape': 'warn',
+
 		// Enforce correct `Error` subclassing (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/custom-error-definition.md
 		'unicorn/custom-error-definition': 'error',
