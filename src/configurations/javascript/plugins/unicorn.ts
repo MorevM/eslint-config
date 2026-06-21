@@ -122,8 +122,10 @@ export default defineConfigurationPart({
 
 		// Prefer `Array#toReversed()` over `Array#reverse()`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-reverse.md
-		// TODO[2026-05-11]: Maybe enable
-		'unicorn/no-array-reverse': 'off',
+		// Note: mutating `reverse()` is ok when in-place operation is intended
+		'unicorn/no-array-reverse': ['warn', {
+			allowExpressionStatement: true,
+		}],
 
 		// Prefer `Array#toSorted()` over `Array#sort()`.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-sort.md
