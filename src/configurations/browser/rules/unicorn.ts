@@ -16,6 +16,11 @@ export default defineConfigurationPart({
 		// Note: reports as `warn` because this is a narrow cleanup suggestion with manual fixes
 		'unicorn/no-blob-to-file': 'warn',
 
+		// Prefer drawing canvases directly instead of converting them to images
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-canvas-to-image.md
+		// Reason: syntax-based check may report intentional canvas conversions
+		'unicorn/no-canvas-to-image': 'off',
+
 		// Prefer `.addEventListener()` and `.removeEventListener()` over on-functions (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-add-event-listener.md
 		// Doesn't set removeEventListener, so may be confusing to disable it
