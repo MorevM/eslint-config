@@ -244,6 +244,11 @@ export default defineConfigurationPart({
 			allowExpressionStatement: true,
 		}],
 
+		// Disallow asterisk prefixes in documentation comments (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-asterisk-prefix-in-documentation-comments.md
+		// Reason: JSDoc formatting is already handled by `jsdoc/require-asterisk-prefix`
+		'unicorn/no-asterisk-prefix-in-documentation-comments': 'off',
+
 		// Forbid member access from await expression (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-expression-member.md
 		'unicorn/no-await-expression-member': 'warn',
