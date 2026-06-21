@@ -545,6 +545,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-logical-operator-over-ternary.md
 		'unicorn/prefer-logical-operator-over-ternary': 'warn',
 
+		// Prefer `Math.abs()` over manual absolute value expressions and symmetric range checks (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-abs.md
+		// Note: reports as `warn` because the transformation is stylistic, not a correctness issue
+		'unicorn/prefer-math-abs': 'warn',
+
 		// Prefer `Math.min()` and `Math.max()` over ternaries for simple comparisons (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-min-max.md
 		'unicorn/prefer-math-min-max': 'warn',
