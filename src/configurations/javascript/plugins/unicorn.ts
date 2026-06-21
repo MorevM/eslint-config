@@ -601,6 +601,14 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-query-selector.md
 		'unicorn/prefer-query-selector': 'warn',
 
+		// Prefer `queueMicrotask()` over `process.nextTick()`, `setImmediate()` and `setTimeout(…, 0)` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-queue-microtask.md
+		// Note: only `process.nextTick()` is checked, without autofix, because task scheduling is observable
+		'no-autofix/unicorn/prefer-queue-microtask': ['warn', {
+			checkSetImmediate: false,
+			checkSetTimeout: false,
+		}],
+
 		// Prefer `Reflect.apply()` over `Function#apply()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-reflect-apply.md
 		'no-autofix/unicorn/prefer-reflect-apply': 'error',
