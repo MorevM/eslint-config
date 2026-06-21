@@ -36,9 +36,6 @@ describe('Check unknown, unused and deprecated rules', () => {
 				'padding-around-describe-blocks',
 				'padding-around-test-blocks',
 			].flatMap((name) => [`jest/${name}`, `vitest/${name}`]),
-			// It seems https://github.com/JuniorTour/vue-template-babel-compiler not stable,
-			// turned off for a while
-			'vue/prefer-template',
 			// Covered with `n/prefer-node-protocol`
 			'unicorn/prefer-node-protocol',
 			// Experimental rules
