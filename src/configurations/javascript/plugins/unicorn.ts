@@ -357,6 +357,11 @@ export default defineConfigurationPart({
 		// Note: developer knows better
 		'unicorn/no-unreadable-iife': 'off',
 
+		// Disallow ignoring the return value of selected array methods
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unused-array-method-return.md
+		// Note: reports as `warn` because it is syntax-only and may see non-array methods with array-like names
+		'unicorn/no-unused-array-method-return': 'warn',
+
 		// Disallow unused object properties
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unused-properties.md
 		'unicorn/no-unused-properties': 'warn',
