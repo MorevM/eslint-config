@@ -894,5 +894,12 @@ export default defineConfigurationPart({
 		// Require new when throwing an error (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/throw-new-error.md
 		'unicorn/throw-new-error': 'warn',
+
+		// Limit the complexity of `try` blocks.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/try-complexity.md
+		// Reason: too noisy for ordinary `try` blocks
+		'unicorn/try-complexity': ['off', {
+			max: 1,
+		}],
 	},
 });
