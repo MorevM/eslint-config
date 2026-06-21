@@ -451,6 +451,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-index-of.md
 		'unicorn/prefer-array-index-of': 'warn',
 
+		// Prefer last-oriented array methods over `Array#reverse()` or `Array#toReversed()` followed by a method
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-last-methods.md
+		// Note: reports as `warn` because replacements can differ for mutation, sparse arrays, and index callbacks
+		'unicorn/prefer-array-last-methods': 'warn',
+
 		// Prefer `.some(…)` over `.filter(…).length` check and `.find(…)` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-some.md
 		'unicorn/prefer-array-some': 'warn',
