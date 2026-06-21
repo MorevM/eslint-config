@@ -91,6 +91,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-existence-index-check.md
 		'unicorn/consistent-existence-index-check': 'warn',
 
+		// Enforce consistent decorator position on exported classes (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-export-decorator-position.md
+		'unicorn/consistent-export-decorator-position': ['warn', 'above'],
+
 		// Move function definitions to the highest possible scope
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-function-scoping.md
 		// Note: really not sure about that, let it be in warn for a while @todo:
