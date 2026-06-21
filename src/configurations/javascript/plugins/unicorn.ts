@@ -246,6 +246,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-magic-array-flat-depth.md
 		'unicorn/no-magic-array-flat-depth': 'warn',
 
+		// Disallow manually wrapped comments (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-manually-wrapped-comments.md
+		// Reason: comment prose heuristics can be noisy
+		'unicorn/no-manually-wrapped-comments': 'off',
+
 		// Disallow named usage of default import and export (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-named-default.md
 		'unicorn/no-named-default': 'warn',
