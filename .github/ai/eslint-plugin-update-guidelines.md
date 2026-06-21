@@ -10,6 +10,8 @@ Use this workflow when updating ESLint plugins that provide rules for this share
   and changes in `src/configurations/browser/rules/unicorn.ts` use `browser`.
 - A single plugin, or even core ESLint rules, may be used across multiple configuration scopes.
   Place each rule in the configuration that matches the rule's domain instead of assuming one plugin belongs to one scope.
+- Within each configuration file, keep rules in the order used by the plugin's own rule documentation or rule export index.
+  Release notes define the update processing order, not the final ordering inside config files.
 - Path aliases follow a local convention: `#` aliases map to concrete files, and `~` aliases map to directories.
   Preserve this convention when changing imports or runtime loaders.
 - Rule entries follow the local style:
