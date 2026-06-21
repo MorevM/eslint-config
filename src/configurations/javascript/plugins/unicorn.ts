@@ -730,6 +730,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/switch-case-braces.md
 		'unicorn/switch-case-braces': ['warn', 'avoid'],
 
+		// Enforce consistent `break`/`return`/`continue`/`throw` position in `case` clauses (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/switch-case-break-position.md
+		'unicorn/switch-case-break-position': 'warn',
+
 		// Fix whitespace-insensitive template indentation (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/template-indent.md
 		// Note: this is default configuration but I have a feeling that changes will be needed, so the options are explicit
