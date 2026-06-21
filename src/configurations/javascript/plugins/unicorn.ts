@@ -133,6 +133,11 @@ export default defineConfigurationPart({
 		// Note: not sure, but let this thing be `error` for a while
 		'unicorn/no-array-callback-reference': 'error',
 
+		// Disallow using reference values as `Array#fill()` values
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-fill-with-reference-type.md
+		// Note: reports as `error` because every filled array element receives the same reference
+		'unicorn/no-array-fill-with-reference-type': 'error',
+
 		// Prefer `for…of` over `Array#forEach(…)` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-for-each.md
 		// Note: what's the problem with `forEach`?
