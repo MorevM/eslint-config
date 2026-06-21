@@ -20,7 +20,11 @@ Use this workflow when updating ESLint plugins that provide rules for this share
   - start the rule description with a capital letter;
   - mark autofix support in the description with `(autofixable)` or `(partially autofixable)` when the rule supports it;
   - a link to the upstream rule documentation;
-  - an optional `Note:` or `Reason:` comment when the severity or options are not obvious;
+  - an optional `Note:` or `Reason:` comment only when it explains a non-obvious local decision:
+    disabling a rule, using `no-autofix/`, choosing non-default or intentional-default options,
+    adding a TODO, handling compatibility or type-system issues, or documenting known false positives;
+  - do not add `Note:` or `Reason:` comments that merely restate what the rule does
+    or justify routine `warn` severity for stylistic preference rules;
   - the rule configuration, using plugin-provided defaults when available and otherwise listing all options explicitly.
 - The test `__tests__/no-bad-rules.test.ts` checks unknown, deprecated, and unconfigured rules.
   A new plugin rule must be either configured or deliberately listed as known unused.
