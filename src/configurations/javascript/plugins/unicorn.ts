@@ -662,6 +662,12 @@ export default defineConfigurationPart({
 		// Note: pretty rarely used thing that raises more questions than it does any benefit
 		'no-autofix/unicorn/prefer-string-raw': 'off',
 
+		// Prefer `String#repeat()` for repeated whitespace (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-repeat.md
+		'unicorn/prefer-string-repeat': ['warn', {
+			minimumRepetitions: 3,
+		}],
+
 		// Prefer `String#replaceAll()` over regex searches with the global flag (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-string-replace-all.md
 		'unicorn/prefer-string-replace-all': 'warn',
