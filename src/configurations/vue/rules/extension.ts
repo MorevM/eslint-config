@@ -150,10 +150,7 @@ export default defineConfigurationPart({
 
 		// Require template literals instead of string concatenation in `<template>` (autofixable)
 		// https://eslint.vuejs.org/rules/prefer-template.html
-		// It seems https://github.com/JuniorTour/vue-template-babel-compiler is not stable, turned off for a while
-		// TODO: [2026-05-11] Try again with vue-template-babel-compiler
-		// ...extensionFromBase('prefer-template'),
-		'vue/prefer-template': 'off',
+		...extensionFromBase('prefer-template'),
 
 		// Require quotes around object literal property names in `<template>` (autofixable)
 		// https://eslint.vuejs.org/rules/quote-props.html
