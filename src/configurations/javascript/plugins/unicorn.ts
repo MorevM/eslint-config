@@ -100,6 +100,19 @@ export default defineConfigurationPart({
 		// Note: really not sure about that, let it be in warn for a while @todo:
 		'unicorn/consistent-function-scoping': 'warn',
 
+		// Enforce function syntax by role
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-function-style.md
+		// Reason: function style is already covered by `func-style` and `prefer-arrow-callback`
+		'unicorn/consistent-function-style': ['off', {
+			default: 'ignore',
+			namedFunctions: 'ignore',
+			namedExports: 'ignore',
+			callbacks: 'ignore',
+			objectProperties: 'ignore',
+			reassignedVariables: 'ignore',
+			typedVariables: 'ignore',
+		}],
+
 		// Enforce consistent style for escaping `${` in template literals (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-template-literal-escape.md
 		'unicorn/consistent-template-literal-escape': 'warn',
