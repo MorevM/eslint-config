@@ -58,6 +58,9 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 				'jsdoc/require-returns-type': 'off',
 				'jsdoc/require-param-type': 'off',
 				'jsdoc/require-yields-type': 'off',
+				// Reason: I would be happy to enable it if `.includes()` narrowed types, but it does not:
+				// https://github.com/microsoft/TypeScript/issues/31018
+				'unicorn/prefer-includes-over-repeated-comparisons': 'off',
 			},
 		}),
 		!isEmpty(overrides) && defineConfigurationPart({
