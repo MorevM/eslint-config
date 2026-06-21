@@ -641,6 +641,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-single-call.md
 		'no-autofix/unicorn/prefer-single-call': 'warn',
 
+		// Prefer `String#split()` with a limit (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-split-limit.md
+		'unicorn/prefer-split-limit': 'warn',
+
 		// Prefer the spread operator over `Array.from(…)`, `Array#concat(…)` and `Array#slice()` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-spread.md
 		'unicorn/prefer-spread': 'error',
