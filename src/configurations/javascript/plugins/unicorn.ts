@@ -145,6 +145,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/explicit-length-check.md
 		'unicorn/explicit-length-check': 'off',
 
+		// Enforce or disallow explicit `delay` argument for `setTimeout()` and `setInterval()` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/explicit-timer-delay.md
+		'unicorn/explicit-timer-delay': ['warn', 'always'],
+
 		// Enforce a case style for filenames
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md
 		'unicorn/filename-case': ['error', {
