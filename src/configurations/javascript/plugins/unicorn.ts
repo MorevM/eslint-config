@@ -143,10 +143,10 @@ export default defineConfigurationPart({
 		// Reason: reference values are covered by `no-array-fill-with-reference-type`, and primitive fills are just another style
 		'unicorn/no-array-from-fill': 'off',
 
-		// Prefer `for…of` over `Array#forEach(…)` (partly autofixable)
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-for-each.md
-		// Note: what's the problem with `forEach`?
-		'unicorn/no-array-for-each': 'off',
+		// Prefer `for…of` over the `forEach` method (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-for-each.md
+		// Reason: `forEach` is acceptable when callback boundaries are intentional
+		'unicorn/no-for-each': 'off',
 
 		// Disallow using the this argument in array methods (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-method-this-argument.md
