@@ -156,6 +156,17 @@ export default defineConfigurationPart({
 			ignore: [],
 		}],
 
+		// Require identifiers to match a specified regular expression
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/id-match.md
+		// Reason: naming style is already covered by `camelcase` and TypeScript naming rules
+		'unicorn/id-match': ['off', '^.+$', {
+			classFields: false,
+			ignoreDestructuring: false,
+			onlyDeclarations: false,
+			properties: false,
+			checkNamedSpecifiers: true,
+		}],
+
 		// Enforce specific import styles per module
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/import-style.md
 		// Note: it depends, developer knows better
