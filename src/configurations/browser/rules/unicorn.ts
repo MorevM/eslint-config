@@ -58,6 +58,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-append.md
 		'unicorn/prefer-dom-node-append': 'warn',
 
+		// Prefer `.getHTML()` and `.setHTML()` over `.innerHTML` (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-html-methods.md
+		// TODO [2026-12-23]: Reconsider when `Element#setHTML()` is Baseline.
+		'unicorn/prefer-dom-node-html-methods': 'off',
+
 		// Enforce consistent style for DOM element dataset access (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/dom-node-dataset.md
 		'unicorn/dom-node-dataset': ['warn', {
