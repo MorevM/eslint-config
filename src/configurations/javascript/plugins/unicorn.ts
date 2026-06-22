@@ -661,6 +661,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-flat-map.md
 		'unicorn/prefer-array-flat-map': 'warn',
 
+		// Prefer using the `Array.from()` mapping function argument (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-from-map.md
+		'unicorn/prefer-array-from-map': 'warn',
+
 		// Prefer `Array#indexOf()` over `Array#findIndex()` when looking for the index of an item (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-index-of.md
 		'unicorn/prefer-array-index-of': 'warn',
