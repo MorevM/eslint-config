@@ -720,6 +720,12 @@ export default defineConfigurationPart({
 		// TODO [2027-05-01]: Reconsider after Node 22 EOL and `using` support is common enough.
 		'unicorn/prefer-dispose': 'off',
 
+		// Prefer early returns over full-function conditional wrapping (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-early-return.md
+		'unicorn/prefer-early-return': ['warn', {
+			maximumStatements: 1,
+		}],
+
 		// Prefer `export…from` when re-exporting (autofixable but might be confusing during development flow)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-export-from.md
 		'no-autofix/unicorn/prefer-export-from': ['warn', {
