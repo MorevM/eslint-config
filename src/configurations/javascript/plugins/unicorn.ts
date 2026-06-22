@@ -373,6 +373,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-named-default.md
 		'unicorn/no-named-default': 'warn',
 
+		// Disallow negated array predicate calls (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-negated-array-predicate.md
+		// Reason: negating the whole predicate call can be clearer.
+		'unicorn/no-negated-array-predicate': 'off',
+
 		// Disallow negated conditions (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-negated-condition.md
 		// Note: this is `no-negated-condition` with autofix capacity.
