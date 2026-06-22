@@ -335,6 +335,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-instanceof-builtins.md
 		'unicorn/no-instanceof-builtins': 'error',
 
+		// Disallow calling functions with an invalid number of arguments.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-argument-count.md
+		'unicorn/no-invalid-argument-count': 'error',
+
 		// Disallow invalid options in `fetch()` and `new Request()`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-fetch-options.md
 		'unicorn/no-invalid-fetch-options': 'error',
