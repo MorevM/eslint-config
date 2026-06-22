@@ -532,6 +532,11 @@ export default defineConfigurationPart({
 		// Reason: readability is contextual.
 		'unicorn/no-unreadable-new-expression': 'off',
 
+		// Disallow unreadable object destructuring.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-object-destructuring.md
+		// Reason: readability is contextual.
+		'unicorn/no-unreadable-object-destructuring': 'off',
+
 		// Disallow ignoring the return value of selected array methods
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unused-array-method-return.md
 		// Note: reports as `warn` because it is syntax-only and may see non-array methods with array-like names
