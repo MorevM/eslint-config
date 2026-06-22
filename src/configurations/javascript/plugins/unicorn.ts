@@ -275,6 +275,11 @@ export default defineConfigurationPart({
 		// Note: reports as `warn` because the alternatives can differ around return values and indexes
 		'unicorn/no-confusing-array-splice': 'warn',
 
+		// Disallow confusing uses of `Array#with()`
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-confusing-array-with.md
+		// Reason: `.length` would be useful, but negative indexes are valid and too broadly forbidden
+		'unicorn/no-confusing-array-with': 'off',
+
 		// Do not use `document.cookie` directly
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-document-cookie.md
 		// `js-cookie` just 1.5kb and no worries
