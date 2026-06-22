@@ -36,6 +36,11 @@ export default defineConfigurationPart({
 		// Reason: syntax-based check may report intentional canvas conversions
 		'unicorn/no-canvas-to-image': 'off',
 
+		// Disallow unsafe DOM HTML APIs.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unsafe-dom-html.md
+		// Reason: raw HTML sinks are usually deliberate.
+		'unicorn/no-unsafe-dom-html': 'off',
+
 		// Prefer `.addEventListener()` and `.removeEventListener()` over on-functions (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-add-event-listener.md
 		// Doesn't set removeEventListener, so may be confusing to disable it
