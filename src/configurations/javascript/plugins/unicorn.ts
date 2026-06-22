@@ -682,6 +682,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-at.md
 		'unicorn/prefer-at': 'warn',
 
+		// Prefer `await` over promise chaining.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-await.md
+		// Reason: promise chains can be intentional and JavaScript files lack type information here.
+		'unicorn/prefer-await': 'off',
+
 		// Prefer `BigInt` literals over the constructor (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-bigint-literals.md
 		'unicorn/prefer-bigint-literals': 'warn',
