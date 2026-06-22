@@ -450,6 +450,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-static-only-class.md
 		'unicorn/no-static-only-class': 'error',
 
+		// Prefer comparing values directly over subtracting and comparing to `0` (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-subtraction-comparison.md
+		'unicorn/no-subtraction-comparison': 'warn',
+
 		// Disallow `then` property
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-thenable.md
 		'unicorn/no-thenable': 'error',
