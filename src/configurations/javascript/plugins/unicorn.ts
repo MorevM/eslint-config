@@ -280,6 +280,11 @@ export default defineConfigurationPart({
 		// Reason: `.length` would be useful, but negative indexes are valid and too broadly forbidden
 		'unicorn/no-confusing-array-with': 'off',
 
+		// Disallow declarations before conditional early exits when they are only used after the exit (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-declarations-before-early-exit.md
+		// Reason: Triggers for constants declared at the beginning of the file.
+		'unicorn/no-declarations-before-early-exit': 'off',
+
 		// Do not use `document.cookie` directly
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-document-cookie.md
 		// `js-cookie` just 1.5kb and no worries
