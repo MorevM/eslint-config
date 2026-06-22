@@ -537,6 +537,11 @@ export default defineConfigurationPart({
 		// Reason: readability is contextual.
 		'unicorn/no-unreadable-object-destructuring': 'off',
 
+		// Prevent unsafe use of ArrayBuffer view `.buffer`.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unsafe-buffer-conversion.md
+		// Reason: without type information, `.buffer` can belong to userland objects.
+		'unicorn/no-unsafe-buffer-conversion': 'warn',
+
 		// Disallow ignoring the return value of selected array methods
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unused-array-method-return.md
 		// Note: reports as `warn` because it is syntax-only and may see non-array methods with array-like names
