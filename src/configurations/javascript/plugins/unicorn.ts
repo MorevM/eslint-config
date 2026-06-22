@@ -608,6 +608,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-switch-case.md
 		'unicorn/no-useless-switch-case': 'error',
 
+		// Disallow useless template literal expressions (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-template-literals.md
+		'unicorn/no-useless-template-literals': 'warn',
+
 		// Disallow useless undefined (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-undefined.md
 		// Note: as for `null`, developer should know better
