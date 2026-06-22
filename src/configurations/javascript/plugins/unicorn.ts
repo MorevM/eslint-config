@@ -513,6 +513,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-slice-end.md
 		'unicorn/no-unnecessary-slice-end': 'warn',
 
+		// Disallow `Array#splice()` when simpler alternatives exist (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-splice.md
+		'unicorn/no-unnecessary-splice': 'warn',
+
 		// Disallow unreadable array destructuring (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-array-destructuring.md
 		// Note: developer knows better
