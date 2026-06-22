@@ -416,6 +416,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-object-methods-with-collections.md
 		'unicorn/no-object-methods-with-collections': 'error',
 
+		// Disallow optional chaining on undeclared variables.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-optional-chaining-on-undeclared-variable.md
+		// Reason: covered by `no-undef` in JavaScript and TypeScript itself in TypeScript.
+		'unicorn/no-optional-chaining-on-undeclared-variable': 'off',
+
 		// Disallow `process.exit()`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-process-exit.md
 		// Note: dunno whats wrong with `process.exit()`
