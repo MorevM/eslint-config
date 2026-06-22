@@ -412,6 +412,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-object-as-default-parameter.md
 		'unicorn/no-object-as-default-parameter': 'error',
 
+		// Disallow `Object` methods with `Map` or `Set`.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-object-methods-with-collections.md
+		'unicorn/no-object-methods-with-collections': 'error',
+
 		// Disallow `process.exit()`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-process-exit.md
 		// Note: dunno whats wrong with `process.exit()`
