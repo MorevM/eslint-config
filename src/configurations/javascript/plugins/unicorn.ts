@@ -295,6 +295,10 @@ export default defineConfigurationPart({
 		// Note: reports as `warn` because duplicates are usually accidental, but removal can be a behavioral decision
 		'unicorn/no-duplicate-set-values': 'warn',
 
+		// Disallow `.map()` and `.filter()` in `for…of` and `for await…of` loop headers
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-duplicate-loops.md
+		'unicorn/no-duplicate-loops': 'warn',
+
 		// Disallow empty files
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-empty-file.md
 		// Note: some files may be intentionally empty, but it's good to have a rule that will show them
