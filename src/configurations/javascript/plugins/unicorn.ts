@@ -432,6 +432,11 @@ export default defineConfigurationPart({
 		// Note: dunno whats wrong with `process.exit()`
 		'unicorn/no-process-exit': 'off',
 
+		// Disallow comparisons made redundant by an equality check in the same logical AND (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-redundant-comparison.md
+		// Reason: some redundant comparisons can make algorithms easier to follow.
+		'unicorn/no-redundant-comparison': 'warn',
+
 		// Disallow passing single-element arrays to Promise methods (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-single-promise-in-promise-methods.md
 		'no-autofix/unicorn/no-single-promise-in-promise-methods': 'off',
