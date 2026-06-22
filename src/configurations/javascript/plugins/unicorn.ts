@@ -559,6 +559,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unused-properties.md
 		'unicorn/no-unused-properties': 'warn',
 
+		// Disallow unnecessary `Boolean()` casts in array predicate callbacks (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-boolean-cast.md
+		'unicorn/no-useless-boolean-cast': 'warn',
+
 		// Disallow unnecessary `.toArray()` on iterators (partially autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-iterator-to-array.md
 		'unicorn/no-useless-iterator-to-array': 'warn',
