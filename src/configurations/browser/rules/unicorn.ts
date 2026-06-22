@@ -41,6 +41,10 @@ export default defineConfigurationPart({
 		// Reason: raw HTML sinks are usually deliberate.
 		'unicorn/no-unsafe-dom-html': 'off',
 
+		// Prefer an options object over a boolean in `.addEventListener()` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-add-event-listener-options.md
+		'unicorn/prefer-add-event-listener-options': 'warn',
+
 		// Prefer `.addEventListener()` and `.removeEventListener()` over on-functions (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-add-event-listener.md
 		// Doesn't set removeEventListener, so may be confusing to disable it
