@@ -323,6 +323,10 @@ export default defineConfigurationPart({
 		// Reason: global patches are common and often outside shared config control
 		'unicorn/no-global-object-property-assignment': 'off',
 
+		// Disallow incorrect template literal interpolation syntax
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-incorrect-template-string-interpolation.md
+		'unicorn/no-incorrect-template-string-interpolation': 'warn',
+
 		// Disallow immediate mutation after variable assignment (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-immediate-mutation.md
 		'unicorn/no-immediate-mutation': 'error',
