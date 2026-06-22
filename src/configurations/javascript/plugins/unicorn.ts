@@ -304,6 +304,10 @@ export default defineConfigurationPart({
 		// Note: some files may be intentionally empty, but it's good to have a rule that will show them
 		'unicorn/no-empty-file': 'warn',
 
+		// Disallow assigning to built-in error properties
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-error-property-assignment.md
+		'unicorn/no-error-property-assignment': 'error',
+
 		// Disallow exports in scripts
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-exports-in-scripts.md
 		// Note: does not break execution, but mixing CLI and module roles may be a design mistake
