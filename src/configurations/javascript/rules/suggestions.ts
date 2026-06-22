@@ -559,7 +559,8 @@ export default defineConfigurationPart({
 
 		// Disallow unnecessary string concatenation
 		// https://eslint.org/docs/rules/no-useless-concat
-		'no-useless-concat': 'error',
+		// Reason: replaced by `unicorn/no-useless-concat`, which covers more cases.
+		'no-useless-concat': 'off',
 
 		// Disallow unnecessary `constructor`
 		// https://eslint.org/docs/rules/no-useless-constructor

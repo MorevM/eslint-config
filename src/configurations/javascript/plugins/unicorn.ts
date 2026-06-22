@@ -571,6 +571,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-collection-argument.md
 		'unicorn/no-useless-collection-argument': 'warn',
 
+		// Disallow useless concatenation of literals (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-concat.md
+		'unicorn/no-useless-concat': 'warn',
+
 		// Disallow unnecessary `Error.captureStackTrace(…)` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-error-capture-stack-trace.md
 		'unicorn/no-useless-error-capture-stack-trace': 'error',
