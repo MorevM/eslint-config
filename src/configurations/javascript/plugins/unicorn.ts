@@ -378,6 +378,12 @@ export default defineConfigurationPart({
 		// Reason: negating the whole predicate call can be clearer.
 		'unicorn/no-negated-array-predicate': 'off',
 
+		// Disallow negated comparisons (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-negated-comparison.md
+		'unicorn/no-negated-comparison': ['warn', {
+			checkLogicalExpressions: false,
+		}],
+
 		// Disallow negated conditions (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-negated-condition.md
 		// Note: this is `no-negated-condition` with autofix capacity.
