@@ -318,6 +318,11 @@ export default defineConfigurationPart({
 		// Note: too radical to be an error or exists at all, but let it be `warn` for a while
 		'unicorn/no-for-loop': 'warn',
 
+		// Disallow assigning properties on the global object
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-global-object-property-assignment.md
+		// Reason: global patches are common and often outside shared config control
+		'unicorn/no-global-object-property-assignment': 'off',
+
 		// Disallow immediate mutation after variable assignment (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-immediate-mutation.md
 		'unicorn/no-immediate-mutation': 'error',
