@@ -479,6 +479,10 @@ export default defineConfigurationPart({
 			checkGlobalVariables: false,
 		}],
 
+		// Require class members to be declared.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-undeclared-class-members.md
+		'unicorn/no-undeclared-class-members': 'warn',
+
 		// Disallow using `1` as the `depth` argument of `Array#flat()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-array-flat-depth.md
 		'unicorn/no-unnecessary-array-flat-depth': 'warn',
