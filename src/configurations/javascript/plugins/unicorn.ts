@@ -527,6 +527,11 @@ export default defineConfigurationPart({
 		// Note: developer knows better
 		'unicorn/no-unreadable-iife': 'off',
 
+		// Disallow unreadable `new` expressions.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-new-expression.md
+		// Reason: readability is contextual.
+		'unicorn/no-unreadable-new-expression': 'off',
+
 		// Disallow ignoring the return value of selected array methods
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unused-array-method-return.md
 		// Note: reports as `warn` because it is syntax-only and may see non-array methods with array-like names
