@@ -596,6 +596,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-promise-resolve-reject.md
 		'unicorn/no-useless-promise-resolve-reject': 'warn',
 
+		// Disallow simple recursive function calls that can be replaced with a loop.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-recursion.md
+		'unicorn/no-useless-recursion': 'warn',
+
 		// Disallow useless spread (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-spread.md
 		'unicorn/no-useless-spread': 'error',
