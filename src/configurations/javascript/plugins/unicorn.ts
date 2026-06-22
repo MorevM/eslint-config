@@ -468,6 +468,11 @@ export default defineConfigurationPart({
 		// Reason: object methods, Vue options, and SDK callbacks may intentionally bind `this`
 		'unicorn/no-this-outside-of-class': 'off',
 
+		// Disallow top-level side effects in exported modules.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-top-level-side-effects.md
+		// Reason: too broad for a shared config.
+		'unicorn/no-top-level-side-effects': 'off',
+
 		// Disallow comparing `undefined` using `typeof` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-typeof-undefined.md
 		'unicorn/no-typeof-undefined': ['warn', {
