@@ -742,6 +742,10 @@ export default defineConfigurationPart({
 		// Note: I think it's better to be explicit, especially when working with mixed environments (Vue/React + SSR for example)
 		'unicorn/prefer-global-this': 'off',
 
+		// Prefer global numeric constants over `Number` static properties (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-global-number-constants.md
+		'unicorn/prefer-global-number-constants': 'warn',
+
 		// Prefer HTTPS over HTTP (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-https.md
 		// Reason: protocol is often outside of a shared config consumer's control
