@@ -495,6 +495,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-await.md
 		'unicorn/no-unnecessary-await': 'warn',
 
+		// Disallow unnecessary `globalThis` references (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-global-this.md
+		// Reason: explicit `globalThis` usage is usually intentional.
+		'unicorn/no-unnecessary-global-this': 'off',
+
 		// Disallow unnecessary nested ternary expressions (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-nested-ternary.md
 		// Note: reports as `warn` because it only combines duplicated ternary branches
