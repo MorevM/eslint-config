@@ -715,6 +715,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-direct-iteration.md
 		'unicorn/prefer-direct-iteration': 'warn',
 
+		// Prefer using `using`/`await using` over manual `try`/`finally` resource disposal.
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dispose.md
+		// TODO [2027-05-01]: Reconsider after Node 22 EOL and `using` support is common enough.
+		'unicorn/prefer-dispose': 'off',
+
 		// Prefer `export…from` when re-exporting (autofixable but might be confusing during development flow)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-export-from.md
 		'no-autofix/unicorn/prefer-export-from': ['warn', {
