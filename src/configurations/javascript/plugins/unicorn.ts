@@ -664,6 +664,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-length-check.md
 		'unicorn/no-useless-length-check': 'off',
 
+		// Disallow useless overrides of class methods (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-override.md
+		// Reason: deleting an override can be visible through prototype introspection.
+		'no-autofix/unicorn/no-useless-override': 'warn',
+
 		// Disallow returning/yielding P`romise.resolve/reject()` in async functions or promise callbacks (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-promise-resolve-reject.md
 		'unicorn/no-useless-promise-resolve-reject': 'warn',
