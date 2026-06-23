@@ -581,6 +581,11 @@ export default defineConfigurationPart({
 		// Note: developer knows better
 		'unicorn/no-unreadable-array-destructuring': 'off',
 
+		// Disallow unreadable iterable expressions in `for…of` and `for await…of` loop headers
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-for-of-expression.md
+		// Reason: readability is contextual.
+		'unicorn/no-unreadable-for-of-expression': 'off',
+
 		// Disallow unreadable IIFEs
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-iife.md
 		// Note: developer knows better
