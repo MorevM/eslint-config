@@ -1033,6 +1033,11 @@ export default defineConfigurationPart({
 		// TODO [2026-06-27]: Discuss whether this preference should be part of the shared config.
 		'unicorn/prefer-type-literal-last': 'warn',
 
+		// Prefer `Uint8Array#toBase64()` and `Uint8Array.fromBase64()` over `atob()`, `btoa()`, and `Buffer` base64 conversions
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-uint8array-base64.md
+		// TODO [2028-05-01]: Reconsider after Node 24 EOL and Uint8Array base64 APIs are available in supported runtimes.
+		'unicorn/prefer-uint8array-base64': 'off',
+
 		// Prefer Unicode code point escapes over legacy escape sequences (partially autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-unicode-code-point-escapes.md
 		'unicorn/prefer-unicode-code-point-escapes': 'warn',
