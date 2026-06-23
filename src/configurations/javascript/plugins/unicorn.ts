@@ -1042,6 +1042,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-unicode-code-point-escapes.md
 		'unicorn/prefer-unicode-code-point-escapes': 'warn',
 
+		// Prefer `URL#href` over stringifying a `URL` (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-url-href.md
+		// TODO [2026-06-27]: Discuss whether this preference should be part of the shared config.
+		'unicorn/prefer-url-href': 'warn',
+
 		// Prevent abbreviations (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prevent-abbreviations.md
 		// Note: it mostly personal preferences, I'm absolutely fine with any common abbreviations
