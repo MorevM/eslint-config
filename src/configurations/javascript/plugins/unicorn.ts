@@ -627,6 +627,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-boolean-cast.md
 		'unicorn/no-useless-boolean-cast': 'warn',
 
+		// Disallow useless type coercions of values that are already of the target type (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-coercion.md
+		'unicorn/no-useless-coercion': 'warn',
+
 		// Disallow unnecessary `.toArray()` on iterators (partially autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-iterator-to-array.md
 		'unicorn/no-useless-iterator-to-array': 'warn',
