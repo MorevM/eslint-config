@@ -65,6 +65,8 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 				// Reason: I would be happy to enable it if `.includes()` narrowed types, but it does not:
 				// https://github.com/microsoft/TypeScript/issues/31018
 				'unicorn/prefer-includes-over-repeated-comparisons': 'off',
+				// Reason: TypeScript already uses `@typescript-eslint/require-array-sort-compare` with type-aware options.
+				'unicorn/require-array-sort-compare': 'off',
 				// Reason: TypeScript code should use explicit `private`, not an underscore convention.
 				'unicorn/prefer-private-class-fields': 'off',
 			},
