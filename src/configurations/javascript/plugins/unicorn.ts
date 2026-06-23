@@ -283,6 +283,11 @@ export default defineConfigurationPart({
 			allowExpressionStatement: true,
 		}],
 
+		// Prefer `Array#toSpliced()` over `Array#splice()`
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-splice.md
+		// Reason: mutating `splice()` is ok when in-place operation is intended.
+		'unicorn/no-array-splice': 'off',
+
 		// Disallow asterisk prefixes in documentation comments (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-asterisk-prefix-in-documentation-comments.md
 		// Reason: JSDoc formatting is already handled by `jsdoc/require-asterisk-prefix`
