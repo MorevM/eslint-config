@@ -98,6 +98,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-path2d.md
 		'unicorn/prefer-path2d': 'warn',
 
+		// Prefer `:scope` when using element query selector methods
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-scoped-selector.md
+		'unicorn/prefer-scoped-selector': 'warn',
+
 		// Require `CSS.escape()` for interpolated values in CSS selectors (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-css-escape.md
 		// Note: only attribute selector interpolations are checked to avoid escaping intentional selector fragments
