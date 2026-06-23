@@ -781,6 +781,11 @@ export default defineConfigurationPart({
 		// TODO [2028-12-24]: Enable after expected Baseline Widely Available.
 		'unicorn/prefer-iterator-concat': 'off',
 
+		// Prefer `Iterator#toArray()` over temporary arrays from iterator spreads (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-iterator-to-array.md
+		// TODO [2027-12-31]: Enable after expected Baseline Widely Available.
+		'unicorn/prefer-iterator-to-array': 'off',
+
 		// Prefer moving `.toArray()` to the end of iterator helper chains.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-iterator-to-array-at-end.md
 		// Note: reports as `warn` because it is suggestion-only and applies only when iterator helpers are already used
