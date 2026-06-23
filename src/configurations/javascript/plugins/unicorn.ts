@@ -894,6 +894,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-logical-operator-over-ternary.md
 		'unicorn/prefer-logical-operator-over-ternary': 'warn',
 
+		// Prefer `new Map()` over `Object.fromEntries()` when using the result as a map (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-map-from-entries.md
+		// Reason: rewriting an object and its operations to `Map` is a larger refactor than formatting.
+		'no-autofix/unicorn/prefer-map-from-entries': 'warn',
+
 		// Prefer `Math.abs()` over manual absolute value expressions and symmetric range checks (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-abs.md
 		// Note: reports as `warn` because the transformation is stylistic, not a correctness issue
