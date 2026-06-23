@@ -813,6 +813,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-trunc.md
 		'unicorn/prefer-math-trunc': 'warn',
 
+		// Prefer moving ternaries into the minimal varying part of an expression
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-minimal-ternary.md
+		// Reason: way too strict, especially for multiline ternaries.
+		'unicorn/prefer-minimal-ternary': 'off',
+
 		// Prefer modern `Math` APIs over legacy patterns (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-modern-math-apis.md
 		'unicorn/prefer-modern-math-apis': 'warn',
