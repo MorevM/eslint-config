@@ -89,6 +89,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-keyboard-event-key.md
 		'unicorn/prefer-keyboard-event-key': 'error',
 
+		// Prefer `location.assign()` over assigning to `location.href` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-location-assign.md
+		// TODO [2026-06-27]: Discuss whether this preference should be part of the shared config.
+		'unicorn/prefer-location-assign': 'warn',
+
 		// Require `CSS.escape()` for interpolated values in CSS selectors (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-css-escape.md
 		// Note: only attribute selector interpolations are checked to avoid escaping intentional selector fragments
