@@ -946,6 +946,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-single-object-destructuring.md
 		'unicorn/prefer-single-object-destructuring': 'off',
 
+		// Prefer declaring variables in the smallest possible scope (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-smaller-scope.md
+		// Reason: no autofix, because declaration placement can be intentional for readability.
+		'no-autofix/unicorn/prefer-smaller-scope': 'warn',
+
 		// Prefer `String#split()` with a limit (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-split-limit.md
 		'unicorn/prefer-split-limit': 'warn',
