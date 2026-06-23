@@ -453,6 +453,12 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-new-buffer.md
 		'unicorn/no-new-buffer': 'error',
 
+		// Disallow non-function values with function-style verb prefixes
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-non-function-verb-prefix.md
+		'unicorn/no-non-function-verb-prefix': ['warn', {
+			verbs: ['get', 'set', 'unset', 'delete', 'add', 'remove', 'destroy', 'create'],
+		}],
+
 		// Disallow the use of the `null` literal
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-null.md
 		// Note: `null` is used to show variable exists and "not set"; `undefined` means... nothing?
