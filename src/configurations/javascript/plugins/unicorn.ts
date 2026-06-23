@@ -751,6 +751,10 @@ export default defineConfigurationPart({
 		// Reason: protocol is often outside of a shared config consumer's control
 		'unicorn/prefer-https': 'off',
 
+		// Prefer identifiers over string literals in import and export specifiers (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-identifier-import-export-specifiers.md
+		'unicorn/prefer-identifier-import-export-specifiers': 'warn',
+
 		// Prefer `import.meta.{dirname,filename}` over legacy techniques for getting file paths (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-import-meta-properties.md
 		'unicorn/prefer-import-meta-properties': 'warn',
