@@ -933,6 +933,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-simple-sort-comparator.md
 		'unicorn/prefer-simple-sort-comparator': 'warn',
 
+		// Prefer a single `Array#some()` or `Array#every()` with a combined predicate
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-single-array-predicate.md
+		'unicorn/prefer-single-array-predicate': 'warn',
+
 		// Enforce combining multiple `Array#push()`, `Element#classList.{add,remove}()`, and `importScripts()` into one call
 		// Autofixable but doesn't care about comments, might be confusing.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-single-call.md
