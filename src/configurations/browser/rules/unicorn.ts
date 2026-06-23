@@ -94,6 +94,10 @@ export default defineConfigurationPart({
 		// TODO [2026-06-27]: Discuss whether this preference should be part of the shared config.
 		'unicorn/prefer-location-assign': 'warn',
 
+		// Prefer `Path2D` for repeatedly drawn canvas paths
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-path2d.md
+		'unicorn/prefer-path2d': 'warn',
+
 		// Require `CSS.escape()` for interpolated values in CSS selectors (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-css-escape.md
 		// Note: only attribute selector interpolations are checked to avoid escaping intentional selector fragments
