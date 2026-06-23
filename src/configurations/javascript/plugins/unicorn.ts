@@ -726,6 +726,11 @@ export default defineConfigurationPart({
 			},
 		}],
 
+		// Require assignment operator shorthand where possible (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/operator-assignment.md
+		// Reason: shorthand is situational, and `+=` can hide string coercion.
+		'unicorn/operator-assignment': ['off', 'always'],
+
 		// Prefer `.find(…)` over the first element from `.filter(…)` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-find.md
 		'unicorn/prefer-array-find': 'warn',
