@@ -812,6 +812,10 @@ export default defineConfigurationPart({
 			maximumStatements: 1,
 		}],
 
+		// Prefer `else if` over adjacent `if` statements with related conditions (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-else-if.md
+		'unicorn/prefer-else-if': 'off',
+
 		// Prefer `export…from` when re-exporting (autofixable but might be confusing during development flow)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-export-from.md
 		'no-autofix/unicorn/prefer-export-from': ['warn', {
