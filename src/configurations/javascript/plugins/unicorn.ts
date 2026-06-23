@@ -1007,6 +1007,15 @@ export default defineConfigurationPart({
 		// Note: opinions about that in community too different, so let this thing be `off`
 		'no-autofix/unicorn/prefer-switch': 'off',
 
+		// Prefer `Temporal` over `Date` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-temporal.md
+		// TODO [2028-05-01]: Reconsider after Node 24 EOL and `Temporal` is available in supported runtimes.
+		'unicorn/prefer-temporal': ['off', {
+			checkDateNow: false,
+			checkReferences: false,
+			checkMethods: false,
+		}],
+
 		// Prefer ternary expressions over simple if-else statements (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-ternary.md
 		'unicorn/prefer-ternary': ['error', 'only-single-line'],
