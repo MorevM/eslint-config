@@ -929,6 +929,10 @@ export default defineConfigurationPart({
 		// Reason: condition order should follow algorithm importance and readability, not static simplicity
 		'unicorn/prefer-simple-condition-first': 'off',
 
+		// Prefer a simple comparison function for `Array#sort()`
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-simple-sort-comparator.md
+		'unicorn/prefer-simple-sort-comparator': 'warn',
+
 		// Enforce combining multiple `Array#push()`, `Element#classList.{add,remove}()`, and `importScripts()` into one call
 		// Autofixable but doesn't care about comments, might be confusing.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-single-call.md
