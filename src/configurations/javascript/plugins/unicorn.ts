@@ -771,6 +771,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-includes.md
 		'unicorn/prefer-includes': 'error',
 
+		// Prefer passing iterables directly to constructors instead of filling empty collections (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-iterable-in-constructor.md
+		'unicorn/prefer-iterable-in-constructor': 'warn',
+
 		// Prefer `Iterator.concat(…)` over temporary spread arrays (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-iterator-concat.md
 		// Reason: `Iterator.concat()` is too new for a shared config
