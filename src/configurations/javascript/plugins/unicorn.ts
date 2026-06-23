@@ -534,6 +534,10 @@ export default defineConfigurationPart({
 			checkGlobalVariables: false,
 		}],
 
+		// Disallow referencing methods without calling them
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-uncalled-method.md
+		'unicorn/no-uncalled-method': 'warn',
+
 		// Require class members to be declared.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-undeclared-class-members.md
 		'unicorn/no-undeclared-class-members': 'warn',
