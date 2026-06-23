@@ -756,6 +756,10 @@ export default defineConfigurationPart({
 		// Note: reports as `warn` because replacements can differ for mutation, sparse arrays, and index callbacks
 		'unicorn/prefer-array-last-methods': 'warn',
 
+		// Prefer `Array#slice()` over `Array#splice()` when reading from the returned array
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-slice.md
+		'unicorn/prefer-array-slice': 'warn',
+
 		// Prefer `.some(…)` over `.filter(…).length` check and `.find(…)` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-some.md
 		'unicorn/prefer-array-some': 'warn',
