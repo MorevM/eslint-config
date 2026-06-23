@@ -518,6 +518,11 @@ export default defineConfigurationPart({
 		// Reason: object methods, Vue options, and SDK callbacks may intentionally bind `this`
 		'unicorn/no-this-outside-of-class': 'off',
 
+		// Disallow assigning to top-level variables from inside functions
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-top-level-assignment-in-function.md
+		// Reason: module-level caches and lifecycle state are common shared-config cases.
+		'unicorn/no-top-level-assignment-in-function': 'off',
+
 		// Disallow top-level side effects in exported modules.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-top-level-side-effects.md
 		// Reason: too broad for a shared config.
