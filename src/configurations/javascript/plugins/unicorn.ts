@@ -919,6 +919,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-size.md
 		'unicorn/prefer-set-size': 'warn',
 
+		// Prefer arrow function properties over methods with a single return (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-short-arrow-method.md
+		// Reason: pure style preference.
+		'unicorn/prefer-short-arrow-method': 'off',
+
 		// Prefer simple conditions first in logical expressions (partially autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-simple-condition-first.md
 		// Reason: condition order should follow algorithm importance and readability, not static simplicity
