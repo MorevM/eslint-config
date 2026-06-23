@@ -851,6 +851,11 @@ export default defineConfigurationPart({
 		// Note: what's the problem with global functions? I'm serious.
 		'unicorn/prefer-number-properties': 'off',
 
+		// Prefer `Object.defineProperties()` over multiple `Object.defineProperty()` calls (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-object-define-properties.md
+		// Reason: no autofix, because a later descriptor can throw after earlier properties were already defined.
+		'no-autofix/unicorn/prefer-object-define-properties': 'warn',
+
 		// Prefer using `Object.fromEntries(…)` to transform a list of key-value pairs into an object
 		// (autofixable for simple cases)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-object-from-entries.md
