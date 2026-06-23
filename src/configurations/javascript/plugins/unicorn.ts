@@ -836,6 +836,12 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-negative-index.md
 		'unicorn/prefer-negative-index': 'error',
 
+		// Prefer `Number()` over `parseFloat()` and base-10 `parseInt()`
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-number-coercion.md
+		// Reason: `parseFloat()` and `parseInt()` are often used to intentionally accept string prefixes.
+		// TODO [2026-06-27]: Discuss whether this preference should be part of the shared config.
+		'unicorn/prefer-number-coercion': 'off',
+
 		// Prefer `Number` static properties over global ones (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-number-properties.md
 		// Note: what's the problem with global functions? I'm serious.
