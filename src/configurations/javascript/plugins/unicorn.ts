@@ -836,6 +836,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-global-number-constants.md
 		'unicorn/prefer-global-number-constants': 'warn',
 
+		// Prefer `.has()` when checking existence (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-has-check.md
+		'unicorn/prefer-has-check': 'warn',
+
 		// Prefer HTTPS over HTTP (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-https.md
 		// Reason: protocol is often outside of a shared config consumer's control
