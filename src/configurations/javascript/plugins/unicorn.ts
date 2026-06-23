@@ -208,6 +208,13 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/isolated-functions.md
 		'unicorn/isolated-functions': 'error',
 
+		// Require or disallow logical assignment operator shorthand (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/logical-assignment-operators.md
+		// Reason: core `logical-assignment-operators` is enough.
+		'unicorn/logical-assignment-operators': ['off', 'always', {
+			enforceForIfStatements: false,
+		}],
+
 		// Limit the depth of nested calls
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/max-nested-calls.md
 		// Reason: a good developer knows when to stop.
