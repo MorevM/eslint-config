@@ -1173,6 +1173,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-array-join-separator.md
 		'unicorn/require-array-join-separator': 'error',
 
+		// Require a compare function when calling `Array#sort()` or `Array#toSorted()`
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-array-sort-compare.md
+		'unicorn/require-array-sort-compare': 'warn',
+
 		// Require non-empty module attributes for imports and exports (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-module-attributes.md
 		'no-autofix/unicorn/require-module-attributes': 'warn',
