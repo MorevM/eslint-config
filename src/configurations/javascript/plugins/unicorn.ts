@@ -1028,6 +1028,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-type-error.md
 		'unicorn/prefer-type-error': 'warn',
 
+		// Require type literals to be last in union and intersection types (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-type-literal-last.md
+		// TODO [2026-06-27]: Discuss whether this preference should be part of the shared config.
+		'unicorn/prefer-type-literal-last': 'warn',
+
 		// Prefer Unicode code point escapes over legacy escape sequences (partially autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-unicode-code-point-escapes.md
 		'unicorn/prefer-unicode-code-point-escapes': 'warn',
