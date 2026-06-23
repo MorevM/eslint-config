@@ -867,6 +867,10 @@ export default defineConfigurationPart({
 		// Reason: too many false-positive errors
 		'no-autofix/unicorn/prefer-object-from-entries': 'off',
 
+		// Prefer the most specific `Object` iterable method (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-object-iterable-methods.md
+		'unicorn/prefer-object-iterable-methods': 'warn',
+
 		// Prefer omitting the catch binding parameter. (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-optional-catch-binding.md
 		'unicorn/prefer-optional-catch-binding': 'warn',
