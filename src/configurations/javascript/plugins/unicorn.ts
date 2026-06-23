@@ -33,6 +33,38 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-assert.md
 		'unicorn/consistent-assert': 'warn',
 
+		// Enforce consistent naming for boolean names (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-boolean-name.md
+		'no-autofix/unicorn/consistent-boolean-name': ['warn', {
+			checkProperties: false,
+			prefixes: {
+				is: true,
+				are: true,
+				has: true,
+				have: true,
+				should: true,
+				can: true,
+				do: true,
+				does: true,
+				did: true,
+				was: true,
+				were: true,
+				will: true,
+				skip: true,
+				no: true,
+				enable: true,
+				disable: true,
+				allow: true,
+				disallow: true,
+				use: true,
+				include: true,
+				exclude: true,
+				ignore: true,
+				force: true,
+				supports: true,
+			},
+		}],
+
 		// Enforce consistent class member order
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-class-member-order.md
 		'unicorn/consistent-class-member-order': ['warn', {
