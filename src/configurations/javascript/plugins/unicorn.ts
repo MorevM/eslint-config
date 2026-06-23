@@ -856,6 +856,11 @@ export default defineConfigurationPart({
 		// Reason: no autofix, because a later descriptor can throw after earlier properties were already defined.
 		'no-autofix/unicorn/prefer-object-define-properties': 'warn',
 
+		// Prefer object destructuring defaults over default object literals with spread
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-object-destructuring-defaults.md
+		// Reason: pure style preference.
+		'unicorn/prefer-object-destructuring-defaults': 'off',
+
 		// Prefer using `Object.fromEntries(…)` to transform a list of key-value pairs into an object
 		// (autofixable for simple cases)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-object-from-entries.md
