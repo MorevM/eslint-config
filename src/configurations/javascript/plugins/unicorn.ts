@@ -643,6 +643,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-concat.md
 		'unicorn/no-useless-concat': 'warn',
 
+		// Disallow useless `continue` statements (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-continue.md
+		'unicorn/no-useless-continue': 'warn',
+
 		// Disallow `else` after a statement that exits (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-else.md
 		// Reason: core `no-else-return` covers the preferred subset and keeps `else if` allowed.
