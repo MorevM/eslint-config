@@ -94,7 +94,7 @@
 		"eslint-plugin-playwright": "^2.5.1",
 		"eslint-plugin-regexp": "^3.1.0",
 		"eslint-plugin-sonarjs": "^1.0.4",
-		"eslint-plugin-unicorn": "^67.0.0",
+		"eslint-plugin-unicorn": "^68.0.0",
 		"eslint-plugin-vue": "^10.9.2",
 		"eslint-plugin-yml": "^3.1.2",
 		"eslint-rule-composer": "^0.3.0",
