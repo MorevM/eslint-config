@@ -1193,6 +1193,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-post-message-target-origin.md
 		'unicorn/require-post-message-target-origin': 'error',
 
+		// Require boolean-returning Proxy traps to return booleans (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/require-proxy-trap-boolean-return.md
+		// Reason: Some reports are bugs, but explicit truthy or falsy values only rely on coercion.
+		'unicorn/require-proxy-trap-boolean-return': 'warn',
+
 		// Enforce better string content
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/string-content.md
 		'unicorn/string-content': 'off',
