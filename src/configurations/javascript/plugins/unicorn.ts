@@ -373,6 +373,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-accessor-recursion.md
 		'unicorn/no-accessor-recursion': 'error',
 
+		// Disallow bitwise operators where a logical operator was likely intended
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-accidental-bitwise-operator.md
+		// Reason: core `no-bitwise` already reports these cases and more.
+		'unicorn/no-accidental-bitwise-operator': 'off',
+
 		// Disallow anonymous functions and classes as the default export
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-anonymous-default-export.md
 		'unicorn/no-anonymous-default-export': 'off',
