@@ -162,6 +162,13 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/custom-error-definition.md
 		'unicorn/custom-error-definition': 'error',
 
+		// Enforce consistent default export declarations (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/default-export-style.md
+		'unicorn/default-export-style': ['warn', {
+			functions: 'inline',
+			classes: 'inline',
+		}],
+
 		// Enforce no spaces between braces (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/empty-brace-spaces.md
 		'unicorn/empty-brace-spaces': 'warn',
