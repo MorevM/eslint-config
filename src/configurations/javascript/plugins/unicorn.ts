@@ -106,6 +106,11 @@ export default defineConfigurationPart({
 			checkShorthandProperties: false,
 		}],
 
+		// Enforce consistent conditional object spread style (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-conditional-object-spread.md
+		// Reason: logical spread avoids the usually unnecessary empty-object branch.
+		'unicorn/consistent-conditional-object-spread': ['warn', 'logical'],
+
 		// Prefer passing `Date` directly to the constructor when cloning (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-date-clone.md
 		'unicorn/consistent-date-clone': 'warn',
