@@ -222,6 +222,131 @@ export default defineConfigurationPart({
 			max: 3,
 		}],
 
+		// Enforce replacements for variable, property, and filenames (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/name-replacements.md
+		// Note: this is mostly personal preference; common abbreviations are fine
+		//       when they make code less verbose, but some are annoying to read.
+		'unicorn/name-replacements': ['warn', {
+			checkProperties: false,
+			checkVariables: true,
+			checkDefaultAndNamespaceImports: 'internal',
+			checkShorthandImports: 'internal',
+			checkShorthandProperties: false,
+			checkFilenames: true,
+			extendDefaultReplacements: false,
+			// @keep-sorted
+			replacements: {
+				btn: {
+					button: true,
+				},
+				cb: {
+					callback: true,
+				},
+				cnt: {
+					count: true,
+				},
+				conf: {
+					config: true,
+				},
+				ctx: {
+					context: true,
+				},
+				cur: {
+					current: true,
+				},
+				curr: {
+					current: true,
+				},
+				descr: {
+					description: true,
+				},
+				dir: {
+					direction: true,
+					directory: true,
+				},
+				dirs: {
+					directories: true,
+				},
+				dst: {
+					dest: true,
+					dist: true,
+					destination: true,
+					distribution: true,
+				},
+				e: {
+					error: true,
+					event: true,
+				},
+				elem: {
+					element: true,
+				},
+				elems: {
+					elements: true,
+				},
+				err: {
+					error: true,
+				},
+				ev: {
+					event: true,
+				},
+				evt: {
+					event: true,
+				},
+				func: {
+					fn: true,
+					function: true,
+				},
+				idx: {
+					index: true,
+				},
+				len: {
+					length: true,
+				},
+				msg: {
+					message: true,
+				},
+				opts: {
+					options: true,
+				},
+				rel: {
+					related: true,
+					relationship: true,
+					relative: true,
+				},
+				req: {
+					request: true,
+				},
+				res: {
+					resource: true,
+					response: true,
+					result: true,
+				},
+				sep: {
+					separator: true,
+				},
+				tbl: {
+					table: true,
+				},
+				tmp: {
+					temp: true,
+				},
+				tmpl: {
+					template: true,
+				},
+				val: {
+					value: true,
+				},
+				ver: {
+					version: true,
+				},
+			},
+			extendDefaultAllowList: true,
+			allowList: {
+				eCommerce: true,
+			},
+			ignore: [],
+		}],
+
 		// Enforce the use of `new` for all builtins, except `String`, `Number`, `Boolean`, `Symbol` and `BigInt`
 		// (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/new-for-builtins.md
@@ -1145,123 +1270,6 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-url-href.md
 		// TODO [2026-06-27]: Discuss whether this preference should be part of the shared config.
 		'unicorn/prefer-url-href': 'warn',
-
-		// Prevent abbreviations (autofixable)
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prevent-abbreviations.md
-		// Note: it mostly personal preferences, I'm absolutely fine with any common abbreviations
-		//       which makes code less verbose, but some of them are just annoying to read.
-		'unicorn/prevent-abbreviations': ['warn', {
-			extendDefaultReplacements: false,
-			// @keep-sorted
-			replacements: {
-				btn: {
-					button: true,
-				},
-				cb: {
-					callback: true,
-				},
-				cnt: {
-					count: true,
-				},
-				conf: {
-					config: true,
-				},
-				ctx: {
-					context: true,
-				},
-				cur: {
-					current: true,
-				},
-				curr: {
-					current: true,
-				},
-				descr: {
-					description: true,
-				},
-				dir: {
-					direction: true,
-					directory: true,
-				},
-				dirs: {
-					directories: true,
-				},
-				dst: {
-					dest: true,
-					dist: true,
-					destination: true,
-					distribution: true,
-				},
-				e: {
-					error: true,
-					event: true,
-				},
-				elem: {
-					element: true,
-				},
-				elems: {
-					elements: true,
-				},
-				err: {
-					error: true,
-				},
-				ev: {
-					event: true,
-				},
-				evt: {
-					event: true,
-				},
-				func: {
-					fn: true,
-					function: true,
-				},
-				idx: {
-					index: true,
-				},
-				len: {
-					length: true,
-				},
-				msg: {
-					message: true,
-				},
-				opts: {
-					options: true,
-				},
-				rel: {
-					related: true,
-					relationship: true,
-					relative: true,
-				},
-				req: {
-					request: true,
-				},
-				res: {
-					resource: true,
-					response: true,
-					result: true,
-				},
-				sep: {
-					separator: true,
-				},
-				tbl: {
-					table: true,
-				},
-				tmp: {
-					temp: true,
-				},
-				tmpl: {
-					template: true,
-				},
-				val: {
-					value: true,
-				},
-				ver: {
-					version: true,
-				},
-			},
-			allowList: {
-				eCommerce: true,
-			},
-		}],
 
 		// Enforce consistent relative URL style (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/relative-url-style.md
