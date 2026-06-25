@@ -1091,6 +1091,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-has-check.md
 		'unicorn/prefer-has-check': 'warn',
 
+		// Prefer moving code shared by all branches of an `if` statement out of the branches (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-hoisting-branch-code.md
+		// Reason: moving code across branches should be reviewed manually.
+		'no-autofix/unicorn/prefer-hoisting-branch-code': 'warn',
+
 		// Prefer HTTPS over HTTP (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-https.md
 		// Reason: protocol is often outside of a shared config consumer's control
