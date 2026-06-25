@@ -759,6 +759,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-await.md
 		'unicorn/no-unnecessary-await': 'warn',
 
+		// Disallow unnecessary comparisons against boolean literals (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-boolean-comparison.md
+		'unicorn/no-unnecessary-boolean-comparison': 'warn',
+
 		// Disallow unnecessary `globalThis` references (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-global-this.md
 		// Reason: explicit `globalThis` usage is usually intentional.

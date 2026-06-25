@@ -64,6 +64,8 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 				'unicorn/no-nonstandard-builtin-properties': 'off',
 				// Reason: TypeScript already reports undeclared class members.
 				'unicorn/no-undeclared-class-members': 'off',
+				// Reason: TypeScript already uses `@typescript-eslint/no-unnecessary-boolean-literal-compare`.
+				'unicorn/no-unnecessary-boolean-comparison': 'off',
 				// Reason: I would be happy to enable it if `.includes()` narrowed types, but it does not:
 				// https://github.com/microsoft/TypeScript/issues/31018
 				'unicorn/prefer-includes-over-repeated-comparisons': 'off',
