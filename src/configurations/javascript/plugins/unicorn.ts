@@ -427,6 +427,10 @@ export default defineConfigurationPart({
 			allowExpressionStatement: true,
 		}],
 
+		// Disallow sorting arrays to get the minimum or maximum value
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-sort-for-min-max.md
+		'unicorn/no-array-sort-for-min-max': 'warn',
+
 		// Prefer `Array#toSorted()` over `Array#sort()`.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-sort.md
 		// Note: mutating `sort()` is ok when in-place operation is intended
