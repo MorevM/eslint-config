@@ -861,6 +861,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-continue.md
 		'unicorn/no-useless-continue': 'warn',
 
+		// Disallow unnecessary existence checks before deletion (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-delete-check.md
+		// TODO [2026-06-27]: Discuss whether delete existence checks should be simplified.
+		'unicorn/no-useless-delete-check': 'warn',
+
 		// Disallow `else` after a statement that exits (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-else.md
 		// Reason: core `no-else-return` covers the preferred subset and keeps `else if` allowed.
