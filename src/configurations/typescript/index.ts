@@ -60,6 +60,8 @@ export default function configurationTypescript(options: Partial<TypescriptConfi
 				'jsdoc/require-yields-type': 'off',
 				// Reason: TypeScript already reports invalid argument counts.
 				'unicorn/no-invalid-argument-count': 'off',
+				// Reason: TypeScript already checks built-in property availability from configured libs.
+				'unicorn/no-nonstandard-builtin-properties': 'off',
 				// Reason: TypeScript already reports undeclared class members.
 				'unicorn/no-undeclared-class-members': 'off',
 				// Reason: I would be happy to enable it if `.includes()` narrowed types, but it does not:

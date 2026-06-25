@@ -659,6 +659,11 @@ export default defineConfigurationPart({
 			verbs: ['get', 'set', 'unset', 'delete', 'add', 'remove', 'destroy', 'create'],
 		}],
 
+		// Disallow non-standard properties on built-in objects
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-nonstandard-builtin-properties.md
+		// Reason: runtime-specific built-in extensions can be intentional.
+		'unicorn/no-nonstandard-builtin-properties': 'warn',
+
 		// Disallow the use of the `null` literal
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-null.md
 		// Note: `null` is used to show variable exists and "not set"; `undefined` means... nothing?
