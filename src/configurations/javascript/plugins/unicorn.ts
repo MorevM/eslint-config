@@ -401,6 +401,11 @@ export default defineConfigurationPart({
 		// Reason: reference values are covered by `no-array-fill-with-reference-type`, and primitive fills are just another style
 		'unicorn/no-array-from-fill': 'off',
 
+		// Disallow front-of-array mutation
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-front-mutation.md
+		// Reason: `shift` and `unshift` are fine
+		'unicorn/no-array-front-mutation': 'off',
+
 		// Prefer `for…of` over the `forEach` method (partially autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-for-each.md
 		// Reason: `forEach` is acceptable when callback boundaries are intentional
