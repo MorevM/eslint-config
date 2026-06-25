@@ -571,6 +571,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-argument-count.md
 		'unicorn/no-invalid-argument-count': 'error',
 
+		// Disallow comparing a single character from a string to a multi-character string
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-character-comparison.md
+		'unicorn/no-invalid-character-comparison': 'error',
+
 		// Disallow invalid options in `fetch()` and `new Request()`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-fetch-options.md
 		'unicorn/no-invalid-fetch-options': 'error',
