@@ -971,6 +971,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-flat-map.md
 		'unicorn/prefer-array-flat-map': 'warn',
 
+		// Prefer `Array.fromAsync()` over `for await…of` array accumulation (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-from-async.md
+		'unicorn/prefer-array-from-async': 'warn',
+
 		// Prefer using the `Array.from()` mapping function argument (partially autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-from-map.md
 		'unicorn/prefer-array-from-map': 'warn',
