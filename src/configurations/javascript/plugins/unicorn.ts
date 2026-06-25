@@ -1017,6 +1017,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-blob-reading-methods.md
 		'unicorn/prefer-blob-reading-methods': 'error',
 
+		// Prefer directly returning boolean expressions over `if` statements (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-boolean-return.md
+		// Reason: this pattern is a recurring personal pain point in code review.
+		'unicorn/prefer-boolean-return': 'error',
+
 		// Prefer class field declarations over `this` assignments in constructors (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-class-fields.md
 		'unicorn/prefer-class-fields': 'error',
