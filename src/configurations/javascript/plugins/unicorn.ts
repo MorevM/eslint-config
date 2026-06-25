@@ -464,6 +464,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-break-in-nested-loop.md
 		'unicorn/no-break-in-nested-loop': 'warn',
 
+		// Disallow chained comparisons such as `a < b < c`
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-chained-comparison.md
+		'unicorn/no-chained-comparison': 'error',
+
 		// Do not use leading/trailing space between `console.log` parameters (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-console-spaces.md
 		'unicorn/no-console-spaces': 'warn',
