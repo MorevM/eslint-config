@@ -1030,6 +1030,12 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-code-point.md
 		'unicorn/prefer-code-point': 'error',
 
+		// Prefer early continues over whole-loop conditional wrapping (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-continue.md
+		'unicorn/prefer-continue': ['warn', {
+			maximumStatements: 1,
+		}],
+
 		// Prefer `Date.now()` to get the number of milliseconds since the Unix Epoch (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-date-now.md
 		'unicorn/prefer-date-now': 'warn',
