@@ -456,6 +456,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-in-promise-methods.md
 		'unicorn/no-await-in-promise-methods': 'warn',
 
+		// Disallow boolean-returning sort comparators
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-boolean-sort-comparator.md
+		'unicorn/no-boolean-sort-comparator': 'error',
+
 		// Disallow `break` and `continue` in nested loops and switches inside loops
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-break-in-nested-loop.md
 		'unicorn/no-break-in-nested-loop': 'warn',
