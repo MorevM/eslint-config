@@ -514,6 +514,10 @@ export default defineConfigurationPart({
 		// Reason: already covered by `sonarjs/no-duplicated-branches`.
 		'unicorn/no-duplicate-if-branches': 'off',
 
+		// Disallow adjacent duplicate operands in logical expressions (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-duplicate-logical-operands.md
+		'unicorn/no-duplicate-logical-operands': 'warn',
+
 		// Disallow duplicate values in `Set` constructor array literals
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-duplicate-set-values.md
 		// Note: reports as `warn` because duplicates are usually accidental, but removal can be a behavioral decision
