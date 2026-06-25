@@ -1069,6 +1069,10 @@ export default defineConfigurationPart({
 			checkUsedVariables: false,
 		}],
 
+		// Prefer flat `Math.min()` and `Math.max()` calls over nested calls (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-flat-math-min-max.md
+		'unicorn/prefer-flat-math-min-max': 'warn',
+
 		// Prefer `.getOrInsertComputed()` when the default value has side effects (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-get-or-insert-computed.md
 		// Note: reports as `error` because `getOrInsert()` evaluates side-effectful defaults even when the key exists
