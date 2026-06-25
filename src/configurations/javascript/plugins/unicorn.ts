@@ -1408,6 +1408,10 @@ export default defineConfigurationPart({
 		// TODO [2026-06-27]: Discuss whether this preference should be part of the shared config.
 		'unicorn/prefer-type-literal-last': 'warn',
 
+		// Prefer the unary minus operator over multiplying or dividing by `-1` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-unary-minus.md
+		'unicorn/prefer-unary-minus': 'warn',
+
 		// Prefer `Uint8Array#toBase64()` and `Uint8Array.fromBase64()` over `atob()`, `btoa()`, and `Buffer` base64 conversions
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-uint8array-base64.md
 		// TODO [2028-05-01]: Reconsider after Node 24 EOL and Uint8Array base64 APIs are available in supported runtimes.
