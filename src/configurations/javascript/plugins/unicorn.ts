@@ -848,6 +848,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-collection-argument.md
 		'unicorn/no-useless-collection-argument': 'warn',
 
+		// Disallow useless compound assignments such as `x += 0`
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-compound-assignment.md
+		// Reason: `+= 0` can still be observable for non-number values.
+		'unicorn/no-useless-compound-assignment': 'warn',
+
 		// Disallow useless concatenation of literals (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-concat.md
 		'unicorn/no-useless-concat': 'warn',
