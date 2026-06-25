@@ -374,6 +374,11 @@ export default defineConfigurationPart({
 		// https://eslint.vuejs.org/rules/prefer-separate-static-class.html
 		'no-autofix/vue/prefer-separate-static-class': 'off',
 
+		// Enforce passing a single argument to custom event emissions
+		// https://eslint.vuejs.org/rules/prefer-single-event-payload.html
+		// Reason: event payload shape is a public component API contract.
+		'vue/prefer-single-event-payload': 'off',
+
 		// Require shorthand form attribute when v-bind value is true
 		// https://eslint.vuejs.org/rules/prefer-true-attribute-shorthand.html
 		'vue/prefer-true-attribute-shorthand': 'warn',
