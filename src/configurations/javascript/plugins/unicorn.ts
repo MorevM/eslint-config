@@ -609,6 +609,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-mismatched-map-key.md
 		'unicorn/no-mismatched-map-key': 'error',
 
+		// Disallow misrefactored compound assignments where the target is duplicated in the right-hand side
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-misrefactored-assignment.md
+		'unicorn/no-misrefactored-assignment': 'warn',
+
 		// Disallow named usage of default import and export (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-named-default.md
 		'unicorn/no-named-default': 'warn',
