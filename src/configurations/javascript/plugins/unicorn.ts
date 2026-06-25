@@ -883,6 +883,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-length-check.md
 		'unicorn/no-useless-length-check': 'off',
 
+		// Disallow unnecessary operands in logical expressions involving boolean literals (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-logical-operand.md
+		// Reason: boolean literals can intentionally isolate behavior while developing tests.
+		'no-autofix/unicorn/no-useless-logical-operand': 'error',
+
 		// Disallow useless overrides of class methods (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-override.md
 		// Reason: deleting an override can be visible through prototype introspection.
