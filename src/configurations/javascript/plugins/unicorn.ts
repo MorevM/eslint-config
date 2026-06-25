@@ -387,6 +387,10 @@ export default defineConfigurationPart({
 		// Note: not sure, but let this thing be `error` for a while
 		'unicorn/no-array-callback-reference': 'error',
 
+		// Disallow array accumulation with `Array#concat()` in loops
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-concat-in-loop.md
+		'unicorn/no-array-concat-in-loop': 'warn',
+
 		// Disallow using reference values as `Array#fill()` values
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-array-fill-with-reference-type.md
 		// Note: reports as `error` because every filled array element receives the same reference
