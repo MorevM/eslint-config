@@ -476,6 +476,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-console-spaces.md
 		'unicorn/no-console-spaces': 'warn',
 
+		// Disallow arithmetic and bitwise operations that always evaluate to `0`
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-constant-zero-expression.md
+		'unicorn/no-constant-zero-expression': 'error',
+
 		// Disallow dynamic object property existence checks
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-computed-property-existence-check.md
 		// Reason: dynamic property checks are usually intentional
