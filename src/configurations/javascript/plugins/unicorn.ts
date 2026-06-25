@@ -1421,6 +1421,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-unicode-code-point-escapes.md
 		'unicorn/prefer-unicode-code-point-escapes': 'warn',
 
+		// Prefer `URL.canParse()` over constructing a `URL` in a try/catch for validation (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-url-can-parse.md
+		'unicorn/prefer-url-can-parse': 'warn',
+
 		// Prefer `URL#href` over stringifying a `URL` (partially autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-url-href.md
 		// TODO [2026-06-27]: Discuss whether this preference should be part of the shared config.
