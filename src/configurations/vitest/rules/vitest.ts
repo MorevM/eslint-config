@@ -296,6 +296,13 @@ export default defineConfigurationPart({
 			maxNumberOfTopLevelDescribes: 2,
 		}],
 
+		// Enforce unbound methods are called with their expected scope
+		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/unbound-method.md
+		// Reason: this type-aware rule is not safe for the shared Vitest config that also targets JavaScript tests.
+		'vitest/unbound-method': ['off', {
+			ignoreStatic: false,
+		}],
+
 		// Enforce valid `describe()` callback
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/valid-describe-callback.md
 		'vitest/valid-describe-callback': 'error',
