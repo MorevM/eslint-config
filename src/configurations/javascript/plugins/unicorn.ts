@@ -1160,6 +1160,10 @@ export default defineConfigurationPart({
 		// Note: reports as `warn` because the transformation is stylistic, not a correctness issue
 		'unicorn/prefer-math-abs': 'warn',
 
+		// Prefer `Math` constants over their approximate numeric values
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-constants.md
+		'unicorn/prefer-math-constants': 'warn',
+
 		// Prefer `Math.min()` and `Math.max()` over ternaries for simple comparisons (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-math-min-max.md
 		'unicorn/prefer-math-min-max': 'warn',
