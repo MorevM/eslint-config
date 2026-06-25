@@ -468,6 +468,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-chained-comparison.md
 		'unicorn/no-chained-comparison': 'error',
 
+		// Disallow accessing `Map`, `Set`, `WeakMap`, and `WeakSet` entries with bracket notation
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-collection-bracket-access.md
+		'unicorn/no-collection-bracket-access': 'error',
+
 		// Do not use leading/trailing space between `console.log` parameters (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-console-spaces.md
 		'unicorn/no-console-spaces': 'warn',
