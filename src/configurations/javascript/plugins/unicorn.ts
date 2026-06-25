@@ -918,6 +918,10 @@ export default defineConfigurationPart({
 		// Note: as for `null`, developer should know better
 		'unicorn/no-useless-undefined': 'off',
 
+		// Disallow the bitwise XOR operator where exponentiation was likely intended
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-xor-as-exponentiation.md
+		'unicorn/no-xor-as-exponentiation': 'error',
+
 		// Disallow number literals with zero fractions or dangling dots (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-zero-fractions.md
 		// Note: developer knows better, maybe we want to indicate number which `used as` double next
