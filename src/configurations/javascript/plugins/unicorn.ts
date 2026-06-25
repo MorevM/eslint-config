@@ -1317,6 +1317,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-single-object-destructuring.md
 		'unicorn/prefer-single-object-destructuring': 'off',
 
+		// Enforce combining multiple single-character replacements into a single `String#replaceAll()` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-single-replace.md
+		'unicorn/prefer-single-replace': 'warn',
+
 		// Prefer declaring variables in the smallest possible scope (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-smaller-scope.md
 		// Reason: no autofix, because declaration placement can be intentional for readability.
