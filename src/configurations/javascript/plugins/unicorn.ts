@@ -592,6 +592,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-lonely-if.md
 		'no-autofix/unicorn/no-lonely-if': 'warn',
 
+		// Disallow mutating a loop iterable during iteration
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-loop-iterable-mutation.md
+		'unicorn/no-loop-iterable-mutation': 'warn',
+
 		// Disallow a magic number as the `depth` argument in `Array#flat(…)`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-magic-array-flat-depth.md
 		'unicorn/no-magic-array-flat-depth': 'warn',
