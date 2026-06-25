@@ -1266,6 +1266,12 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-reflect-apply.md
 		'no-autofix/unicorn/prefer-reflect-apply': 'error',
 
+		// Prefer `RegExp.escape()` for escaping strings to use in regular expressions (partially autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-regexp-escape.md
+		// Reason: `RegExp.escape()` is not available in the Node.js 22 runtime this package still supports.
+		// TODO [2027-11-05]: Enable when `RegExp.escape()` is Widely Available.
+		'unicorn/prefer-regexp-escape': 'off',
+
 		// Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-regexp-test.md
 		// Note: just why?
