@@ -559,6 +559,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-immediate-mutation.md
 		'unicorn/no-immediate-mutation': 'error',
 
+		// Disallow impossible comparisons against `.length` or `.size`
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-impossible-length-comparison.md
+		'unicorn/no-impossible-length-comparison': 'error',
+
 		// Disallow `instanceof` with built-in objects (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-instanceof-builtins.md
 		'unicorn/no-instanceof-builtins': 'error',
