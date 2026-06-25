@@ -505,6 +505,10 @@ export default defineConfigurationPart({
 		// `js-cookie` just 1.5kb and no worries
 		'unicorn/no-document-cookie': 'error',
 
+		// Disallow two comparisons of the same operands that can be combined into one
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-double-comparison.md
+		'unicorn/no-double-comparison': 'warn',
+
 		// Disallow duplicate values in `Set` constructor array literals
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-duplicate-set-values.md
 		// Note: reports as `warn` because duplicates are usually accidental, but removal can be a behavioral decision
