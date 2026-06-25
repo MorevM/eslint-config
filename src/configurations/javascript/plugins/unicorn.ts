@@ -1430,6 +1430,10 @@ export default defineConfigurationPart({
 		// TODO [2026-06-27]: Discuss whether this preference should be part of the shared config.
 		'unicorn/prefer-url-href': 'warn',
 
+		// Prefer putting the condition in the while statement (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-while-loop-condition.md
+		'unicorn/prefer-while-loop-condition': 'warn',
+
 		// Enforce consistent relative URL style (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/relative-url-style.md
 		// Note: explicit indication more clear than implicit
