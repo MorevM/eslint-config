@@ -383,6 +383,10 @@ export default defineConfigurationPart({
 		// https://eslint.vuejs.org/rules/prefer-true-attribute-shorthand.html
 		'vue/prefer-true-attribute-shorthand': 'warn',
 
+		// Enforce using `v-model` instead of `:prop`/`@update:prop` pair
+		// https://eslint.vuejs.org/rules/prefer-v-model.html
+		'vue/prefer-v-model': 'warn',
+
 		// Require components to be the default export
 		// https://eslint.vuejs.org/rules/require-default-export.html
 		'vue/require-default-export': 'error',
