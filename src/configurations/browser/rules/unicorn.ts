@@ -36,6 +36,10 @@ export default defineConfigurationPart({
 		// Reason: syntax-based check may report intentional canvas conversions
 		'unicorn/no-canvas-to-image': 'off',
 
+		// Disallow selector syntax in DOM names (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-selector-as-dom-name.md
+		'unicorn/no-selector-as-dom-name': 'error',
+
 		// Disallow unsafe DOM HTML APIs.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unsafe-dom-html.md
 		// Reason: raw HTML sinks are usually deliberate.
