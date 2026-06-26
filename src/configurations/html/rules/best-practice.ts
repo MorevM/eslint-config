@@ -30,6 +30,10 @@ export default defineConfigurationPart({
 		// https://html-eslint.org/docs/rules/no-inline-styles
 		'@html-eslint/no-inline-styles': 'off',
 
+		// Disallow invalid attribute values
+		// https://html-eslint.org/docs/rules/no-invalid-attr-value
+		'@html-eslint/no-invalid-attr-value': 'error',
+
 		// Disallow use of invalid HTML entities
 		// https://html-eslint.org/docs/rules/no-invalid-entity
 		'@html-eslint/no-invalid-entity': 'error',
