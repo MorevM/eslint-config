@@ -42,6 +42,11 @@ export default defineConfigurationPart({
 		// https://html-eslint.org/docs/rules/css-no-empty-blocks
 		'@html-eslint/css-no-empty-blocks': 'warn',
 
+		// Enforce optimal ordering of elements in `<head>`
+		// https://html-eslint.org/docs/rules/head-order
+		// TODO [2026-06-27]: Discuss about proper order
+		'@html-eslint/head-order': 'off',
+
 		// Enforces element maximum depth
 		// https://html-eslint.org/docs/rules/max-element-depth
 		'@html-eslint/max-element-depth': 'off',
