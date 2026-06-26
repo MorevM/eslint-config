@@ -57,8 +57,8 @@ importers:
         specifier: ^3.5.2
         version: 3.5.2(@typescript-eslint/rule-tester@8.62.0(eslint@10.5.0(jiti@2.7.0))(typescript@6.0.3))(@typescript-eslint/typescript-estree@8.62.0(typescript@6.0.3))(@typescript-eslint/utils@8.62.0(eslint@10.5.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.5.0(jiti@2.7.0))
       eslint-plugin-cypress:
-        specifier: ^5.3.0
-        version: 5.3.0(eslint@10.5.0(jiti@2.7.0))
+        specifier: ^6.4.1
+        version: 6.4.1(@typescript-eslint/parser@8.61.1(eslint@10.5.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.5.0(jiti@2.7.0))
       eslint-plugin-import-x:
         specifier: ^4.17.0
         version: 4.17.0(@typescript-eslint/utils@8.62.0(eslint@10.5.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.5.0(jiti@2.7.0))
@@ -2476,10 +2476,14 @@ packages:
       '@typescript-eslint/utils': '*'
       eslint: '*'
 
-  eslint-plugin-cypress@5.3.0:
-    resolution: {integrity: sha512-qjHF2Sdi3VkXSMnfQeUqsbYnessgc6T2dus/Q1U+e5102GpPy9eLd8MWW2Xp2SS9bMpPNLnSHwktMhCKr0dIBg==}
+  eslint-plugin-cypress@6.4.1:
+    resolution: {integrity: sha512-8mnfR3q0Lr41Fu9SYZGeZ5nbSBgtS44+bbtSs7k0KvfoQ2pPmK43IvaTP6FGTfwBTN6S7w027CpqjrLAd65AYA==}
     peerDependencies:
+      '@typescript-eslint/parser': '>=8'
       eslint: '>=9'
+    peerDependenciesMeta:
+      '@typescript-eslint/parser':
+        optional: true
 
   eslint-plugin-es-x@7.8.0:
     resolution: {integrity: sha512-7Ds8+wAAoV3T+LAKeu39Y5BzXCrGKrcISfgKEqTS4BDN8SFEDQd0S43jiQ8vIa3wUKD07qitZdfzlenSi8/0qQ==}
@@ -7050,10 +7054,12 @@ snapshots:
       '@typescript-eslint/utils': 8.62.0(eslint@10.5.0(jiti@2.7.0))(typescript@6.0.3)
       eslint: 10.5.0(jiti@2.7.0)
 
-  eslint-plugin-cypress@5.3.0(eslint@10.5.0(jiti@2.7.0)):
+  eslint-plugin-cypress@6.4.1(@typescript-eslint/parser@8.61.1(eslint@10.5.0(jiti@2.7.0))(typescript@6.0.3))(eslint@10.5.0(jiti@2.7.0)):
     dependencies:
       eslint: 10.5.0(jiti@2.7.0)
-      globals: 16.5.0
+      globals: 17.7.0
+    optionalDependencies:
+      '@typescript-eslint/parser': 8.61.1(eslint@10.5.0(jiti@2.7.0))(typescript@6.0.3)
 
   eslint-plugin-es-x@7.8.0(eslint@10.5.0(jiti@2.7.0)):
     dependencies:
