@@ -11,6 +11,7 @@ export default defineConfigurationPart({
 		'@html-eslint/attrs-newline': ['warn', {
 			closeStyle: 'newline',
 			ifAttrsMoreThan: 5,
+			maxLen: 80,
 		}],
 
 		// Disallow extra spacing in class attribute values (autofixable)
