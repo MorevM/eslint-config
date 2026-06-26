@@ -42,6 +42,10 @@ export default defineConfigurationPart({
 		// https://html-eslint.org/docs/rules/no-positive-tabindex
 		'@html-eslint/no-positive-tabindex': 'error',
 
+		// Disallow redundant role attributes that match the element's implicit role
+		// https://html-eslint.org/docs/rules/no-redundant-role
+		'@html-eslint/no-redundant-role': 'error',
+
 		// Disallow skipping heading levels
 		// https://html-eslint.org/docs/rules/no-skip-heading-levels
 		'@html-eslint/no-skip-heading-levels': 'warn',
