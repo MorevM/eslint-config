@@ -99,6 +99,10 @@ export default defineConfigurationPart({
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/no-restricted-matchers.md
 		'playwright/no-restricted-matchers': 'off',
 
+		// Disallow specific roles in getByRole()
+		// https://github.com/mskelton/eslint-plugin-playwright/tree/main/docs/rules/no-restricted-roles.md
+		'playwright/no-restricted-roles': 'off',
+
 		// Disallow usage of the `.skip` annotation
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/no-skipped-test.md
 		'playwright/no-skipped-test': ['warn', {
