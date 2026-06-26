@@ -143,6 +143,10 @@ export default defineConfigurationPart({
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/console.md
 		'n/prefer-global/console': 'error',
 
+		// Enforce either `crypto` or `require("crypto").webcrypto`
+		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/crypto.md
+		'n/prefer-global/crypto': ['warn', 'always'],
+
 		// Enforce either `process` or `require("process")`
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/process.md
 		'n/prefer-global/process': 'error',
@@ -154,6 +158,10 @@ export default defineConfigurationPart({
 		// Enforce either `TextEncoder` or `require("util").TextEncoder`
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/text-encoder.md
 		'n/prefer-global/text-encoder': 'error',
+
+		// Enforce either global timer functions or `require("timers")`
+		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/timers.md
+		'n/prefer-global/timers': ['warn', 'always'],
 
 		// Enforce either `URL` or `require("url").URL`
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/url.md
