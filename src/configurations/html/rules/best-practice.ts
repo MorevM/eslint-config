@@ -96,6 +96,10 @@ export default defineConfigurationPart({
 			selfClosingCustomPatterns: [],
 		}],
 
+		// Require use of closing tag (autofixable for `void` elements)
+		// https://html-eslint.org/docs/rules/require-closing-tags
+		'@html-eslint/require-details-summary': 'error',
+
 		// Require `<!DOCTYPE html>` in the document (autofixable)
 		// https://html-eslint.org/docs/rules/require-doctype
 		'@html-eslint/require-doctype': 'error',
