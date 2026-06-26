@@ -42,6 +42,10 @@ export default defineConfigurationPart({
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/no-duplicate-hooks.md
 		'playwright/no-duplicate-hooks': 'error',
 
+		// Disallow multiple `test.slow()` calls in the same test
+		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/no-duplicate-slow.md
+		'playwright/no-duplicate-slow': 'error',
+
 		// Disallow usage of element handles
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/no-element-handle.md
 		'playwright/no-element-handle': 'error',
