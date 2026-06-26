@@ -7,6 +7,10 @@ export default defineConfigurationPart({
 		'chai-friendly': pluginChaiFriendly,
 	},
 	rules: {
+		// Enforce `.should()` over `.and()` for starting assertion chains (autofixable)
+		// https://docs.cypress.io/guides/references/best-practices#Assigning-Return-Values
+		'cypress/no-and': 'warn',
+
 		// Prevent assigning return values of cy calls
 		// https://docs.cypress.io/guides/references/best-practices#Assigning-Return-Values
 		'cypress/no-assigning-return-values': 'error',
