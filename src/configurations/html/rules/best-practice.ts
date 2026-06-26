@@ -109,6 +109,10 @@ export default defineConfigurationPart({
 		// https://html-eslint.org/docs/rules/require-meta-charset
 		'@html-eslint/require-meta-charset': 'error',
 
+		// Enforce `<svg>` elements to have a `viewBox` attribute
+		// https://html-eslint.org/docs/rules/svg-require-viewbox
+		'@html-eslint/svg-require-viewbox': 'error',
+
 		// Enforce the use of baseline features
 		// https://html-eslint.org/docs/rules/use-baseline
 		'@html-eslint/use-baseline': 'off',
