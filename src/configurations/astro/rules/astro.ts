@@ -47,6 +47,10 @@ export default defineConfigurationPart({
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-exports-from-components/
 		'astro/no-exports-from-components': 'error',
 
+		// Disallow `prerender` export outside of `pages/` directory
+		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-prerender-export-outside-pages/
+		'astro/no-prerender-export-outside-pages': 'warn',
+
 		// Disallow unused `define:vars={...}` in `style` tag
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-unused-define-vars-in-style/
 		'astro/no-unused-define-vars-in-style': 'error',
