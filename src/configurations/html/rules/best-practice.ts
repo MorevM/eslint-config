@@ -105,7 +105,7 @@ export default defineConfigurationPart({
 		// https://html-eslint.org/docs/rules/require-li-container
 		'@html-eslint/require-li-container': 'error',
 
-		// Enforce to use `<meta charset="...">` in the `<head></head>`
+		// Enforce to use `<meta charset="...">` in the `<head></head>` (autofixable)
 		// https://html-eslint.org/docs/rules/require-meta-charset
 		'@html-eslint/require-meta-charset': 'error',
 
