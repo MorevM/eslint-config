@@ -46,6 +46,10 @@ export default defineConfigurationPart({
 		// https://html-eslint.org/docs/rules/no-skip-heading-levels
 		'@html-eslint/no-skip-heading-levels': 'warn',
 
+		// Enforces content for elements which must convey meaning
+		// https://html-eslint.org/docs/rules/require-content
+		'@html-eslint/require-content': 'error',
+
 		// Enforces to use a valid `method` attribute on the `<form>`
 		// https://html-eslint.org/docs/rules/require-form-method
 		'@html-eslint/require-form-method': 'error',
