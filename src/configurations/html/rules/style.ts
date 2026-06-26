@@ -48,8 +48,17 @@ export default defineConfigurationPart({
 
 		// Disallow extra spaces around attributes (autofixable)
 		// https://html-eslint.org/docs/rules/no-extra-spacing-attrs
-		'@html-eslint/no-extra-spacing-attrs': ['warn', {
+		'@html-eslint/no-extra-spacing-attrs': ['off', {
 			enforceBeforeSelfClose: true,
+		}],
+
+		// Disallow extra spaces around attributes (autofixable)
+		// https://html-eslint.org/docs/rules/no-extra-spacing-tags
+		'@html-eslint/no-extra-spacing-tags': ['warn', {
+			enforceBeforeSelfClose: true,
+			disallowMissing: true,
+			disallowTabs: true,
+			disallowInAssignment: true,
 		}],
 
 		// Disallow multiple consecutive spaces or tabs in text and comments (autofixable)
