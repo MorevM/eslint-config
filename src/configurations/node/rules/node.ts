@@ -137,11 +137,11 @@ export default defineConfigurationPart({
 
 		// Enforce either `Buffer` or `require("buffer").Buffer`
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/buffer.md
-		'n/prefer-global/buffer': 'error',
+		'n/prefer-global/buffer': ['warn', 'always'],
 
 		// Enforce either `console` or `require("console")`
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/console.md
-		'n/prefer-global/console': 'error',
+		'n/prefer-global/console': ['warn', 'always'],
 
 		// Enforce either `crypto` or `require("crypto").webcrypto`
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/crypto.md
@@ -149,15 +149,15 @@ export default defineConfigurationPart({
 
 		// Enforce either `process` or `require("process")`
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/process.md
-		'n/prefer-global/process': 'error',
+		'n/prefer-global/process': ['warn', 'always'],
 
 		// Enforce either `TextDecoder` or `require("util").TextDecoder`
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/text-decoder.md
-		'n/prefer-global/text-decoder': 'error',
+		'n/prefer-global/text-decoder': ['warn', 'always'],
 
 		// Enforce either `TextEncoder` or `require("util").TextEncoder`
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/text-encoder.md
-		'n/prefer-global/text-encoder': 'error',
+		'n/prefer-global/text-encoder': ['warn', 'always'],
 
 		// Enforce either global timer functions or `require("timers")`
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/timers.md
@@ -165,11 +165,11 @@ export default defineConfigurationPart({
 
 		// Enforce either `URL` or `require("url").URL`
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/url.md
-		'n/prefer-global/url': 'error',
+		'n/prefer-global/url': ['warn', 'always'],
 
 		// Enforce either `URLSearchParams` or `require("url").URLSearchParams`
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/url-search-params.md
-		'n/prefer-global/url-search-params': 'error',
+		'n/prefer-global/url-search-params': ['warn', 'always'],
 
 		// Enforce using the `node:` protocol when importing `Node.js` builtin modules (autofixable)
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-node-protocol.md
