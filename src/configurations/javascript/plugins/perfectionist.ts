@@ -10,6 +10,10 @@ export default defineConfigurationPart({
 		// https://perfectionist.dev/rules/sort-array-includes
 		'perfectionist/sort-array-includes': 'off',
 
+		// Enforce sorted array values on arrays matching configured conditions (autofixable)
+		// https://perfectionist.dev/rules/sort-arrays
+		'perfectionist/sort-arrays': 'off',
+
 		// Enforce sorted class members (autofixable)
 		// https://perfectionist.dev/rules/sort-classes
 		'perfectionist/sort-classes': 'off',
