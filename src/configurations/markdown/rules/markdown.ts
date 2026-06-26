@@ -11,6 +11,10 @@ export default defineConfigurationPart({
 		// https://github.com/eslint/markdown/blob/main/docs/rules/fenced-code-language.md
 		'markdown/fenced-code-language': 'warn',
 
+		// Require or disallow metadata for fenced code blocks
+		// https://github.com/eslint/markdown/blob/main/docs/rules/fenced-code-meta.md
+		'markdown/fenced-code-meta': 'off',
+
 		// Require languages for fenced code blocks
 		// https://github.com/eslint/markdown/blob/main/docs/rules/heading-increment.md
 		'markdown/heading-increment': 'warn',
