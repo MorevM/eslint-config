@@ -75,6 +75,10 @@ export default defineConfigurationPart({
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/prefer-class-list-directive/
 		'astro/prefer-class-list-directive': 'off',
 
+		// Disallow omitted end tags (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-omitted-end-tags/
+		'astro/no-omitted-end-tags': 'error',
+
 		// Require use object instead of ternary expression in `class:list` (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/prefer-object-class-list/
 		'astro/prefer-object-class-list': 'warn',
