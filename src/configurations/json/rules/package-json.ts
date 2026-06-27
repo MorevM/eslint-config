@@ -161,6 +161,13 @@ export default defineConfigurationPart({
 			ignorePrivate: false,
 		}],
 
+		// Requires the `browser` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-browser
+		// Note: Most packages are not browser-specific entrypoint maps.
+		'package-json/require-browser': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `bugs` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-bugs.md
 		// Note: Most commercial projects are doing quite well without it
