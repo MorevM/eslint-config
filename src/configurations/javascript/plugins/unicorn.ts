@@ -587,6 +587,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-remove-event-listener.md
 		'unicorn/no-invalid-remove-event-listener': 'error',
 
+		// Disallow invalid implementations of well-known symbol methods (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-invalid-well-known-symbol-methods.md
+		'unicorn/no-invalid-well-known-symbol-methods': 'error',
+
 		// Disallow identifiers starting with new or class
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-keyword-prefix.md
 		// Note: developer knows better
