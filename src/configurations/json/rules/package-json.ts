@@ -178,6 +178,13 @@ export default defineConfigurationPart({
 		// Note: Way too strict to require
 		'package-json/require-bundleDependencies': 'off',
 
+		// Requires the `config` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-config
+		// Note: Most packages do not need package-managed configuration values.
+		'package-json/require-config': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `dependencies` property to be present.
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-dependencies.md
 		// Note: Way too strict to require
