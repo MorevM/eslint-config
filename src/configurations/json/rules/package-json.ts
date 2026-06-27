@@ -221,6 +221,13 @@ export default defineConfigurationPart({
 			ignorePrivate: false,
 		}],
 
+		// Requires the `directories` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-directories
+		// Note: Most packages do not use the legacy CommonJS directories metadata.
+		'package-json/require-directories': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `engines` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-engines.md
 		'package-json/require-engines': 'error',
