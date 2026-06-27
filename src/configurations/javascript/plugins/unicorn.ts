@@ -1080,6 +1080,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-else-if.md
 		'unicorn/prefer-else-if': 'off',
 
+		// Prefer `Error.isError()` when checking for errors (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-error-is-error.md
+		// TODO [2027-05-01]: Enable after Node 22 EOL and `Error.isError()` is available in supported runtimes.
+		'unicorn/prefer-error-is-error': 'off',
+
 		// Prefer `export…from` when re-exporting (autofixable but might be confusing during development flow)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-export-from.md
 		'no-autofix/unicorn/prefer-export-from': ['warn', {
