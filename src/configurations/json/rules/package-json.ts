@@ -192,6 +192,13 @@ export default defineConfigurationPart({
 			ignorePrivate: false,
 		}],
 
+		// Requires the `cpu` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-cpu
+		// Note: Most packages are not limited to specific CPU architectures.
+		'package-json/require-cpu': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `dependencies` property to be present.
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-dependencies.md
 		// Note: Way too strict to require
