@@ -21,11 +21,15 @@ Use this workflow when updating ESLint plugins that provide rules for this share
   - mark autofix support in the description with `(autofixable)` or `(partially autofixable)` when the rule supports it;
   - a link to the upstream rule documentation;
   - an optional `Note:` or `Reason:` comment only when it explains a non-obvious local decision:
-    disabling a rule, using `no-autofix/`, choosing non-default or intentional-default options,
+    disabling a rule, using `no-autofix/`, choosing non-default options,
     adding a TODO, handling compatibility or type-system issues, or documenting known false positives;
   - do not add `Note:` or `Reason:` comments that merely restate what the rule does
     or justify routine `warn` severity for stylistic preference rules;
-  - the rule configuration, using plugin-provided defaults when available and otherwise listing all options explicitly.
+  - the rule configuration. When a rule accepts options (`meta.schema` is non-empty
+    or upstream docs describe options), always use the option-bearing config form
+    and list the final value for every option that affects the rule's behavior,
+    even when the value matches the plugin-provided default or the rule is configured as `off`.
+    Use plugin-provided defaults as researched values, not as permission to omit options.
 - The test `__tests__/no-bad-rules.test.ts` checks unknown, deprecated, and unconfigured rules.
   A new plugin rule must be either configured or deliberately listed as known unused.
 
@@ -46,6 +50,19 @@ Use this workflow when updating ESLint plugins that provide rules for this share
   - deprecated rules;
   - option renames and default changes;
   - peer dependency or engine requirements.
+
+## Rule research
+
+- For every new or changed rule, inspect rule metadata from the installed package, not only release notes:
+  - `meta.docs.description`;
+  - `meta.type`;
+  - `meta.fixable` and `meta.hasSuggestions`;
+  - `meta.schema` and `meta.defaultOptions`;
+  - whether the rule requires type information.
+- If packaged Markdown docs are absent, use runtime plugin exports or rule source as the primary source.
+- Verify browser and runtime API availability before enabling rules that introduce newer platform APIs.
+  Compare the API against the package's supported engines and compatibility baseline.
+  If the API is too new, keep the rule `off` and add a dated TODO for reconsideration when the API is Widely Available.
 
 ## Commit strategy
 
@@ -68,16 +85,26 @@ Use this workflow when updating ESLint plugins that provide rules for this share
 ## Rule decisions
 
 - Configure every new active rule, even when the decision is to keep it off.
+- Treat `error` as a consumer-facing breaking change.
 - Prefer `error` for problem rules that catch likely runtime bugs, invalid API usage, or security-sensitive patterns.
 - Prefer `warn` for suggestion or preference rules that improve readability, modernity, or maintainability
   but may need migration time.
 - Use `off` only when the rule is too opinionated, noisy, redundant with another configured rule,
   or incompatible with the repository's style.
-- If a rule's autofix may be surprising, use the `no-autofix/` wrapper when the repository already uses that pattern
-  for similar rules.
+- Also use `off` for compatibility-sensitive modern APIs, public API shape choices, broad syntax preferences,
+  and type-aware rules in shared configs that also target non-type-aware files.
+- Do not assume an autofix is safe because the rule is marked fixable.
+  Use the `no-autofix/` wrapper when the fix:
+  - moves code across branches or control-flow boundaries;
+  - changes scheduling, evaluation order, or number of calls;
+  - rewrites public API shapes;
+  - may obscure intentional test or development scaffolding.
 - Keep options explicit when they document an intentional compromise, even if the option value equals the upstream default.
   Example: `unicorn/no-array-reverse` and `unicorn/no-array-sort` use `allowExpressionStatement: true`
   to allow in-place mutation statements while warning on using the returned array value.
+- For new or changed rules with options, verify the final rule entry against `meta.schema` before committing.
+  If an option is intentionally not configured because it is mode-specific, unavailable for the chosen config shape,
+  or otherwise inapplicable, document that reason in the rule comment or commit summary.
 - For renamed rules, update the rule id and documentation link in the same commit,
   preserving the existing severity and options when still valid.
 - For dropped rules, remove the old rule and add the upstream replacement in separate commits unless the replacement is a direct rename.
@@ -86,8 +113,12 @@ Use this workflow when updating ESLint plugins that provide rules for this share
 ## Verification
 
 - Run changed-file ESLint for the files touched by the current task.
-- Run `pnpm exec vitest run` after completing each coherent rule-coverage step.
+- Run `pnpm exec vitest run __tests__/no-bad-rules.test.ts` after completing each coherent rule-coverage step.
+  Use broader test runs when the update changes shared helper logic, build output, or runtime behavior.
 - Expect dependency-only intermediate commits to fail `no-bad-rules` when the bumped plugin exposes new active rules.
   The final state after all rules for the processed release are handled must pass tests.
+- If a plugin update reveals unconfigured rules from other already-installed plugins, finish the requested plugin first,
+  then handle the remaining rule-coverage failures separately so the final repository state is green.
+- Before committing, stage only files/lines that belong to the planned commit.
 - If a pre-commit hook blocks a deliberately partial commit because a later commit in the same planned series fixes it,
   confirm the reason and use `--no-verify` only for that already-approved commit.
