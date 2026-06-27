@@ -211,6 +211,10 @@ export default defineConfigurationPart({
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/require-tags.md
 		'playwright/require-tags': 'off',
 
+		// Require a timeout option for `toPass()`
+		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/require-to-pass-timeout.md
+		'playwright/require-to-pass-timeout': 'warn',
+
 		// Require a message for `toThrow()`
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/require-to-throw-message.md
 		'playwright/require-to-throw-message': 'off',
