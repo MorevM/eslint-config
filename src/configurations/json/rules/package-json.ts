@@ -185,6 +185,13 @@ export default defineConfigurationPart({
 			ignorePrivate: false,
 		}],
 
+		// Requires the `contributors` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-contributors
+		// Note: Most commercial projects are doing quite well without it.
+		'package-json/require-contributors': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `dependencies` property to be present.
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-dependencies.md
 		// Note: Way too strict to require
