@@ -971,6 +971,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-abort-signal-timeout.md
 		'unicorn/prefer-abort-signal-timeout': 'warn',
 
+		// Prefer `AggregateError` when throwing collected errors (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-aggregate-error.md
+		// Reason: autofix changes the thrown error class and should be reviewed manually.
+		'no-autofix/unicorn/prefer-aggregate-error': 'warn',
+
 		// Prefer `.find(…)` over the first element from `.filter(…)` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-find.md
 		'unicorn/prefer-array-find': 'warn',
