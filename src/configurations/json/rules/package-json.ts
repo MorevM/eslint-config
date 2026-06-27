@@ -378,6 +378,13 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/restrict-private-properties.md
 		'package-json/restrict-private-properties': 'off',
 
+		// Disallows specified top-level properties in package.json.
+		// https://eslint-plugin-package-json.dev/rules/restrict-top-level-properties
+		// Note: There is no shared policy for banning arbitrary package.json fields.
+		'package-json/restrict-top-level-properties': ['off', {
+			ban: [],
+		}],
+
 		// Enforce that names for `scripts` are in kebab case (optionally separated by colons)
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/scripts-name-casing.md
 		'package-json/scripts-name-casing': 'error',
