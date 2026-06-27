@@ -1313,6 +1313,11 @@ export default defineConfigurationPart({
 		// Note: Set needed when Set needed, Array needed when Array needed...
 		'no-autofix/unicorn/prefer-set-has': 'off',
 
+		// Prefer `Set` methods for Set operations (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-methods.md
+		// TODO [2027-07-01]: Enable when Set methods are broadly available in supported runtimes.
+		'unicorn/prefer-set-methods': 'off',
+
 		// Prefer using `Set#size` instead of `Array#length` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-set-size.md
 		'unicorn/prefer-set-size': 'warn',
