@@ -207,6 +207,10 @@ export default defineConfigurationPart({
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/require-soft-assertions.md
 		'playwright/require-soft-assertions': 'off',
 
+		// Require test blocks to have tags
+		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/require-tags.md
+		'playwright/require-tags': 'off',
+
 		// Require a message for `toThrow()`
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/require-to-throw-message.md
 		'playwright/require-to-throw-message': 'off',
