@@ -23,6 +23,12 @@ export default defineConfigurationPart({
 			ignoreProperties: ['browserslist'],
 		}],
 
+		// Requires that dependencies do not use local file paths, which will likely result in errors when installing from a registry.
+		// https://eslint-plugin-package-json.dev/rules/no-local-dependencies
+		'package-json/no-local-dependencies': ['error', {
+			ignorePrivate: true,
+		}],
+
 		// Prevents adding unnecessary / redundant files
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/no-redundant-files.md
 		// Note: It's good to be informed that NPM includes some files by default,
