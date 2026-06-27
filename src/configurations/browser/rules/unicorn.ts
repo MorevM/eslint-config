@@ -86,6 +86,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-remove.md
 		'unicorn/prefer-dom-node-remove': 'warn',
 
+		// Prefer `.replaceChildren()` when emptying DOM children (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-replace-children.md
+		// TODO [2026-06-27]: Discuss about
+		'unicorn/prefer-dom-node-replace-children': 'warn',
+
 		// Prefer `.textContent` over `.innerText`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-text-content.md
 		'unicorn/prefer-dom-node-text-content': 'error',
