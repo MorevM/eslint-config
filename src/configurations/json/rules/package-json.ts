@@ -249,6 +249,13 @@ export default defineConfigurationPart({
 			ignorePrivate: false,
 		}],
 
+		// Requires the `gypfile` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-gypfile
+		// Note: Most packages do not build native addons with node-gyp.
+		'package-json/require-gypfile': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `homepage` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-homepage.md
 		// Note: Most commercial projects are doing quite well without it
