@@ -52,12 +52,6 @@ export default defineConfigurationPart({
 		'@html-eslint/max-element-depth': 'off',
 
 		// Disallow extra spaces around attributes (autofixable)
-		// https://html-eslint.org/docs/rules/no-extra-spacing-attrs
-		'@html-eslint/no-extra-spacing-attrs': ['off', {
-			enforceBeforeSelfClose: true,
-		}],
-
-		// Disallow extra spaces around attributes (autofixable)
 		// https://html-eslint.org/docs/rules/no-extra-spacing-tags
 		'@html-eslint/no-extra-spacing-tags': ['warn', {
 			enforceBeforeSelfClose: true,
