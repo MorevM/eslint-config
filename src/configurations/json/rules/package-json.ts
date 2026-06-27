@@ -410,6 +410,14 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-bin.md
 		'package-json/valid-bin': 'error',
 
+		// Enforce that the `browser` property is valid.
+		// https://eslint-plugin-package-json.dev/rules/valid-properties/valid-browser
+		'package-json/valid-browser': 'error',
+
+		// Enforce that the `bugs` property is valid.
+		// https://eslint-plugin-package-json.dev/rules/valid-properties/valid-bugs
+		'package-json/valid-bugs': 'error',
+
 		// Enforce that the `bundleDependencies` (also: `bundledDependencies`) property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-bundleDependencies.md
 		'package-json/valid-bundleDependencies': 'error',
@@ -438,6 +446,10 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-devDependencies.md
 		'package-json/valid-devDependencies': 'error',
 
+		// Enforce that the `devEngines` property is valid.
+		// https://eslint-plugin-package-json.dev/rules/valid-properties/valid-devEngines
+		'package-json/valid-devEngines': 'error',
+
 		// Enforce that the `directories` property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-directories.md
 		'package-json/valid-directories': 'error',
@@ -454,6 +466,14 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-files.md
 		'package-json/valid-files': 'error',
 
+		// Enforce that the `funding` property is valid.
+		// https://eslint-plugin-package-json.dev/rules/valid-properties/valid-funding
+		'package-json/valid-funding': 'error',
+
+		// Enforce that the `gypfile` property is valid.
+		// https://eslint-plugin-package-json.dev/rules/valid-properties/valid-gypfile
+		'package-json/valid-gypfile': 'error',
+
 		// Enforce that the `homepage` property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-homepage.md
 		'package-json/valid-homepage': 'error',
@@ -461,6 +481,10 @@ export default defineConfigurationPart({
 		// Enforce that the `keywords` property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-keywords.md
 		'package-json/valid-keywords': 'error',
+
+		// Enforce that the `libc` property is valid.
+		// https://eslint-plugin-package-json.dev/rules/valid-properties/valid-libc
+		'package-json/valid-libc': 'error',
 
 		// Enforce that the `license` property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-license.md
@@ -490,9 +514,17 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-os.md
 		'package-json/valid-os': 'error',
 
+		// Enforce that the `packageManager` property is valid.
+		// https://eslint-plugin-package-json.dev/rules/valid-properties/valid-packageManager
+		'package-json/valid-packageManager': 'error',
+
 		// Enforce that the `peerDependencies` property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-peerDependencies.md
 		'package-json/valid-peerDependencies': 'error',
+
+		// Enforce that the `peerDependenciesMeta` property is valid.
+		// https://eslint-plugin-package-json.dev/rules/valid-properties/valid-peerDependenciesMeta
+		'package-json/valid-peerDependenciesMeta': 'error',
 
 		// Enforce that the `private` property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-private.md
@@ -529,5 +561,9 @@ export default defineConfigurationPart({
 		// Enforce that the `workspaces` property is valid
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/valid-workspaces.md
 		'package-json/valid-workspaces': 'error',
+
+		// Enforces that any dependencies declared in `peerDependenciesMeta` are also defined in the package's `peerDependencies`.
+		// https://eslint-plugin-package-json.dev/rules/valid-peerDependenciesMeta-relationship
+		'package-json/valid-peerDependenciesMeta-relationship': 'error',
 	},
 });
