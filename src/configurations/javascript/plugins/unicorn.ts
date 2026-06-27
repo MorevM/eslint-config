@@ -1256,15 +1256,20 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-optional-catch-binding.md
 		'unicorn/prefer-optional-catch-binding': 'warn',
 
+		// Prefer private class fields over the underscore-prefix convention (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-private-class-fields.md
+		'unicorn/prefer-private-class-fields': 'warn',
+
+		// Prefer `Promise.try()` over promise-wrapping boilerplate (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-promise-try.md
+		// TODO [2027-12-01]: Enable when `Promise.try()` is Widely Available.
+		'unicorn/prefer-promise-try': 'off',
+
 		// Prefer `Promise.withResolvers()` when extracting resolver functions from `new Promise()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-promise-with-resolvers.md
 		// Reason: `Promise.withResolvers()` is not Widely Available yet.
 		// TODO [2026-09-05]: Enable when `Promise.withResolvers()` is Widely Available.
 		'unicorn/prefer-promise-with-resolvers': 'off',
-
-		// Prefer private class fields over the underscore-prefix convention (autofixable)
-		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-private-class-fields.md
-		'unicorn/prefer-private-class-fields': 'warn',
 
 		// Prefer borrowing methods from the prototype instead of methods from an instance (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-prototype-methods.md
