@@ -170,6 +170,14 @@ export default defineConfigurationPart({
 			maxBOF: 0,
 		}],
 
+		// Disallow trailing whitespace at the end of lines (autofixable)
+		// https://ota-meshi.github.io/eslint-plugin-yml/rules/no-multiple-empty-lines.html
+		// Note: Handled universally for all files by `@stylistic/no-trailing-spaces`
+		'yml/no-trailing-spaces': ['off', {
+			skipBlankLines: false,
+			ignoreComments: false,
+		}],
+
 		// Require mapping keys to be sorted (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/sort-keys.html
 		// Reason for `off`: developer knows better which properties are more important to be on top
