@@ -284,6 +284,13 @@ export default defineConfigurationPart({
 			ignorePrivate: false,
 		}],
 
+		// Requires the `man` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-man
+		// Note: Most packages do not ship man pages.
+		'package-json/require-man': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `name` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-name.md
 		'package-json/require-name': 'error',
