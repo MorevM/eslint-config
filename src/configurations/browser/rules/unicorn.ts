@@ -103,6 +103,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-modern-dom-apis.md
 		'unicorn/prefer-modern-dom-apis': 'warn',
 
+		// Prefer observer APIs over resize and scroll listeners with layout reads
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-observer-apis.md
+		// TODO [2026-06-27]: Discuss about
+		'unicorn/prefer-observer-apis': 'off',
+
 		// Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-keyboard-event-key.md
 		'unicorn/prefer-keyboard-event-key': 'error',
