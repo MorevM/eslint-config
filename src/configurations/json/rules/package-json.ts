@@ -214,6 +214,13 @@ export default defineConfigurationPart({
 		// Note: Way too strict to require
 		'package-json/require-devDependencies': 'off',
 
+		// Requires the `devEngines` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-devEngines
+		// Note: Development tooling constraints are not universal package metadata.
+		'package-json/require-devEngines': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `engines` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-engines.md
 		'package-json/require-engines': 'error',
