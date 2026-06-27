@@ -326,6 +326,13 @@ export default defineConfigurationPart({
 		// Note: Way too strict to require
 		'package-json/require-peerDependencies': 'off',
 
+		// Requires the `peerDependenciesMeta` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-peerDependenciesMeta
+		// Note: Most packages do not need peer dependency metadata.
+		'package-json/require-peerDependenciesMeta': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `repository` property to be present.
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-repository.md
 		'package-json/require-repository': 'off',
