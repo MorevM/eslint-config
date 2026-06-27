@@ -314,6 +314,13 @@ export default defineConfigurationPart({
 			ignorePrivate: false,
 		}],
 
+		// Requires the `packageManager` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-packageManager
+		// Note: Package manager pinning is useful, but too project-specific to require everywhere.
+		'package-json/require-packageManager': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `peerDependencies` property to be present.
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-peerDependencies.md
 		// Note: Way too strict to require
