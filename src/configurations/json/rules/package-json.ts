@@ -291,6 +291,13 @@ export default defineConfigurationPart({
 			ignorePrivate: false,
 		}],
 
+		// Requires the `module` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-module
+		// Note: The non-standard `module` field is not universal package metadata.
+		'package-json/require-module': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `name` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-name.md
 		'package-json/require-name': 'error',
