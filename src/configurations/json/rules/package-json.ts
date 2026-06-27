@@ -266,6 +266,13 @@ export default defineConfigurationPart({
 		// Note: Most commercial projects are doing quite well without it
 		'package-json/require-keywords': 'off',
 
+		// Requires the `libc` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-libc
+		// Note: Most packages are not limited to specific libc implementations.
+		'package-json/require-libc': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `license` property to be present.
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-license.md
 		'package-json/require-license': 'warn',
