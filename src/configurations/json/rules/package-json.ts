@@ -154,6 +154,13 @@ export default defineConfigurationPart({
 		// Note: Most commercial projects are doing quite well without it
 		'package-json/require-author': 'off',
 
+		// Requires the `bin` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-bin
+		// Note: Most packages do not expose command-line binaries.
+		'package-json/require-bin': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `bugs` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-bugs.md
 		// Note: Most commercial projects are doing quite well without it
