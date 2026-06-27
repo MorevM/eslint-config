@@ -158,6 +158,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-template-literal-escape.md
 		'unicorn/consistent-template-literal-escape': 'warn',
 
+		// Enforce consistent labels on tuple type elements
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-tuple-labels.md
+		'unicorn/consistent-tuple-labels': 'warn',
+
 		// Enforce correct `Error` subclassing (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/custom-error-definition.md
 		'unicorn/custom-error-definition': 'error',
