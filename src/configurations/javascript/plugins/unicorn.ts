@@ -967,6 +967,10 @@ export default defineConfigurationPart({
 		// Reason: shorthand is situational, and `+=` can hide string coercion.
 		'unicorn/operator-assignment': ['off', 'always'],
 
+		// Prefer `AbortSignal.timeout()` over manually aborting an `AbortController` with `setTimeout()`
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-abort-signal-timeout.md
+		'unicorn/prefer-abort-signal-timeout': 'warn',
+
 		// Prefer `.find(…)` over the first element from `.filter(…)` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-find.md
 		'unicorn/prefer-array-find': 'warn',
