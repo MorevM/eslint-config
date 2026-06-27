@@ -31,6 +31,11 @@ export default defineConfigurationPart({
 		// Note: reports as `warn` because it catches real late-access bugs but can flag synchronous nested functions
 		'unicorn/no-late-current-target-access': 'warn',
 
+		// Disallow event-control method calls after the synchronous event dispatch has finished
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-late-event-control.md
+		// Note: reports as `warn` because it catches real late-control bugs but can flag synchronous nested functions
+		'unicorn/no-late-event-control': 'warn',
+
 		// Prefer drawing canvases directly instead of converting them to images
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-canvas-to-image.md
 		// Reason: syntax-based check may report intentional canvas conversions
