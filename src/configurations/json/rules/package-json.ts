@@ -242,6 +242,13 @@ export default defineConfigurationPart({
 		// Note: Most commercial projects are doing quite well without it
 		'package-json/require-files': 'off',
 
+		// Requires the `funding` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-funding
+		// Note: Funding metadata is useful for open-source packages, but not universal enough to require.
+		'package-json/require-funding': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `homepage` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-homepage.md
 		// Note: Most commercial projects are doing quite well without it
