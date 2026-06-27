@@ -277,6 +277,13 @@ export default defineConfigurationPart({
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-license.md
 		'package-json/require-license': 'warn',
 
+		// Requires the `main` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-main
+		// Note: Packages may rely on `exports`, and apps often do not expose package entrypoints.
+		'package-json/require-main': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `name` property to be present
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-name.md
 		'package-json/require-name': 'error',
