@@ -1462,6 +1462,10 @@ export default defineConfigurationPart({
 		// TODO [2026-06-27]: Discuss whether this preference should be part of the shared config.
 		'unicorn/prefer-url-href': 'warn',
 
+		// Prefer `URLSearchParams` over manually splitting query strings
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-url-search-parameters.md
+		'unicorn/prefer-url-search-parameters': 'warn',
+
 		// Prefer putting the condition in the while statement (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-while-loop-condition.md
 		'unicorn/prefer-while-loop-condition': 'warn',
