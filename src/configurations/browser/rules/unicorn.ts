@@ -63,6 +63,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-classlist-toggle.md
 		'unicorn/prefer-classlist-toggle': 'warn',
 
+		// Prefer using `Element#toggleAttribute()` to toggle attributes (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-toggle-attribute.md
+		'unicorn/prefer-toggle-attribute': 'warn',
+
 		// Prefer `Node#append()` over `Node#appendChild()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-append.md
 		'unicorn/prefer-dom-node-append': 'warn',
