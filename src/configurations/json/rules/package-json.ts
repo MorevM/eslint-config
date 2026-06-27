@@ -338,6 +338,13 @@ export default defineConfigurationPart({
 		// Note: Requiring `private` would force every package to declare publish intent explicitly.
 		'package-json/require-private': 'off',
 
+		// Requires the `publishConfig` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-publishConfig
+		// Note: Publish configuration is only meaningful for packages that are actually published.
+		'package-json/require-publishConfig': ['off', {
+			ignorePrivate: true,
+		}],
+
 		// Requires the `repository` property to be present.
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-repository.md
 		'package-json/require-repository': 'off',
