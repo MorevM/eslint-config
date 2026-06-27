@@ -307,6 +307,13 @@ export default defineConfigurationPart({
 		// Note: Way too strict to require
 		'package-json/require-optionalDependencies': 'off',
 
+		// Requires the `os` property to be present.
+		// https://eslint-plugin-package-json.dev/rules/require-properties/require-os
+		// Note: Most packages are not limited to specific operating systems.
+		'package-json/require-os': ['off', {
+			ignorePrivate: false,
+		}],
+
 		// Requires the `peerDependencies` property to be present.
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/require-peerDependencies.md
 		// Note: Way too strict to require
