@@ -1361,6 +1361,7 @@ export default defineConfigurationPart({
 
 		// Prefer `String#split()` with a limit (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-split-limit.md
+		// Reason: this makes the code harder to read, but the actual savings are negligible
 		'unicorn/prefer-split-limit': 'warn',
 
 		// Prefer the spread operator over `Array.from(…)`, `Array#concat(…)` and `Array#slice()` (partly autofixable)
