@@ -1,3 +1,17 @@
+
+
+## [42.0.0-rc.1](https://github.com/MorevM/eslint-config/compare/v42.0.0-rc.0...v42.0.0-rc.1) (2026-06-28)
+
+
+### Bug fixes
+
+* Disable `unicorn/prefer-string-repeat` in test files ([a219f20](https://github.com/MorevM/eslint-config/commit/a219f20aade1cbd915f3075744b451c356d3f46d))
+* **javascript:** Add some exceptions to `unicorn/consistent-boolean-name` ([1284769](https://github.com/MorevM/eslint-config/commit/1284769dfdf2be9f20a1a86cba7bb9a951418e06))
+* **javascript:** DIsable `unicor/no-array-reverse` rule ([a851b1a](https://github.com/MorevM/eslint-config/commit/a851b1a6b11a29eefa0e19186eabac8614b9d072))
+* **javascript:** Disable `unicorn/prefer-split-limit` rule ([99da9bd](https://github.com/MorevM/eslint-config/commit/99da9bdaedb0d4f26a25377a9a266b03d922c113))
+* **javascript:** Increase statements count for `unicorn/prefer-continue` ([3f99bdc](https://github.com/MorevM/eslint-config/commit/3f99bdca97657f9b0df5d70f2a3bfd7882bedb3e))
+* **javascript:** Skip `__directory__` files in `unicorn/filename-case` ([96449fe](https://github.com/MorevM/eslint-config/commit/96449feabbd7dbec2b4712d989c6342a4fcdd45d))
+
 ## [42.0.0-rc.0](https://github.com/MorevM/eslint-config/compare/v41.0.0...v42.0.0-rc.0) (2026-06-28)
 
 
