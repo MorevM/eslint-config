@@ -23,7 +23,6 @@ export default defineConfigurationPart({
 
 		// Enforce better comment content (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/comment-content.md
-		// TODO [2026-06-27]: Discuss whether the default replacement dictionary fits shared prose.
 		'unicorn/comment-content': ['off', {
 			extendDefaultReplacements: true,
 			replacements: {},
@@ -871,7 +870,6 @@ export default defineConfigurationPart({
 
 		// Disallow unnecessary existence checks before deletion (partially autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-delete-check.md
-		// TODO [2026-06-27]: Discuss whether delete existence checks should be simplified.
 		'unicorn/no-useless-delete-check': 'warn',
 
 		// Disallow `else` after a statement that exits (autofixable)
@@ -1220,7 +1218,6 @@ export default defineConfigurationPart({
 		// Prefer `Number()` over `parseFloat()` and base-10 `parseInt()`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-number-coercion.md
 		// Reason: `parseFloat()` and `parseInt()` are often used to intentionally accept string prefixes.
-		// TODO [2026-06-27]: Discuss whether this preference should be part of the shared config.
 		'unicorn/prefer-number-coercion': 'off',
 
 		// Prefer `Number.isSafeInteger()` over integer checks
@@ -1437,7 +1434,6 @@ export default defineConfigurationPart({
 
 		// Require type literals to be last in union and intersection types (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-type-literal-last.md
-		// TODO [2026-06-27]: Discuss whether this preference should be part of the shared config.
 		'unicorn/prefer-type-literal-last': 'warn',
 
 		// Prefer the unary minus operator over multiplying or dividing by `-1` (autofixable)
@@ -1459,7 +1455,6 @@ export default defineConfigurationPart({
 
 		// Prefer `URL#href` over stringifying a `URL` (partially autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-url-href.md
-		// TODO [2026-06-27]: Discuss whether this preference should be part of the shared config.
 		'unicorn/prefer-url-href': 'warn',
 
 		// Prefer `URLSearchParams` over manually splitting query strings
