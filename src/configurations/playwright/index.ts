@@ -36,6 +36,7 @@ export default function configurationPlaywright(options: Partial<PlaywrightConfi
 			rules: {
 				// It's better to be explicit in tests.
 				'sonarjs/no-duplicate-string': 'off',
+				'unicorn/prefer-string-repeat': 'off',
 			},
 		}),
 		!isEmpty(overrides) && defineConfigurationPart({

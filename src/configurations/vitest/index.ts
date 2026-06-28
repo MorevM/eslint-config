@@ -65,6 +65,7 @@ export default function configurationVitest(options: Partial<VitestConfiguration
 			rules: {
 				// It's better to be explicit in tests.
 				'sonarjs/no-duplicate-string': 'off',
+				'unicorn/prefer-string-repeat': 'off',
 			},
 		}),
 		!isEmpty(overrides) && defineConfigurationPart({
