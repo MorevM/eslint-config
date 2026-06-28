@@ -1052,7 +1052,7 @@ export default defineConfigurationPart({
 		// Prefer early continues over whole-loop conditional wrapping (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-continue.md
 		'unicorn/prefer-continue': ['warn', {
-			maximumStatements: 1,
+			maximumStatements: 3,
 		}],
 
 		// Prefer `Date.now()` to get the number of milliseconds since the Unix Epoch (autofixable)
