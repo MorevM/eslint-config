@@ -88,7 +88,6 @@ export default defineConfigurationPart({
 
 		// Prefer `.replaceChildren()` when emptying DOM children (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-dom-node-replace-children.md
-		// TODO [2026-06-27]: Discuss about
 		'unicorn/prefer-dom-node-replace-children': 'warn',
 
 		// Prefer `.textContent` over `.innerText`
@@ -105,7 +104,6 @@ export default defineConfigurationPart({
 
 		// Prefer observer APIs over resize and scroll listeners with layout reads
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-observer-apis.md
-		// TODO [2026-06-27]: Discuss about
 		'unicorn/prefer-observer-apis': 'off',
 
 		// Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode` (partly autofixable)
@@ -114,7 +112,6 @@ export default defineConfigurationPart({
 
 		// Prefer `location.assign()` over assigning to `location.href` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-location-assign.md
-		// TODO [2026-06-27]: Discuss whether this preference should be part of the shared config.
 		'unicorn/prefer-location-assign': 'warn',
 
 		// Prefer `Path2D` for repeatedly drawn canvas paths
