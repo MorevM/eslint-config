@@ -1055,7 +1055,8 @@ export default defineConfigurationPart({
 
 		// Prefer early continues over whole-loop conditional wrapping (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-continue.md
-		'unicorn/prefer-continue': ['warn', {
+		// Reason: way too destructive for existing code.
+		'unicorn/prefer-continue': ['off', {
 			maximumStatements: 3,
 		}],
 
