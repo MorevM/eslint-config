@@ -200,7 +200,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/filename-case.md
 		'unicorn/filename-case': ['error', {
 			case: 'kebabCase',
-			ignore: [],
+			ignore: [
+				'__tests__',
+			],
+			checkDirectories: true,
+			multipleFileExtensions: true,
 		}],
 
 		// Require identifiers to match a specified regular expression
