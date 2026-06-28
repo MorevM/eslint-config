@@ -114,7 +114,7 @@
 		"@total-typescript/ts-reset": "^0.6.1",
 		"@types/node": "^22.18.10",
 		"@types/semver": "^7.7.1",
-		"eslint": "10.5.0",
+		"eslint": "^10.6.0",
 		"jiti": "^2.7.0",
 		"lefthook": "^2.1.9",
 		"release-it": "^20.2.1",
