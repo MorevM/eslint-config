@@ -78,7 +78,7 @@ export default class RulesFinder {
 	 */
 	private loadEslintRulesData() {
 		// eslint-disable-next-line @typescript-eslint/no-deprecated -- There's no other way
-		const eslintRules = [...riskyEslint.builtinRules.entries()];
+		const eslintRules = [...riskyEslint.builtinRules];
 
 		return eslintRules.reduce<Provider>((acc, [ruleName, ruleDefinition]) => {
 			acc.allRules.push(ruleName);
@@ -129,6 +129,26 @@ export default class RulesFinder {
 
 				acc.push(provider);
 			});
+
+			return acc;
+		}, []);
+	}
+
+	/**
+	 * Extracts rule data grouped by provider.
+	 * This is used to generate readable error texts.
+	 *
+	 * @param   ruleNames   Rule names to group by provider.
+	 * @param   property    Source key to check.
+	 *
+	 * @returns             Array containing rules grouped by provider.
+	 */
+	private getReadableSource(ruleNames: string[], property: keyof Provider) {
+		return ruleNames.reduce<ReadableSource[]>((acc, rule) => {
+			const source = this.rulesData.find((source) => source[property].includes(rule))!;
+			const existingEntry = acc.find((item) => item.name === source.name);
+			existingEntry?.rules.push(rule);
+			!existingEntry && acc.push({ name: source.name, rules: [rule] });
 
 			return acc;
 		}, []);
@@ -245,26 +265,6 @@ export default class RulesFinder {
 		return this.configuredRules
 			.filter((rule) => !this.knownDeprecatedRules.includes(rule))
 			.filter((rule) => this.deprecatedRules.includes(rule));
-	}
-
-	/**
-	 * Extracts rule data grouped by provider.
-	 * This is used to generate readable error texts.
-	 *
-	 * @param   ruleNames   Rule names to group by provider.
-	 * @param   property    Source key to check.
-	 *
-	 * @returns             Array containing rules grouped by provider.
-	 */
-	private getReadableSource(ruleNames: string[], property: keyof Provider) {
-		return ruleNames.reduce<ReadableSource[]>((acc, rule) => {
-			const source = this.rulesData.find((source) => source[property].includes(rule))!;
-			const existingEntry = acc.find((item) => item.name === source.name);
-			existingEntry?.rules.push(rule);
-			!existingEntry && acc.push({ name: source.name, rules: [rule] });
-
-			return acc;
-		}, []);
 	}
 
 	/**

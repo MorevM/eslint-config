@@ -203,7 +203,7 @@ export const createConfig = async (stepOptions: StepOptions) => {
 			{{CONTENTS}}
 		]);
 	`, { trimTrailingSpacings: false })
-		.replace('{{CONTENTS}}', prependTabs(configurationsToAdd).trim());
+		.replace('{{CONTENTS}}', () => prependTabs(configurationsToAdd).trim());
 
 	log.success(formatCliMessage(`Contents of the <c>${fileName}</c> file:`));
 	log.message(fileContents);
