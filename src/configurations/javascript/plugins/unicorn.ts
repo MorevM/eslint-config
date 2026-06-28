@@ -205,7 +205,7 @@ export default defineConfigurationPart({
 		'unicorn/filename-case': ['error', {
 			case: 'kebabCase',
 			ignore: [
-				'__tests__',
+				'^__.+__$',
 			],
 			checkDirectories: true,
 			multipleFileExtensions: true,
