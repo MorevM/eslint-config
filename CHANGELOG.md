@@ -1,4 +1,43 @@
+## [42.0.0-rc.0](https://github.com/MorevM/eslint-config/compare/v41.0.0...v42.0.0-rc.0) (2026-06-28)
 
+
+### ⚠ BREAKING CHANGES
+
+- Tooling baseline:
+  - Node >=22.22.3.
+  - ESLint ^10.4.0.
+- JavaScript and browser:
+  - `eslint-plugin-unicorn` is updated to 69.0.0 and now reports more correctness and safety issues: invalid
+    comparisons, unsafe string or property usage, Map/Set misuse, invalid JS function arity, shared references in
+    `Array#fill()`, side-effectful `Map#getOrInsert()` defaults, and isolated functions that close over outer scope.
+  - Inline disables and rule overrides for `unicorn/prevent-abbreviations` must be renamed to
+    `unicorn/name-replacements`.
+  - JSON file reads must specify a string encoding, including TypeScript files.
+  - Browser rules now report unsafe or incorrect DOM patterns: selector syntax used as DOM names, invalid file input
+    `accept`, late event access/control, unsafe DOM HTML or canvas conversion, missing passive event options, and
+    unescaped CSS selectors.
+- JSON, HTML, tests, and templates:
+  - `package.json` files now reject local path dependencies and validate `browser`, `bugs`, `devEngines`, `funding`,
+    `gypfile`, `libc`, `packageManager`, and `peerDependenciesMeta`.
+  - HTML now reports `details` without `summary`, invalid known attribute values, redundant roles, empty
+    content-bearing elements without accessible labels, and inline SVG without `viewBox`.
+  - Playwright now reports multiple `test.slow()` calls in one test.
+  - Astro now reports omitted end tags.
+
+### Summary
+
+This release updates the config for the current ESLint plugin ecosystem.
+
+Main user-visible changes:
+
+- JavaScript and browser presets gained broader correctness, safety, and modern-API coverage.
+- JSON/package-json validation is stricter and covers more metadata fields.
+- HTML validation is stricter around accessibility, valid attributes, `details`/`summary`, and inline SVG.
+- Playwright, Vue, Cypress, Vitest, Markdown, YAML, Node, Astro, and JSDoc presets were updated for new and changed
+  upstream rules.
+- Deprecated or removed upstream rules were dropped or renamed, including `unicorn/better-regex`,
+  `unicorn/no-hex-escape`, `@html-eslint/no-extra-spacing-attrs`, `cypress/no-xpath`, and
+  `eslint-comments/no-unused-disable`.
 
 ## [41.0.0](https://github.com/MorevM/eslint-config/compare/v40.0.0...v41.0.0) (2026-02-10)
 
