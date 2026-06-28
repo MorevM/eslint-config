@@ -785,8 +785,9 @@ export default defineConfigurationPart({
 
 		// Disallow unnecessary nested ternary expressions (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-nested-ternary.md
-		// Note: reports as `warn` because it only combines duplicated ternary branches
-		'unicorn/no-unnecessary-nested-ternary': 'warn',
+		// Note: it looks pretty good at first glance, but in multi-line ternary operators,
+		//       following the algorithm is more important than conciseness.
+		'unicorn/no-unnecessary-nested-ternary': 'off',
 
 		// Enforce the use of built-in methods instead of unnecessary polyfills
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-polyfills.md
