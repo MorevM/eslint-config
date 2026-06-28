@@ -48,6 +48,8 @@ export default defineConfigurationPart({
 
 		// Require include descriptions in ESLint directive-comments
 		// https://eslint-community.github.io/eslint-plugin-eslint-comments/rules/require-description.html
-		'eslint-comments/require-description': 'warn',
+		'eslint-comments/require-description': ['warn', {
+			ignore: ['eslint-enable', 'eslint-env', 'global', 'globals'],
+		}],
 	},
 });
