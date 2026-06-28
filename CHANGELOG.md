@@ -1,5 +1,14 @@
 
 
+## [42.0.0-rc.2](https://github.com/MorevM/eslint-config/compare/v42.0.0-rc.1...v42.0.0-rc.2) (2026-06-28)
+
+
+### Bug fixes
+
+* Disable `unicorn/prefer-continue` rule ([edf69ed](https://github.com/MorevM/eslint-config/commit/edf69ed2d18c876ddeff17d257cf1a1bd9ba551a))
+* **javascript:** Disable `unicorn/no-unnecessary-nested-ternary` rule ([160c884](https://github.com/MorevM/eslint-config/commit/160c884c6cbaada4a9f3250d559c2592deeb4b1c))
+* **javascript:** Do not require description for safe eslint directives ([ee736cf](https://github.com/MorevM/eslint-config/commit/ee736cfba0fd7fca5aa97e546403c779936896f6))
+
 ## [42.0.0-rc.1](https://github.com/MorevM/eslint-config/compare/v42.0.0-rc.0...v42.0.0-rc.1) (2026-06-28)
 
 
