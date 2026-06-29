@@ -1044,7 +1044,7 @@ export default defineConfigurationPart({
 		// Prefer directly returning boolean expressions over `if` statements (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-boolean-return.md
 		// Reason: this pattern is a recurring personal pain point in code review.
-		'unicorn/prefer-boolean-return': 'error',
+		'unicorn/prefer-boolean-return': 'off',
 
 		// Prefer class field declarations over `this` assignments in constructors (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-class-fields.md
@@ -1368,7 +1368,7 @@ export default defineConfigurationPart({
 		// Prefer `String#split()` with a limit (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-split-limit.md
 		// Reason: this makes the code harder to read, but the actual savings are negligible
-		'unicorn/prefer-split-limit': 'warn',
+		'unicorn/prefer-split-limit': 'off',
 
 		// Prefer the spread operator over `Array.from(…)`, `Array#concat(…)` and `Array#slice()` (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-spread.md
