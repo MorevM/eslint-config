@@ -1,5 +1,12 @@
 
 
+## [42.0.0-rc.3](https://github.com/MorevM/eslint-config/compare/v42.0.0-rc.2...v42.0.0-rc.3) (2026-06-29)
+
+
+### Bug fixes
+
+* **javascript:** Actually disable `unicorn/prefer-boolean-return` and `unicorn/prefer-split-limit` rules ([73a4037](https://github.com/MorevM/eslint-config/commit/73a4037677be0758be9d88238888b53d93ef0492))
+
 ## [42.0.0-rc.2](https://github.com/MorevM/eslint-config/compare/v42.0.0-rc.1...v42.0.0-rc.2) (2026-06-28)
 
 
