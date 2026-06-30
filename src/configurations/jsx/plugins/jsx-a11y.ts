@@ -238,6 +238,9 @@ export default defineConfigurationPart({
 		// https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/no-redundant-roles.md
 		'jsx-a11y/no-redundant-roles': ['error', {
 			nav: ['navigation'],
+			// https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/list-style#accessibility
+			ul: ['list'],
+			ol: ['list'],
 		}],
 
 		// Enforce that non-interactive, visible elements (such as `<div>`) that have click handlers use the role attribute
