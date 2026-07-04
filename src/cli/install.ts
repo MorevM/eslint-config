@@ -3,7 +3,7 @@ import { isNull, sleep } from '@morev/utils';
 import { detect } from 'package-manager-detector';
 import * as semver from 'semver';
 import { customExec } from '#utils';
-import { formatCliMessage, getPackageJson, loadModule, runAgentCommand } from './utils';
+import { formatCliMessage, getPackageJson, isSupportedAgent, loadModule, runAgentCommand } from './utils';
 import type { ExecException } from 'node:child_process';
 import type { StepOptions } from './types';
 
@@ -64,9 +64,13 @@ export const install = async (options: StepOptions) => {
 	const mode = hasConfigDependency ? 'update' : 'installation';
 
 	const packageManagerDetect = await detect();
+	const detectedPackageManager = packageManagerDetect?.name;
+	const initialPackageManager = isSupportedAgent(detectedPackageManager)
+		? detectedPackageManager
+		: undefined;
 	const packageManager = await select({
 		message: 'What package manager would you like to use?\n',
-		initialValue: packageManagerDetect?.name,
+		initialValue: initialPackageManager,
 		options: [
 			{
 				value: 'npm',

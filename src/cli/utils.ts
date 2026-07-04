@@ -5,12 +5,18 @@ import { safeJsonParse, sleep, stripIndent } from '@morev/utils';
 import ansis from 'ansis';
 import type { PackageJson } from '@morev/utils';
 
-type Agent = 'npm' | 'yarn' | 'pnpm' | 'bun' | 'deno';
+const SUPPORTED_AGENTS = ['npm', 'yarn', 'pnpm', 'bun', 'deno'] as const;
+
+type Agent = typeof SUPPORTED_AGENTS[number];
 type AgentCommand = 'add-dev' | 'upgrade';
 type AgentCommandDeclaration = {
 	command: string;
 	flags: string[];
 };
+
+export const isSupportedAgent = (agent: string | undefined): agent is Agent =>
+	SUPPORTED_AGENTS.includes(agent as Agent);
+
 export const runAgentCommand = (agent: Agent, action: AgentCommand, args: string[]) => {
 	const stack: string[] = [agent];
 	const mappings: Record<Agent, Record<AgentCommand, AgentCommandDeclaration>> = {
