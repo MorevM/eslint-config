@@ -1016,6 +1016,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-from-async.md
 		'unicorn/prefer-array-from-async': 'warn',
 
+		// Prefer `Array.from({ length }, …)` when creating range arrays (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-from-range.md
+		// Reason: range construction shape is mostly a style preference.
+		'unicorn/prefer-array-from-range': 'off',
+
 		// Prefer using the `Array.from()` mapping function argument (partially autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-array-from-map.md
 		'unicorn/prefer-array-from-map': 'warn',
