@@ -1148,6 +1148,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-global-number-constants.md
 		'unicorn/prefer-global-number-constants': 'warn',
 
+		// Prefer `Object.groupBy()` or `Map.groupBy()` over reduce-based grouping (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-group-by.md
+		// TODO [2026-09-05]: Enable when `Object.groupBy()` and `Map.groupBy()` are Widely Available.
+		'unicorn/prefer-group-by': 'off',
+
 		// Prefer `.has()` when checking existence (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-has-check.md
 		'unicorn/prefer-has-check': 'warn',
