@@ -1,5 +1,33 @@
 
 
+## [42.0.0-rc.4](https://github.com/MorevM/eslint-config/compare/v42.0.0-rc.3...v42.0.0-rc.4) (2026-07-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* **javascript:** With new rule `unicorn/no-unsafe-promise-all-settled-values`, unguarded `.value` reads from `Promise.allSettled()` results now produce an error. Check for a fulfilled status or narrow to `PromiseFulfilledResult` before reading `value`.
+* **javascript:** With new rule `unicorn/no-async-promise-finally`, async `Promise#finally()` callbacks now produce an error. Move awaited cleanup outside the `finally()` callback, or keep the finalizer synchronous when cleanup is fire-and-forget.
+
+### Features
+
+* **javascript:** Add `unicorn/no-async-promise-finally` rule ([fb21cb7](https://github.com/MorevM/eslint-config/commit/fb21cb7c39f973f2b5c9bf4dc848f54457d932d6))
+* **javascript:** Add `unicorn/no-unnecessary-array-flat-map` rule ([250a90d](https://github.com/MorevM/eslint-config/commit/250a90d8a5ccbe4493598bee8d4a1a13944ae403))
+* **javascript:** Add `unicorn/no-unsafe-promise-all-settled-values` rule ([86dda60](https://github.com/MorevM/eslint-config/commit/86dda6058384629691bb4279096e96f62b69c749))
+* **javascript:** Add `unicorn/prefer-block-statement-over-iife` rule ([2877813](https://github.com/MorevM/eslint-config/commit/28778130511e80f54c373d2060c0231f78f0abb3))
+* **javascript:** Add `unicorn/prefer-simplified-conditions` rule ([b78a941](https://github.com/MorevM/eslint-config/commit/b78a94154cf85c404b6dcd9bb4c88a7132bfd5ec))
+* **javascript:** Take account of `unicorn/no-unnecessary-fetch-options` rule ([95cc67b](https://github.com/MorevM/eslint-config/commit/95cc67b4dd0db55bdfbefcb01de47b3a79754185))
+* **javascript:** Take account of `unicorn/prefer-abort-signal-any` rule ([66c16ee](https://github.com/MorevM/eslint-config/commit/66c16ee3ba5c9a51adb40611d829e673f2860b47))
+* **javascript:** Take account of `unicorn/prefer-array-from-range` rule ([9036006](https://github.com/MorevM/eslint-config/commit/9036006a41471f3e79ec2bf26655a4ce552e39b0))
+* **javascript:** Take account of `unicorn/prefer-group-by` rule ([4c741bb](https://github.com/MorevM/eslint-config/commit/4c741bbb002b4c3b3e9e3c6263a5e26db4cfdc8d))
+* **javascript:** Take account of `unicorn/prefer-iterator-helpers` rule ([dada0ea](https://github.com/MorevM/eslint-config/commit/dada0ea8c9db3e8a4cf82617e446131f133f8ee5))
+* **jsx:** Allow `role="list"` for `ul` and `ol` elements ([6ad7e7f](https://github.com/MorevM/eslint-config/commit/6ad7e7fc782519269f04e31026a87a2480fc3ffb))
+
+
+### Bug fixes
+
+* **cli:** Ignore unsupported detected package managers ([1b26a8a](https://github.com/MorevM/eslint-config/commit/1b26a8af0fdcbfe17a3a100fd8914c28877bbb57))
+
+
 ## [42.0.0-rc.3](https://github.com/MorevM/eslint-config/compare/v42.0.0-rc.2...v42.0.0-rc.3) (2026-06-29)
 
 
