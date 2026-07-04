@@ -167,7 +167,8 @@ export default defineConfigurationPart({
 
 		// Enforce correct `Error` subclassing (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/custom-error-definition.md
-		'unicorn/custom-error-definition': 'error',
+		// Reason: custom errors may intentionally define custom constructor signatures
+		'unicorn/custom-error-definition': 'off',
 
 		// Enforce consistent default export declarations (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/default-export-style.md
