@@ -991,6 +991,11 @@ export default defineConfigurationPart({
 		// Reason: shorthand is situational, and `+=` can hide string coercion.
 		'unicorn/operator-assignment': ['off', 'always'],
 
+		// Prefer `AbortSignal.any()` over manually forwarding abort events between signals
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-abort-signal-any.md
+		// TODO [2026-09-05]: Enable when `AbortSignal.any()` is Widely Available.
+		'unicorn/prefer-abort-signal-any': 'off',
+
 		// Prefer `AbortSignal.timeout()` over manually aborting an `AbortController` with `setTimeout()`
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-abort-signal-timeout.md
 		'unicorn/prefer-abort-signal-timeout': 'warn',
