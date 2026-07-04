@@ -770,6 +770,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-array-flat-depth.md
 		'unicorn/no-unnecessary-array-flat-depth': 'warn',
 
+		// Disallow `Array#flatMap()` callbacks that only wrap a single item (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-array-flat-map.md
+		'unicorn/no-unnecessary-array-flat-map': 'warn',
+
 		// Disallow using `.length` or `Infinity` as the `deleteCount` or `skipCount` argument of `Array#{splice,toSpliced}()` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-array-splice-count.md
 		'unicorn/no-unnecessary-array-splice-count': 'warn',
