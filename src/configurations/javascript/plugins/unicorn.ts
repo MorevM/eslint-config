@@ -1068,6 +1068,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-blob-reading-methods.md
 		'unicorn/prefer-blob-reading-methods': 'error',
 
+		// Prefer block statements over IIFEs used only for scoping (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-block-statement-over-iife.md
+		'unicorn/prefer-block-statement-over-iife': 'warn',
+
 		// Prefer directly returning boolean expressions over `if` statements (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-boolean-return.md
 		// Reason: this pattern is a recurring personal pain point in code review.
