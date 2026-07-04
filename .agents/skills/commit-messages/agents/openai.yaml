@@ -1,0 +1,4 @@
+interface:
+  display_name: Commit Messages
+  short_description: Write and split repository commit messages.
+  default_prompt: Use $commit-messages to propose atomic commits for this shared ESLint config.

@@ -1,0 +1,4 @@
+interface:
+  display_name: Update Dependencies
+  short_description: Update deps and required ESLint config coverage.
+  default_prompt: Use $update-dependencies to update one package and handle required follow-up changes.
