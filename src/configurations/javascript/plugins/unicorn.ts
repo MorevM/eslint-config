@@ -1384,6 +1384,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-simple-sort-comparator.md
 		'unicorn/prefer-simple-sort-comparator': 'warn',
 
+		// Prefer simplified conditions (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-simplified-conditions.md
+		'unicorn/prefer-simplified-conditions': 'warn',
+
 		// Prefer a single `Array#some()` or `Array#every()` with a combined predicate
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-single-array-predicate.md
 		'unicorn/prefer-single-array-predicate': 'warn',
