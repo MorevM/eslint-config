@@ -454,6 +454,10 @@ export default defineConfigurationPart({
 		// Reason: mutating `splice()` is ok when in-place operation is intended.
 		'unicorn/no-array-splice': 'off',
 
+		// Disallow async functions as `Promise#finally()` callbacks
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-async-promise-finally.md
+		'unicorn/no-async-promise-finally': 'error',
+
 		// Disallow asterisk prefixes in documentation comments (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-asterisk-prefix-in-documentation-comments.md
 		// Reason: JSDoc formatting is already handled by `jsdoc/require-asterisk-prefix`
