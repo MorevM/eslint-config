@@ -835,6 +835,10 @@ export default defineConfigurationPart({
 		// Reason: without type information, `.buffer` can belong to userland objects.
 		'unicorn/no-unsafe-buffer-conversion': 'warn',
 
+		// Disallow reading `.value` from `Promise.allSettled()` results without a fulfilled status guard
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unsafe-promise-all-settled-values.md
+		'unicorn/no-unsafe-promise-all-settled-values': 'error',
+
 		// Disallow unsafe values as property keys.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unsafe-property-key.md
 		'unicorn/no-unsafe-property-key': 'error',
