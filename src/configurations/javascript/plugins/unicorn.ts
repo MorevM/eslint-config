@@ -786,6 +786,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-boolean-comparison.md
 		'unicorn/no-unnecessary-boolean-comparison': 'warn',
 
+		// Disallow unnecessary options in `fetch()` and `new Request()` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-fetch-options.md
+		// Reason: explicit default request options can document intent.
+		'unicorn/no-unnecessary-fetch-options': 'off',
+
 		// Disallow unnecessary `globalThis` references (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-global-this.md
 		// Reason: explicit `globalThis` usage is usually intentional.
