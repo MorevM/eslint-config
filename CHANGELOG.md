@@ -1,4 +1,25 @@
+## [42.0.0](https://github.com/MorevM/eslint-config/compare/v41.0.0...v42.0.0) (2026-07-07)
 
+
+### ⚠ BREAKING CHANGES
+
+- Tooling baseline:
+  - Node >=22.22.3.
+  - ESLint ^10.4.0.
+- JavaScript and browser:
+  - The config now reports more correctness, safety, and modern-API issues,
+    including invalid well-known symbol methods, unsafe property/string and Map/Set usage,
+    `Promise.allSettled()` value reads without status checks, async `Promise#finally()` callbacks,
+    unsafe DOM access patterns, and missing passive event options.
+  - Inline disables and rule overrides for `unicorn/prevent-abbreviations` must be renamed to `unicorn/name-replacements`.
+  - JSON file reads must specify a string encoding, including TypeScript files.
+- JSON, HTML, tests, and templates:
+  - `package.json` validation is stricter: local path dependencies are rejected and more metadata fields are validated.
+  - HTML now reports invalid or inaccessible markup more aggressively, including missing `summary` in `details`,
+    invalid known attribute values, redundant roles, unlabeled content-bearing empty elements, inline SVG without
+    `viewBox`, and invalid document head order.
+  - Playwright now reports multiple `test.slow()` calls in one test.
+  - Astro now reports omitted end tags.
 
 ## [42.0.0-rc.4](https://github.com/MorevM/eslint-config/compare/v42.0.0-rc.3...v42.0.0-rc.4) (2026-07-04)
 
