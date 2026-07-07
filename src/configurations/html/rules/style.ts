@@ -44,8 +44,7 @@ export default defineConfigurationPart({
 
 		// Enforce optimal ordering of elements in `<head>`
 		// https://html-eslint.org/docs/rules/head-order
-		// TODO [2026-06-27]: Discuss about proper order
-		'@html-eslint/head-order': 'off',
+		'@html-eslint/head-order': 'warn',
 
 		// Enforces element maximum depth
 		// https://html-eslint.org/docs/rules/max-element-depth
