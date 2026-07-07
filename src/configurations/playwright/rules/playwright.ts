@@ -24,7 +24,10 @@ export default defineConfigurationPart({
 
 		// Enforce Playwright APIs to be awaited (autofixable)
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/missing-playwright-await.md
-		'playwright/missing-playwright-await': 'error',
+		'playwright/missing-playwright-await': ['error', {
+			customMatchers: [],
+			includePageLocatorMethods: false,
+		}],
 
 		// Disallow commented out tests
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/no-commented-out-tests.md
