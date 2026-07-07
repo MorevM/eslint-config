@@ -65,6 +65,7 @@ export default defineConfigurationPart({
 			},
 			ignore: [
 				'condition',
+				'able$', // configurable, fixable and so on
 			],
 		}],
 
