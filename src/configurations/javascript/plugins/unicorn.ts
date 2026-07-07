@@ -230,7 +230,12 @@ export default defineConfigurationPart({
 
 		// Prevent usage of variables from outside the scope of isolated functions
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/isolated-functions.md
-		'unicorn/isolated-functions': 'error',
+		'unicorn/isolated-functions': ['error', {
+			functions: ['makeSynchronous', 'workerize'],
+			selectors: [],
+			comments: ['@isolated'],
+			overrideGlobals: {},
+		}],
 
 		// Require or disallow logical assignment operator shorthand (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/logical-assignment-operators.md
