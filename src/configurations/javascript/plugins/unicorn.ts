@@ -191,7 +191,10 @@ export default defineConfigurationPart({
 
 		// Add expiration conditions to TODO comments
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/expiring-todo-comments.md
-		'unicorn/expiring-todo-comments': 'error',
+		'unicorn/expiring-todo-comments': ['error', {
+			checkDates: true,
+			checkDatesOnPullRequests: false,
+		}],
 
 		// Enforce explicitly comparing the length or size property of a value
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/explicit-length-check.md
