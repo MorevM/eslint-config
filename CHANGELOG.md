@@ -1,3 +1,12 @@
+
+
+## [42.0.1](https://github.com/MorevM/eslint-config/compare/v42.0.0...v42.0.1) (2026-07-07)
+
+
+### Bug fixes
+
+* **javascript:** Allow boolean variables ending with `able` ([c507daf](https://github.com/MorevM/eslint-config/commit/c507daffab06c2dedf4c07db0da188c8b6523dc7))
+
 ## [42.0.0](https://github.com/MorevM/eslint-config/compare/v41.0.0...v42.0.0) (2026-07-07)
 
 
