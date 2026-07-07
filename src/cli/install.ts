@@ -1,9 +1,9 @@
-import { confirm, isCancel, log, select, spinner } from '@clack/prompts';
+import { isCancel, log, select, spinner } from '@clack/prompts';
 import { isNull, sleep } from '@morev/utils';
 import { detect } from 'package-manager-detector';
 import * as semver from 'semver';
 import { customExec } from '#utils';
-import { formatCliMessage, getPackageJson, isSupportedAgent, loadModule, runAgentCommand } from './utils';
+import { confirmPrompt, formatCliMessage, getPackageJson, isSupportedAgent, loadModule, runAgentCommand } from './utils';
 import type { ExecException } from 'node:child_process';
 import type { StepOptions } from './types';
 
@@ -121,10 +121,10 @@ export const install = async (options: StepOptions) => {
 				`),
 			);
 
-			const shouldContinue = await confirm({
+			const shouldContinue = await confirmPrompt({
 				message: formatCliMessage(`Continue the updating process?`),
 			});
-			if (!shouldContinue || isCancel(shouldContinue)) return;
+			if (!shouldContinue) return;
 		}
 
 		dependenciesToUpdate.push(`@morev/eslint-config@^${latestConfigVersion ?? executingConfigVersion}`);
@@ -145,10 +145,9 @@ export const install = async (options: StepOptions) => {
 			`),
 		);
 
-		const shouldUpdateEslint = await confirm({
+		const shouldUpdateEslint = await confirmPrompt({
 			message: formatCliMessage(`Update to <c>eslint@${MINIMAL_ESLINT_VERSION}</c>?`),
 		});
-		if (isCancel(shouldUpdateEslint)) return;
 
 		if (shouldUpdateEslint) {
 			dependenciesToUpdate.push(`eslint@${MINIMAL_ESLINT_VERSION}`);
@@ -156,11 +155,10 @@ export const install = async (options: StepOptions) => {
 	}
 
 	if (!hasTypescriptDependency) {
-		const shouldInstallTypescript = await confirm({
+		const shouldInstallTypescript = await confirmPrompt({
 			message: formatCliMessage('Would you like to use <c>TypeScript</c>?'),
 		});
 
-		if (isCancel(shouldInstallTypescript)) return;
 		if (shouldInstallTypescript) {
 			dependenciesToInstall.push(`typescript`);
 		}
@@ -177,10 +175,9 @@ export const install = async (options: StepOptions) => {
 			`),
 		);
 
-		const shouldUpdateTypescript = await confirm({
+		const shouldUpdateTypescript = await confirmPrompt({
 			message: formatCliMessage(`Update to <c>typescript@${MINIMAL_TYPESCRIPT_VERSION}</c>?`),
 		});
-		if (isCancel(shouldUpdateTypescript)) return;
 
 		if (shouldUpdateTypescript) {
 			dependenciesToUpdate.push(`typescript@${MINIMAL_TYPESCRIPT_VERSION}`);
@@ -229,11 +226,11 @@ export const install = async (options: StepOptions) => {
 		? formatCliMessage(`Run the command <c>${allCommands[0]}</c>?`)
 		: 'Run the commands above?';
 
-	const shouldRunCommand = await confirm({
+	const shouldRunCommand = await confirmPrompt({
 		message: confirmMessage,
 	});
 
-	if (isCancel(shouldRunCommand)) return;
+	if (!shouldRunCommand) return;
 
 	const installers = allCommands.map((command, index) => {
 		const messages = command.includes('add')

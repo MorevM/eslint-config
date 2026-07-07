@@ -1,9 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { confirm, isCancel, log } from '@clack/prompts';
+import { log } from '@clack/prompts';
 import { formatSlashes, mergeObjects, sleep } from '@morev/utils';
 import { parse } from 'jsonc-parser';
-import { formatCliMessage } from './utils';
+import { confirmPrompt, formatCliMessage } from './utils';
 import type { PlainObject } from '@morev/utils';
 import type { StepOptions } from './types';
 
@@ -71,13 +71,11 @@ export const updateSettings = async (stepOptions: StepOptions) => {
 			`),
 		);
 
-		const shouldCreateDirectory = await confirm({
+		const shouldCreateDirectory = await confirmPrompt({
 			message: formatCliMessage(`
 				Create <c>${DIRECTORY_NAME}</c> directory by path <c>${formatSlashes(directoryPath, { to: `/` })}</c>?
 			`),
 		});
-
-		if (isCancel(shouldCreateDirectory)) return;
 
 		if (shouldCreateDirectory) {
 			try {
@@ -96,10 +94,10 @@ export const updateSettings = async (stepOptions: StepOptions) => {
 					`),
 				);
 
-				const shouldContinue = await confirm({
+				const shouldContinue = await confirmPrompt({
 					message: CONTINUE_QUESTION_MESSAGE,
 				});
-				if (!shouldContinue || isCancel(shouldContinue)) return;
+				if (!shouldContinue) return;
 			}
 		}
 	} else {
@@ -159,11 +157,11 @@ export const updateSettings = async (stepOptions: StepOptions) => {
 					`),
 					);
 
-					const shouldContinue = await confirm({
+					const shouldContinue = await confirmPrompt({
 						message: `Continue the process?`,
 					});
 					// eslint-disable-next-line max-depth -- Well, this is just step-by-step utility
-					if (!shouldContinue || isCancel(shouldContinue)) return;
+					if (!shouldContinue) return;
 				}
 			} catch {
 				log.error(
@@ -173,10 +171,10 @@ export const updateSettings = async (stepOptions: StepOptions) => {
 				`),
 				);
 
-				const shouldContinue = await confirm({
+				const shouldContinue = await confirmPrompt({
 					message: `Continue the process?`,
 				});
-				if (!shouldContinue || isCancel(shouldContinue)) return;
+				if (!shouldContinue) return;
 			}
 		} else {
 			log.info(formatCliMessage(`The existed <c>${FULL_FILE_NAME}</c> file was not found.`));
@@ -206,11 +204,11 @@ export const updateSettings = async (stepOptions: StepOptions) => {
 	log.message(newContentsWithComments);
 
 	const verb = isFileFound ? 'Update' : 'Create';
-	const shouldCreateFile = await confirm({
+	const shouldCreateFile = await confirmPrompt({
 		message: formatCliMessage(`${verb} the <c>${FULL_FILE_NAME}</c> file with the content above?`),
 	});
 
-	if (!shouldCreateFile || isCancel(shouldCreateFile)) return;
+	if (!shouldCreateFile) return;
 
 	if (shouldCreateFile) {
 		try {

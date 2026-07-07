@@ -1,7 +1,7 @@
 import fs from 'node:fs';
-import { confirm, isCancel, log, select, text } from '@clack/prompts';
+import { isCancel, log, select, text } from '@clack/prompts';
 import { formatSlashes, isEmpty, mergeObjects, quote, sleep, tsObject  } from '@morev/utils';
-import { formatCliMessage, getPackageJson, getPackageJsonPath } from './utils';
+import { confirmPrompt, formatCliMessage, getPackageJson, getPackageJsonPath } from './utils';
 import type { PackageJson } from '@morev/utils';
 import type { StepOptions } from './types';
 
@@ -127,10 +127,10 @@ export const addScripts = async (stepOptions: StepOptions) => {
 		);
 		return;
 	}
-	const shouldWriteFile = await confirm({
+	const shouldWriteFile = await confirmPrompt({
 		message: formatCliMessage(`Update the <c>${FILE_NAME}</c> file with the content above?`),
 	});
-	if (!shouldWriteFile || isCancel(shouldWriteFile)) return;
+	if (!shouldWriteFile) return;
 
 	if (shouldWriteFile) {
 		try {

@@ -1,9 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { confirm, isCancel, log, multiselect } from '@clack/prompts';
+import { isCancel, log, multiselect } from '@clack/prompts';
 import { formatSlashes, isArray, pick, quote, sleep, stripIndent, tsObject  } from '@morev/utils';
 import { hasTsconfig } from '#utils';
-import { formatCliMessage, getPackageJson, loadModule, prependTabs } from './utils';
+import { confirmPrompt, formatCliMessage, getPackageJson, loadModule, prependTabs } from './utils';
 import type { PlainObject } from '@morev/utils';
 import type { StepOptions } from './types';
 
@@ -93,10 +93,10 @@ export const createConfig = async (stepOptions: StepOptions) => {
 			will require additional confirmation in the following steps.
 		`));
 
-		const shouldContinue = await confirm({
+		const shouldContinue = await confirmPrompt({
 			message: formatCliMessage(`Continue the process?`),
 		});
-		if (!shouldContinue || isCancel(shouldContinue)) return;
+		if (!shouldContinue) return;
 	}
 
 	log.info(formatCliMessage(`Trying to guess what configurations you will need...`));
@@ -208,10 +208,10 @@ export const createConfig = async (stepOptions: StepOptions) => {
 	log.success(formatCliMessage(`Contents of the <c>${fileName}</c> file:`));
 	log.message(fileContents);
 
-	const shouldCreateFile = await confirm({
+	const shouldCreateFile = await confirmPrompt({
 		message: formatCliMessage(`Create the <c>${fileName}</c> file with the content above?`),
 	});
-	if (!shouldCreateFile || isCancel(shouldCreateFile)) return;
+	if (!shouldCreateFile) return;
 
 	if (shouldCreateFile) {
 		try {

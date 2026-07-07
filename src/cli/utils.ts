@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { log } from '@clack/prompts';
+import { cancel, confirm, isCancel, log } from '@clack/prompts';
 import { safeJsonParse, sleep, stripIndent } from '@morev/utils';
 import ansis from 'ansis';
 import type { PackageJson } from '@morev/utils';
@@ -57,6 +57,17 @@ export const loadModule = async (name: string) => {
 	} catch {
 		return undefined;
 	}
+};
+
+export const confirmPrompt = async (options: Parameters<typeof confirm>[0]): Promise<boolean> => {
+	const answer = await confirm(options);
+
+	if (isCancel(answer)) {
+		cancel('Operation cancelled.');
+		process.exit(0);
+	}
+
+	return answer;
 };
 
 export const prependTabs = (value: string) =>
