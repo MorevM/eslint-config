@@ -42,7 +42,15 @@ export default defineConfigurationPart({
 
 		// Require or disallow trailing commas in `<template>` (autofixable)
 		// https://eslint.vuejs.org/rules/comma-dangle.html
-		...extensionFromBase('comma-dangle'),
+		// Reason not to use `extensionFromBase`: `eslint-plugin-vue` resolves
+		// `@stylistic` from the consumer cwd and can fall back to the ESLint core schema.
+		'vue/comma-dangle': ['warn', {
+			arrays: 'always-multiline',
+			objects: 'always-multiline',
+			imports: 'always-multiline',
+			exports: 'always-multiline',
+			functions: 'always-multiline',
+		}],
 
 		// Enforce consistent spacing before and after commas in `<template>` (autofixable)
 		// https://eslint.vuejs.org/rules/comma-spacing.html
