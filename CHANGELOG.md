@@ -1,5 +1,12 @@
 
 
+## [42.0.2](https://github.com/MorevM/eslint-config/compare/v42.0.1...v42.0.2) (2026-07-09)
+
+
+### Bug fixes
+
+* **vue:** Keep `vue/comma-dangle` compatible with fallback schemas ([2a9d9da](https://github.com/MorevM/eslint-config/commit/2a9d9da4d6e39d45beaf25856b48a11d321e1d10))
+
 ## [42.0.1](https://github.com/MorevM/eslint-config/compare/v42.0.0...v42.0.1) (2026-07-07)
 
 
