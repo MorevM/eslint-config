@@ -7,24 +7,24 @@ export default defineConfigurationPart({
 	},
 	rules: {
 		// Checks that `@access` tags use one of the correct values
-		// https://github.com/gajus/eslint-plugin-jsdoc#check-access
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-access.md
 		'jsdoc/check-access': 'error',
 
 		// Reports invalid alignment of JSDoc block asterisks (autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc#check-alignment
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-alignment.md
 		'jsdoc/check-alignment': 'warn',
 
 		// Ensures that (JavaScript) examples within JSDoc adhere to ESLint rules
-		// https://github.com/gajus/eslint-plugin-jsdoc#check-examples
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-examples.md
 		'jsdoc/check-examples': 'off',
 
 		// Reports invalid padding inside JSDoc blocks
-		// https://github.com/gajus/eslint-plugin-jsdoc#check-indentation
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-indentation.md
 		// Note: false positives with multiline aligned strings
 		'jsdoc/check-indentation': 'off',
 
 		// Reports invalid alignment of JSDoc block lines (autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc#check-line-alignment
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-line-alignment.md
 		'jsdoc/check-line-alignment': ['warn', 'always', {
 			customSpacings: {
 				postTag: 3,
@@ -35,7 +35,7 @@ export default defineConfigurationPart({
 
 		// Ensures that parameter names in JSDoc match those
 		// in the function declaration (autofixable but may be confusing)
-		// https://github.com/gajus/eslint-plugin-jsdoc#check-param-names
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-param-names.md
 		'no-autofix/jsdoc/check-param-names': ['error', {
 			enableFixer: true,
 		}],
@@ -43,38 +43,38 @@ export default defineConfigurationPart({
 		// Ensures that property names in JSDoc are not duplicated on the same block
 		// and that nested properties have defined roots
 		// (autofixable but may be confusing)
-		// https://github.com/gajus/eslint-plugin-jsdoc#check-property-names
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-property-names.md
 		'no-autofix/jsdoc/check-property-names': ['error', { enableFixer: true }],
 
 		// Reports against syntax not encouraged for the mode
-		// https://github.com/gajus/eslint-plugin-jsdoc#check-syntax
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-syntax.md
 		'jsdoc/check-syntax': 'error',
 
 		// Reports invalid block tag names
-		// https://github.com/gajus/eslint-plugin-jsdoc#check-tag-names
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-tag-names.md
 		'jsdoc/check-tag-names': ['error', {
 			definedTags: ['TODO', 'DEPRECATED'],
 		}],
 
 		// Checks that any `@template` names are actually used in the connected `@typedef` or type alias.
-		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-template-names.md#readme
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-template-names.md
 		'jsdoc/check-template-names': 'error',
 
 		// Reports invalid types
-		// https://github.com/gajus/eslint-plugin-jsdoc#check-types
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-types.md
 		'jsdoc/check-types': 'error',
 
 		// Reports invalid types
-		// https://github.com/gajus/eslint-plugin-jsdoc#check-values
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-values.md
 		'jsdoc/check-values': 'error',
 
 		// Converts line and block comments preceding or following specified nodes into JSDoc comments
-		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/convert-to-jsdoc-comments.md#readme
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/convert-to-jsdoc-comments.md
 		// Note: developer knows better
 		'jsdoc/convert-to-jsdoc-comments': 'off',
 
 		// Expects the following tags to be empty of any content (autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc#empty-tags
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/empty-tags.md
 		'jsdoc/empty-tags': 'warn',
 
 		// Reports use of JSDoc tags in non-tag positions (in the default "typescript" mode) (autofixable)
@@ -86,7 +86,7 @@ export default defineConfigurationPart({
 		}],
 
 		// Reports an issue with any non-constructor function using `@implements`
-		// https://github.com/gajus/eslint-plugin-jsdoc#implements-on-classes
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/implements-on-classes.md
 		'jsdoc/implements-on-classes': 'error',
 
 		// This rule will report an issue if JSDoc `import()` statements point to
@@ -95,7 +95,7 @@ export default defineConfigurationPart({
 		'jsdoc/imports-as-dependencies': 'error',
 
 		// Reports on JSDoc texts that serve only to restart their attached name
-		// https://github.com/gajus/eslint-plugin-jsdoc#informative-docs
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/informative-docs.md
 		'jsdoc/informative-docs': 'off',
 
 		// Enforces minimum number of newlines before JSDoc comment blocks (autofixable)
@@ -107,17 +107,17 @@ export default defineConfigurationPart({
 		}],
 
 		// Enforces a regular expression pattern on descriptions
-		// https://github.com/gajus/eslint-plugin-jsdoc#match-description
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/match-description.md
 		'jsdoc/match-description': 'off',
 
 		// Reports the name portion of a JSDoc tag if matching
 		// or not matching a given regular expression (partly autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc#match-name
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/match-name.md
 		'jsdoc/match-name': 'off',
 
 		// Controls how and whether jsdoc blocks can be expressed
 		// as single or multiple line blocks (autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc#multiline-blocks
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/multiline-blocks.md
 		'jsdoc/multiline-blocks': ['warn', {
 			noMultilineBlocks: false,
 			noSingleLineBlocks: true,
@@ -125,7 +125,7 @@ export default defineConfigurationPart({
 
 		// Checks for multi-line-style comments which fail
 		// to meet the criteria of a jsdoc block (autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc#no-bad-blocks
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-bad-blocks.md
 		'jsdoc/no-bad-blocks': ['error', {
 			ignore: ['ts-check', 'ts-expect-error', 'ts-ignore', 'ts-nocheck', 'vite-ignore'],
 		}],
@@ -133,7 +133,7 @@ export default defineConfigurationPart({
 		// If tags are present, this rule will prevent empty lines in the block description.
 		// If no tags are present, this rule will prevent extra empty lines in the block description.
 		// (autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc#no-blank-block-descriptions
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-blank-block-descriptions.md
 		'jsdoc/no-blank-block-descriptions': ['warn'],
 
 		// Reports and optionally removes blocks with whitespace only (autofixable)
@@ -142,28 +142,28 @@ export default defineConfigurationPart({
 
 		// Reports defaults being used on the relevant portion
 		// of `@param` or `@default` (autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc#no-defaults
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-defaults.md
 		'jsdoc/no-defaults': 'warn',
 
 		// Report if certain always expected comment structures are missing
-		// https://github.com/gajus/eslint-plugin-jsdoc#no-missing-syntax
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-missing-syntax.md
 		'jsdoc/no-missing-syntax': 'off',
 
 		// Prevents use of multiple asterisks at the beginning of lines (autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc#no-multi-asterisks
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-multi-asterisks.md
 		'jsdoc/no-multi-asterisks': 'off',
 
 		// Reports when certain comment structures are present
-		// https://github.com/gajus/eslint-plugin-jsdoc#no-restricted-syntax
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-restricted-syntax.md
 		'jsdoc/no-restricted-syntax': 'off',
 
 		// This rule reports types being used on `@param` or `@returns`
 		// (autofixable but it isn't clear)
-		// https://github.com/gajus/eslint-plugin-jsdoc#no-types
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-types.md
 		'no-autofix/jsdoc/no-types': 'off',
 
 		// Checks that types in jsdoc comments are defined
-		// https://github.com/gajus/eslint-plugin-jsdoc#no-undefined-types
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-undefined-types.md
 		'jsdoc/no-undefined-types': 'error',
 
 		// Prefer `@import` tags to inline `import()` statements (autofixable)
@@ -171,7 +171,7 @@ export default defineConfigurationPart({
 		'jsdoc/prefer-import-tag': 'off',
 
 		// Reports use of `any` or `*` type
-		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/prefer-import-tag.md
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/reject-any-type.md
 		'jsdoc/reject-any-type': 'off',
 
 		// Reports use of `Function` type
@@ -179,35 +179,35 @@ export default defineConfigurationPart({
 		'jsdoc/reject-function-type': 'off',
 
 		// Requires that each JSDoc line starts with an `*` (autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-asterisk-prefix
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-asterisk-prefix.md
 		'jsdoc/require-asterisk-prefix': ['warn', 'always'],
 
 		// Requires that block description, explicit `@description`,
 		// and `@param`/`@returns` tag descriptions are written
 		// in complete sentences (autofixable but works incorrect)
 		// Related issue: https://github.com/gajus/eslint-plugin-jsdoc/issues/779
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-description-complete-sentence
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-description-complete-sentence.md
 		'no-autofix/jsdoc/require-description-complete-sentence': 'off',
 
 		// Requires that all functions have a description
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-description
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-description.md
 		'jsdoc/require-description': 'error',
 
 		// Requires that all functions have examples (strangely autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-example
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-example.md
 		'no-autofix/jsdoc/require-example': 'off',
 
 		// Require `@file`, `@fileoverview,` or `@overview`
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-file-overview
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-file-overview.md
 		'jsdoc/require-file-overview': 'off',
 
 		// Requires (or disallows) a hyphen before the `@param` description
 		// (autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-hyphen-before-param-description
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-hyphen-before-param-description.md
 		'jsdoc/require-hyphen-before-param-description': ['warn', 'never'],
 
 		// Checks for presence of jsdoc comments
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-jsdoc
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-jsdoc.md
 		'jsdoc/require-jsdoc': 'off',
 
 		// Requires a description for `@next` tags
@@ -219,19 +219,19 @@ export default defineConfigurationPart({
 		'jsdoc/require-next-type': 'off',
 
 		// Requires that each `@param` tag has a description value
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-param-description
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param-description.md
 		'jsdoc/require-param-description': 'off',
 
 		// Requires that all function parameters have names
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-param-name
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param-name.md
 		'jsdoc/require-param-name': 'error',
 
 		// Requires that each `@param` tag has a `type` value
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-param-type
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param-type.md
 		'jsdoc/require-param-type': 'error',
 
 		// Requires that all function parameters are documented (autofixable?)
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-param
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param.md
 		// Note: document all or nothing!
 		'jsdoc/require-param': ['error', {
 			enableFixer: true,
@@ -239,19 +239,19 @@ export default defineConfigurationPart({
 
 		// Requires that all `@typedef` and `@namespace` tags have `@property`
 		// when their type is a plain object, Object, or PlainObject
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-property
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-property.md
 		'jsdoc/require-property': 'off',
 
 		// Requires that each `@property` tag has a `description` value
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-property-description
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-property-description.md
 		'jsdoc/require-property-description': 'off',
 
 		// Requires that all function `@property` tags have names
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-property-name
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-property-name.md
 		'jsdoc/require-property-name': 'error',
 
 		// Requires that each `@property` tag has a `type` value
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-property-type
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-property-type.md
 		'jsdoc/require-property-type': 'error',
 
 		// Requires that each `@property` tag has a `type` value
@@ -261,15 +261,15 @@ export default defineConfigurationPart({
 		// Requires a return statement (or non-undefined Promise resolve value)
 		// in function bodies if a @returns tag (without a void or undefined type)
 		// is specified in the function's jsdoc comment.
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-returns-check
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns-check.md
 		'jsdoc/require-returns-check': 'error',
 
 		// Requires that the `@returns` tag has a `description` value
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-returns-description
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns-description.md
 		'jsdoc/require-returns-description': 'off',
 
 		// Requires that `@returns` tag has `type` value
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-returns-type
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns-type.md
 		'jsdoc/require-returns-type': 'error',
 
 		// Requires tags be present, optionally for specific contexts
@@ -277,7 +277,7 @@ export default defineConfigurationPart({
 		'jsdoc/require-tags': 'off',
 
 		// Requires `@template` tags be present when type parameters are used.
-		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-template.md#readme
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-template.md
 		// Note: Do not think this is required in a TS environment
 		'jsdoc/require-template': 'off',
 
@@ -286,15 +286,15 @@ export default defineConfigurationPart({
 		'jsdoc/require-template-description': 'off',
 
 		// Requires that returns are documented
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-returns
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns.md
 		'jsdoc/require-returns': 'error',
 
 		// Requires that throw statements are documented
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-throws
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-throws.md
 		'jsdoc/require-throws': 'error',
 
 		// Requires a description for `@throws` tags
-		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-throws.md
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-throws-description.md
 		'jsdoc/require-throws-description': 'error',
 
 		// Requires a type for `@throws` tags
@@ -302,12 +302,12 @@ export default defineConfigurationPart({
 		'jsdoc/require-throws-type': 'off',
 
 		// Requires that yields are documented
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-yields
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-yields.md
 		'jsdoc/require-yields': 'error',
 
 		// Ensures that if a `@yields` is present that a yield
 		// (or yield with a value) is present in the function body
-		// https://github.com/gajus/eslint-plugin-jsdoc#require-yields-check
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-yields-check.md
 		'jsdoc/require-yields-check': 'error',
 
 		// Requires a description for `@yields` tags
@@ -319,7 +319,7 @@ export default defineConfigurationPart({
 		'jsdoc/require-yields-type': 'error',
 
 		// Sorts tags by a specified sequence according to tag name (autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc#sort-tags
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/sort-tags.md
 		// Note: let it be here with default order for a while
 		'jsdoc/sort-tags': ['warn', {
 			tagSequence: [
@@ -512,7 +512,7 @@ export default defineConfigurationPart({
 		}],
 
 		// Enforces lines (or no lines) between tags (autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc#tag-lines
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/tag-lines.md
 		// Note: `any` because of previous `sort-tags` rule, which handles this much more granular
 		// Related: https://github.com/gajus/eslint-plugin-jsdoc/issues/782
 		'jsdoc/tag-lines': ['warn', 'any', {
@@ -521,7 +521,7 @@ export default defineConfigurationPart({
 		}],
 
 		// Auto-escape certain characters that are input within block and tag descriptions (autofixable)
-		// https://github.com/gajus/eslint-plugin-jsdoc/blob/master/README.md#text-escaping
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/text-escaping.md
 		// Note: HTML tags should mostly be enclosed in backticks, and HTML tags display fine inside them.
 		'jsdoc/text-escaping': ['off', {
 			escapeHTML: true,
@@ -586,7 +586,7 @@ export default defineConfigurationPart({
 
 		// Requires all types to be valid JSDoc, Closure, or TypeScript compiler
 		// types without syntax errors
-		// https://github.com/gajus/eslint-plugin-jsdoc#valid-types
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/valid-types.md
 		'jsdoc/valid-types': 'error',
 	},
 });
