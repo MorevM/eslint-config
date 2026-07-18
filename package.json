@@ -118,7 +118,7 @@
 		"jiti": "^2.7.0",
 		"lefthook": "^2.1.9",
 		"release-it": "^20.2.1",
-		"tsdown": "^0.22.3",
+		"tsdown": "^0.22.9",
 		"tsx": "^4.23.0",
 		"typescript": "^6.0.3",
 		"vite-tsconfig-paths": "^6.1.1",
