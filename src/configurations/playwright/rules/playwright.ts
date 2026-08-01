@@ -120,6 +120,10 @@ export default defineConfigurationPart({
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/no-standalone-expect.md
 		'playwright/no-standalone-expect': 'error',
 
+		// Disallow assertions on a Locator that can never fail
+		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/no-unnecessary-assertions.md
+		'playwright/no-unnecessary-assertions': 'error',
+
 		// Prevent unsafe variable references in `page.evaluate()` (autofixable)
 		// https://github.com/mskelton/eslint-plugin-playwright/blob/main/docs/rules/no-unsafe-references.md
 		'playwright/no-unsafe-references': 'error',
