@@ -272,10 +272,6 @@ export default defineConfigurationPart({
 			allowInGenericTypeArguments: true,
 		}],
 
-		// Disallow function declarations that contain unsafe references inside loop statements
-		// https://typescript-eslint.io/rules/no-loop-func
-		...extensionFromBase('no-loop-func'),
-
 		// Disallow magic numbers
 		// https://typescript-eslint.io/rules/no-magic-numbers
 		...extensionFromBase('no-magic-numbers', {
