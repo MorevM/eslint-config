@@ -173,7 +173,10 @@ export default defineConfigurationPart({
 		// Suggest using expect assertions instead of callbacks
 		// https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-expect-assertions.md
 		'vitest/prefer-expect-assertions': ['off', {
+			disallowHasAssertions: false,
 			onlyFunctionsWithAsyncKeyword: true,
+			onlyFunctionsWithExpectInCallback: false,
+			onlyFunctionsWithExpectInLoop: false,
 		}],
 
 		// Prefer `await expect(...).resolves` over `expect(await ...)` syntax (autofixable)
