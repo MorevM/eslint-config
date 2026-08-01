@@ -272,7 +272,9 @@ export default defineConfigurationPart({
 
 		// Require that `resolve` and `reject` modifiers are present (and only) for promise-like types (requires type information)
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/valid-expect-with-promise.md
-		'jest/valid-expect-with-promise': 'error',
+		'jest/valid-expect-with-promise': ['error', {
+			checkThenables: false,
+		}],
 
 		// Enable all `padding-around-*` rules of `jest`, all are autofixable
 		// https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/padding-around-all.md
