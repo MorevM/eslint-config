@@ -5,6 +5,7 @@ import { universalRules } from '~configurations/universal-rules';
 
 import markdown from './rules/markdown';
 import markdownPreferences from './rules/markdown-preferences';
+import unicorn from './rules/unicorn';
 
 import type { MarkdownConfigurationOptions } from '#types';
 
@@ -29,6 +30,7 @@ export default function configurationMarkdown(options: Partial<MarkdownConfigura
 			...mergeParts(
 				markdown,
 				markdownPreferences,
+				unicorn,
 			),
 		}),
 		defineConfigurationPart({
