@@ -730,6 +730,11 @@ export default defineConfigurationPart({
 		// Reasons: Triggers even with short `condition && array.push()`
 		'unicorn/no-return-array-push': 'off',
 
+		// Disallow shorthand properties that override related longhand properties
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-shorthand-property-overrides.md
+		// Reason: CSS declarations are validated by Stylelint.
+		'unicorn/no-shorthand-property-overrides': 'off',
+
 		// Disallow passing single-element arrays to Promise methods (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-single-promise-in-promise-methods.md
 		'no-autofix/unicorn/no-single-promise-in-promise-methods': 'off',
