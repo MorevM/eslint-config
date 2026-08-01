@@ -12,6 +12,7 @@ export default defineConfigurationPart({
 
 		// Enforce sorted array values on arrays matching configured conditions (autofixable)
 		// https://perfectionist.dev/rules/sort-arrays
+		// Note: Array ordering and matching conditions are project-specific.
 		'perfectionist/sort-arrays': 'off',
 
 		// Enforce sorted class members (autofixable)
