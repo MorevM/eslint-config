@@ -642,6 +642,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-misrefactored-assignment.md
 		'unicorn/no-misrefactored-assignment': 'warn',
 
+		// Disallow calling Promise executor resolver functions more than once on the same execution path
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-multiple-promise-resolver-calls.md
+		'unicorn/no-multiple-promise-resolver-calls': 'error',
+
 		// Disallow named usage of default import and export (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-named-default.md
 		'unicorn/no-named-default': 'warn',
