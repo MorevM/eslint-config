@@ -8,6 +8,7 @@ import accessibility from './rules/accessibility';
 import bestPractice from './rules/best-practice';
 import seo from './rules/seo';
 import style from './rules/style';
+import unicorn from './rules/unicorn';
 
 import type { HtmlConfigurationOptions } from '#types';
 
@@ -40,6 +41,7 @@ export default function configurationHtml(options: Partial<HtmlConfigurationOpti
 				bestPractice,
 				seo,
 				style,
+				unicorn,
 			),
 		}),
 		defineConfigurationPart({
