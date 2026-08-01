@@ -337,10 +337,6 @@ export default defineConfigurationPart({
 		// https://typescript-eslint.io/rules/no-require-imports
 		'@typescript-eslint/no-require-imports': 'error',
 
-		// Disallow specified modules when loaded by `import`
-		// https://typescript-eslint.io/rules/no-restricted-imports
-		'@typescript-eslint/no-restricted-imports': 'off',
-
 		// Disallow certain types
 		// https://typescript-eslint.io/rules/no-restricted-types/
 		// Note: Should be configured for each project
