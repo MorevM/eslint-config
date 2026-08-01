@@ -28,7 +28,9 @@ checks. Use `.agents/skills/commit-messages/SKILL.md` for general commit-message
    installation, inspection, validation, and the dependency-only commit.
 1. If that package requires follow-up repository changes, such as new rule coverage, renamed options, config edits, tests,
    or documentation, make those focused follow-up commits immediately after the dependency-only commit and before moving
-   to the next package.
+   to the next package. Keep the follow-up series adjacent to its dependency commit and order it by upstream release
+   chronology, handling changes from earlier releases before changes from later releases. For example, if an ESLint update
+   introduces new core rules, add or configure those rules in the next commits before updating another dependency.
 
 Do not update multiple direct packages in one install/update command, and do not batch dependency commits at the end of a
 larger update run. Each direct package update must leave the repository committed before the next direct package is
