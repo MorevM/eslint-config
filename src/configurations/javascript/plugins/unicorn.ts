@@ -833,6 +833,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-splice.md
 		'unicorn/no-unnecessary-splice': 'warn',
 
+		// Disallow `String#trim()` before `String#startsWith()` or `String#endsWith()` (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unnecessary-string-trim.md
+		'unicorn/no-unnecessary-string-trim': 'warn',
+
 		// Disallow unreadable array destructuring (partly autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unreadable-array-destructuring.md
 		// Note: developer knows better
