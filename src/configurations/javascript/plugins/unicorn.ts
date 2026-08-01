@@ -952,6 +952,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-promise-resolve-reject.md
 		'unicorn/no-useless-promise-resolve-reject': 'warn',
 
+		// Disallow redundant re-exports
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-re-export.md
+		'unicorn/no-useless-re-export': 'warn',
+
 		// Disallow simple recursive function calls that can be replaced with a loop.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-useless-recursion.md
 		'unicorn/no-useless-recursion': 'warn',
