@@ -103,6 +103,13 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-event-target.md
 		'unicorn/prefer-event-target': 'error',
 
+		// Prefer explicit viewport units
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-explicit-viewport-units.md
+		// Reason: CSS declarations are validated by Stylelint.
+		'unicorn/prefer-explicit-viewport-units': ['off', {
+			unit: 'dvh',
+		}],
+
 		// Prefer modern DOM APIs (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-modern-dom-apis.md
 		'unicorn/prefer-modern-dom-apis': 'warn',
