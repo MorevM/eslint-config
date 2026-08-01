@@ -45,6 +45,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-selector-as-dom-name.md
 		'unicorn/no-selector-as-dom-name': 'error',
 
+		// Disallow `all` as a transition property
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-transition-all.md
+		// Reason: CSS declarations are validated by Stylelint.
+		'unicorn/no-transition-all': 'off',
+
 		// Disallow unsafe DOM HTML APIs.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unsafe-dom-html.md
 		// Reason: raw HTML sinks are usually deliberate.
