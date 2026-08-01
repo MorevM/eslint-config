@@ -171,6 +171,7 @@ export default defineConfigurationPart({
 		// Enforce using link reference definitions instead of inline links (autofixable)
 		// https://ota-meshi.github.io/eslint-plugin-markdown-preferences/rules/prefer-link-reference-definitions.html
 		'markdown-preferences/prefer-link-reference-definitions': ['warn', {
+			ignoreUrlPatterns: [],
 			minLinks: 2,
 		}],
 
