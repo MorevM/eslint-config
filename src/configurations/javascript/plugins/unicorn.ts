@@ -1507,6 +1507,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-ternary.md
 		'unicorn/prefer-ternary': ['error', 'only-single-line'],
 
+		// Prefer `.then().catch()` over `.then(…, …)` for error handling
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-then-catch.md
+		'unicorn/prefer-then-catch': 'error',
+
 		// Prefer top-level await over top-level promises and async function calls
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-top-level-await.md
 		'unicorn/prefer-top-level-await': 'error',
