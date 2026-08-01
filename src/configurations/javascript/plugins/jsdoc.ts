@@ -123,6 +123,14 @@ export default defineConfigurationPart({
 			noSingleLineBlocks: true,
 		}],
 
+		// Normalizes labeled links in `@see` tags to a canonical `{@link}` form (autofixable)
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/normalize-see-links.md
+		'jsdoc/normalize-see-links': ['warn', {
+			canonicalForm: 'pipe',
+			enableFixer: true,
+			wrapBareUrls: false,
+		}],
+
 		// Checks for multi-line-style comments which fail
 		// to meet the criteria of a jsdoc block (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-bad-blocks.md
