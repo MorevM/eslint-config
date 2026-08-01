@@ -179,6 +179,7 @@ export default defineConfigurationPart({
 
 		// Enforce sorted intersection types in TypeScript (autofixable)
 		// https://perfectionist.dev/rules/sort-intersection-types
+		// Note: Intersection member ordering is project-specific.
 		'perfectionist/sort-intersection-types': 'off',
 
 		// Enforce sorted JSX props within JSX elements (autofixable)
