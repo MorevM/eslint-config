@@ -55,10 +55,6 @@ export default defineConfigurationPart({
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-unused-define-vars-in-style/
 		'astro/no-unused-define-vars-in-style': 'error',
 
-		// Disallow warnings when compiling
-		// https://ota-meshi.github.io/eslint-plugin-astro/rules/valid-compile/
-		'astro/valid-compile': 'error',
-
 		// Disallow use of `set:html` to prevent XSS attack
 		// https://ota-meshi.github.io/eslint-plugin-astro/rules/no-set-html-directive/
 		'astro/no-set-html-directive': 'off',
