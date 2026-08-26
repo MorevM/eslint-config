@@ -1,5 +1,5 @@
-const { readFileSync } = require('node:fs');
-const { join } = require('node:path');
+const { readFileSync } = process.getBuiltinModule('node:fs');
+const { join } = process.getBuiltinModule('node:path');
 
 const extractLatestChangelogEntry = () => {
 	const contents = readFileSync(join(__dirname, '..', 'CHANGELOG.md'), { encoding: 'utf8' });
