@@ -35,7 +35,11 @@ export default defineConfigurationPart({
 		// Enforce consistent naming for boolean names (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-boolean-name.md
 		'no-autofix/unicorn/consistent-boolean-name': ['warn', {
-			checkProperties: false,
+			checkVariables: 'always',
+			checkArguments: 'always',
+			checkFunctions: 'always',
+			checkMethods: 'never',
+			checkFields: 'never',
 			prefixes: {
 				is: true,
 				are: true,
@@ -67,6 +71,7 @@ export default defineConfigurationPart({
 				'condition',
 				'able$', // configurable, fixable and so on
 			],
+			wrappers: {},
 		}],
 
 		// Enforce consistent class member order
