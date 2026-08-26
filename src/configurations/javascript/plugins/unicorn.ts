@@ -28,6 +28,11 @@ export default defineConfigurationPart({
 			replacements: {},
 		}],
 
+		// Enforce a consistent return style for multiline arrow function bodies (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-arrow-return-style.md
+		// Reason: arrow body style is already covered by `arrow-body-style` and `implicit-arrow-linebreak`.
+		'unicorn/consistent-arrow-return-style': 'off',
+
 		// Enforce consistent assertion style with `node:assert` (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-assert.md
 		'unicorn/consistent-assert': 'warn',
