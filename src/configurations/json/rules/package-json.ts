@@ -372,7 +372,7 @@ export default defineConfigurationPart({
 
 		// Restricts the range of dependencies to allow or disallow specific types of ranges
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/restrict-dependency-ranges.md
-		'package-json/restrict-dependency-ranges': 'off',
+		'package-json/restrict-dependency-ranges': ['off', []],
 
 		// Disallows unnecessary properties in private packages (autofixable)
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/restrict-private-properties.md
