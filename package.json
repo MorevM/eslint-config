@@ -4,7 +4,7 @@
 	"type": "module",
 	"version": "42.0.2",
 	"engines": {
-		"node": ">=22.22.3"
+		"node": "^22.22.3 || >=24.15.0"
 	},
 	"license": "MIT",
 	"publishConfig": {
