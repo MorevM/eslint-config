@@ -896,6 +896,10 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unsafe-property-key.md
 		'unicorn/no-unsafe-property-key': 'error',
 
+		// Disallow interpolation into SQL strings passed to Node.js `node:sqlite` APIs
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unsafe-sqlite-interpolation.md
+		'unicorn/no-unsafe-sqlite-interpolation': 'error',
+
 		// Disallow non-literal replacement values in `String#replace()` and `String#replaceAll()`.
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-unsafe-string-replacement.md
 		'unicorn/no-unsafe-string-replacement': 'error',
