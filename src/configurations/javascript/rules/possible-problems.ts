@@ -193,7 +193,9 @@ export default defineConfigurationPart({
 
 		// Disallow unmodified conditions of loops
 		// https://eslint.org/docs/rules/no-unmodified-loop-condition
-		'no-unmodified-loop-condition': 'error',
+		'no-unmodified-loop-condition': ['error', {
+			checkConditionalExpressions: false,
+		}],
 
 		// Disallow unreachable code after `return`, `throw`, `continue` and `break` statements
 		// https://eslint.org/docs/rules/no-unreachable
