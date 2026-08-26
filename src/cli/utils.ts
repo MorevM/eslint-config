@@ -59,6 +59,7 @@ export const loadModule = async (name: string) => {
 	}
 };
 
+// eslint-disable-next-line unicorn/consistent-boolean-name -- This helper performs a prompt instead of acting as a predicate.
 export const confirmPrompt = async (options: Parameters<typeof confirm>[0]): Promise<boolean> => {
 	const answer = await confirm(options);
 
