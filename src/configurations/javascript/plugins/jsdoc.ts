@@ -37,7 +37,18 @@ export default defineConfigurationPart({
 		// in the function declaration (autofixable but may be confusing)
 		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-param-names.md
 		'no-autofix/jsdoc/check-param-names': ['error', {
+			allowExtraTrailingParamDocs: false,
+			badParamNames: false,
+			badParamOrder: true,
+			checkDestructured: true,
+			checkRestProperty: false,
+			checkTypesPattern: '/^(?:[oO]bject|[aA]rray|PlainObject|Generic(?:Object|Array))$/v',
+			disableExtraPropertyReporting: false,
+			disableMissingParamChecks: false,
+			duplicateParams: true,
 			enableFixer: true,
+			extraParams: false,
+			useDefaultObjectProperties: false,
 		}],
 
 		// Ensures that property names in JSDoc are not duplicated on the same block
