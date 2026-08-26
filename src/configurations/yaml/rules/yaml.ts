@@ -60,6 +60,10 @@ export default defineConfigurationPart({
 			'ignores': [],
 		}],
 
+		// Disallow boolean mapping keys
+		// https://ota-meshi.github.io/eslint-plugin-yml/rules/no-boolean-key.html
+		'yml/no-boolean-key': 'warn',
+
 		// Disallow empty document
 		// https://ota-meshi.github.io/eslint-plugin-yml/rules/no-empty-document.html
 		'yml/no-empty-document': 'warn',
