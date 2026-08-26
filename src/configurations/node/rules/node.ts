@@ -171,6 +171,10 @@ export default defineConfigurationPart({
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-global/url-search-params.md
 		'n/prefer-global/url-search-params': ['warn', 'always'],
 
+		// Enforce using `node:assert/strict` instead of `node:assert`
+		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-import/assert-strict.md
+		'n/prefer-import/assert-strict': 'warn',
+
 		// Enforce using the `node:` protocol when importing `Node.js` builtin modules (autofixable)
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-node-protocol.md
 		'n/prefer-node-protocol': 'warn',
