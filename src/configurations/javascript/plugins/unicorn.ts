@@ -151,6 +151,7 @@ export default defineConfigurationPart({
 		// Reason: function style is already covered by `func-style` and `prefer-arrow-callback`
 		'unicorn/consistent-function-style': ['off', {
 			default: 'ignore',
+			defaultExport: 'ignore',
 			namedFunctions: 'ignore',
 			namedExports: 'ignore',
 			callbacks: 'ignore',
