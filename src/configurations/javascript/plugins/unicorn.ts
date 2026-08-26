@@ -252,6 +252,11 @@ export default defineConfigurationPart({
 			overrideGlobals: {},
 		}],
 
+		// Enforce a consistent style for optional loop sources (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/iteration-fallback-style.md
+		// Reason: guard clauses and fallback expressions are both readable depending on the surrounding control flow.
+		'unicorn/iteration-fallback-style': ['off', 'guard'],
+
 		// Require or disallow logical assignment operator shorthand (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/logical-assignment-operators.md
 		// Reason: core `logical-assignment-operators` is enough.
