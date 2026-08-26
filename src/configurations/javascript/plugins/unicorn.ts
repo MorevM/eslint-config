@@ -1198,7 +1198,9 @@ export default defineConfigurationPart({
 		// Prefer HTTPS over HTTP (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-https.md
 		// Reason: protocol is often outside of a shared config consumer's control
-		'unicorn/prefer-https': 'off',
+		'unicorn/prefer-https': ['off', {
+			ignore: [],
+		}],
 
 		// Prefer identifiers over string literals in import and export specifiers (autofixable)
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/prefer-identifier-import-export-specifiers.md
