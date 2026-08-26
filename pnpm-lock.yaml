@@ -84,8 +84,8 @@ importers:
         specifier: ^2.3.3
         version: 2.3.3(eslint@10.9.1(jiti@2.7.0)(supports-color@7.2.0))
       eslint-plugin-package-json:
-        specifier: ^1.6.2
-        version: 1.6.2(eslint@10.9.1(jiti@2.7.0)(supports-color@7.2.0))
+        specifier: ^1.7.1
+        version: 1.7.1(eslint@10.9.1(jiti@2.7.0)(supports-color@7.2.0))
       eslint-plugin-perfectionist:
         specifier: ^5.10.1
         version: 5.10.1(eslint@10.9.1(jiti@2.7.0)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@6.0.3)
@@ -2604,8 +2604,8 @@ packages:
     peerDependencies:
       eslint: '>=5'
 
-  eslint-plugin-package-json@1.6.2:
-    resolution: {integrity: sha512-Zp0CdqXKQqB9luUYa/TOwnGq3VlLotx1UDflZOzEt3D5A5kxu3Lj1VFJ087jKudEhc+K3kF20XV/aKZAlDuslw==}
+  eslint-plugin-package-json@1.7.1:
+    resolution: {integrity: sha512-nlIlX7thB20+uExdYL0QGAmyjHXI+AgIAWpwTs45be4XkJFaOGjSrShxw42b51aUHWGtNrA+eLSkeA1RYm+ugA==}
     engines: {node: ^22.22.2 || >=24.15.0}
     peerDependencies:
       '@eslint/json': '>=1.0.0'
@@ -3863,8 +3863,8 @@ packages:
     peerDependencies:
       quickjs-wasi: ^2.2.0
 
-  package-json-validator@1.5.2:
-    resolution: {integrity: sha512-eHXskJQU4aCiSfjhRfTVtCJ+22/EzLHgYgZv5Gj3teb3NJrnTMzq5BnKAWKvR+PLpknCO1PmOCImDuO+dX4Vaw==}
+  package-json-validator@1.6.1:
+    resolution: {integrity: sha512-eyl3DGFoxdUO0RA1Ym+H11S6P2XWIlA6Sy2PbvslbwFJ14kkz+FgX1Br3MaebrvLY3Q10Iih3PsL3741vsevrA==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0}
 
   package-manager-detector@1.8.0:
@@ -7132,7 +7132,7 @@ snapshots:
     dependencies:
       eslint: 10.9.1(jiti@2.7.0)(supports-color@7.2.0)
 
-  eslint-plugin-package-json@1.6.2(eslint@10.9.1(jiti@2.7.0)(supports-color@7.2.0)):
+  eslint-plugin-package-json@1.7.1(eslint@10.9.1(jiti@2.7.0)(supports-color@7.2.0)):
     dependencies:
       '@altano/repository-tools': 2.0.3
       '@types/estree': 1.0.9
@@ -7143,7 +7143,7 @@ snapshots:
       eslint-fix-utils: 0.4.3(@types/estree@1.0.9)(eslint@10.9.1(jiti@2.7.0)(supports-color@7.2.0))
       eslint-json-compat-utils: 0.2.3(eslint@10.9.1(jiti@2.7.0)(supports-color@7.2.0))(jsonc-eslint-parser@3.3.0)
       jsonc-eslint-parser: 3.3.0
-      package-json-validator: 1.5.2
+      package-json-validator: 1.6.1
       semver: 7.8.5
       sort-object-keys: 2.1.0
       sort-package-json: 4.0.0
@@ -8595,7 +8595,7 @@ snapshots:
       netmask: 2.1.1
       quickjs-wasi: 2.2.0
 
-  package-json-validator@1.5.2:
+  package-json-validator@1.6.1:
     dependencies:
       npm-package-arg: 13.0.2
       semver: 7.8.5
