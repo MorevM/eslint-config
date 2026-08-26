@@ -96,7 +96,7 @@
 		"eslint-plugin-sonarjs": "^1.0.4",
 		"eslint-plugin-unicorn": "^72.0.0",
 		"eslint-plugin-vue": "^10.10.0",
-		"eslint-plugin-yml": "^3.6.0",
+		"eslint-plugin-yml": "^3.8.1",
 		"eslint-rule-composer": "^0.3.0",
 		"globals": "^17.8.0",
 		"jsonc-eslint-parser": "^3.3.0",
