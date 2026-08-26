@@ -1616,6 +1616,13 @@ export default defineConfigurationPart({
 		// Reason: Some reports are bugs, but explicit truthy or falsy values only rely on coercion.
 		'unicorn/require-proxy-trap-boolean-return': 'warn',
 
+		// Enforce a consistent style for single-line block comments (autofixable)
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/single-line-block-comment-style.md
+		// Reason: single-line block comment layout is intentional and context-dependent.
+		'unicorn/single-line-block-comment-style': ['off', 'multiline', {
+			ignore: [],
+		}],
+
 		// Enforce better string content
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/string-content.md
 		'unicorn/string-content': 'off',
