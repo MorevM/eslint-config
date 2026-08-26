@@ -497,6 +497,11 @@ export default defineConfigurationPart({
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-in-promise-methods.md
 		'unicorn/no-await-in-promise-methods': 'warn',
 
+		// Disallow barrel files
+		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-barrel-files.md
+		// Reason: barrel files are a public API and module architecture choice.
+		'unicorn/no-barrel-files': 'off',
+
 		// Disallow boolean-returning sort comparators
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-boolean-sort-comparator.md
 		'unicorn/no-boolean-sort-comparator': 'error',
