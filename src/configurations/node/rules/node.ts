@@ -179,6 +179,11 @@ export default defineConfigurationPart({
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-node-protocol.md
 		'n/prefer-node-protocol': 'warn',
 
+		// Enforce using `process.getBuiltinModule()` to load Node.js built-in modules
+		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-process-get-builtin-module.md
+		// Note: The Node.js version is inferred from the consumer's `package.json#engines`.
+		'n/prefer-process-get-builtin-module': 'warn',
+
 		// Enforce `require("dns").promises`
 		// https://github.com/eslint-community/eslint-plugin-n/blob/master/docs/rules/prefer-promises/dns.md
 		'n/prefer-promises/dns': 'error',
