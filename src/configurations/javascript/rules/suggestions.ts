@@ -97,7 +97,8 @@ export default defineConfigurationPart({
 
 		// Enforce the consistent use of either `function` declarations or expressions
 		// https://eslint.org/docs/rules/func-style
-		'func-style': ['error', 'expression'],
+		// Reason: function syntaxes have different semantics and should not be enforced universally.
+		'func-style': 'off',
 
 		// Require grouped accessor pairs in object literals and classes
 		// https://eslint.org/docs/rules/grouped-accessor-pairs

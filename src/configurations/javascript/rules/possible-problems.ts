@@ -234,7 +234,7 @@ export default defineConfigurationPart({
 		// Disallow early use
 		// https://eslint.org/docs/rules/no-use-before-define
 		'no-use-before-define': ['error', {
-			functions: true,
+			functions: false,
 			classes: true,
 			variables: true,
 			allowNamedExports: true,

@@ -153,7 +153,7 @@ export default defineConfigurationPart({
 
 		// Enforce function syntax by role
 		// https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/consistent-function-style.md
-		// Reason: function style is already covered by `func-style` and `prefer-arrow-callback`
+		// Reason: role alone does not make function syntaxes semantically interchangeable.
 		'unicorn/consistent-function-style': ['off', {
 			default: 'ignore',
 			defaultExport: 'ignore',
