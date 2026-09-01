@@ -138,6 +138,13 @@ export default defineConfigurationPart({
 		// Note: Already configured in `jsonc/sort-keys` above
 		'package-json/order-properties': 'off',
 
+		// Require dependencies declared with the workspace protocol to use a rolling workspace spec
+		// https://eslint-plugin-package-json.dev/rules/prefer-rolling-workspace-spec
+		'package-json/prefer-rolling-workspace-spec': ['warn', {
+			ignoreDependencies: [],
+			ignorePatterns: [],
+		}],
+
 		// Enforce either object or shorthand declaration for repository (autofixable)
 		// https://github.com/JoshuaKGoldberg/eslint-plugin-package-json/blob/main/docs/rules/repository-shorthand.md
 		'package-json/repository-shorthand': ['warn', {
