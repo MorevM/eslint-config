@@ -1,5 +1,150 @@
 
 
+## [43.0.0](https://github.com/MorevM/eslint-config/compare/v42.0.2...v43.0.0) (2026-09-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* **javascript:** With new rule `unicorn/no-unsafe-sqlite-interpolation`, interpolated SQL passed to `node:sqlite` APIs now produces an error. Use bound parameters instead.
+* Node.js 23 and Node.js 24 versions before 24.15.0 are no longer supported.
+* **html:** With new rule `unicorn/no-missing-local-resource`, static HTML references to missing local files now produce an error. Correct the relative path, add the resource, or use a supported external or root-relative URL.
+* **javascript:** With new rule `unicorn/prefer-then-catch`, two-callback `.then(onFulfilled, onRejected)` error handling now produces an error. Chain `.catch(onRejected)` after `.then(onFulfilled)` so fulfillment-handler errors are also handled, or disable the rule inline when the narrower boundary is intentional.
+* **javascript:** With new rule `unicorn/no-multiple-promise-resolver-calls`, invoking a Promise executor resolver more than once on the same execution path now produces an error. Resolve or reject each path only once.
+* **playwright:** With new rule `playwright/no-unnecessary-assertions`, Locator assertions that can never fail now produce an error. Replace them with assertions that validate Locator state or remove the redundant assertion.
+
+### Features
+
+* **browser:** Take account of `unicorn/no-transition-all` rule ([a51527f](https://github.com/MorevM/eslint-config/commit/a51527f9c4f4a9aea8cb89f73c706a5c40e31188))
+* **browser:** Take account of `unicorn/prefer-explicit-viewport-units` rule ([ec42a49](https://github.com/MorevM/eslint-config/commit/ec42a491c465382cae22969705161a7548aa8689))
+* **html:** Add `unicorn/no-missing-local-resource` rule ([7734ad9](https://github.com/MorevM/eslint-config/commit/7734ad93fc964a94987843a3d48634725b5431b7))
+* **javascript:** Add `jsdoc/normalize-see-links` rule ([9d07ec2](https://github.com/MorevM/eslint-config/commit/9d07ec28583661743f65b5dda9354060389bd326))
+* **javascript:** Add `unicorn/no-multiple-promise-resolver-calls` rule ([e53f79e](https://github.com/MorevM/eslint-config/commit/e53f79eeae27101935c9df5c86bd3e846bf32cef))
+* **javascript:** Add `unicorn/no-unnecessary-string-trim` rule ([133d596](https://github.com/MorevM/eslint-config/commit/133d59661f3f4b80e737bce2d61c78c703bda828))
+* **javascript:** Add `unicorn/no-unsafe-sqlite-interpolation` rule ([b431c1c](https://github.com/MorevM/eslint-config/commit/b431c1cc921db82a704043ccab8b9cd5177763ee))
+* **javascript:** Add `unicorn/no-useless-re-export` rule ([5ab3284](https://github.com/MorevM/eslint-config/commit/5ab3284a0c9a3ea322d51c27c70da7692e7b9fd4))
+* **javascript:** Add `unicorn/prefer-then-catch` rule ([4e85699](https://github.com/MorevM/eslint-config/commit/4e856999a0d405885e2a831f4795bd1b117f1954))
+* **javascript:** Take account of `jsdoc/no-unnecessary-type-assertion` rule ([d645417](https://github.com/MorevM/eslint-config/commit/d645417ea0d534e18d73d50a1f02000403471733))
+* **javascript:** Take account of `unicorn/consistent-arrow-return-style` rule ([f3fefaf](https://github.com/MorevM/eslint-config/commit/f3fefaf6203f0ddfb85c3575895ca839152cd5fd))
+* **javascript:** Take account of `unicorn/iteration-fallback-style` rule ([0d8884d](https://github.com/MorevM/eslint-config/commit/0d8884dff854de08c54832abc8d3f393f98c9981))
+* **javascript:** Take account of `unicorn/no-barrel-files` rule ([c2eeddc](https://github.com/MorevM/eslint-config/commit/c2eeddc0a960677cd02c4646fd8dd4333f26398c))
+* **javascript:** Take account of `unicorn/no-shorthand-property-overrides` rule ([6f20cdd](https://github.com/MorevM/eslint-config/commit/6f20cdd6bafe2e42f661827ee1377d0f80224c23))
+* **javascript:** Take account of `unicorn/single-line-block-comment-style` rule ([cfbf75c](https://github.com/MorevM/eslint-config/commit/cfbf75c3414c0efa1c24638db079cca9006b820d))
+* **json:** Add `package-json/prefer-rolling-workspace-spec` rule ([93712f2](https://github.com/MorevM/eslint-config/commit/93712f28cddbb5303aa9da6d09e5294da22f5db9))
+* **markdown:** Take account of `unicorn/no-missing-local-resource` rule ([dc502ba](https://github.com/MorevM/eslint-config/commit/dc502ba15808902b6eb2f4d6274900c6f914c8d8))
+* **markdown:** Take account of `unicorn/require-frontmatter-fields` rule ([cda223b](https://github.com/MorevM/eslint-config/commit/cda223bb861d0a212609f0ed9874af353c3344f9))
+* **node:** Add `n/prefer-import/assert-strict` rule ([ce2aa2d](https://github.com/MorevM/eslint-config/commit/ce2aa2d8be46407fd460d13dac5b0456252c93fc))
+* **node:** Add `n/prefer-process-get-builtin-module` rule ([a9d8604](https://github.com/MorevM/eslint-config/commit/a9d8604c07276d70c8330e5d7619b71a72f79f35))
+* **playwright:** Add `playwright/no-unnecessary-assertions` rule ([3efdf45](https://github.com/MorevM/eslint-config/commit/3efdf4518fdda8770599e5a0df94ad74a13eee50))
+* **yaml:** Add `yml/no-boolean-key` rule ([8bb704b](https://github.com/MorevM/eslint-config/commit/8bb704bb03c9fc25c19b27ac208d37cfb9057bce))
+
+
+### CI improvements
+
+* Bump `actions/checkout` from 4 to 7 ([748d020](https://github.com/MorevM/eslint-config/commit/748d020a32bbcd6cc82ce294a0e8062a57b39ad0))
+* Bump `actions/github-script` from 7 to 9 ([3e870af](https://github.com/MorevM/eslint-config/commit/3e870afb84fdfaa647d9b7afbdb8d5768754b22d))
+* Bump `actions/setup-node` from 4 to 7 ([7acfd49](https://github.com/MorevM/eslint-config/commit/7acfd49d024bf8cbd92eb3bfb1930c5df36b5b72))
+* Bump `pnpm/action-setup` from 4 to 6 ([f481124](https://github.com/MorevM/eslint-config/commit/f4811243d8b1084aadf9f7a32effa6bb87618e67))
+* Bump `softprops/action-gh-release` from 1 to 3 ([5eac149](https://github.com/MorevM/eslint-config/commit/5eac14981753a47e545efb5205795cb75a3f30b9))
+* Pin GitHub Actions to commit SHAs ([d7e0785](https://github.com/MorevM/eslint-config/commit/d7e078587fe536d4ada972710dedd09c4ddf4256))
+
+
+### Refactoring
+
+* Add actual links to jsdoc rule urls ([aa11695](https://github.com/MorevM/eslint-config/commit/aa11695f603d679f162fea27dfccd6903a529f67))
+* **javascript:** Configure `jsdoc/check-param-names` options explicitly ([76d9054](https://github.com/MorevM/eslint-config/commit/76d9054ebcab3317951f9b3e41721c22d7b55517))
+* **javascript:** Configure `no-unmodified-loop-condition` options explicitly ([4bbb012](https://github.com/MorevM/eslint-config/commit/4bbb012ad79796a8038c472ba842e41429a8849f))
+* **javascript:** Configure `unicorn/consistent-function-style` options explicitly ([d01f72b](https://github.com/MorevM/eslint-config/commit/d01f72b05b4a824ad59974ff4183bf9eac955890))
+* **javascript:** Configure `unicorn/prefer-https` options explicitly ([18f8a3b](https://github.com/MorevM/eslint-config/commit/18f8a3ba803287c5ef915c72195b0dc64fac0388))
+* **json:** Configure `package-json/restrict-dependency-ranges` options explicitly ([39f6304](https://github.com/MorevM/eslint-config/commit/39f63045f7d806f01369f315434a24cb85495dab))
+* **json:** Configure `package-json/scripts-name-casing` options explicitly ([ed09d00](https://github.com/MorevM/eslint-config/commit/ed09d009ec8b7c82ad456e1a455266cd59761089))
+* Use `process.getBuiltinModule()` in changelog extraction ([223b4fb](https://github.com/MorevM/eslint-config/commit/223b4fb9beed6b8fec09bf16bec8e35c312fa31e))
+
+
+### Bug fixes
+
+* Align Node.js support with `eslint-plugin-jsdoc` ([2cdb2dd](https://github.com/MorevM/eslint-config/commit/2cdb2dd21af14916f771aea85817f7122ad9bbee))
+* Allow imperative name for confirmation prompt helper ([6f7192c](https://github.com/MorevM/eslint-config/commit/6f7192caab4f8c4cf5ee5a619c67970ff6f66a2d))
+* **astro:** Remove deprecated `astro/no-omitted-end-tags` rule ([b5956e1](https://github.com/MorevM/eslint-config/commit/b5956e193e4a700393a8a80100bc6c628ac7ce3c))
+* **astro:** Remove deprecated `astro/valid-compile` rule ([9589ed2](https://github.com/MorevM/eslint-config/commit/9589ed2829eb8ab6c53facfaebf3e09ae009a253))
+* **javascript:** Allow function declarations before use ([ebb7dcd](https://github.com/MorevM/eslint-config/commit/ebb7dcd8d3f3b17a804062a99b20226795cc9435))
+* **javascript:** Configure `unicorn/prefer-minimal-ternary` options ([fda9f32](https://github.com/MorevM/eslint-config/commit/fda9f329d2e163d151aa36237fb962049ab994b8))
+* **javascript:** Configure `unicorn/prefer-short-arrow-method` mode ([9007d23](https://github.com/MorevM/eslint-config/commit/9007d239344cfb7337dcfc97b06ba38306f62b70))
+* **javascript:** Replace removed `unicorn/consistent-boolean-name` option ([eaa5288](https://github.com/MorevM/eslint-config/commit/eaa528888751360c3404432ef1c27fec2bdc4e62))
+* **jest:** Configure `jest/valid-expect-with-promise` thenable checks ([ef1decf](https://github.com/MorevM/eslint-config/commit/ef1decf72fe382d07719b13a00c12c2c790edb3d))
+* **markdown:** Configure ignored link URL patterns ([4ca0865](https://github.com/MorevM/eslint-config/commit/4ca0865566da74841e6fd4f65af0373cc07e68be))
+* **typescript:** Replace deprecated `@typescript-eslint/no-loop-func` rule with `no-loop-func` ([ac70c4f](https://github.com/MorevM/eslint-config/commit/ac70c4f07c10d6c76efe8df502ec3c34ea95e815))
+* **typescript:** Replace deprecated `@typescript-eslint/no-restricted-imports` rule with `no-restricted-imports` ([00ff742](https://github.com/MorevM/eslint-config/commit/00ff74250ff7d28b07cb1f22b8f83926a7da8432))
+* **vitest:** Configure all `vitest/prefer-expect-assertions` options ([f0e9674](https://github.com/MorevM/eslint-config/commit/f0e96744f884134c9dcf29ec857df8b50c1960dd))
+
+
+### Chores
+
+* Bump `@html-eslint/eslint-plugin` from 0.63.0 to 0.64.0 ([9a83b6f](https://github.com/MorevM/eslint-config/commit/9a83b6f408975ee98591a4a6b98f522f02a4de0e))
+* Bump `@html-eslint/eslint-plugin` from 0.64.0 to 0.65.0 ([9e2b537](https://github.com/MorevM/eslint-config/commit/9e2b537e7d918c05642ba5412bb490ee3afdf960))
+* Bump `@html-eslint/parser` from 0.63.0 to 0.64.0 ([bbeffe8](https://github.com/MorevM/eslint-config/commit/bbeffe85a620086665c788f08d1327c7ec343ada))
+* Bump `@html-eslint/parser` from 0.64.0 to 0.65.0 ([82c1434](https://github.com/MorevM/eslint-config/commit/82c1434f7bfe91eb4dbbf0fff3d4f7f7eec159b9))
+* Bump `@types/node` from 22.20.0 to 22.20.1 ([8d4285b](https://github.com/MorevM/eslint-config/commit/8d4285bc342c4ff36bb18f4556002a34c949498d))
+* Bump `@types/semver` from 7.7.1 to 7.8.0 ([4a619f5](https://github.com/MorevM/eslint-config/commit/4a619f53f8ebe309874c8f0f17a3be85c824c80f))
+* Bump `@vitest/eslint-plugin` from 1.6.21 to 1.6.24 ([4b057a1](https://github.com/MorevM/eslint-config/commit/4b057a197ec01a0503a8ace26f964538b986f1f4))
+* Bump `@vitest/eslint-plugin` from 1.6.24 to 1.6.27 ([2e4209a](https://github.com/MorevM/eslint-config/commit/2e4209ab5731e3888de9b11e63ea3dad4d21e61f))
+* Bump `astro-eslint-parser` from 2.1.0 to 3.0.0 ([8b262b1](https://github.com/MorevM/eslint-config/commit/8b262b1391a6cabfe47c9b27c1a9bc871e7d6f1f))
+* Bump `astro-eslint-parser` from 3.0.0 to 3.1.0 ([9b90e71](https://github.com/MorevM/eslint-config/commit/9b90e71c15397f400ea4433700eeb8dd7dbae1f6))
+* Bump `eslint-config-flat-gitignore` from 2.3.0 to 2.4.0 ([330bfcb](https://github.com/MorevM/eslint-config/commit/330bfcb7aa94632ace349c55c37e34dae3206ff3))
+* Bump `eslint-plugin-astro` from 2.1.1 to 3.0.1 ([f06820a](https://github.com/MorevM/eslint-config/commit/f06820a8259a5c41d7dedfb23d219b664851904a))
+* Bump `eslint-plugin-astro` from 3.0.1 to 3.1.0 ([1b7ca32](https://github.com/MorevM/eslint-config/commit/1b7ca3253eeadd4b0864586aca9f621235a6d71b))
+* Bump `eslint-plugin-command` from 3.5.2 to 4.0.0 ([d943e50](https://github.com/MorevM/eslint-config/commit/d943e506ddd042b661e5b15aec0d27b2eb87bec7))
+* Bump `eslint-plugin-cypress` from 6.4.2 to 6.4.3 ([311537b](https://github.com/MorevM/eslint-config/commit/311537b2fec0c1b93f1c53ccd54dfc19ef9241b9))
+* Bump `eslint-plugin-cypress` from 6.4.3 to 7.0.1 ([af1ecfb](https://github.com/MorevM/eslint-config/commit/af1ecfbcc43483a52c7a952e1e5907c62a1a0588))
+* Bump `eslint-plugin-jest` from 29.15.4 to 29.16.0 ([e29b28e](https://github.com/MorevM/eslint-config/commit/e29b28eb107db0d604812b34272acdf4669f9d3b))
+* Bump `eslint-plugin-jest` from 29.16.0 to 29.16.1 ([d512f50](https://github.com/MorevM/eslint-config/commit/d512f50bcf91e2d98aad43b8e003a557621c356d))
+* Bump `eslint-plugin-jest` from 29.16.1 to 29.16.6 ([a69b779](https://github.com/MorevM/eslint-config/commit/a69b7795b4ed3c1b2b2a0814031ecc78f4068899))
+* Bump `eslint-plugin-jsdoc` from 63.0.12 to 63.3.2 ([debc37d](https://github.com/MorevM/eslint-config/commit/debc37d319de89272e64bdecd6a22b25e19ad5c7))
+* Bump `eslint-plugin-jsdoc` from 63.3.2 to 64.2.1 ([4e16344](https://github.com/MorevM/eslint-config/commit/4e16344e1c36aa31e3bd8aa4d644fb6ecf7c6423))
+* Bump `eslint-plugin-jsdoc` from 64.2.1 to 64.3.2 ([48b1e2b](https://github.com/MorevM/eslint-config/commit/48b1e2be8c93eec2b1ec5e2c23e1bbbb76cbecde))
+* Bump `eslint-plugin-jsonc` from 3.2.0 to 3.3.0 ([41ebea9](https://github.com/MorevM/eslint-config/commit/41ebea92d8c084c7c07a8f918b0a4243fc7a5186))
+* Bump `eslint-plugin-jsonc` from 3.3.0 to 3.4.2 ([cf018e4](https://github.com/MorevM/eslint-config/commit/cf018e452f5bf666f13a1db27e9b7c9f7404a72a))
+* Bump `eslint-plugin-markdown-preferences` from 0.41.1 to 0.42.0 ([ba33748](https://github.com/MorevM/eslint-config/commit/ba33748b3fdd5f915bdbab34d1ffb9f740956fd5))
+* Bump `eslint-plugin-n` from 18.2.1 to 18.2.2 ([9cc07da](https://github.com/MorevM/eslint-config/commit/9cc07da9b79d1e863112cf2b5676239982a22f8a))
+* Bump `eslint-plugin-n` from 18.2.2 to 18.3.0 ([0a1d4b3](https://github.com/MorevM/eslint-config/commit/0a1d4b30225644d1332e024e52672600c8c6adee))
+* Bump `eslint-plugin-package-json` from 1.5.0 to 1.6.2 ([86aade9](https://github.com/MorevM/eslint-config/commit/86aade92d906b8400eb4f40dd1d72c2802bf2d07))
+* Bump `eslint-plugin-package-json` from 1.6.2 to 1.7.1 ([c2d3aad](https://github.com/MorevM/eslint-config/commit/c2d3aad1483de0360282870a55b71f468d87365f))
+* Bump `eslint-plugin-package-json` from 1.7.1 to 1.8.0 ([a724173](https://github.com/MorevM/eslint-config/commit/a7241732b9368fbffef34a53b52bb830db87efc4))
+* Bump `eslint-plugin-perfectionist` from 5.10.0 to 5.10.1 ([e8c29dd](https://github.com/MorevM/eslint-config/commit/e8c29ddc5d4a8c59a7d132ccb8e57c15ab319df2))
+* Bump `eslint-plugin-perfectionist` from 5.10.1 to 5.11.0 ([b76892d](https://github.com/MorevM/eslint-config/commit/b76892d6f603d9a463fd10bfdefecdc2a435ec2e))
+* Bump `eslint-plugin-perfectionist` from 5.9.1 to 5.10.0 ([c873962](https://github.com/MorevM/eslint-config/commit/c873962451a4ce489e94dc04c81585db8797eea7))
+* Bump `eslint-plugin-playwright` from 2.10.5 to 2.11.0 ([dc2af53](https://github.com/MorevM/eslint-config/commit/dc2af53fb58ab1fe9f958713566ddf3c6fa7103e))
+* Bump `eslint-plugin-regexp` from 3.1.1 to 3.2.0 ([5172ae4](https://github.com/MorevM/eslint-config/commit/5172ae4d1f25f3dbb6c84c402286c788e2fbc861))
+* Bump `eslint-plugin-unicorn` from 71.1.0 to 72.0.0 ([09580ed](https://github.com/MorevM/eslint-config/commit/09580ed143bb4020da989c73ec3d5decfedcd537))
+* Bump `eslint-plugin-unicorn` from 72.0.0 to 73.0.0 ([eec9541](https://github.com/MorevM/eslint-config/commit/eec954138728d244e372dc0c75f4de92515d6713))
+* Bump `eslint-plugin-unicorn` from 73.0.0 to 74.0.0 ([43fbd53](https://github.com/MorevM/eslint-config/commit/43fbd539178fdabdac447214526b57236ce74c93))
+* Bump `eslint-plugin-vue` from 10.9.2 to 10.10.0 ([f25e15e](https://github.com/MorevM/eslint-config/commit/f25e15ee2418fd7b387ecc171b327c0ab1ef3f04))
+* Bump `eslint-plugin-yml` from 3.5.0 to 3.6.0 ([a235711](https://github.com/MorevM/eslint-config/commit/a23571119db40563789c427de563e5720f2bb4dc))
+* Bump `eslint-plugin-yml` from 3.6.0 to 3.8.1 ([75a5506](https://github.com/MorevM/eslint-config/commit/75a5506df35827f159a276a1f30586032e0a4356))
+* Bump `eslint` from 10.6.0 to 10.8.0 ([f9188da](https://github.com/MorevM/eslint-config/commit/f9188daf86cf270030248e8d5ba5d6cb5eefb589))
+* Bump `eslint` from 10.8.0 to 10.9.1 ([b459503](https://github.com/MorevM/eslint-config/commit/b459503c6f39423ae1dafc8486b1341449e73937))
+* Bump `globals` from 17.7.0 to 17.8.0 ([2cd778e](https://github.com/MorevM/eslint-config/commit/2cd778e354dbd8ec3b203383f2a01f6426e6c65e))
+* Bump `globals` from 17.8.0 to 17.11.0 ([69988e6](https://github.com/MorevM/eslint-config/commit/69988e641dd2849af450e87ea54f3078fe767731))
+* Bump `jsonc-eslint-parser` from 3.1.0 to 3.3.0 ([a808d45](https://github.com/MorevM/eslint-config/commit/a808d455dc71f89b5c873c72b8db1ec53d2ce850))
+* Bump `lefthook` from 2.1.10 to 2.1.12 ([89d0740](https://github.com/MorevM/eslint-config/commit/89d074072ca4c787c810f9557385a5b107a3eeb8))
+* Bump `lefthook` from 2.1.9 to 2.1.10 ([b4dd545](https://github.com/MorevM/eslint-config/commit/b4dd545e3d7370f7a4ed627b60b3ea252e1f3959))
+* Bump `package-manager-detector` from 1.7.0 to 1.8.0 ([545aaed](https://github.com/MorevM/eslint-config/commit/545aaed5eef902f72e75954a5145fc5cd59be97a))
+* Bump `release-it` from 20.2.1 to 21.0.0 ([9fa08da](https://github.com/MorevM/eslint-config/commit/9fa08da050926ee3317b8b56552cd83f011b0d21))
+* Bump `release-it` from 21.0.0 to 21.0.2 ([4ab1a22](https://github.com/MorevM/eslint-config/commit/4ab1a220a3c43dfddbe65e7930e6acabeb54d79c))
+* Bump `tsdown` from 0.22.3 to 0.22.14 ([4380b9c](https://github.com/MorevM/eslint-config/commit/4380b9c45749f33ed9658f42151e28bf6f46b02f))
+* Bump `tsx` from 4.23.0 to 4.23.1 ([27aaa50](https://github.com/MorevM/eslint-config/commit/27aaa50424275735d1045297280a927085579aa4))
+* Bump `tsx` from 4.23.1 to 4.23.12 ([6336580](https://github.com/MorevM/eslint-config/commit/6336580f806d02c0ac8f90356282fdcf4ef8c313))
+* Bump `tsx` from 4.23.12 to 4.23.13 ([de5e73f](https://github.com/MorevM/eslint-config/commit/de5e73fe4bb50787fe6049b5a12008e3a036ddcc))
+* Bump `typescript-eslint` from 8.62.1 to 8.65.0 ([3b29ed1](https://github.com/MorevM/eslint-config/commit/3b29ed1a7b666e0b76d93cf59fc68b015b74b4bf))
+* Bump `typescript-eslint` from 8.65.0 to 8.68.0 ([d572cb7](https://github.com/MorevM/eslint-config/commit/d572cb7568e52aa61614e3b336a204199fdf430c))
+* Bump `vitest` from 4.1.10 to 4.1.11 ([bd6dca5](https://github.com/MorevM/eslint-config/commit/bd6dca52b32e813ae39389d17d2256d01f2ea6e2))
+* Bump `vitest` from 4.1.9 to 4.1.10 ([770ed02](https://github.com/MorevM/eslint-config/commit/770ed02d47c6ac0cd92eb1132a9af1820c05ffce))
+* Bump `vue` from 3.5.39 to 3.5.40 ([37c6060](https://github.com/MorevM/eslint-config/commit/37c60609df69091d1847ce1797cb487c0880d87f))
+* Bump `vue` from 3.5.40 to 3.5.41 ([8503d02](https://github.com/MorevM/eslint-config/commit/8503d023fd5d14ecd1be27fa9aa18d2185283490)), closes [/github.com/vuejs/core/blob/v3.5.41/CHANGELOG.md#3541-2026-08-05](https://github.com/MorevM//github.com/vuejs/core/blob/v3.5.41/CHANGELOG.md/issues/3541-2026-08-05)
+* Bump `vue` from 3.5.41 to 3.5.42 ([aa074fe](https://github.com/MorevM/eslint-config/commit/aa074fe903c1558dc48e931c8155fa889944ecb8)), closes [/github.com/vuejs/core/blob/v3.5.42/CHANGELOG.md#3542-2026-08-27](https://github.com/MorevM//github.com/vuejs/core/blob/v3.5.42/CHANGELOG.md/issues/3542-2026-08-27)
+* Bump `yaml-eslint-parser` from 2.0.0 to 2.1.0 ([837b576](https://github.com/MorevM/eslint-config/commit/837b576151909705a5ddfe4883605c52e7cebd00))
+* Get rid of removed `--disable-metrics` flag with `release-it` ([1db5747](https://github.com/MorevM/eslint-config/commit/1db5747324b6c810870317f29de6a55c532af580))
+* Respect dependency minimum release age ([abb8266](https://github.com/MorevM/eslint-config/commit/abb8266d6367d0754b0041dc5fefe3a68b91c7cd))
+
 ## [42.0.2](https://github.com/MorevM/eslint-config/compare/v42.0.1...v42.0.2) (2026-07-09)
 
 

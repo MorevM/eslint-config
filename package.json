@@ -2,7 +2,7 @@
 	"name": "@morev/eslint-config",
 	"description": "Strict shareable ESLint configuration with reasonable defaults",
 	"type": "module",
-	"version": "42.0.2",
+	"version": "43.0.0",
 	"engines": {
 		"node": "^22.22.3 || >=24.15.0"
 	},
