@@ -89,7 +89,7 @@
 		"eslint-plugin-markdown-preferences": "^0.42.0",
 		"eslint-plugin-n": "^18.3.0",
 		"eslint-plugin-no-secrets": "^2.3.3",
-		"eslint-plugin-package-json": "^1.7.1",
+		"eslint-plugin-package-json": "^1.8.0",
 		"eslint-plugin-perfectionist": "^5.10.1",
 		"eslint-plugin-playwright": "^2.11.0",
 		"eslint-plugin-regexp": "^3.2.0",
