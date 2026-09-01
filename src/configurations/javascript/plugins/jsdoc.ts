@@ -185,6 +185,16 @@ export default defineConfigurationPart({
 		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-undefined-types.md
 		'jsdoc/no-undefined-types': 'error',
 
+		// Reports redundant `@type` tags that match or broaden the naturally inferred TypeScript type (autofixable)
+		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-unnecessary-type-assertion.md
+		// Reason: Type information is not available in every configuration where JSDoc rules are enabled
+		'jsdoc/no-unnecessary-type-assertion': ['off', {
+			checkLiteralConstAssertions: false,
+			enableFixer: true,
+			treatAnyAsRedundant: false,
+			typesToIgnore: [],
+		}],
+
 		// Prefer `@import` tags to inline `import()` statements (autofixable)
 		// https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/prefer-import-tag.md
 		'jsdoc/prefer-import-tag': 'off',
