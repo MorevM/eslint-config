@@ -40,6 +40,9 @@ installed. Sequential updates make lockfile and transitive changes attributable 
 
 - Do not update `eslint-plugin-sonarjs` and `@release-it/conventional-changelog` during broad
   or routine dependency updates unless the user explicitly asks to update them by name.
+- Do not add new entries to `pnpm-workspace.yaml#minimumReleaseAgeExclude` unless the user explicitly asks to bypass
+  the minimum release age policy. If a target version or its transitive dependency is rejected by that policy, skip the
+  direct dependency update and report it.
 - Keep `@types/node` on the same major version as the repository's declared Node.js engine support in
   `package.json#engines.node`. For example, when `engines.node` is `>=22.x`, update `@types/node` only within major 22
   unless the engine range is changed intentionally first.

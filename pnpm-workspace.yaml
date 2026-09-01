@@ -2,5 +2,3 @@ allowBuilds:
   esbuild: true
   lefthook: true
   unrs-resolver: true
-minimumReleaseAgeExclude:
-  - eslint-plugin-unicorn@71.1.0
